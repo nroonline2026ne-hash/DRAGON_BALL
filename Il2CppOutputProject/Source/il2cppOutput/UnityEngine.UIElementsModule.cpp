@@ -563,7 +563,7 @@ float BaselineFunction_Invoke_m13EB3EF10C95E981D9420E97CEB4DB0E34863C8B_OpenGene
 	NullCheck(___0_node);
 	return GenericInterfaceFuncInvoker2< float, float, float >::Invoke(method, ___0_node, ___1_width, ___2_height);
 }
-// Method Definition Index: 22347
+// Method Definition Index: 22346
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaselineFunction__ctor_mB96F611BB5FD8849C6DC1C69A017B5F9A482DAC3 (BaselineFunction_tC445BD8DBEF6E2D011F0761B6387F9DD019812E8* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) 
 {
 	__this->___method_ptr = (intptr_t)il2cpp_codegen_get_method_pointer((RuntimeMethod*)___1_method);
@@ -616,7 +616,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BaselineFunction__ctor_mB96F611BB5FD8849
 	}
 	__this->___extra_arg = (intptr_t)&BaselineFunction_Invoke_m13EB3EF10C95E981D9420E97CEB4DB0E34863C8B_Multicast;
 }
-// Method Definition Index: 22348
+// Method Definition Index: 22347
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float BaselineFunction_Invoke_m13EB3EF10C95E981D9420E97CEB4DB0E34863C8B (BaselineFunction_tC445BD8DBEF6E2D011F0761B6387F9DD019812E8* __this, YogaNode_t9EE7C2B7C0BD1299C28837B1A66CF4660E724C8B* ___0_node, float ___1_width, float ___2_height, const RuntimeMethod* method) 
 {
 	typedef float (*FunctionPointerType) (RuntimeObject*, YogaNode_t9EE7C2B7C0BD1299C28837B1A66CF4660E724C8B*, float, float, const RuntimeMethod*);
@@ -675,7 +675,7 @@ YogaSize_t3FF1BB4D590ACFC61602BA2713211CFBF1AA9DCB MeasureFunction_Invoke_m57BA4
 	NullCheck(___0_node);
 	return GenericInterfaceFuncInvoker4< YogaSize_t3FF1BB4D590ACFC61602BA2713211CFBF1AA9DCB, float, int32_t, float, int32_t >::Invoke(method, ___0_node, ___1_width, ___2_widthMode, ___3_height, ___4_heightMode);
 }
-// Method Definition Index: 22349
+// Method Definition Index: 22348
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeasureFunction__ctor_m03A58477C9EFCE58C52AF4CA149B8881E9A55548 (MeasureFunction_tFF5C288931BCD9972BF58C7247560B30D8ED91C8* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) 
 {
 	__this->___method_ptr = (intptr_t)il2cpp_codegen_get_method_pointer((RuntimeMethod*)___1_method);
@@ -728,7 +728,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MeasureFunction__ctor_m03A58477C9EFCE58C
 	}
 	__this->___extra_arg = (intptr_t)&MeasureFunction_Invoke_m57BA4BE3E3623583F56D7B3F38818D2CE4C9FEC5_Multicast;
 }
-// Method Definition Index: 22350
+// Method Definition Index: 22349
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR YogaSize_t3FF1BB4D590ACFC61602BA2713211CFBF1AA9DCB MeasureFunction_Invoke_m57BA4BE3E3623583F56D7B3F38818D2CE4C9FEC5 (MeasureFunction_tFF5C288931BCD9972BF58C7247560B30D8ED91C8* __this, YogaNode_t9EE7C2B7C0BD1299C28837B1A66CF4660E724C8B* ___0_node, float ___1_width, int32_t ___2_widthMode, float ___3_height, int32_t ___4_heightMode, const RuntimeMethod* method) 
 {
 	typedef YogaSize_t3FF1BB4D590ACFC61602BA2713211CFBF1AA9DCB (*FunctionPointerType) (RuntimeObject*, YogaNode_t9EE7C2B7C0BD1299C28837B1A66CF4660E724C8B*, float, int32_t, float, int32_t, const RuntimeMethod*);
@@ -750,7 +750,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR YogaSize_t3FF1BB4D590ACFC61602BA2713211CFBF1A
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 22351
+// Method Definition Index: 22350
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_YGNodeMeasureInvoke_m448DB3A849285A6B8845A0D5B1084F543D31F43E (YogaNode_t9EE7C2B7C0BD1299C28837B1A66CF4660E724C8B* ___0_node, float ___1_width, int32_t ___2_widthMode, float ___3_height, int32_t ___4_heightMode, intptr_t ___5_returnValueAddress, const RuntimeMethod* method) 
 {
 	{
@@ -768,7 +768,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_YGNodeMeasureInvoke_m448DB3A84928
 		return;
 	}
 }
-// Method Definition Index: 22352
+// Method Definition Index: 22351
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_YGNodeBaselineInvoke_m47559BB828CD8D0A835DEE50ECC2FFBCBA005599 (YogaNode_t9EE7C2B7C0BD1299C28837B1A66CF4660E724C8B* ___0_node, float ___1_width, float ___2_height, intptr_t ___3_returnValueAddress, const RuntimeMethod* method) 
 {
 	{
@@ -792,7 +792,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Native_YGNodeBaselineInvoke_m47559BB828C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 22353
+// Method Definition Index: 22352
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR YogaSize_t3FF1BB4D590ACFC61602BA2713211CFBF1AA9DCB YogaNode_MeasureInternal_mA92CB63CB8B411FA5EC2B36DF5441A9C93C8A5E7 (YogaNode_t9EE7C2B7C0BD1299C28837B1A66CF4660E724C8B* ___0_node, float ___1_width, int32_t ___2_widthMode, float ___3_height, int32_t ___4_heightMode, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
@@ -857,7 +857,7 @@ IL_0034:
 		return L_13;
 	}
 }
-// Method Definition Index: 22354
+// Method Definition Index: 22353
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float YogaNode_BaselineInternal_mE6CDCD2F9C884415E362BF5578B34FFFF52BC6C1 (YogaNode_t9EE7C2B7C0BD1299C28837B1A66CF4660E724C8B* ___0_node, float ___1_width, float ___2_height, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
@@ -935,7 +935,7 @@ IL_0031:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 22355
+// Method Definition Index: 22354
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIElementsRuntimeUtilityNative_RepaintOverlayPanels_m6D6A8A57DD315A491C24434E9A9475AE829B9809 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -971,7 +971,7 @@ IL_0012:
 		return;
 	}
 }
-// Method Definition Index: 22356
+// Method Definition Index: 22355
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIElementsRuntimeUtilityNative_UpdateRuntimePanels_m12DC61546EA04E667B924669822735C03F761E95 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1007,7 +1007,7 @@ IL_0012:
 		return;
 	}
 }
-// Method Definition Index: 22357
+// Method Definition Index: 22356
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIElementsRuntimeUtilityNative_RepaintOffscreenPanels_m3DACE4CD09DD7464A2C13C72BC61E0F5A78FD8B9 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1051,7 +1051,7 @@ IL_0012:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 22358
+// Method Definition Index: 22357
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_RaiseGraphicsResourcesRecreate_mF33D7223297EC8AB4C3273397005E442BF6FAA11 (bool ___0_recreate, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1089,7 +1089,7 @@ IL_0013:
 		return;
 	}
 }
-// Method Definition Index: 22359
+// Method Definition Index: 22358
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_RaiseEngineUpdate_m2D3D837B201E72568207882032626907E05F0327 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1123,7 +1123,7 @@ IL_0030:
 		return;
 	}
 }
-// Method Definition Index: 22360
+// Method Definition Index: 22359
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_RaiseFlushPendingResources_mA1138479367B74CFF601A3E7617C6861CCD814B2 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1160,7 +1160,7 @@ IL_0012:
 		return;
 	}
 }
-// Method Definition Index: 22361
+// Method Definition Index: 22360
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_RaiseRegisterIntermediateRenderers_mF86BF645336D859D165A103ED551C8036502C33B (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___0_camera, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1198,7 +1198,7 @@ IL_0013:
 		return;
 	}
 }
-// Method Definition Index: 22362
+// Method Definition Index: 22361
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_RaiseRenderNodeAdd_m7710751B3024FDC11AC7EA9B2224FBD9C73E068B (intptr_t ___0_userData, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1236,7 +1236,7 @@ IL_0013:
 		return;
 	}
 }
-// Method Definition Index: 22363
+// Method Definition Index: 22362
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_RaiseRenderNodeExecute_m1478319E20BE01E5F15FE82A48635DC9C9A4892C (intptr_t ___0_userData, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1274,7 +1274,7 @@ IL_0013:
 		return;
 	}
 }
-// Method Definition Index: 22364
+// Method Definition Index: 22363
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility_RaiseRenderNodeCleanup_m92C3DD2F46BBB88D1FB2B4701779FE3EB720B746 (intptr_t ___0_userData, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1312,7 +1312,7 @@ IL_0013:
 		return;
 	}
 }
-// Method Definition Index: 22365
+// Method Definition Index: 22364
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility__cctor_m462F466B065A735D1D573736C7AC1D251C0271EE (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1333,13 +1333,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Utility__cctor_m462F466B065A735D1D573736
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 22350
+// Method Definition Index: 22349
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR YogaSize_t3FF1BB4D590ACFC61602BA2713211CFBF1AA9DCB MeasureFunction_Invoke_m57BA4BE3E3623583F56D7B3F38818D2CE4C9FEC5_inline (MeasureFunction_tFF5C288931BCD9972BF58C7247560B30D8ED91C8* __this, YogaNode_t9EE7C2B7C0BD1299C28837B1A66CF4660E724C8B* ___0_node, float ___1_width, int32_t ___2_widthMode, float ___3_height, int32_t ___4_heightMode, const RuntimeMethod* method) 
 {
 	typedef YogaSize_t3FF1BB4D590ACFC61602BA2713211CFBF1AA9DCB (*FunctionPointerType) (RuntimeObject*, YogaNode_t9EE7C2B7C0BD1299C28837B1A66CF4660E724C8B*, float, int32_t, float, int32_t, const RuntimeMethod*);
 	return ((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_node, ___1_width, ___2_widthMode, ___3_height, ___4_heightMode, reinterpret_cast<RuntimeMethod*>(__this->___method));
 }
-// Method Definition Index: 22348
+// Method Definition Index: 22347
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float BaselineFunction_Invoke_m13EB3EF10C95E981D9420E97CEB4DB0E34863C8B_inline (BaselineFunction_tC445BD8DBEF6E2D011F0761B6387F9DD019812E8* __this, YogaNode_t9EE7C2B7C0BD1299C28837B1A66CF4660E724C8B* ___0_node, float ___1_width, float ___2_height, const RuntimeMethod* method) 
 {
 	typedef float (*FunctionPointerType) (RuntimeObject*, YogaNode_t9EE7C2B7C0BD1299C28837B1A66CF4660E724C8B*, float, float, const RuntimeMethod*);
@@ -1351,7 +1351,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_Invoke_m7126A54DACA72
 	typedef void (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, reinterpret_cast<RuntimeMethod*>(__this->___method));
 }
-// Method Definition Index: 18587
+// Method Definition Index: 18586
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ProfilerMarker_Begin_mD07DB736ADA7D8BAF9D969CC7F3C55848A218C6E_inline (ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1360,7 +1360,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ProfilerMarker_Begin_mD07DB7
 		return;
 	}
 }
-// Method Definition Index: 18588
+// Method Definition Index: 18587
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ProfilerMarker_End_m025AE3EF0F96F6DADC53489A53FC6EE65073DE60_inline (ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1369,7 +1369,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ProfilerMarker_End_m025AE3EF
 		return;
 	}
 }
-// Method Definition Index: 18586
+// Method Definition Index: 18585
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ProfilerMarker__ctor_mDD68B0A8B71E0301F592AF8891560150E55699C8_inline (ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD* __this, String_t* ___0_name, const RuntimeMethod* method) 
 {
 	{

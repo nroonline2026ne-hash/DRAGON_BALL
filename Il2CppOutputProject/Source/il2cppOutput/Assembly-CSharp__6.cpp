@@ -3141,8 +3141,9 @@ struct KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_StaticFields
 	int64_t ___stopHp;
 	bool ___useTanSatV2;
 	bool ___autoChangeZoneWhenEmpty;
-	int32_t ___editingIndex;
-	int64_t ___lastBackspaceTime;
+	Int64U5BU5D_tAEDFCBDB5414E2A140A6F34C0538BF97FCF67A1D* ___HpSteps;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___HpStepLabels;
+	int32_t ___stepIndex;
 };
 struct Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05_StaticFields
 {
@@ -7660,7 +7661,7 @@ IL_0187_1:
 			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_36 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 			if (!L_36)
 			{
-				goto IL_0604_1;
+				goto IL_05f5_1;
 			}
 		}
 		{
@@ -8398,7 +8399,7 @@ IL_0528_1:
 			bool L_161 = L_160->___isShow;
 			if (L_161)
 			{
-				goto IL_05f5_1;
+				goto IL_05e6_1;
 			}
 		}
 		{
@@ -8406,7 +8407,7 @@ IL_0528_1:
 			ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0* L_162 = ((ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_StaticFields*)il2cpp_codegen_static_fields_for(ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_il2cpp_TypeInfo_var))->___serverChatPopUp;
 			if (L_162)
 			{
-				goto IL_05f5_1;
+				goto IL_05e6_1;
 			}
 		}
 		{
@@ -8424,7 +8425,7 @@ IL_0528_1:
 			bool L_165 = L_164->___isShow;
 			if (!L_165)
 			{
-				goto IL_05f5_1;
+				goto IL_05e6_1;
 			}
 		}
 
@@ -8434,7 +8435,7 @@ IL_055c_1:
 			bool L_166 = ((AutoMapPanel_tBEC66D8461BA41AB4269C697948E16DB38E4C471_StaticFields*)il2cpp_codegen_static_fields_for(AutoMapPanel_tBEC66D8461BA41AB4269C697948E16DB38E4C471_il2cpp_TypeInfo_var))->___isShow;
 			if (L_166)
 			{
-				goto IL_05f5_1;
+				goto IL_05e6_1;
 			}
 		}
 		{
@@ -8442,7 +8443,7 @@ IL_055c_1:
 			bool L_167 = ((GraphicPanel_t19507AE5DD776EAC4C5B5180F4995435555A4071_StaticFields*)il2cpp_codegen_static_fields_for(GraphicPanel_t19507AE5DD776EAC4C5B5180F4995435555A4071_il2cpp_TypeInfo_var))->___isShow;
 			if (L_167)
 			{
-				goto IL_05f5_1;
+				goto IL_05e6_1;
 			}
 		}
 		{
@@ -8450,7 +8451,7 @@ IL_055c_1:
 			bool L_168 = ((ChessPanel_t84614DE3A0BA5A2E444760AD7A99DE3114973EB0_StaticFields*)il2cpp_codegen_static_fields_for(ChessPanel_t84614DE3A0BA5A2E444760AD7A99DE3114973EB0_il2cpp_TypeInfo_var))->___isShow;
 			if (L_168)
 			{
-				goto IL_05f5_1;
+				goto IL_05e6_1;
 			}
 		}
 		{
@@ -8458,7 +8459,7 @@ IL_055c_1:
 			bool L_169 = ((MiniGamePanel_t329F32B3DC9CF0322300A7F08D06EA4E8C24176B_StaticFields*)il2cpp_codegen_static_fields_for(MiniGamePanel_t329F32B3DC9CF0322300A7F08D06EA4E8C24176B_il2cpp_TypeInfo_var))->___isShow;
 			if (L_169)
 			{
-				goto IL_05f5_1;
+				goto IL_05e6_1;
 			}
 		}
 		{
@@ -8466,7 +8467,7 @@ IL_055c_1:
 			bool L_170 = ((AutoItemPanel_t2E7F7F6C9261D64F40BC7170592CE01D10978E50_StaticFields*)il2cpp_codegen_static_fields_for(AutoItemPanel_t2E7F7F6C9261D64F40BC7170592CE01D10978E50_il2cpp_TypeInfo_var))->___isShow;
 			if (L_170)
 			{
-				goto IL_05f5_1;
+				goto IL_05e6_1;
 			}
 		}
 		{
@@ -8474,140 +8475,128 @@ IL_055c_1:
 			bool L_171 = ((AutoSkillPanel_t2C390C00559138A3B1918283862FAA9E278E04C4_StaticFields*)il2cpp_codegen_static_fields_for(AutoSkillPanel_t2C390C00559138A3B1918283862FAA9E278E04C4_il2cpp_TypeInfo_var))->___isShow;
 			if (L_171)
 			{
-				goto IL_05f5_1;
+				goto IL_05e6_1;
 			}
 		}
 		{
 			il2cpp_codegen_runtime_class_init_inline(KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var);
 			bool L_172 = ((KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_StaticFields*)il2cpp_codegen_static_fields_for(KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var))->___isShow;
-			if (!L_172)
+			if (L_172)
 			{
-				goto IL_059f_1;
+				goto IL_05e6_1;
 			}
 		}
-		{
-			ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_173;
-			L_173 = ChatTextField_gI_mEBDFD51CF605F319722D5C0D2403A11E50B06D81(NULL);
-			NullCheck(L_173);
-			bool L_174 = L_173->___isShow;
-			if (!L_174)
-			{
-				goto IL_05f5_1;
-			}
-		}
-
-IL_059f_1:
 		{
 			il2cpp_codegen_runtime_class_init_inline(AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561_il2cpp_TypeInfo_var);
-			bool L_175 = ((AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561_StaticFields*)il2cpp_codegen_static_fields_for(AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561_il2cpp_TypeInfo_var))->___isShow;
+			bool L_173 = ((AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561_StaticFields*)il2cpp_codegen_static_fields_for(AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561_il2cpp_TypeInfo_var))->___isShow;
+			if (!L_173)
+			{
+				goto IL_05a3_1;
+			}
+		}
+		{
+			ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_174;
+			L_174 = ChatTextField_gI_mEBDFD51CF605F319722D5C0D2403A11E50B06D81(NULL);
+			NullCheck(L_174);
+			bool L_175 = L_174->___isShow;
 			if (!L_175)
 			{
-				goto IL_05b2_1;
-			}
-		}
-		{
-			ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_176;
-			L_176 = ChatTextField_gI_mEBDFD51CF605F319722D5C0D2403A11E50B06D81(NULL);
-			NullCheck(L_176);
-			bool L_177 = L_176->___isShow;
-			if (!L_177)
-			{
-				goto IL_05f5_1;
+				goto IL_05e6_1;
 			}
 		}
 
-IL_05b2_1:
+IL_05a3_1:
 		{
 			il2cpp_codegen_runtime_class_init_inline(AutoChatPanel_t9F210BA1E16FA865E87E0BFDAE2748AD9E951F2F_il2cpp_TypeInfo_var);
-			bool L_178 = ((AutoChatPanel_t9F210BA1E16FA865E87E0BFDAE2748AD9E951F2F_StaticFields*)il2cpp_codegen_static_fields_for(AutoChatPanel_t9F210BA1E16FA865E87E0BFDAE2748AD9E951F2F_il2cpp_TypeInfo_var))->___isShow;
+			bool L_176 = ((AutoChatPanel_t9F210BA1E16FA865E87E0BFDAE2748AD9E951F2F_StaticFields*)il2cpp_codegen_static_fields_for(AutoChatPanel_t9F210BA1E16FA865E87E0BFDAE2748AD9E951F2F_il2cpp_TypeInfo_var))->___isShow;
+			if (!L_176)
+			{
+				goto IL_05b6_1;
+			}
+		}
+		{
+			ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_177;
+			L_177 = ChatTextField_gI_mEBDFD51CF605F319722D5C0D2403A11E50B06D81(NULL);
+			NullCheck(L_177);
+			bool L_178 = L_177->___isShow;
 			if (!L_178)
 			{
-				goto IL_05c5_1;
-			}
-		}
-		{
-			ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_179;
-			L_179 = ChatTextField_gI_mEBDFD51CF605F319722D5C0D2403A11E50B06D81(NULL);
-			NullCheck(L_179);
-			bool L_180 = L_179->___isShow;
-			if (!L_180)
-			{
-				goto IL_05f5_1;
+				goto IL_05e6_1;
 			}
 		}
 
-IL_05c5_1:
+IL_05b6_1:
 		{
 			il2cpp_codegen_runtime_class_init_inline(AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643_il2cpp_TypeInfo_var);
-			bool L_181 = ((AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643_StaticFields*)il2cpp_codegen_static_fields_for(AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643_il2cpp_TypeInfo_var))->___isShow;
+			bool L_179 = ((AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643_StaticFields*)il2cpp_codegen_static_fields_for(AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643_il2cpp_TypeInfo_var))->___isShow;
+			if (!L_179)
+			{
+				goto IL_05c9_1;
+			}
+		}
+		{
+			ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_180;
+			L_180 = ChatTextField_gI_mEBDFD51CF605F319722D5C0D2403A11E50B06D81(NULL);
+			NullCheck(L_180);
+			bool L_181 = L_180->___isShow;
 			if (!L_181)
 			{
-				goto IL_05d8_1;
-			}
-		}
-		{
-			ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_182;
-			L_182 = ChatTextField_gI_mEBDFD51CF605F319722D5C0D2403A11E50B06D81(NULL);
-			NullCheck(L_182);
-			bool L_183 = L_182->___isShow;
-			if (!L_183)
-			{
-				goto IL_05f5_1;
+				goto IL_05e6_1;
 			}
 		}
 
-IL_05d8_1:
+IL_05c9_1:
 		{
 			il2cpp_codegen_runtime_class_init_inline(ItemViewerPanel_tA0F6DC147E5219D70EDB24C89874DCB4AC55A386_il2cpp_TypeInfo_var);
-			bool L_184 = ((ItemViewerPanel_tA0F6DC147E5219D70EDB24C89874DCB4AC55A386_StaticFields*)il2cpp_codegen_static_fields_for(ItemViewerPanel_tA0F6DC147E5219D70EDB24C89874DCB4AC55A386_il2cpp_TypeInfo_var))->___isShow;
-			if (!L_184)
+			bool L_182 = ((ItemViewerPanel_tA0F6DC147E5219D70EDB24C89874DCB4AC55A386_StaticFields*)il2cpp_codegen_static_fields_for(ItemViewerPanel_tA0F6DC147E5219D70EDB24C89874DCB4AC55A386_il2cpp_TypeInfo_var))->___isShow;
+			if (!L_182)
 			{
-				goto IL_05eb_1;
+				goto IL_05dc_1;
 			}
 		}
 		{
-			ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_185;
-			L_185 = ChatTextField_gI_mEBDFD51CF605F319722D5C0D2403A11E50B06D81(NULL);
-			NullCheck(L_185);
-			bool L_186 = L_185->___isShow;
-			if (!L_186)
+			ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_183;
+			L_183 = ChatTextField_gI_mEBDFD51CF605F319722D5C0D2403A11E50B06D81(NULL);
+			NullCheck(L_183);
+			bool L_184 = L_183->___isShow;
+			if (!L_184)
 			{
-				goto IL_05f5_1;
+				goto IL_05e6_1;
 			}
 		}
 
-IL_05eb_1:
+IL_05dc_1:
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:722>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_187 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
-			NullCheck(L_187);
-			VirtualActionInvoker0::Invoke(8, L_187);
+			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_185 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
+			NullCheck(L_185);
+			VirtualActionInvoker0::Invoke(8, L_185);
 		}
 
-IL_05f5_1:
+IL_05e6_1:
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:724>
 			Hint_update_mED131EDAB0D3BCB08F05C1BAC18EE199014CBA5E(NULL);
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:725>
 			il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
-			SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE* L_188;
-			L_188 = SoundMn_gI_mC638F7F795F36F9E04F30A3613B22693B6E6B4D7(NULL);
-			NullCheck(L_188);
-			SoundMn_update_m4B38E141343A89D7A9799F5483919E080ACF176B(L_188, NULL);
+			SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE* L_186;
+			L_186 = SoundMn_gI_mC638F7F795F36F9E04F30A3613B22693B6E6B4D7(NULL);
+			NullCheck(L_186);
+			SoundMn_update_m4B38E141343A89D7A9799F5483919E080ACF176B(L_186, NULL);
 		}
 
-IL_0604_1:
+IL_05f5_1:
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:727>
 			Timer_update_m59ACFCC04B706DB4F3E5B90155EAD6A42A143F30(NULL);
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:728>
 			InfoDlg_update_mCD5B0079C2AC414D3C754B809D0332C4742790F8(NULL);
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:729>
-			bool L_189 = __this->___resetToLoginScr;
-			if (!L_189)
+			bool L_187 = __this->___resetToLoginScr;
+			if (!L_187)
 			{
-				goto IL_0628_1;
+				goto IL_0619_1;
 			}
 		}
 		{
@@ -8615,176 +8604,176 @@ IL_0604_1:
 			__this->___resetToLoginScr = (bool)0;
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:732>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_190 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
-			GameCanvas_doResetToLoginScr_m44BDD35BD65D396ED9FAB27FB4ABE99A1B5048A9(__this, L_190, NULL);
+			ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_188 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
+			GameCanvas_doResetToLoginScr_m44BDD35BD65D396ED9FAB27FB4ABE99A1B5048A9(__this, L_188, NULL);
 		}
 
-IL_0628_1:
+IL_0619_1:
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:734>
 			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
-			bool L_191 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isConnectOK;
-			if (!L_191)
+			bool L_189 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isConnectOK;
+			if (!L_189)
 			{
-				goto IL_069b_1;
+				goto IL_068c_1;
 			}
 		}
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:736>
 			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
-			bool L_192 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isMain;
-			if (!L_192)
+			bool L_190 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isMain;
+			if (!L_190)
 			{
-				goto IL_0681_1;
+				goto IL_0672_1;
 			}
 		}
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:738>
 			il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
-			StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_193 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___address;
-			int32_t L_194 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___ipSelect;
-			NullCheck(L_193);
-			int32_t L_195 = L_194;
-			String_t* L_196 = (L_193)->GetAt(static_cast<il2cpp_array_size_t>(L_195));
+			StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_191 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___address;
+			int32_t L_192 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___ipSelect;
+			NullCheck(L_191);
+			int32_t L_193 = L_192;
+			String_t* L_194 = (L_191)->GetAt(static_cast<il2cpp_array_size_t>(L_193));
 			il2cpp_codegen_runtime_class_init_inline(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var);
-			((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___IP = L_196;
-			Il2CppCodeGenWriteBarrier((void**)(&((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___IP), (void*)L_196);
+			((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___IP = L_194;
+			Il2CppCodeGenWriteBarrier((void**)(&((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___IP), (void*)L_194);
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:739>
-			Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB* L_197 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___port;
-			int32_t L_198 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___ipSelect;
-			NullCheck(L_197);
-			int32_t L_199 = L_198;
-			int16_t L_200 = (L_197)->GetAt(static_cast<il2cpp_array_size_t>(L_199));
-			((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___PORT = L_200;
+			Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB* L_195 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___port;
+			int32_t L_196 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___ipSelect;
+			NullCheck(L_195);
+			int32_t L_197 = L_196;
+			int16_t L_198 = (L_195)->GetAt(static_cast<il2cpp_array_size_t>(L_197));
+			((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___PORT = L_198;
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:740>
 			((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___testConnect = 2;
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:741>
-			int32_t L_201 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___ipSelect;
+			int32_t L_199 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___ipSelect;
 			il2cpp_codegen_runtime_class_init_inline(Rms_t233B1849E61744F4CE2C667927199ADDA6438C4A_il2cpp_TypeInfo_var);
-			Rms_saveRMSInt_m6429922F24AC570BC8C569486E3BD135B981A8C7(_stringLiteral430C22452EB9E76B1F50A4B18F3F42A7509EF14A, L_201, NULL);
+			Rms_saveRMSInt_m6429922F24AC570BC8C569486E3BD135B981A8C7(_stringLiteral430C22452EB9E76B1F50A4B18F3F42A7509EF14A, L_199, NULL);
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:742>
+			Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_200;
+			L_200 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
+			NullCheck(L_200);
+			Service_setClientType_mD8390A1CB8178636B963C26B3B988B5A5F894561(L_200, NULL);
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:743>
+			Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_201;
+			L_201 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
+			NullCheck(L_201);
+			Service_androidPack_m68E5AF9C65471D00C43B55283B9E8F9608F6980A(L_201, NULL);
+			goto IL_0686_1;
+		}
+
+IL_0672_1:
+		{
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:747>
 			Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_202;
 			L_202 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 			NullCheck(L_202);
-			Service_setClientType_mD8390A1CB8178636B963C26B3B988B5A5F894561(L_202, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:743>
+			Service_setClientType2_m24C6A492B2B077DF226B99F6262C8EBBB6A3DF06(L_202, NULL);
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:748>
 			Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_203;
 			L_203 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 			NullCheck(L_203);
-			Service_androidPack_m68E5AF9C65471D00C43B55283B9E8F9608F6980A(L_203, NULL);
-			goto IL_0695_1;
+			Service_androidPack2_mFC26BCA6745065D7536D417AA793783EBD18AC45(L_203, NULL);
 		}
 
-IL_0681_1:
-		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:747>
-			Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_204;
-			L_204 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
-			NullCheck(L_204);
-			Service_setClientType2_m24C6A492B2B077DF226B99F6262C8EBBB6A3DF06(L_204, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:748>
-			Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_205;
-			L_205 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
-			NullCheck(L_205);
-			Service_androidPack2_mFC26BCA6745065D7536D417AA793783EBD18AC45(L_205, NULL);
-		}
-
-IL_0695_1:
+IL_0686_1:
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:750>
 			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
 			((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isConnectOK = (bool)0;
 		}
 
-IL_069b_1:
+IL_068c_1:
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:752>
 			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
-			bool L_206 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isDisconnected;
-			if (!L_206)
+			bool L_204 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isDisconnected;
+			if (!L_204)
 			{
-				goto IL_06ed_1;
+				goto IL_06de_1;
 			}
 		}
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:754>
 			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
-			bool L_207 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isMain;
-			if (L_207)
+			bool L_205 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isMain;
+			if (L_205)
 			{
-				goto IL_06e1_1;
+				goto IL_06d2_1;
 			}
 		}
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:756>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_208 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
-			ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_209 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
-			if ((!(((RuntimeObject*)(mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54*)L_208) == ((RuntimeObject*)(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064*)L_209))))
+			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_206 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
+			ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_207 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
+			if ((!(((RuntimeObject*)(mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54*)L_206) == ((RuntimeObject*)(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064*)L_207))))
 			{
-				goto IL_06c6_1;
+				goto IL_06b7_1;
 			}
 		}
 		{
-			bool L_210 = ((Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_StaticFields*)il2cpp_codegen_static_fields_for(Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_il2cpp_TypeInfo_var))->___reciveFromMainSession;
-			if (L_210)
+			bool L_208 = ((Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_StaticFields*)il2cpp_codegen_static_fields_for(Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_il2cpp_TypeInfo_var))->___reciveFromMainSession;
+			if (L_208)
 			{
-				goto IL_06c6_1;
+				goto IL_06b7_1;
 			}
 		}
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:758>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_211 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
-			NullCheck(L_211);
-			ServerListScreen_cancel_m1F2F65EA3C2BD3563D7B7569241E58F105C52AAB(L_211, NULL);
+			ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_209 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
+			NullCheck(L_209);
+			ServerListScreen_cancel_m1F2F65EA3C2BD3563D7B7569241E58F105C52AAB(L_209, NULL);
 		}
 
-IL_06c6_1:
+IL_06b7_1:
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:760>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_212 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
-			LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_213 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
-			if ((!(((RuntimeObject*)(mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54*)L_212) == ((RuntimeObject*)(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8*)L_213))))
+			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_210 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
+			LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_211 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
+			if ((!(((RuntimeObject*)(mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54*)L_210) == ((RuntimeObject*)(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8*)L_211))))
 			{
-				goto IL_06e7_1;
+				goto IL_06d8_1;
 			}
 		}
 		{
-			bool L_214 = ((Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_StaticFields*)il2cpp_codegen_static_fields_for(Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_il2cpp_TypeInfo_var))->___reciveFromMainSession;
-			if (L_214)
+			bool L_212 = ((Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_StaticFields*)il2cpp_codegen_static_fields_for(Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_il2cpp_TypeInfo_var))->___reciveFromMainSession;
+			if (L_212)
 			{
-				goto IL_06e7_1;
+				goto IL_06d8_1;
 			}
 		}
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:762>
 			GameCanvas_onDisconnected_m7E66CE769A2337A7B624B577DA1D7F79BDAC1424(__this, NULL);
-			goto IL_06e7_1;
+			goto IL_06d8_1;
 		}
 
-IL_06e1_1:
+IL_06d2_1:
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:767>
 			GameCanvas_onDisconnected_m7E66CE769A2337A7B624B577DA1D7F79BDAC1424(__this, NULL);
 		}
 
-IL_06e7_1:
+IL_06d8_1:
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:769>
 			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
 			((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isDisconnected = (bool)0;
 		}
 
-IL_06ed_1:
+IL_06de_1:
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:771>
 			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
-			bool L_215 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isConnectionFail;
-			if (!L_215)
+			bool L_213 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isConnectionFail;
+			if (!L_213)
 			{
-				goto IL_0762_1;
+				goto IL_0753_1;
 			}
 		}
 		{
@@ -8793,35 +8782,35 @@ IL_06ed_1:
 			Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralF4A77F54F576D3C1E92A2483BE58CFAC15C4C88C, NULL);
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:774>
 			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
-			bool L_216 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isMain;
-			if (L_216)
+			bool L_214 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isMain;
+			if (L_214)
 			{
-				goto IL_074a_1;
+				goto IL_073b_1;
 			}
 		}
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:776>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_217 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
-			ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_218 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
-			if ((!(((RuntimeObject*)(mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54*)L_217) == ((RuntimeObject*)(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064*)L_218))))
+			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_215 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
+			ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_216 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
+			if ((!(((RuntimeObject*)(mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54*)L_215) == ((RuntimeObject*)(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064*)L_216))))
 			{
-				goto IL_072f_1;
+				goto IL_0720_1;
 			}
 		}
 		{
 			il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
-			bool L_219 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___isGetData;
-			if (!L_219)
+			bool L_217 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___isGetData;
+			if (!L_217)
 			{
-				goto IL_072f_1;
+				goto IL_0720_1;
 			}
 		}
 		{
-			bool L_220 = ((Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_StaticFields*)il2cpp_codegen_static_fields_for(Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_il2cpp_TypeInfo_var))->___reciveFromMainSession;
-			if (L_220)
+			bool L_218 = ((Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_StaticFields*)il2cpp_codegen_static_fields_for(Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_il2cpp_TypeInfo_var))->___reciveFromMainSession;
+			if (L_218)
 			{
-				goto IL_072f_1;
+				goto IL_0720_1;
 			}
 		}
 		{
@@ -8830,47 +8819,47 @@ IL_06ed_1:
 			((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___testConnect = 0;
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:779>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_221 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
-			NullCheck(L_221);
-			ServerListScreen_cancel_m1F2F65EA3C2BD3563D7B7569241E58F105C52AAB(L_221, NULL);
+			ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_219 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
+			NullCheck(L_219);
+			ServerListScreen_cancel_m1F2F65EA3C2BD3563D7B7569241E58F105C52AAB(L_219, NULL);
 		}
 
-IL_072f_1:
+IL_0720_1:
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:781>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_222 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
-			LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_223 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
-			if ((!(((RuntimeObject*)(mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54*)L_222) == ((RuntimeObject*)(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8*)L_223))))
+			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_220 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
+			LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_221 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
+			if ((!(((RuntimeObject*)(mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54*)L_220) == ((RuntimeObject*)(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8*)L_221))))
 			{
-				goto IL_075c_1;
+				goto IL_074d_1;
 			}
 		}
 		{
-			bool L_224 = ((Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_StaticFields*)il2cpp_codegen_static_fields_for(Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_il2cpp_TypeInfo_var))->___reciveFromMainSession;
-			if (L_224)
+			bool L_222 = ((Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_StaticFields*)il2cpp_codegen_static_fields_for(Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_il2cpp_TypeInfo_var))->___reciveFromMainSession;
+			if (L_222)
 			{
-				goto IL_075c_1;
+				goto IL_074d_1;
 			}
 		}
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:783>
 			GameCanvas_onConnectionFail_m3B0AF9771DCE826AB98BA0AFCB4BB34BA54BB080(__this, NULL);
-			goto IL_075c_1;
+			goto IL_074d_1;
 		}
 
-IL_074a_1:
+IL_073b_1:
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:786>
 			il2cpp_codegen_runtime_class_init_inline(Session_ME_t04C33DE1A7AD3EF7D655E860FAD232C9D38B44DB_il2cpp_TypeInfo_var);
-			Session_ME_t04C33DE1A7AD3EF7D655E860FAD232C9D38B44DB* L_225;
-			L_225 = Session_ME_gI_m08EE51E01B34D2C15C6BA5D68AF6B05C2A74CB76(NULL);
-			NullCheck(L_225);
-			bool L_226;
-			L_226 = Session_ME_isCompareIPConnect_m8935F65B3CA4D2B7EFD6936EC603CD29A4AFC0C8(L_225, NULL);
-			if (!L_226)
+			Session_ME_t04C33DE1A7AD3EF7D655E860FAD232C9D38B44DB* L_223;
+			L_223 = Session_ME_gI_m08EE51E01B34D2C15C6BA5D68AF6B05C2A74CB76(NULL);
+			NullCheck(L_223);
+			bool L_224;
+			L_224 = Session_ME_isCompareIPConnect_m8935F65B3CA4D2B7EFD6936EC603CD29A4AFC0C8(L_223, NULL);
+			if (!L_224)
 			{
-				goto IL_075c_1;
+				goto IL_074d_1;
 			}
 		}
 		{
@@ -8878,21 +8867,21 @@ IL_074a_1:
 			GameCanvas_onConnectionFail_m3B0AF9771DCE826AB98BA0AFCB4BB34BA54BB080(__this, NULL);
 		}
 
-IL_075c_1:
+IL_074d_1:
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:790>
 			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
 			((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isConnectionFail = (bool)0;
 		}
 
-IL_0762_1:
+IL_0753_1:
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:792>
 			il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
-			bool L_227 = ((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___isResume;
-			if (!L_227)
+			bool L_225 = ((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___isResume;
+			if (!L_225)
 			{
-				goto IL_07a2_1;
+				goto IL_0793_1;
 			}
 		}
 		{
@@ -8901,10 +8890,20 @@ IL_0762_1:
 			((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___isResume = (bool)0;
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:795>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972* L_228 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog;
+			Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972* L_226 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog;
+			if (!L_226)
+			{
+				goto IL_0793_1;
+			}
+		}
+		{
+			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+			Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972* L_227 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog;
+			NullCheck(L_227);
+			Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_228 = L_227->___left;
 			if (!L_228)
 			{
-				goto IL_07a2_1;
+				goto IL_0793_1;
 			}
 		}
 		{
@@ -8912,75 +8911,65 @@ IL_0762_1:
 			Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972* L_229 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog;
 			NullCheck(L_229);
 			Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_230 = L_229->___left;
-			if (!L_230)
+			NullCheck(L_230);
+			RuntimeObject* L_231 = L_230->___actionListener;
+			if (!L_231)
 			{
-				goto IL_07a2_1;
-			}
-		}
-		{
-			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972* L_231 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog;
-			NullCheck(L_231);
-			Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_232 = L_231->___left;
-			NullCheck(L_232);
-			RuntimeObject* L_233 = L_232->___actionListener;
-			if (!L_233)
-			{
-				goto IL_07a2_1;
+				goto IL_0793_1;
 			}
 		}
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:797>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972* L_234 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog;
-			NullCheck(L_234);
-			Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_235 = L_234->___left;
-			NullCheck(L_235);
-			Command_performAction_m3A905442C00B9B39886E58D78958ABB68E81F0A7(L_235, NULL);
+			Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972* L_232 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog;
+			NullCheck(L_232);
+			Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_233 = L_232->___left;
+			NullCheck(L_233);
+			Command_performAction_m3A905442C00B9B39886E58D78958ABB68E81F0A7(L_233, NULL);
 		}
 
-IL_07a2_1:
+IL_0793_1:
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:800>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_236 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
-			if (!L_236)
+			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_234 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
+			if (!L_234)
 			{
-				goto IL_07b5_1;
+				goto IL_07a6_1;
 			}
 		}
 		{
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_237 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
-			if (((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6*)IsInstClass((RuntimeObject*)L_237, GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var)))
+			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_235 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
+			if (((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6*)IsInstClass((RuntimeObject*)L_235, GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var)))
 			{
-				goto IL_07b7_1;
+				goto IL_07a8_1;
 			}
 		}
 
-IL_07b5_1:
+IL_07a6_1:
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:802>
-			goto IL_0810;
+			goto IL_0801;
 		}
 
-IL_07b7_1:
+IL_07a8_1:
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:804>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			int32_t L_238 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___xThongBaoTranslate;
-			int32_t L_239 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___dir_;
-			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___xThongBaoTranslate = ((int32_t)il2cpp_codegen_add(L_238, ((int32_t)il2cpp_codegen_multiply(L_239, 2))));
+			int32_t L_236 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___xThongBaoTranslate;
+			int32_t L_237 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___dir_;
+			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___xThongBaoTranslate = ((int32_t)il2cpp_codegen_add(L_236, ((int32_t)il2cpp_codegen_multiply(L_237, 2))));
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:805>
-			int32_t L_240 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___xThongBaoTranslate;
+			int32_t L_238 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___xThongBaoTranslate;
 			il2cpp_codegen_runtime_class_init_inline(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var);
-			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_241 = ((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___imgNew;
-			NullCheck(L_241);
-			int32_t L_242;
-			L_242 = Image_getWidth_m56A0FEDBD7CDA88D486BC548201E91A3DD2A8E97(L_241, NULL);
-			if ((((int32_t)((int32_t)il2cpp_codegen_subtract(L_240, L_242))) > ((int32_t)((int32_t)60))))
+			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_239 = ((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___imgNew;
+			NullCheck(L_239);
+			int32_t L_240;
+			L_240 = Image_getWidth_m56A0FEDBD7CDA88D486BC548201E91A3DD2A8E97(L_239, NULL);
+			if ((((int32_t)((int32_t)il2cpp_codegen_subtract(L_238, L_240))) > ((int32_t)((int32_t)60))))
 			{
-				goto IL_080b_1;
+				goto IL_07fc_1;
 			}
 		}
 		{
@@ -8988,13 +8977,13 @@ IL_07b7_1:
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___dir_ = 0;
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:808>
-			int32_t L_243 = __this->___tickWaitThongBao;
-			__this->___tickWaitThongBao = ((int32_t)il2cpp_codegen_add(L_243, 1));
+			int32_t L_241 = __this->___tickWaitThongBao;
+			__this->___tickWaitThongBao = ((int32_t)il2cpp_codegen_add(L_241, 1));
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:809>
-			int32_t L_244 = __this->___tickWaitThongBao;
-			if ((((int32_t)L_244) <= ((int32_t)((int32_t)150))))
+			int32_t L_242 = __this->___tickWaitThongBao;
+			if ((((int32_t)L_242) <= ((int32_t)((int32_t)150))))
 			{
-				goto IL_080b_1;
+				goto IL_07fc_1;
 			}
 		}
 		{
@@ -9006,10 +8995,10 @@ IL_07b7_1:
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___thongBaoTest), (void*)(String_t*)NULL);
 		}
 
-IL_080b_1:
+IL_07fc_1:
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:815>
-			goto IL_0810;
+			goto IL_0801;
 		}
 	}
 	catch(Il2CppExceptionWrapper& e)
@@ -9017,21 +9006,21 @@ IL_080b_1:
 		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
 		{
 			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-			goto CATCH_080d;
+			goto CATCH_07fe;
 		}
 		throw e;
 	}
 
-CATCH_080d:
+CATCH_07fe:
 	{
-		Exception_t* L_245 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+		Exception_t* L_243 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:816>
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:818>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
-		goto IL_0810;
+		goto IL_0801;
 	}
 
-IL_0810:
+IL_0801:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:819>
 		return;
@@ -28035,7 +28024,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void TField_setMaxTextLenght_m61E
 		return;
 	}
 }
-// Method Definition Index: 18777
+// Method Definition Index: 18776
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, float ___0_x, float ___1_y, float ___2_width, float ___3_height, const RuntimeMethod* method) 
 {
 	{

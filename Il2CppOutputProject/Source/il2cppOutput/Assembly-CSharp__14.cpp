@@ -3904,8 +3904,9 @@ struct KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_StaticFields
 	int64_t ___stopHp;
 	bool ___useTanSatV2;
 	bool ___autoChangeZoneWhenEmpty;
-	int32_t ___editingIndex;
-	int64_t ___lastBackspaceTime;
+	Int64U5BU5D_tAEDFCBDB5414E2A140A6F34C0538BF97FCF67A1D* ___HpSteps;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___HpStepLabels;
+	int32_t ___stepIndex;
 };
 struct ManualXmap_t0449FC283E5EDA2B50AEA928B2014C2A3AD4EB92_StaticFields
 {
@@ -38999,7 +39000,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc__cctor_m3C3AFEB34C5D775112A0FE01
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 19128
+// Method Definition Index: 19127
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, const RuntimeMethod* method) 
 {
 	{
@@ -39033,7 +39034,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void TField_setMaxTextLenght_m61E
 		return;
 	}
 }
-// Method Definition Index: 19138
+// Method Definition Index: 19137
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_red_mA2E53E7173FDC97E68E335049AB0FAAEE43A844D_inline (const RuntimeMethod* method) 
 {
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
@@ -39234,7 +39235,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_mB728D0E
 		return L_0;
 	}
 }
-// Method Definition Index: 21448
+// Method Definition Index: 21447
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t HashSet_1_get_Count_mB717B519B4FBD92488427A6798B491B5FA5FB185_gshared_inline (HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2* __this, const RuntimeMethod* method) 
 {
 	{
@@ -39576,7 +39577,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m5998B85
 		return L_0;
 	}
 }
-// Method Definition Index: 19127
+// Method Definition Index: 19126
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, float ___3_a, const RuntimeMethod* method) 
 {
 	{

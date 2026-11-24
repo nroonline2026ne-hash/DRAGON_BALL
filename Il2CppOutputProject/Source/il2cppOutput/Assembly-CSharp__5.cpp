@@ -3763,8 +3763,9 @@ struct KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_StaticFields
 	int64_t ___stopHp;
 	bool ___useTanSatV2;
 	bool ___autoChangeZoneWhenEmpty;
-	int32_t ___editingIndex;
-	int64_t ___lastBackspaceTime;
+	Int64U5BU5D_tAEDFCBDB5414E2A140A6F34C0538BF97FCF67A1D* ___HpSteps;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___HpStepLabels;
+	int32_t ___stepIndex;
 };
 struct Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05_StaticFields
 {

@@ -963,6 +963,7 @@ struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49
 	__StaticArrayInitTypeSizeU3D32_tC3894D25C1E879699FE1C9BAB1BBF2787B405069 ___6DA17E477BD491EE17F20B42CC7669458BC3D798DD5E41A42C06C23DF1179348;
 	__StaticArrayInitTypeSizeU3D25_t0DA0550689392E3893BDC464372B57710AB77495 ___6DAC6C892DE87C88DCEF4BF52E20852CB12FE5F4E77F9892C3E96E907EA18C2E;
 	__StaticArrayInitTypeSizeU3D16_tFB2D94E174C3DFBC336BBEE6AD92E07462831A23 ___6FC6C9AEBC04C8FE4148B3ED030AA6F7686F31B2C4E5B401B1548CC9D21148DF;
+	__StaticArrayInitTypeSizeU3D32_tC3894D25C1E879699FE1C9BAB1BBF2787B405069 ___7006DCEB1602CE32BD0D30EC2901C123A30B00779C527DD03A189E75A31A8BA2;
 	__StaticArrayInitTypeSizeU3D56_tF90903548CF34D92C9F741BD6D3F8DC6C822EF4E ___700F3F3F73C9D1DCE6B079BDE2F484AAA1547C358B378699B9A75356AE3B7EEF;
 	__StaticArrayInitTypeSizeU3D68_t1492D7B035AE52E6EA3A6DABCA1FE35C2CFC66A5 ___709F93EFCD81B44366E59D4D692C81769CDE451363CAA3AEDB634C74FB1D8FCD;
 	__StaticArrayInitTypeSizeU3D12_t1BDD2193C3F925556BCD5FF35C0AC52DDB0CAB8F ___714625152F56977D0E145B03B5E1C27161C6039B520585B77C95BE3737109646;
@@ -1364,7 +1365,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 14649
+// Method Definition Index: 14648
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ChatVip__ctor_m685D69202FEF1FE3EEA40292676F4F5315F51CCC (ChatVip_t9BA0615DABC7FC2F2C1EEAECCE267C0331EE4FA3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1380,7 +1381,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ChatVip__ctor_m685D69202FEF1FE3EEA402926
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 14650
+// Method Definition Index: 14649
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Small__ctor_m2E06214058ABCA5383CCBBD69237FB097A7DBB95 (Small_t8AE30B28DD8FA1AE17919DFCA65F97AF22112B2E* __this, Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___0_img, int32_t ___1_id, const RuntimeMethod* method) 
 {
 	{
@@ -1401,7 +1402,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Small__ctor_m2E06214058ABCA5383CCBBD6923
 		return;
 	}
 }
-// Method Definition Index: 14651
+// Method Definition Index: 14650
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Small_paint_mDB8A868D8B7238C6F2FDB7ED6E4B0CEBE9766AA2 (Small_t8AE30B28DD8FA1AE17919DFCA65F97AF22112B2E* __this, mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* ___0_g, int32_t ___1_transform, int32_t ___2_x, int32_t ___3_y, int32_t ___4_anchor, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1451,7 +1452,7 @@ IL_0051:
 		return;
 	}
 }
-// Method Definition Index: 14652
+// Method Definition Index: 14651
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Small_paint_m821E026387F046B35C51D2241740EBF94FFA4F6F (Small_t8AE30B28DD8FA1AE17919DFCA65F97AF22112B2E* __this, mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* ___0_g, int32_t ___1_transform, int32_t ___2_f, int32_t ___3_x, int32_t ___4_y, int32_t ___5_w, int32_t ___6_h, int32_t ___7_anchor, const RuntimeMethod* method) 
 {
 	{
@@ -1469,7 +1470,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Small_paint_m821E026387F046B35C51D224174
 		return;
 	}
 }
-// Method Definition Index: 14653
+// Method Definition Index: 14652
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Small_paint_m8DC7ACBC012AB3E78552E2651887DB483F803C6C (Small_t8AE30B28DD8FA1AE17919DFCA65F97AF22112B2E* __this, mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* ___0_g, int32_t ___1_transform, int32_t ___2_f, int32_t ___3_x, int32_t ___4_y, int32_t ___5_w, int32_t ___6_h, int32_t ___7_anchor, bool ___8_isClip, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1528,7 +1529,7 @@ IL_0053:
 		return;
 	}
 }
-// Method Definition Index: 14654
+// Method Definition Index: 14653
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Small_update_m8940E7001CEA5F8CB05DE83817A17211A9B7B024 (Small_t8AE30B28DD8FA1AE17919DFCA65F97AF22112B2E* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1544,7 +1545,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Small_update_m8940E7001CEA5F8CB05DE83817
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 14655
+// Method Definition Index: 14654
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SmallSave__ctor_m76D5BE86C147470316CDE158CF21CADC1E636E2F (SmallSave_tD3F63093BD2EA02187952254F44EC6264361E2E8* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1560,7 +1561,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SmallSave__ctor_m76D5BE86C147470316CDE15
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 14656
+// Method Definition Index: 14655
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876 (String_t* ___0_s, const RuntimeMethod* method) 
 {
 	uint32_t V_0 = 0;

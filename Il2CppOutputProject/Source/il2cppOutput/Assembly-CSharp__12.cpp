@@ -3393,8 +3393,9 @@ struct KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_StaticFields
 	int64_t ___stopHp;
 	bool ___useTanSatV2;
 	bool ___autoChangeZoneWhenEmpty;
-	int32_t ___editingIndex;
-	int64_t ___lastBackspaceTime;
+	Int64U5BU5D_tAEDFCBDB5414E2A140A6F34C0538BF97FCF67A1D* ___HpSteps;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___HpStepLabels;
+	int32_t ___stepIndex;
 };
 struct MiniGamePanel_t329F32B3DC9CF0322300A7F08D06EA4E8C24176B_StaticFields
 {
@@ -35096,7 +35097,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR myReader_tFB44890E0114AFA52E24074
 		return L_0;
 	}
 }
-// Method Definition Index: 19185
+// Method Definition Index: 19184
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
