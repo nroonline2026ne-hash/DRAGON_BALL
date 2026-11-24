@@ -122,6 +122,7 @@ struct ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A;
 struct Arrow_t7048A6830A9F76E0448BBD44FD9C3C00BC138DBF;
 struct AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643;
 struct AutoChatPanel_t9F210BA1E16FA865E87E0BFDAE2748AD9E951F2F;
+struct AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561;
 struct AutoItemPanel_t2E7F7F6C9261D64F40BC7170592CE01D10978E50;
 struct AutoLogin_t431E89D3397130C8D7F0792C0C5B4A9050F5B8B0;
 struct AutoMapPanel_tBEC66D8461BA41AB4269C697948E16DB38E4C471;
@@ -173,6 +174,7 @@ struct Item_tFAF77888D49883A321EB596A7D93CB5615D37E95;
 struct ItemMap_t2B30F00DB645DF643CDA7BBE963A58A018175E38;
 struct ItemTemplate_t39FD64463B94EBCD96909003E2BB12E876BA17FF;
 struct ItemViewerPanel_tA0F6DC147E5219D70EDB24C89874DCB4AC55A386;
+struct KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998;
 struct Layer_tE12B8098AB969AEF6C36C465A3B59B75502D75CD;
 struct LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8;
 struct MagicTree_tE3EC2D5EE8C9EA20541B7DE795AD6BFAA39D29EB;
@@ -239,6 +241,7 @@ struct Sender_t4F7CCB42ED95550E383FD51B235C7E956E2197CC;
 IL2CPP_EXTERN_C RuntimeClass* Application_tDB03BE91CDF0ACA614A5E0B67CFB77C44EB19B21_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AutoChatPanel_t9F210BA1E16FA865E87E0BFDAE2748AD9E951F2F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AutoItemPanel_t2E7F7F6C9261D64F40BC7170592CE01D10978E50_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AutoMapPanel_tBEC66D8461BA41AB4269C697948E16DB38E4C471_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AutoReconnect_tB4B30643C28FD12796201007070AFD332276DC5A_il2cpp_TypeInfo_var;
@@ -278,6 +281,7 @@ IL2CPP_EXTERN_C RuntimeClass* Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il
 IL2CPP_EXTERN_C RuntimeClass* ItemMap_t2B30F00DB645DF643CDA7BBE963A58A018175E38_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ItemU5BU5D_t4DD3B0CDED4FDEE29D6C29225CED0468C194295B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ItemViewerPanel_tA0F6DC147E5219D70EDB24C89874DCB4AC55A386_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05_il2cpp_TypeInfo_var;
@@ -428,6 +432,9 @@ struct AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643  : public Runtime
 {
 };
 struct AutoChatPanel_t9F210BA1E16FA865E87E0BFDAE2748AD9E951F2F  : public RuntimeObject
+{
+};
+struct AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561  : public RuntimeObject
 {
 };
 struct AutoItemPanel_t2E7F7F6C9261D64F40BC7170592CE01D10978E50  : public RuntimeObject
@@ -1297,6 +1304,9 @@ struct ItemTemplate_t39FD64463B94EBCD96909003E2BB12E876BA17FF  : public RuntimeO
 	int32_t ___strRequire;
 };
 struct ItemViewerPanel_tA0F6DC147E5219D70EDB24C89874DCB4AC55A386  : public RuntimeObject
+{
+};
+struct KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998  : public RuntimeObject
 {
 };
 struct Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05  : public RuntimeObject
@@ -2605,6 +2615,29 @@ struct AutoChatPanel_t9F210BA1E16FA865E87E0BFDAE2748AD9E951F2F_StaticFields
 	int64_t ___lastToggleKhuVucTime;
 	int64_t ___lastToggleTheGioiTime;
 };
+struct AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561_StaticFields
+{
+	AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561* ____instance;
+	bool ___isShow;
+	bool ___isPetGoHome;
+	bool ___isAutoFusion;
+	bool ___isHideFusionEffect;
+	bool ___isFusionByHp;
+	bool ___isFusionByTime;
+	int64_t ___fusionHpThreshold;
+	int32_t ___fusionHpPercent;
+	int32_t ___fuseAfterSeconds;
+	int32_t ___unfuseAfterSeconds;
+	int64_t ___lastFusionActionTime;
+	int64_t ___lastPetHomeTime;
+	int64_t ___lastFusionStateTime;
+	bool ___lastKnownNhapThe;
+	bool ___hasInitFusionState;
+	String_t* ___lastLoadedAccountKey;
+	int32_t ___editingIndex;
+	int64_t ___lastBackspaceTime;
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___PorataItemIds;
+};
 struct AutoItemPanel_t2E7F7F6C9261D64F40BC7170592CE01D10978E50_StaticFields
 {
 	AutoItemPanel_t2E7F7F6C9261D64F40BC7170592CE01D10978E50* ____instance;
@@ -2662,6 +2695,9 @@ struct AutoUpPanel_t678638F617E385A069DD4AFB491CC91FB3E8519F_StaticFields
 	bool ___isGuideShow;
 	bool ___isEditingCustomDiscardIds;
 	int64_t ___lastInventoryGold;
+	bool ___isMobPickerShow;
+	int32_t ___mobPage;
+	int32_t ___lastMobListMapId;
 };
 struct BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields
 {
@@ -3095,6 +3131,18 @@ struct ItemViewerPanel_tA0F6DC147E5219D70EDB24C89874DCB4AC55A386_StaticFields
 	int32_t ___itemsPerPage;
 	ItemTemplate_t39FD64463B94EBCD96909003E2BB12E876BA17FF* ___selectedItem;
 	bool ___isSelectDiscardMode;
+};
+struct KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_StaticFields
+{
+	KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998* ____instance;
+	bool ___isShow;
+	bool ___isKsGold;
+	int64_t ___minStartHp;
+	int64_t ___stopHp;
+	bool ___useTanSatV2;
+	bool ___autoChangeZoneWhenEmpty;
+	int32_t ___editingIndex;
+	int64_t ___lastBackspaceTime;
 };
 struct Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05_StaticFields
 {
@@ -5094,6 +5142,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoChatPanel_UpdateAutoChat_mC9E7354F8A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643* AutoBossPanel_GI_mA5834CB68C9EFD85EE2D2995172C86D955FBAE86 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoBossPanel_Update_m66DA76BD8364799CAD50EC4328B508E9EFADB2E8 (AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoBossPanel_UpdateAutoBoss_m50EBAF1AFC9A625287F81835BC2E8E6E50C2339B (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998* KsGoldPanel_GI_m971D5418ADA3D3488225C206CD667EACEEB60BDC (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KsGoldPanel_Update_mF4A1AE647A82F32AB5C93E7CA5A59DFB5843B6F8 (KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561* AutoFusionPanel_GI_mA70BBF991181E1326813B3B79BB54264917C431C (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoFusionPanel_Update_m249BC09095FFA6C03B244F311DD50AF2B2DB62E2 (AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoFusionPanel_UpdateAutoFusion_mFE6828A09FAC0EB945D7E7F0AC2A18771A82AAD2 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* ChatTextField_gI_mEBDFD51CF605F319722D5C0D2403A11E50B06D81 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Hint_update_mED131EDAB0D3BCB08F05C1BAC18EE199014CBA5E (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE* SoundMn_gI_mC638F7F795F36F9E04F30A3613B22693B6E6B4D7 (const RuntimeMethod* method) ;
@@ -7261,6 +7314,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_update_m1374D2FB6C728DEE95838
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AutoChatPanel_t9F210BA1E16FA865E87E0BFDAE2748AD9E951F2F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AutoItemPanel_t2E7F7F6C9261D64F40BC7170592CE01D10978E50_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AutoMapPanel_tBEC66D8461BA41AB4269C697948E16DB38E4C471_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AutoReconnect_tB4B30643C28FD12796201007070AFD332276DC5A_il2cpp_TypeInfo_var);
@@ -7275,6 +7329,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_update_m1374D2FB6C728DEE95838
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GraphicPanel_t19507AE5DD776EAC4C5B5180F4995435555A4071_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ItemViewerPanel_tA0F6DC147E5219D70EDB24C89874DCB4AC55A386_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MiniGamePanel_t329F32B3DC9CF0322300A7F08D06EA4E8C24176B_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ModKeyManager_t396FEF730D6C91E03FF6341AEA168E28BBD90F10_il2cpp_TypeInfo_var);
@@ -7605,7 +7660,7 @@ IL_0187_1:
 			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_36 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 			if (!L_36)
 			{
-				goto IL_05ae_1;
+				goto IL_0604_1;
 			}
 		}
 		{
@@ -8296,584 +8351,665 @@ IL_0501_1:
 			il2cpp_codegen_runtime_class_init_inline(AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643_il2cpp_TypeInfo_var);
 			AutoBossPanel_UpdateAutoBoss_m50EBAF1AFC9A625287F81835BC2E8E6E50C2339B(NULL);
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:711>
-			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			Panel_t49349297CB778B2219539905F16B94090BD93138* L_156 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
-			NullCheck(L_156);
-			bool L_157 = L_156->___isShow;
-			if (L_157)
+			il2cpp_codegen_runtime_class_init_inline(KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var);
+			bool L_156 = ((KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_StaticFields*)il2cpp_codegen_static_fields_for(KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var))->___isShow;
+			if (!L_156)
 			{
-				goto IL_059f_1;
+				goto IL_0517_1;
+			}
+		}
+		{
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:713>
+			il2cpp_codegen_runtime_class_init_inline(KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var);
+			KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998* L_157;
+			L_157 = KsGoldPanel_GI_m971D5418ADA3D3488225C206CD667EACEEB60BDC(NULL);
+			NullCheck(L_157);
+			KsGoldPanel_Update_mF4A1AE647A82F32AB5C93E7CA5A59DFB5843B6F8(L_157, NULL);
+		}
+
+IL_0517_1:
+		{
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:715>
+			il2cpp_codegen_runtime_class_init_inline(AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561_il2cpp_TypeInfo_var);
+			bool L_158 = ((AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561_StaticFields*)il2cpp_codegen_static_fields_for(AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561_il2cpp_TypeInfo_var))->___isShow;
+			if (!L_158)
+			{
+				goto IL_0528_1;
+			}
+		}
+		{
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:717>
+			il2cpp_codegen_runtime_class_init_inline(AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561_il2cpp_TypeInfo_var);
+			AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561* L_159;
+			L_159 = AutoFusionPanel_GI_mA70BBF991181E1326813B3B79BB54264917C431C(NULL);
+			NullCheck(L_159);
+			AutoFusionPanel_Update_m249BC09095FFA6C03B244F311DD50AF2B2DB62E2(L_159, NULL);
+		}
+
+IL_0528_1:
+		{
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:719>
+			il2cpp_codegen_runtime_class_init_inline(AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561_il2cpp_TypeInfo_var);
+			AutoFusionPanel_UpdateAutoFusion_mFE6828A09FAC0EB945D7E7F0AC2A18771A82AAD2(NULL);
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:720>
+			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+			Panel_t49349297CB778B2219539905F16B94090BD93138* L_160 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
+			NullCheck(L_160);
+			bool L_161 = L_160->___isShow;
+			if (L_161)
+			{
+				goto IL_05f5_1;
 			}
 		}
 		{
 			il2cpp_codegen_runtime_class_init_inline(ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_il2cpp_TypeInfo_var);
-			ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0* L_158 = ((ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_StaticFields*)il2cpp_codegen_static_fields_for(ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_il2cpp_TypeInfo_var))->___serverChatPopUp;
-			if (L_158)
+			ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0* L_162 = ((ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_StaticFields*)il2cpp_codegen_static_fields_for(ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_il2cpp_TypeInfo_var))->___serverChatPopUp;
+			if (L_162)
 			{
-				goto IL_059f_1;
+				goto IL_05f5_1;
 			}
 		}
 		{
 			il2cpp_codegen_runtime_class_init_inline(AutoUpPanel_t678638F617E385A069DD4AFB491CC91FB3E8519F_il2cpp_TypeInfo_var);
-			bool L_159 = ((AutoUpPanel_t678638F617E385A069DD4AFB491CC91FB3E8519F_StaticFields*)il2cpp_codegen_static_fields_for(AutoUpPanel_t678638F617E385A069DD4AFB491CC91FB3E8519F_il2cpp_TypeInfo_var))->___isShow;
-			if (!L_159)
+			bool L_163 = ((AutoUpPanel_t678638F617E385A069DD4AFB491CC91FB3E8519F_StaticFields*)il2cpp_codegen_static_fields_for(AutoUpPanel_t678638F617E385A069DD4AFB491CC91FB3E8519F_il2cpp_TypeInfo_var))->___isShow;
+			if (!L_163)
 			{
-				goto IL_0532_1;
+				goto IL_055c_1;
 			}
 		}
 		{
-			ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_160;
-			L_160 = ChatTextField_gI_mEBDFD51CF605F319722D5C0D2403A11E50B06D81(NULL);
-			NullCheck(L_160);
-			bool L_161 = L_160->___isShow;
-			if (!L_161)
+			ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_164;
+			L_164 = ChatTextField_gI_mEBDFD51CF605F319722D5C0D2403A11E50B06D81(NULL);
+			NullCheck(L_164);
+			bool L_165 = L_164->___isShow;
+			if (!L_165)
 			{
-				goto IL_059f_1;
+				goto IL_05f5_1;
 			}
 		}
 
-IL_0532_1:
+IL_055c_1:
 		{
 			il2cpp_codegen_runtime_class_init_inline(AutoMapPanel_tBEC66D8461BA41AB4269C697948E16DB38E4C471_il2cpp_TypeInfo_var);
-			bool L_162 = ((AutoMapPanel_tBEC66D8461BA41AB4269C697948E16DB38E4C471_StaticFields*)il2cpp_codegen_static_fields_for(AutoMapPanel_tBEC66D8461BA41AB4269C697948E16DB38E4C471_il2cpp_TypeInfo_var))->___isShow;
-			if (L_162)
+			bool L_166 = ((AutoMapPanel_tBEC66D8461BA41AB4269C697948E16DB38E4C471_StaticFields*)il2cpp_codegen_static_fields_for(AutoMapPanel_tBEC66D8461BA41AB4269C697948E16DB38E4C471_il2cpp_TypeInfo_var))->___isShow;
+			if (L_166)
 			{
-				goto IL_059f_1;
+				goto IL_05f5_1;
 			}
 		}
 		{
 			il2cpp_codegen_runtime_class_init_inline(GraphicPanel_t19507AE5DD776EAC4C5B5180F4995435555A4071_il2cpp_TypeInfo_var);
-			bool L_163 = ((GraphicPanel_t19507AE5DD776EAC4C5B5180F4995435555A4071_StaticFields*)il2cpp_codegen_static_fields_for(GraphicPanel_t19507AE5DD776EAC4C5B5180F4995435555A4071_il2cpp_TypeInfo_var))->___isShow;
-			if (L_163)
+			bool L_167 = ((GraphicPanel_t19507AE5DD776EAC4C5B5180F4995435555A4071_StaticFields*)il2cpp_codegen_static_fields_for(GraphicPanel_t19507AE5DD776EAC4C5B5180F4995435555A4071_il2cpp_TypeInfo_var))->___isShow;
+			if (L_167)
 			{
-				goto IL_059f_1;
+				goto IL_05f5_1;
 			}
 		}
 		{
 			il2cpp_codegen_runtime_class_init_inline(ChessPanel_t84614DE3A0BA5A2E444760AD7A99DE3114973EB0_il2cpp_TypeInfo_var);
-			bool L_164 = ((ChessPanel_t84614DE3A0BA5A2E444760AD7A99DE3114973EB0_StaticFields*)il2cpp_codegen_static_fields_for(ChessPanel_t84614DE3A0BA5A2E444760AD7A99DE3114973EB0_il2cpp_TypeInfo_var))->___isShow;
-			if (L_164)
+			bool L_168 = ((ChessPanel_t84614DE3A0BA5A2E444760AD7A99DE3114973EB0_StaticFields*)il2cpp_codegen_static_fields_for(ChessPanel_t84614DE3A0BA5A2E444760AD7A99DE3114973EB0_il2cpp_TypeInfo_var))->___isShow;
+			if (L_168)
 			{
-				goto IL_059f_1;
+				goto IL_05f5_1;
 			}
 		}
 		{
 			il2cpp_codegen_runtime_class_init_inline(MiniGamePanel_t329F32B3DC9CF0322300A7F08D06EA4E8C24176B_il2cpp_TypeInfo_var);
-			bool L_165 = ((MiniGamePanel_t329F32B3DC9CF0322300A7F08D06EA4E8C24176B_StaticFields*)il2cpp_codegen_static_fields_for(MiniGamePanel_t329F32B3DC9CF0322300A7F08D06EA4E8C24176B_il2cpp_TypeInfo_var))->___isShow;
-			if (L_165)
+			bool L_169 = ((MiniGamePanel_t329F32B3DC9CF0322300A7F08D06EA4E8C24176B_StaticFields*)il2cpp_codegen_static_fields_for(MiniGamePanel_t329F32B3DC9CF0322300A7F08D06EA4E8C24176B_il2cpp_TypeInfo_var))->___isShow;
+			if (L_169)
 			{
-				goto IL_059f_1;
+				goto IL_05f5_1;
 			}
 		}
 		{
 			il2cpp_codegen_runtime_class_init_inline(AutoItemPanel_t2E7F7F6C9261D64F40BC7170592CE01D10978E50_il2cpp_TypeInfo_var);
-			bool L_166 = ((AutoItemPanel_t2E7F7F6C9261D64F40BC7170592CE01D10978E50_StaticFields*)il2cpp_codegen_static_fields_for(AutoItemPanel_t2E7F7F6C9261D64F40BC7170592CE01D10978E50_il2cpp_TypeInfo_var))->___isShow;
-			if (L_166)
+			bool L_170 = ((AutoItemPanel_t2E7F7F6C9261D64F40BC7170592CE01D10978E50_StaticFields*)il2cpp_codegen_static_fields_for(AutoItemPanel_t2E7F7F6C9261D64F40BC7170592CE01D10978E50_il2cpp_TypeInfo_var))->___isShow;
+			if (L_170)
 			{
-				goto IL_059f_1;
+				goto IL_05f5_1;
 			}
 		}
 		{
 			il2cpp_codegen_runtime_class_init_inline(AutoSkillPanel_t2C390C00559138A3B1918283862FAA9E278E04C4_il2cpp_TypeInfo_var);
-			bool L_167 = ((AutoSkillPanel_t2C390C00559138A3B1918283862FAA9E278E04C4_StaticFields*)il2cpp_codegen_static_fields_for(AutoSkillPanel_t2C390C00559138A3B1918283862FAA9E278E04C4_il2cpp_TypeInfo_var))->___isShow;
-			if (L_167)
+			bool L_171 = ((AutoSkillPanel_t2C390C00559138A3B1918283862FAA9E278E04C4_StaticFields*)il2cpp_codegen_static_fields_for(AutoSkillPanel_t2C390C00559138A3B1918283862FAA9E278E04C4_il2cpp_TypeInfo_var))->___isShow;
+			if (L_171)
+			{
+				goto IL_05f5_1;
+			}
+		}
+		{
+			il2cpp_codegen_runtime_class_init_inline(KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var);
+			bool L_172 = ((KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_StaticFields*)il2cpp_codegen_static_fields_for(KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var))->___isShow;
+			if (!L_172)
 			{
 				goto IL_059f_1;
 			}
 		}
 		{
-			il2cpp_codegen_runtime_class_init_inline(AutoChatPanel_t9F210BA1E16FA865E87E0BFDAE2748AD9E951F2F_il2cpp_TypeInfo_var);
-			bool L_168 = ((AutoChatPanel_t9F210BA1E16FA865E87E0BFDAE2748AD9E951F2F_StaticFields*)il2cpp_codegen_static_fields_for(AutoChatPanel_t9F210BA1E16FA865E87E0BFDAE2748AD9E951F2F_il2cpp_TypeInfo_var))->___isShow;
-			if (!L_168)
-			{
-				goto IL_056f_1;
-			}
-		}
-		{
-			ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_169;
-			L_169 = ChatTextField_gI_mEBDFD51CF605F319722D5C0D2403A11E50B06D81(NULL);
-			NullCheck(L_169);
-			bool L_170 = L_169->___isShow;
-			if (!L_170)
-			{
-				goto IL_059f_1;
-			}
-		}
-
-IL_056f_1:
-		{
-			il2cpp_codegen_runtime_class_init_inline(AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643_il2cpp_TypeInfo_var);
-			bool L_171 = ((AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643_StaticFields*)il2cpp_codegen_static_fields_for(AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643_il2cpp_TypeInfo_var))->___isShow;
-			if (!L_171)
-			{
-				goto IL_0582_1;
-			}
-		}
-		{
-			ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_172;
-			L_172 = ChatTextField_gI_mEBDFD51CF605F319722D5C0D2403A11E50B06D81(NULL);
-			NullCheck(L_172);
-			bool L_173 = L_172->___isShow;
-			if (!L_173)
-			{
-				goto IL_059f_1;
-			}
-		}
-
-IL_0582_1:
-		{
-			il2cpp_codegen_runtime_class_init_inline(ItemViewerPanel_tA0F6DC147E5219D70EDB24C89874DCB4AC55A386_il2cpp_TypeInfo_var);
-			bool L_174 = ((ItemViewerPanel_tA0F6DC147E5219D70EDB24C89874DCB4AC55A386_StaticFields*)il2cpp_codegen_static_fields_for(ItemViewerPanel_tA0F6DC147E5219D70EDB24C89874DCB4AC55A386_il2cpp_TypeInfo_var))->___isShow;
+			ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_173;
+			L_173 = ChatTextField_gI_mEBDFD51CF605F319722D5C0D2403A11E50B06D81(NULL);
+			NullCheck(L_173);
+			bool L_174 = L_173->___isShow;
 			if (!L_174)
 			{
-				goto IL_0595_1;
+				goto IL_05f5_1;
 			}
-		}
-		{
-			ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_175;
-			L_175 = ChatTextField_gI_mEBDFD51CF605F319722D5C0D2403A11E50B06D81(NULL);
-			NullCheck(L_175);
-			bool L_176 = L_175->___isShow;
-			if (!L_176)
-			{
-				goto IL_059f_1;
-			}
-		}
-
-IL_0595_1:
-		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:713>
-			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_177 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
-			NullCheck(L_177);
-			VirtualActionInvoker0::Invoke(8, L_177);
 		}
 
 IL_059f_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:715>
-			Hint_update_mED131EDAB0D3BCB08F05C1BAC18EE199014CBA5E(NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:716>
-			il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
-			SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE* L_178;
-			L_178 = SoundMn_gI_mC638F7F795F36F9E04F30A3613B22693B6E6B4D7(NULL);
-			NullCheck(L_178);
-			SoundMn_update_m4B38E141343A89D7A9799F5483919E080ACF176B(L_178, NULL);
-		}
-
-IL_05ae_1:
-		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:718>
-			Timer_update_m59ACFCC04B706DB4F3E5B90155EAD6A42A143F30(NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:719>
-			InfoDlg_update_mCD5B0079C2AC414D3C754B809D0332C4742790F8(NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:720>
-			bool L_179 = __this->___resetToLoginScr;
-			if (!L_179)
+			il2cpp_codegen_runtime_class_init_inline(AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561_il2cpp_TypeInfo_var);
+			bool L_175 = ((AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561_StaticFields*)il2cpp_codegen_static_fields_for(AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561_il2cpp_TypeInfo_var))->___isShow;
+			if (!L_175)
 			{
-				goto IL_05d2_1;
+				goto IL_05b2_1;
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:722>
-			__this->___resetToLoginScr = (bool)0;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:723>
-			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_180 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
-			GameCanvas_doResetToLoginScr_m44BDD35BD65D396ED9FAB27FB4ABE99A1B5048A9(__this, L_180, NULL);
+			ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_176;
+			L_176 = ChatTextField_gI_mEBDFD51CF605F319722D5C0D2403A11E50B06D81(NULL);
+			NullCheck(L_176);
+			bool L_177 = L_176->___isShow;
+			if (!L_177)
+			{
+				goto IL_05f5_1;
+			}
 		}
 
-IL_05d2_1:
+IL_05b2_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:725>
-			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
-			bool L_181 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isConnectOK;
+			il2cpp_codegen_runtime_class_init_inline(AutoChatPanel_t9F210BA1E16FA865E87E0BFDAE2748AD9E951F2F_il2cpp_TypeInfo_var);
+			bool L_178 = ((AutoChatPanel_t9F210BA1E16FA865E87E0BFDAE2748AD9E951F2F_StaticFields*)il2cpp_codegen_static_fields_for(AutoChatPanel_t9F210BA1E16FA865E87E0BFDAE2748AD9E951F2F_il2cpp_TypeInfo_var))->___isShow;
+			if (!L_178)
+			{
+				goto IL_05c5_1;
+			}
+		}
+		{
+			ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_179;
+			L_179 = ChatTextField_gI_mEBDFD51CF605F319722D5C0D2403A11E50B06D81(NULL);
+			NullCheck(L_179);
+			bool L_180 = L_179->___isShow;
+			if (!L_180)
+			{
+				goto IL_05f5_1;
+			}
+		}
+
+IL_05c5_1:
+		{
+			il2cpp_codegen_runtime_class_init_inline(AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643_il2cpp_TypeInfo_var);
+			bool L_181 = ((AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643_StaticFields*)il2cpp_codegen_static_fields_for(AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643_il2cpp_TypeInfo_var))->___isShow;
 			if (!L_181)
 			{
-				goto IL_0645_1;
+				goto IL_05d8_1;
 			}
 		}
+		{
+			ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_182;
+			L_182 = ChatTextField_gI_mEBDFD51CF605F319722D5C0D2403A11E50B06D81(NULL);
+			NullCheck(L_182);
+			bool L_183 = L_182->___isShow;
+			if (!L_183)
+			{
+				goto IL_05f5_1;
+			}
+		}
+
+IL_05d8_1:
+		{
+			il2cpp_codegen_runtime_class_init_inline(ItemViewerPanel_tA0F6DC147E5219D70EDB24C89874DCB4AC55A386_il2cpp_TypeInfo_var);
+			bool L_184 = ((ItemViewerPanel_tA0F6DC147E5219D70EDB24C89874DCB4AC55A386_StaticFields*)il2cpp_codegen_static_fields_for(ItemViewerPanel_tA0F6DC147E5219D70EDB24C89874DCB4AC55A386_il2cpp_TypeInfo_var))->___isShow;
+			if (!L_184)
+			{
+				goto IL_05eb_1;
+			}
+		}
+		{
+			ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_185;
+			L_185 = ChatTextField_gI_mEBDFD51CF605F319722D5C0D2403A11E50B06D81(NULL);
+			NullCheck(L_185);
+			bool L_186 = L_185->___isShow;
+			if (!L_186)
+			{
+				goto IL_05f5_1;
+			}
+		}
+
+IL_05eb_1:
+		{
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:722>
+			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_187 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
+			NullCheck(L_187);
+			VirtualActionInvoker0::Invoke(8, L_187);
+		}
+
+IL_05f5_1:
+		{
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:724>
+			Hint_update_mED131EDAB0D3BCB08F05C1BAC18EE199014CBA5E(NULL);
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:725>
+			il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
+			SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE* L_188;
+			L_188 = SoundMn_gI_mC638F7F795F36F9E04F30A3613B22693B6E6B4D7(NULL);
+			NullCheck(L_188);
+			SoundMn_update_m4B38E141343A89D7A9799F5483919E080ACF176B(L_188, NULL);
+		}
+
+IL_0604_1:
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:727>
-			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
-			bool L_182 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isMain;
-			if (!L_182)
+			Timer_update_m59ACFCC04B706DB4F3E5B90155EAD6A42A143F30(NULL);
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:728>
+			InfoDlg_update_mCD5B0079C2AC414D3C754B809D0332C4742790F8(NULL);
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:729>
+			bool L_189 = __this->___resetToLoginScr;
+			if (!L_189)
 			{
-				goto IL_062b_1;
+				goto IL_0628_1;
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:729>
-			il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
-			StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_183 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___address;
-			int32_t L_184 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___ipSelect;
-			NullCheck(L_183);
-			int32_t L_185 = L_184;
-			String_t* L_186 = (L_183)->GetAt(static_cast<il2cpp_array_size_t>(L_185));
-			il2cpp_codegen_runtime_class_init_inline(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var);
-			((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___IP = L_186;
-			Il2CppCodeGenWriteBarrier((void**)(&((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___IP), (void*)L_186);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:730>
-			Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB* L_187 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___port;
-			int32_t L_188 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___ipSelect;
-			NullCheck(L_187);
-			int32_t L_189 = L_188;
-			int16_t L_190 = (L_187)->GetAt(static_cast<il2cpp_array_size_t>(L_189));
-			((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___PORT = L_190;
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:731>
-			((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___testConnect = 2;
+			__this->___resetToLoginScr = (bool)0;
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:732>
-			int32_t L_191 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___ipSelect;
-			il2cpp_codegen_runtime_class_init_inline(Rms_t233B1849E61744F4CE2C667927199ADDA6438C4A_il2cpp_TypeInfo_var);
-			Rms_saveRMSInt_m6429922F24AC570BC8C569486E3BD135B981A8C7(_stringLiteral430C22452EB9E76B1F50A4B18F3F42A7509EF14A, L_191, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:733>
-			Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_192;
-			L_192 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
-			NullCheck(L_192);
-			Service_setClientType_mD8390A1CB8178636B963C26B3B988B5A5F894561(L_192, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:734>
-			Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_193;
-			L_193 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
-			NullCheck(L_193);
-			Service_androidPack_m68E5AF9C65471D00C43B55283B9E8F9608F6980A(L_193, NULL);
-			goto IL_063f_1;
+			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+			ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_190 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
+			GameCanvas_doResetToLoginScr_m44BDD35BD65D396ED9FAB27FB4ABE99A1B5048A9(__this, L_190, NULL);
 		}
 
-IL_062b_1:
+IL_0628_1:
+		{
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:734>
+			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
+			bool L_191 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isConnectOK;
+			if (!L_191)
+			{
+				goto IL_069b_1;
+			}
+		}
+		{
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:736>
+			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
+			bool L_192 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isMain;
+			if (!L_192)
+			{
+				goto IL_0681_1;
+			}
+		}
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:738>
-			Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_194;
-			L_194 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
-			NullCheck(L_194);
-			Service_setClientType2_m24C6A492B2B077DF226B99F6262C8EBBB6A3DF06(L_194, NULL);
+			il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
+			StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_193 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___address;
+			int32_t L_194 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___ipSelect;
+			NullCheck(L_193);
+			int32_t L_195 = L_194;
+			String_t* L_196 = (L_193)->GetAt(static_cast<il2cpp_array_size_t>(L_195));
+			il2cpp_codegen_runtime_class_init_inline(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var);
+			((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___IP = L_196;
+			Il2CppCodeGenWriteBarrier((void**)(&((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___IP), (void*)L_196);
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:739>
-			Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_195;
-			L_195 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
-			NullCheck(L_195);
-			Service_androidPack2_mFC26BCA6745065D7536D417AA793783EBD18AC45(L_195, NULL);
+			Int16U5BU5D_t8175CE8DD9C9F9FB0CF4F58E45BC570575B43CFB* L_197 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___port;
+			int32_t L_198 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___ipSelect;
+			NullCheck(L_197);
+			int32_t L_199 = L_198;
+			int16_t L_200 = (L_197)->GetAt(static_cast<il2cpp_array_size_t>(L_199));
+			((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___PORT = L_200;
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:740>
+			((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___testConnect = 2;
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:741>
+			int32_t L_201 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___ipSelect;
+			il2cpp_codegen_runtime_class_init_inline(Rms_t233B1849E61744F4CE2C667927199ADDA6438C4A_il2cpp_TypeInfo_var);
+			Rms_saveRMSInt_m6429922F24AC570BC8C569486E3BD135B981A8C7(_stringLiteral430C22452EB9E76B1F50A4B18F3F42A7509EF14A, L_201, NULL);
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:742>
+			Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_202;
+			L_202 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
+			NullCheck(L_202);
+			Service_setClientType_mD8390A1CB8178636B963C26B3B988B5A5F894561(L_202, NULL);
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:743>
+			Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_203;
+			L_203 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
+			NullCheck(L_203);
+			Service_androidPack_m68E5AF9C65471D00C43B55283B9E8F9608F6980A(L_203, NULL);
+			goto IL_0695_1;
 		}
 
-IL_063f_1:
+IL_0681_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:741>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:747>
+			Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_204;
+			L_204 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
+			NullCheck(L_204);
+			Service_setClientType2_m24C6A492B2B077DF226B99F6262C8EBBB6A3DF06(L_204, NULL);
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:748>
+			Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_205;
+			L_205 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
+			NullCheck(L_205);
+			Service_androidPack2_mFC26BCA6745065D7536D417AA793783EBD18AC45(L_205, NULL);
+		}
+
+IL_0695_1:
+		{
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:750>
 			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
 			((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isConnectOK = (bool)0;
 		}
 
-IL_0645_1:
+IL_069b_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:743>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:752>
 			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
-			bool L_196 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isDisconnected;
-			if (!L_196)
+			bool L_206 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isDisconnected;
+			if (!L_206)
 			{
-				goto IL_0697_1;
+				goto IL_06ed_1;
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:745>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:754>
 			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
-			bool L_197 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isMain;
-			if (L_197)
+			bool L_207 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isMain;
+			if (L_207)
 			{
-				goto IL_068b_1;
+				goto IL_06e1_1;
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:747>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:756>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_198 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
-			ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_199 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
-			if ((!(((RuntimeObject*)(mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54*)L_198) == ((RuntimeObject*)(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064*)L_199))))
+			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_208 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
+			ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_209 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
+			if ((!(((RuntimeObject*)(mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54*)L_208) == ((RuntimeObject*)(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064*)L_209))))
 			{
-				goto IL_0670_1;
-			}
-		}
-		{
-			bool L_200 = ((Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_StaticFields*)il2cpp_codegen_static_fields_for(Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_il2cpp_TypeInfo_var))->___reciveFromMainSession;
-			if (L_200)
-			{
-				goto IL_0670_1;
-			}
-		}
-		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:749>
-			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_201 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
-			NullCheck(L_201);
-			ServerListScreen_cancel_m1F2F65EA3C2BD3563D7B7569241E58F105C52AAB(L_201, NULL);
-		}
-
-IL_0670_1:
-		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:751>
-			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_202 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
-			LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_203 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
-			if ((!(((RuntimeObject*)(mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54*)L_202) == ((RuntimeObject*)(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8*)L_203))))
-			{
-				goto IL_0691_1;
-			}
-		}
-		{
-			bool L_204 = ((Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_StaticFields*)il2cpp_codegen_static_fields_for(Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_il2cpp_TypeInfo_var))->___reciveFromMainSession;
-			if (L_204)
-			{
-				goto IL_0691_1;
-			}
-		}
-		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:753>
-			GameCanvas_onDisconnected_m7E66CE769A2337A7B624B577DA1D7F79BDAC1424(__this, NULL);
-			goto IL_0691_1;
-		}
-
-IL_068b_1:
-		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:758>
-			GameCanvas_onDisconnected_m7E66CE769A2337A7B624B577DA1D7F79BDAC1424(__this, NULL);
-		}
-
-IL_0691_1:
-		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:760>
-			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
-			((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isDisconnected = (bool)0;
-		}
-
-IL_0697_1:
-		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:762>
-			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
-			bool L_205 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isConnectionFail;
-			if (!L_205)
-			{
-				goto IL_070c_1;
-			}
-		}
-		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:764>
-			il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-			Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralF4A77F54F576D3C1E92A2483BE58CFAC15C4C88C, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:765>
-			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
-			bool L_206 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isMain;
-			if (L_206)
-			{
-				goto IL_06f4_1;
-			}
-		}
-		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:767>
-			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_207 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
-			ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_208 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
-			if ((!(((RuntimeObject*)(mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54*)L_207) == ((RuntimeObject*)(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064*)L_208))))
-			{
-				goto IL_06d9_1;
-			}
-		}
-		{
-			il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
-			bool L_209 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___isGetData;
-			if (!L_209)
-			{
-				goto IL_06d9_1;
+				goto IL_06c6_1;
 			}
 		}
 		{
 			bool L_210 = ((Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_StaticFields*)il2cpp_codegen_static_fields_for(Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_il2cpp_TypeInfo_var))->___reciveFromMainSession;
 			if (L_210)
 			{
-				goto IL_06d9_1;
+				goto IL_06c6_1;
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:769>
-			il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
-			((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___testConnect = 0;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:770>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:758>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_211 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
 			NullCheck(L_211);
 			ServerListScreen_cancel_m1F2F65EA3C2BD3563D7B7569241E58F105C52AAB(L_211, NULL);
 		}
 
-IL_06d9_1:
+IL_06c6_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:772>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:760>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_212 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 			LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_213 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
 			if ((!(((RuntimeObject*)(mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54*)L_212) == ((RuntimeObject*)(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8*)L_213))))
 			{
-				goto IL_0706_1;
+				goto IL_06e7_1;
 			}
 		}
 		{
 			bool L_214 = ((Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_StaticFields*)il2cpp_codegen_static_fields_for(Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_il2cpp_TypeInfo_var))->___reciveFromMainSession;
 			if (L_214)
 			{
-				goto IL_0706_1;
+				goto IL_06e7_1;
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:774>
-			GameCanvas_onConnectionFail_m3B0AF9771DCE826AB98BA0AFCB4BB34BA54BB080(__this, NULL);
-			goto IL_0706_1;
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:762>
+			GameCanvas_onDisconnected_m7E66CE769A2337A7B624B577DA1D7F79BDAC1424(__this, NULL);
+			goto IL_06e7_1;
 		}
 
-IL_06f4_1:
+IL_06e1_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:777>
-			il2cpp_codegen_runtime_class_init_inline(Session_ME_t04C33DE1A7AD3EF7D655E860FAD232C9D38B44DB_il2cpp_TypeInfo_var);
-			Session_ME_t04C33DE1A7AD3EF7D655E860FAD232C9D38B44DB* L_215;
-			L_215 = Session_ME_gI_m08EE51E01B34D2C15C6BA5D68AF6B05C2A74CB76(NULL);
-			NullCheck(L_215);
-			bool L_216;
-			L_216 = Session_ME_isCompareIPConnect_m8935F65B3CA4D2B7EFD6936EC603CD29A4AFC0C8(L_215, NULL);
-			if (!L_216)
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:767>
+			GameCanvas_onDisconnected_m7E66CE769A2337A7B624B577DA1D7F79BDAC1424(__this, NULL);
+		}
+
+IL_06e7_1:
+		{
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:769>
+			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
+			((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isDisconnected = (bool)0;
+		}
+
+IL_06ed_1:
+		{
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:771>
+			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
+			bool L_215 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isConnectionFail;
+			if (!L_215)
 			{
-				goto IL_0706_1;
+				goto IL_0762_1;
 			}
 		}
 		{
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:773>
+			il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+			Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteralF4A77F54F576D3C1E92A2483BE58CFAC15C4C88C, NULL);
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:774>
+			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
+			bool L_216 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isMain;
+			if (L_216)
+			{
+				goto IL_074a_1;
+			}
+		}
+		{
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:776>
+			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_217 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
+			ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_218 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
+			if ((!(((RuntimeObject*)(mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54*)L_217) == ((RuntimeObject*)(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064*)L_218))))
+			{
+				goto IL_072f_1;
+			}
+		}
+		{
+			il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
+			bool L_219 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___isGetData;
+			if (!L_219)
+			{
+				goto IL_072f_1;
+			}
+		}
+		{
+			bool L_220 = ((Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_StaticFields*)il2cpp_codegen_static_fields_for(Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_il2cpp_TypeInfo_var))->___reciveFromMainSession;
+			if (L_220)
+			{
+				goto IL_072f_1;
+			}
+		}
+		{
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:778>
+			il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
+			((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___testConnect = 0;
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:779>
-			GameCanvas_onConnectionFail_m3B0AF9771DCE826AB98BA0AFCB4BB34BA54BB080(__this, NULL);
+			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+			ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_221 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
+			NullCheck(L_221);
+			ServerListScreen_cancel_m1F2F65EA3C2BD3563D7B7569241E58F105C52AAB(L_221, NULL);
 		}
 
-IL_0706_1:
+IL_072f_1:
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:781>
-			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
-			((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isConnectionFail = (bool)0;
+			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_222 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
+			LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_223 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
+			if ((!(((RuntimeObject*)(mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54*)L_222) == ((RuntimeObject*)(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8*)L_223))))
+			{
+				goto IL_075c_1;
+			}
 		}
-
-IL_070c_1:
+		{
+			bool L_224 = ((Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_StaticFields*)il2cpp_codegen_static_fields_for(Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D_il2cpp_TypeInfo_var))->___reciveFromMainSession;
+			if (L_224)
+			{
+				goto IL_075c_1;
+			}
+		}
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:783>
-			il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
-			bool L_217 = ((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___isResume;
-			if (!L_217)
-			{
-				goto IL_074c_1;
-			}
+			GameCanvas_onConnectionFail_m3B0AF9771DCE826AB98BA0AFCB4BB34BA54BB080(__this, NULL);
+			goto IL_075c_1;
 		}
+
+IL_074a_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:785>
-			il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
-			((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___isResume = (bool)0;
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:786>
-			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972* L_218 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog;
-			if (!L_218)
+			il2cpp_codegen_runtime_class_init_inline(Session_ME_t04C33DE1A7AD3EF7D655E860FAD232C9D38B44DB_il2cpp_TypeInfo_var);
+			Session_ME_t04C33DE1A7AD3EF7D655E860FAD232C9D38B44DB* L_225;
+			L_225 = Session_ME_gI_m08EE51E01B34D2C15C6BA5D68AF6B05C2A74CB76(NULL);
+			NullCheck(L_225);
+			bool L_226;
+			L_226 = Session_ME_isCompareIPConnect_m8935F65B3CA4D2B7EFD6936EC603CD29A4AFC0C8(L_225, NULL);
+			if (!L_226)
 			{
-				goto IL_074c_1;
-			}
-		}
-		{
-			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972* L_219 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog;
-			NullCheck(L_219);
-			Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_220 = L_219->___left;
-			if (!L_220)
-			{
-				goto IL_074c_1;
-			}
-		}
-		{
-			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972* L_221 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog;
-			NullCheck(L_221);
-			Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_222 = L_221->___left;
-			NullCheck(L_222);
-			RuntimeObject* L_223 = L_222->___actionListener;
-			if (!L_223)
-			{
-				goto IL_074c_1;
+				goto IL_075c_1;
 			}
 		}
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:788>
-			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972* L_224 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog;
-			NullCheck(L_224);
-			Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_225 = L_224->___left;
-			NullCheck(L_225);
-			Command_performAction_m3A905442C00B9B39886E58D78958ABB68E81F0A7(L_225, NULL);
+			GameCanvas_onConnectionFail_m3B0AF9771DCE826AB98BA0AFCB4BB34BA54BB080(__this, NULL);
 		}
 
-IL_074c_1:
+IL_075c_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:791>
-			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_226 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
-			if (!L_226)
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:790>
+			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
+			((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isConnectionFail = (bool)0;
+		}
+
+IL_0762_1:
+		{
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:792>
+			il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
+			bool L_227 = ((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___isResume;
+			if (!L_227)
 			{
-				goto IL_075f_1;
+				goto IL_07a2_1;
 			}
 		}
 		{
-			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_227 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
-			if (((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6*)IsInstClass((RuntimeObject*)L_227, GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var)))
-			{
-				goto IL_0761_1;
-			}
-		}
-
-IL_075f_1:
-		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:793>
-			goto IL_07ba;
-		}
-
-IL_0761_1:
-		{
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:794>
+			il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
+			((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___isResume = (bool)0;
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:795>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			int32_t L_228 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___xThongBaoTranslate;
-			int32_t L_229 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___dir_;
-			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___xThongBaoTranslate = ((int32_t)il2cpp_codegen_add(L_228, ((int32_t)il2cpp_codegen_multiply(L_229, 2))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:796>
-			int32_t L_230 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___xThongBaoTranslate;
-			il2cpp_codegen_runtime_class_init_inline(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var);
-			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_231 = ((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___imgNew;
+			Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972* L_228 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog;
+			if (!L_228)
+			{
+				goto IL_07a2_1;
+			}
+		}
+		{
+			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+			Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972* L_229 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog;
+			NullCheck(L_229);
+			Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_230 = L_229->___left;
+			if (!L_230)
+			{
+				goto IL_07a2_1;
+			}
+		}
+		{
+			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+			Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972* L_231 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog;
 			NullCheck(L_231);
-			int32_t L_232;
-			L_232 = Image_getWidth_m56A0FEDBD7CDA88D486BC548201E91A3DD2A8E97(L_231, NULL);
-			if ((((int32_t)((int32_t)il2cpp_codegen_subtract(L_230, L_232))) > ((int32_t)((int32_t)60))))
+			Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_232 = L_231->___left;
+			NullCheck(L_232);
+			RuntimeObject* L_233 = L_232->___actionListener;
+			if (!L_233)
+			{
+				goto IL_07a2_1;
+			}
+		}
+		{
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:797>
+			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+			Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972* L_234 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog;
+			NullCheck(L_234);
+			Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_235 = L_234->___left;
+			NullCheck(L_235);
+			Command_performAction_m3A905442C00B9B39886E58D78958ABB68E81F0A7(L_235, NULL);
+		}
+
+IL_07a2_1:
+		{
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:800>
+			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_236 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
+			if (!L_236)
 			{
 				goto IL_07b5_1;
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:798>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___dir_ = 0;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:799>
-			int32_t L_233 = __this->___tickWaitThongBao;
-			__this->___tickWaitThongBao = ((int32_t)il2cpp_codegen_add(L_233, 1));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:800>
-			int32_t L_234 = __this->___tickWaitThongBao;
-			if ((((int32_t)L_234) <= ((int32_t)((int32_t)150))))
+			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_237 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
+			if (((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6*)IsInstClass((RuntimeObject*)L_237, GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var)))
 			{
-				goto IL_07b5_1;
+				goto IL_07b7_1;
 			}
 		}
+
+IL_07b5_1:
 		{
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:802>
+			goto IL_0810;
+		}
+
+IL_07b7_1:
+		{
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:804>
+			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+			int32_t L_238 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___xThongBaoTranslate;
+			int32_t L_239 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___dir_;
+			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___xThongBaoTranslate = ((int32_t)il2cpp_codegen_add(L_238, ((int32_t)il2cpp_codegen_multiply(L_239, 2))));
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:805>
+			int32_t L_240 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___xThongBaoTranslate;
+			il2cpp_codegen_runtime_class_init_inline(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var);
+			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_241 = ((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___imgNew;
+			NullCheck(L_241);
+			int32_t L_242;
+			L_242 = Image_getWidth_m56A0FEDBD7CDA88D486BC548201E91A3DD2A8E97(L_241, NULL);
+			if ((((int32_t)((int32_t)il2cpp_codegen_subtract(L_240, L_242))) > ((int32_t)((int32_t)60))))
+			{
+				goto IL_080b_1;
+			}
+		}
+		{
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:807>
+			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___dir_ = 0;
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:808>
+			int32_t L_243 = __this->___tickWaitThongBao;
+			__this->___tickWaitThongBao = ((int32_t)il2cpp_codegen_add(L_243, 1));
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:809>
+			int32_t L_244 = __this->___tickWaitThongBao;
+			if ((((int32_t)L_244) <= ((int32_t)((int32_t)150))))
+			{
+				goto IL_080b_1;
+			}
+		}
+		{
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:811>
 			__this->___tickWaitThongBao = 0;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:803>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:812>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___thongBaoTest = (String_t*)NULL;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___thongBaoTest), (void*)(String_t*)NULL);
 		}
 
-IL_07b5_1:
+IL_080b_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:806>
-			goto IL_07ba;
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:815>
+			goto IL_0810;
 		}
 	}
 	catch(Il2CppExceptionWrapper& e)
@@ -8881,23 +9017,23 @@ IL_07b5_1:
 		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
 		{
 			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
-			goto CATCH_07b7;
+			goto CATCH_080d;
 		}
 		throw e;
 	}
 
-CATCH_07b7:
+CATCH_080d:
 	{
-		Exception_t* L_235 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:807>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:809>
+		Exception_t* L_245 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:816>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:818>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
-		goto IL_07ba;
+		goto IL_0810;
 	}
 
-IL_07ba:
+IL_0810:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:810>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:819>
 		return;
 	}
 }
@@ -8917,7 +9053,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Image_t88AA1A2EF052D8D9F2559D593A4EB7853C3059
 	Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* V_0 = NULL;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:814>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:823>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = L_0;
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
@@ -8943,17 +9079,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Image_t88AA1A2EF052D8D9F2559D593A4EB7853C3059
 		String_t* L_9;
 		L_9 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_7, NULL);
 		___0_path = L_9;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:815>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:824>
 		V_0 = (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)NULL;
 	}
 	try
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:818>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:827>
 		String_t* L_10 = ___0_path;
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_11;
 		L_11 = Image_createImage_mAE35E2D9090F867E18A42F31AE84B179D2592C2A(L_10, NULL);
 		V_0 = L_11;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:819>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:828>
 		goto IL_0044;
 	}
 	catch(Il2CppExceptionWrapper& e)
@@ -8969,15 +9105,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Image_t88AA1A2EF052D8D9F2559D593A4EB7853C3059
 CATCH_0041:
 	{
 		Exception_t* L_12 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:820>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:822>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:829>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:831>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0044;
 	}
 
 IL_0044:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:823>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:832>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_13 = V_0;
 		return L_13;
 	}
@@ -8999,7 +9135,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_onDisconnected_m7E66CE769A233
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:828>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:837>
 		il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
 		bool L_0 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isConnectionFail;
 		if (!L_0)
@@ -9008,39 +9144,39 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_onDisconnected_m7E66CE769A233
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:830>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:839>
 		il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
 		((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isConnectionFail = (bool)0;
 	}
 
 IL_000d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:832>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:841>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isResume = (bool)1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:833>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:842>
 		il2cpp_codegen_runtime_class_init_inline(Session_ME_t04C33DE1A7AD3EF7D655E860FAD232C9D38B44DB_il2cpp_TypeInfo_var);
 		Session_ME_t04C33DE1A7AD3EF7D655E860FAD232C9D38B44DB* L_1;
 		L_1 = Session_ME_gI_m08EE51E01B34D2C15C6BA5D68AF6B05C2A74CB76(NULL);
 		NullCheck(L_1);
 		Session_ME_clearSendingMessage_m697C4B05B5B4953EA2DDE559DAF0810C19DAE692(L_1, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:834>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:843>
 		il2cpp_codegen_runtime_class_init_inline(Session_ME2_t07CF8028A517CFF38B63BE09A7ABED138FBB6A45_il2cpp_TypeInfo_var);
 		Session_ME2_t07CF8028A517CFF38B63BE09A7ABED138FBB6A45* L_2;
 		L_2 = Session_ME2_gI_m5952BA066D6A86FA59EDABC88564DF04289709B6(NULL);
 		NullCheck(L_2);
 		Session_ME2_clearSendingMessage_m0EB2C010C4D57D11E573FB0D734C74D9D5C9A9B7(L_2, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:835>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:844>
 		Session_ME_t04C33DE1A7AD3EF7D655E860FAD232C9D38B44DB* L_3;
 		L_3 = Session_ME_gI_m08EE51E01B34D2C15C6BA5D68AF6B05C2A74CB76(NULL);
 		NullCheck(L_3);
 		Session_ME_close_m9E8E26F3FDCF4543183F1A9870E23B49CE5DA828(L_3, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:836>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:845>
 		Session_ME2_t07CF8028A517CFF38B63BE09A7ABED138FBB6A45* L_4;
 		L_4 = Session_ME2_gI_m5952BA066D6A86FA59EDABC88564DF04289709B6(NULL);
 		NullCheck(L_4);
 		Session_ME2_close_mDAE7E0C78BB90D54ACB0B3D08F03FA8B2291EE67(L_4, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:837>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:846>
 		il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
 		bool L_5 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isLoadingData;
 		if (!L_5)
@@ -9049,25 +9185,25 @@ IL_000d:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:839>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:848>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* L_6 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___instance;
 		NullCheck(L_6);
 		GameCanvas_resetToLoginScrz_m172CADB7BE7E4351FD02CD0DCA9C136BE7BA5EA5(L_6, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:840>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:849>
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
 		String_t* L_7 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___pls_restart_game_error;
 		GameCanvas_startOK_mBD90D8C4981E41498469E0BCB3235D5379F7B410(L_7, ((int32_t)8885), NULL, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:841>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:850>
 		il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
 		((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isDisconnected = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:842>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:851>
 		return;
 	}
 
 IL_0063:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:844>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:853>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_8 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_9 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
@@ -9077,7 +9213,7 @@ IL_0063:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:846>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:855>
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
 		String_t* L_10 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___maychutathoacmatsong;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
@@ -9087,17 +9223,17 @@ IL_0063:
 
 IL_007b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:850>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:859>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
 	}
 
 IL_0080:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:852>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:861>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_StaticFields*)il2cpp_codegen_static_fields_for(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var))->___isLoadingMap = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:853>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:862>
 		il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
 		bool L_11 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isMain;
 		if (!L_11)
@@ -9106,26 +9242,26 @@ IL_0080:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:855>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:864>
 		il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
 		((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___testConnect = 0;
 	}
 
 IL_0093:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:857>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:866>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* L_12 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___instance;
 		NullCheck(L_12);
 		GameCanvas_resetToLoginScrz_m172CADB7BE7E4351FD02CD0DCA9C136BE7BA5EA5(L_12, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:858>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:867>
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
 		String_t* L_13 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___maychutathoacmatsong;
 		GameCanvas_startOKDlg_mE90D8FA242593766F2C9B055069F898DF654E1EB(L_13, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:859>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:868>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		mSystem_endKey_m8158A721583DA53B30B56A8A202319001A256106(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:860>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:869>
 		return;
 	}
 }
@@ -9151,7 +9287,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_onConnectionFail_m3B0AF9771DC
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:864>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:873>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		il2cpp_codegen_runtime_class_init_inline(SplashScr_t4390DA782283C7115B8F6F55E3526C9BB443C367_il2cpp_TypeInfo_var);
@@ -9165,7 +9301,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_onConnectionFail_m3B0AF9771DC
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:866>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:875>
 		il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_3 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___hasConnected;
 		if (!L_3)
@@ -9174,11 +9310,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_onConnectionFail_m3B0AF9771DC
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:868>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:877>
 		il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
 		String_t* L_4 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___linkDefault;
 		ServerListScreen_GetServerList_m3679060F3C065D6490B47C5A5FE5DB17E1C6DCCB(L_4, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:869>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:878>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_5 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___hasConnected;
 		NullCheck(L_5);
 		int32_t L_6 = 0;
@@ -9189,14 +9325,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_onConnectionFail_m3B0AF9771DC
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:871>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:880>
 		il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_8 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___hasConnected;
 		NullCheck(L_8);
 		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(0), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:872>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:881>
 		((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___ipSelect = 0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:873>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:882>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_9 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___address;
 		int32_t L_10 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___ipSelect;
 		NullCheck(L_9);
@@ -9205,11 +9341,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_onConnectionFail_m3B0AF9771DC
 		il2cpp_codegen_runtime_class_init_inline(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var);
 		((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___IP = L_12;
 		Il2CppCodeGenWriteBarrier((void**)(&((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___IP), (void*)L_12);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:874>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:883>
 		int32_t L_13 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___ipSelect;
 		il2cpp_codegen_runtime_class_init_inline(Rms_t233B1849E61744F4CE2C667927199ADDA6438C4A_il2cpp_TypeInfo_var);
 		Rms_saveRMSInt_m6429922F24AC570BC8C569486E3BD135B981A8C7(_stringLiteral430C22452EB9E76B1F50A4B18F3F42A7509EF14A, L_13, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:875>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:884>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_connect_m1F9B4F03D35F651662A28F78F5F6E9AEE53EE04C(NULL);
 		return;
@@ -9217,7 +9353,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_onConnectionFail_m3B0AF9771DC
 
 IL_0064:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:877>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:886>
 		il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_14 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___hasConnected;
 		NullCheck(L_14);
@@ -9229,14 +9365,14 @@ IL_0064:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:879>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:888>
 		il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_17 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___hasConnected;
 		NullCheck(L_17);
 		(L_17)->SetAt(static_cast<il2cpp_array_size_t>(2), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:880>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:889>
 		((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___ipSelect = 2;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:881>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:890>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_18 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___address;
 		int32_t L_19 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___ipSelect;
 		NullCheck(L_18);
@@ -9245,11 +9381,11 @@ IL_0064:
 		il2cpp_codegen_runtime_class_init_inline(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var);
 		((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___IP = L_21;
 		Il2CppCodeGenWriteBarrier((void**)(&((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___IP), (void*)L_21);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:882>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:891>
 		int32_t L_22 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___ipSelect;
 		il2cpp_codegen_runtime_class_init_inline(Rms_t233B1849E61744F4CE2C667927199ADDA6438C4A_il2cpp_TypeInfo_var);
 		Rms_saveRMSInt_m6429922F24AC570BC8C569486E3BD135B981A8C7(_stringLiteral430C22452EB9E76B1F50A4B18F3F42A7509EF14A, L_22, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:883>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:892>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_connect_m1F9B4F03D35F651662A28F78F5F6E9AEE53EE04C(NULL);
 		return;
@@ -9257,7 +9393,7 @@ IL_0064:
 
 IL_00a0:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:887>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:896>
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
 		String_t* L_23 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___pls_restart_game_error;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
@@ -9266,28 +9402,28 @@ IL_00a0:
 
 IL_00b0:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:890>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:899>
 		return;
 	}
 
 IL_00b1:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:892>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:901>
 		il2cpp_codegen_runtime_class_init_inline(Session_ME_t04C33DE1A7AD3EF7D655E860FAD232C9D38B44DB_il2cpp_TypeInfo_var);
 		Session_ME_t04C33DE1A7AD3EF7D655E860FAD232C9D38B44DB* L_24;
 		L_24 = Session_ME_gI_m08EE51E01B34D2C15C6BA5D68AF6B05C2A74CB76(NULL);
 		NullCheck(L_24);
 		Session_ME_clearSendingMessage_m697C4B05B5B4953EA2DDE559DAF0810C19DAE692(L_24, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:893>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:902>
 		il2cpp_codegen_runtime_class_init_inline(Session_ME2_t07CF8028A517CFF38B63BE09A7ABED138FBB6A45_il2cpp_TypeInfo_var);
 		Session_ME2_t07CF8028A517CFF38B63BE09A7ABED138FBB6A45* L_25;
 		L_25 = Session_ME2_gI_m5952BA066D6A86FA59EDABC88564DF04289709B6(NULL);
 		NullCheck(L_25);
 		Session_ME2_clearSendingMessage_m0EB2C010C4D57D11E573FB0D734C74D9D5C9A9B7(L_25, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:894>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:903>
 		il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
 		((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___isWait = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:895>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:904>
 		il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
 		bool L_26 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isLoadingData;
 		if (!L_26)
@@ -9296,27 +9432,27 @@ IL_00b1:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:897>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:906>
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
 		String_t* L_27 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___pls_restart_game_error;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_startOK_mBD90D8C4981E41498469E0BCB3235D5379F7B410(L_27, ((int32_t)8885), NULL, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:898>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:907>
 		il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
 		((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isConnectionFail = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:899>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:908>
 		return;
 	}
 
 IL_00e9:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:901>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:910>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isResume = (bool)1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:902>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:911>
 		il2cpp_codegen_runtime_class_init_inline(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var);
 		((LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_StaticFields*)il2cpp_codegen_static_fields_for(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var))->___isContinueToLogin = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:903>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:912>
 		LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_28 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
 		if (!L_28)
 		{
@@ -9324,7 +9460,7 @@ IL_00e9:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:905>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:914>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* L_29 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___instance;
 		NullCheck(L_29);
@@ -9334,7 +9470,7 @@ IL_00e9:
 
 IL_0108:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:909>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:918>
 		LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_30 = (LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8*)il2cpp_codegen_object_new(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var);
 		LoginScr__ctor_m3EB45EC8F390B05EC0EBF83FE469EE4336DD8BD5(L_30, NULL);
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
@@ -9344,7 +9480,7 @@ IL_0108:
 
 IL_0112:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:911>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:920>
 		il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_31 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___nameServer;
 		int32_t L_32 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___ipSelect;
@@ -9354,7 +9490,7 @@ IL_0112:
 		il2cpp_codegen_runtime_class_init_inline(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var);
 		((LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_StaticFields*)il2cpp_codegen_static_fields_for(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var))->___serverName = L_34;
 		Il2CppCodeGenWriteBarrier((void**)(&((LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_StaticFields*)il2cpp_codegen_static_fields_for(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var))->___serverName), (void*)L_34);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:912>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:921>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_35 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_36 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
@@ -9364,7 +9500,7 @@ IL_0112:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:914>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:923>
 		il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
 		((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___countDieConnect = 0;
 		goto IL_014b;
@@ -9372,13 +9508,13 @@ IL_0112:
 
 IL_0136:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:918>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:927>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:919>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:928>
 		il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
 		((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___loadScreen = (bool)1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:920>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:929>
 		ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_37 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
 		NullCheck(L_37);
 		VirtualActionInvoker0::Invoke(4, L_37);
@@ -9386,10 +9522,10 @@ IL_0136:
 
 IL_014b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:922>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:931>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_StaticFields*)il2cpp_codegen_static_fields_for(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var))->___isLoadingMap = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:923>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:932>
 		il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
 		bool L_38 = ((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isMain;
 		if (!L_38)
@@ -9398,17 +9534,17 @@ IL_014b:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:925>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:934>
 		il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
 		((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___testConnect = 0;
 	}
 
 IL_015e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:927>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:936>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		mSystem_endKey_m8158A721583DA53B30B56A8A202319001A256106(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:928>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:937>
 		return;
 	}
 }
@@ -9426,7 +9562,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameCanvas_isWaiting_m5CE4C025787080B3CE
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:932>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:941>
 		bool L_0 = ((InfoDlg_tB16B0DFB390BD0F2B8AC314A563F3640DA576A2D_StaticFields*)il2cpp_codegen_static_fields_for(InfoDlg_tB16B0DFB390BD0F2B8AC314A563F3640DA576A2D_il2cpp_TypeInfo_var))->___isShow;
 		if (L_0)
 		{
@@ -9477,13 +9613,13 @@ IL_0024:
 
 IL_0032:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:934>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:943>
 		return (bool)1;
 	}
 
 IL_0034:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:936>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:945>
 		return (bool)0;
 	}
 }
@@ -9498,7 +9634,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_connect_m1F9B4F03D35F651662A2
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:941>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:950>
 		il2cpp_codegen_runtime_class_init_inline(Session_ME_t04C33DE1A7AD3EF7D655E860FAD232C9D38B44DB_il2cpp_TypeInfo_var);
 		Session_ME_t04C33DE1A7AD3EF7D655E860FAD232C9D38B44DB* L_0;
 		L_0 = Session_ME_gI_m08EE51E01B34D2C15C6BA5D68AF6B05C2A74CB76(NULL);
@@ -9511,7 +9647,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_connect_m1F9B4F03D35F651662A2
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:943>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:952>
 		il2cpp_codegen_runtime_class_init_inline(Session_ME_t04C33DE1A7AD3EF7D655E860FAD232C9D38B44DB_il2cpp_TypeInfo_var);
 		Session_ME_t04C33DE1A7AD3EF7D655E860FAD232C9D38B44DB* L_2;
 		L_2 = Session_ME_gI_m08EE51E01B34D2C15C6BA5D68AF6B05C2A74CB76(NULL);
@@ -9524,7 +9660,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_connect_m1F9B4F03D35F651662A2
 
 IL_0020:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:945>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:954>
 		return;
 	}
 }
@@ -9542,7 +9678,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_connect2_mA5ABE63FFFD3F861CB0
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:949>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:958>
 		il2cpp_codegen_runtime_class_init_inline(Session_ME2_t07CF8028A517CFF38B63BE09A7ABED138FBB6A45_il2cpp_TypeInfo_var);
 		Session_ME2_t07CF8028A517CFF38B63BE09A7ABED138FBB6A45* L_0;
 		L_0 = Session_ME2_gI_m5952BA066D6A86FA59EDABC88564DF04289709B6(NULL);
@@ -9555,7 +9691,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_connect2_mA5ABE63FFFD3F861CB0
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:951>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:960>
 		il2cpp_codegen_runtime_class_init_inline(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var);
 		String_t* L_2 = ((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___IP2;
 		String_t* L_3;
@@ -9564,7 +9700,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_connect2_mA5ABE63FFFD3F861CB0
 		L_4 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(_stringLiteral238BEB5EAF85CF186AFE6723D3C0C9644A53ACEB, L_2, _stringLiteral344B610CF34592F020EE6117DF432FCDA5DFE546, L_3, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Res_t42939C8A70541C5F8BBAC618E2AE68A048453E10_il2cpp_TypeInfo_var);
 		Res_outz_mF51EC000D16B49E001011B2C1BAD2F66E72C33D3(L_4, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:952>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:961>
 		il2cpp_codegen_runtime_class_init_inline(Session_ME2_t07CF8028A517CFF38B63BE09A7ABED138FBB6A45_il2cpp_TypeInfo_var);
 		Session_ME2_t07CF8028A517CFF38B63BE09A7ABED138FBB6A45* L_5;
 		L_5 = Session_ME2_gI_m5952BA066D6A86FA59EDABC88564DF04289709B6(NULL);
@@ -9576,7 +9712,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_connect2_mA5ABE63FFFD3F861CB0
 
 IL_0043:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:954>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:963>
 		return;
 	}
 }
@@ -9590,7 +9726,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_resetTrans_m5DBEC43F3ABD75A00
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:958>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:967>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_0 = ___0_g;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_1 = ___0_g;
 		NullCheck(L_1);
@@ -9602,14 +9738,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_resetTrans_m5DBEC43F3ABD75A00
 		L_4 = mGraphics_getTranslateY_mC8B2DF28F2BED3BFAAB16A3522AE8029D63F99EA(L_3, NULL);
 		NullCheck(L_0);
 		mGraphics_translate_m935DBC9CDE2048589DFCE243A3462166E912EDEC(L_0, ((-L_2)), ((-L_4)), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:959>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:968>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_5 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_6 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
 		int32_t L_7 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
 		NullCheck(L_5);
 		mGraphics_setClip_m40F6AC445C68B4E10ABA519E1A2EDC421FC39797(L_5, 0, 0, L_6, L_7, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:960>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:969>
 		return;
 	}
 }
@@ -9624,7 +9760,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_resetTransGameScr_m4A610EEEDE
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:964>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:973>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_0 = ___0_g;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_1 = ___0_g;
 		NullCheck(L_1);
@@ -9636,25 +9772,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_resetTransGameScr_m4A610EEEDE
 		L_4 = mGraphics_getTranslateY_mC8B2DF28F2BED3BFAAB16A3522AE8029D63F99EA(L_3, NULL);
 		NullCheck(L_0);
 		mGraphics_translate_m935DBC9CDE2048589DFCE243A3462166E912EDEC(L_0, ((-L_2)), ((-L_4)), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:965>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:974>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_5 = ___0_g;
 		NullCheck(L_5);
 		mGraphics_translate_m935DBC9CDE2048589DFCE243A3462166E912EDEC(L_5, 0, 0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:966>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:975>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_6 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_7 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
 		int32_t L_8 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
 		NullCheck(L_6);
 		mGraphics_setClip_m40F6AC445C68B4E10ABA519E1A2EDC421FC39797(L_6, 0, 0, L_7, L_8, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:967>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:976>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_9 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		int32_t L_10 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmx;
 		int32_t L_11 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmy;
 		NullCheck(L_9);
 		mGraphics_translate_m935DBC9CDE2048589DFCE243A3462166E912EDEC(L_9, ((-L_10)), ((-L_11)), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:968>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:977>
 		return;
 	}
 }
@@ -9662,7 +9798,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_resetTransGameScr_m4A610EEEDE
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_start_mF63078D27377B6C07FE6CAB66F92B60BA3DAEC28 (GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:972>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:981>
 		return;
 	}
 }
@@ -9670,7 +9806,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_start_mF63078D27377B6C07FE6CA
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_debug_mA8D3DBDA2658AF8393B6F962FB25739A5146D01E (String_t* ___0_s, int32_t ___1_type, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:976>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:985>
 		return;
 	}
 }
@@ -9709,62 +9845,62 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_doResetToLoginScr_m44BDD35BD6
 	try
 	{
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:982>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:991>
 			il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 			SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE* L_0;
 			L_0 = SoundMn_gI_mC638F7F795F36F9E04F30A3613B22693B6E6B4D7(NULL);
 			NullCheck(L_0);
 			SoundMn_stopAll_m3BBA3789102D97D21FB379DBA109A92A49019819(L_0, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:983>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:992>
 			il2cpp_codegen_runtime_class_init_inline(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var);
 			((LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_StaticFields*)il2cpp_codegen_static_fields_for(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var))->___isContinueToLogin = (bool)0;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:984>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:993>
 			int32_t L_1 = 0;
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___bgType = L_1;
 			((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___lastType = L_1;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:985>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:994>
 			il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 			Char_clearMyChar_m12E715829A13DEAB4622ED386D557177E09370D3(NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:986>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:995>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			GameScr_clearGameScr_m77021AFD7489032EA99B5B1A62845DEAB6A51ABE(NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:987>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:996>
 			GameScr_resetAllvector_m7091DAA1A7156321F91FF91E3FFB6973B23EFC0E(NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:988>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:997>
 			InfoDlg_hide_m814AC3464EB8EF2DB1324DDD359DD8CF01A864B8(NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:989>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:998>
 			InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_2 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 			NullCheck(L_2);
 			InfoMe_hide_mFFAB3DBCF35ED27788059677EB0989154FAD6E8A(L_2, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:990>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:999>
 			InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_3 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info2;
 			NullCheck(L_3);
 			InfoMe_hide_mFFAB3DBCF35ED27788059677EB0989154FAD6E8A(L_3, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:991>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1000>
 			InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_4 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info2;
 			NullCheck(L_4);
 			L_4->___cmdChat = (Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1*)NULL;
 			Il2CppCodeGenWriteBarrier((void**)(&L_4->___cmdChat), (void*)(Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1*)NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:992>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1001>
 			((Hint_tD85946BD5CC1D2A6AB142523845F0A39202749BB_StaticFields*)il2cpp_codegen_static_fields_for(Hint_tD85946BD5CC1D2A6AB142523845F0A39202749BB_il2cpp_TypeInfo_var))->___isShow = (bool)0;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:993>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1002>
 			il2cpp_codegen_runtime_class_init_inline(ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_il2cpp_TypeInfo_var);
 			((ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_StaticFields*)il2cpp_codegen_static_fields_for(ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_il2cpp_TypeInfo_var))->___currChatPopup = (ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0*)NULL;
 			Il2CppCodeGenWriteBarrier((void**)(&((ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_StaticFields*)il2cpp_codegen_static_fields_for(ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_il2cpp_TypeInfo_var))->___currChatPopup), (void*)(ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0*)NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:994>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1003>
 			il2cpp_codegen_runtime_class_init_inline(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var);
 			((Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_StaticFields*)il2cpp_codegen_static_fields_for(Controller_t080F3A02FE42D755CC6A8B605F85CA157ED61BB9_il2cpp_TypeInfo_var))->___isStopReadMessage = (bool)0;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:995>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1004>
 			GameScr_loadCamera_m00ECF615F8EC3A0E042C0B8FA678DA33DA7C52F6((bool)1, (-1), (-1), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:996>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1005>
 			((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmx = ((int32_t)100);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:997>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1006>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Panel_t49349297CB778B2219539905F16B94090BD93138* L_5 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 			NullCheck(L_5);
 			L_5->___currentTabIndex = 0;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:998>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1007>
 			Panel_t49349297CB778B2219539905F16B94090BD93138* L_6 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 			bool L_7 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isTouch;
 			if (L_7)
@@ -9790,73 +9926,73 @@ IL_008b_1:
 		{
 			NullCheck(G_B3_1);
 			G_B3_1->___selected = G_B3_0;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:999>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1008>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Panel_t49349297CB778B2219539905F16B94090BD93138* L_8 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 			NullCheck(L_8);
 			Panel_init_m74112D9C24737B37387E86D81CA3351DF71B03EC(L_8, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1000>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1009>
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel2 = (Panel_t49349297CB778B2219539905F16B94090BD93138*)NULL;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel2), (void*)(Panel_t49349297CB778B2219539905F16B94090BD93138*)NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1001>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1010>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___isPaint = (bool)1;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1002>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1011>
 			il2cpp_codegen_runtime_class_init_inline(ClanMessage_t1579B3354732943FD68C6ECD6AF5CDDA12B4A738_il2cpp_TypeInfo_var);
 			MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_9 = ((ClanMessage_t1579B3354732943FD68C6ECD6AF5CDDA12B4A738_StaticFields*)il2cpp_codegen_static_fields_for(ClanMessage_t1579B3354732943FD68C6ECD6AF5CDDA12B4A738_il2cpp_TypeInfo_var))->___vMessage;
 			NullCheck(L_9);
 			MyVector_removeAllElements_mF2D6466281DBBB597BBEDED74C9214256D0CE7D1(L_9, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1003>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1012>
 			MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_10 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___textTime;
 			NullCheck(L_10);
 			MyVector_removeAllElements_mF2D6466281DBBB597BBEDED74C9214256D0CE7D1(L_10, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1004>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1013>
 			MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_11 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vClan;
 			NullCheck(L_11);
 			MyVector_removeAllElements_mF2D6466281DBBB597BBEDED74C9214256D0CE7D1(L_11, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1005>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1014>
 			MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_12 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vFriend;
 			NullCheck(L_12);
 			MyVector_removeAllElements_mF2D6466281DBBB597BBEDED74C9214256D0CE7D1(L_12, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1006>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1015>
 			MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_13 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vEnemies;
 			NullCheck(L_13);
 			MyVector_removeAllElements_mF2D6466281DBBB597BBEDED74C9214256D0CE7D1(L_13, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1007>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1016>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_14 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___vCurrItem;
 			NullCheck(L_14);
 			MyVector_removeAllElements_mF2D6466281DBBB597BBEDED74C9214256D0CE7D1(L_14, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1008>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1017>
 			il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 			MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_15 = ((BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_StaticFields*)il2cpp_codegen_static_fields_for(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var))->___vBgEffect;
 			NullCheck(L_15);
 			MyVector_removeAllElements_mF2D6466281DBBB597BBEDED74C9214256D0CE7D1(L_15, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1009>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1018>
 			il2cpp_codegen_runtime_class_init_inline(EffecMn_t7BBBF6893ECE79ED57FD347042288DBB9258D4AB_il2cpp_TypeInfo_var);
 			MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_16 = ((EffecMn_t7BBBF6893ECE79ED57FD347042288DBB9258D4AB_StaticFields*)il2cpp_codegen_static_fields_for(EffecMn_t7BBBF6893ECE79ED57FD347042288DBB9258D4AB_il2cpp_TypeInfo_var))->___vEff;
 			NullCheck(L_16);
 			MyVector_removeAllElements_mF2D6466281DBBB597BBEDED74C9214256D0CE7D1(L_16, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1010>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1019>
 			il2cpp_codegen_runtime_class_init_inline(Effect_t7314F450E1367CA54E7FC18EA08439D1A160EB09_il2cpp_TypeInfo_var);
 			MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_17 = ((Effect_t7314F450E1367CA54E7FC18EA08439D1A160EB09_StaticFields*)il2cpp_codegen_static_fields_for(Effect_t7314F450E1367CA54E7FC18EA08439D1A160EB09_il2cpp_TypeInfo_var))->___newEff;
 			NullCheck(L_17);
 			MyVector_removeAllElements_mF2D6466281DBBB597BBEDED74C9214256D0CE7D1(L_17, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1011>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1020>
 			Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05* L_18 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___menu;
 			NullCheck(L_18);
 			L_18->___showMenu = (bool)0;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1012>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1021>
 			Panel_t49349297CB778B2219539905F16B94090BD93138* L_19 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 			NullCheck(L_19);
 			MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_20 = L_19->___vItemCombine;
 			NullCheck(L_20);
 			MyVector_removeAllElements_mF2D6466281DBBB597BBEDED74C9214256D0CE7D1(L_20, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1013>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1022>
 			Panel_t49349297CB778B2219539905F16B94090BD93138* L_21 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 			NullCheck(L_21);
 			L_21->___isShow = (bool)0;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1014>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1023>
 			Panel_t49349297CB778B2219539905F16B94090BD93138* L_22 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 			NullCheck(L_22);
 			TabClanIcon_tF80C43BD337FB209AA60D2FF34D21837B4D3E23B* L_23 = L_22->___tabIcon;
@@ -9866,7 +10002,7 @@ IL_008b_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1016>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1025>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Panel_t49349297CB778B2219539905F16B94090BD93138* L_24 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 			NullCheck(L_24);
@@ -9877,7 +10013,7 @@ IL_008b_1:
 
 IL_0141_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1018>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1027>
 			il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 			int32_t L_26 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 			if ((!(((uint32_t)L_26) == ((uint32_t)1))))
@@ -9886,30 +10022,30 @@ IL_0141_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1020>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1029>
 			il2cpp_codegen_runtime_class_init_inline(SmallImage_tF792A43A543EDAADA02E96089CBAA7938E1F4742_il2cpp_TypeInfo_var);
 			SmallImage_clearHastable_m6380EB9337D852E17D7082883C4A193B9F4AB85A(NULL);
 		}
 
 IL_014e_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1022>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1031>
 			il2cpp_codegen_runtime_class_init_inline(Session_ME_t04C33DE1A7AD3EF7D655E860FAD232C9D38B44DB_il2cpp_TypeInfo_var);
 			Session_ME_t04C33DE1A7AD3EF7D655E860FAD232C9D38B44DB* L_27;
 			L_27 = Session_ME_gI_m08EE51E01B34D2C15C6BA5D68AF6B05C2A74CB76(NULL);
 			NullCheck(L_27);
 			Session_ME_close_m9E8E26F3FDCF4543183F1A9870E23B49CE5DA828(L_27, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1023>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1032>
 			il2cpp_codegen_runtime_class_init_inline(Session_ME2_t07CF8028A517CFF38B63BE09A7ABED138FBB6A45_il2cpp_TypeInfo_var);
 			Session_ME2_t07CF8028A517CFF38B63BE09A7ABED138FBB6A45* L_28;
 			L_28 = Session_ME2_gI_m5952BA066D6A86FA59EDABC88564DF04289709B6(NULL);
 			NullCheck(L_28);
 			Session_ME2_close_mDAE7E0C78BB90D54ACB0B3D08F03FA8B2291EE67(L_28, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1024>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1033>
 			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_29 = ___0_screen;
 			NullCheck(L_29);
 			VirtualActionInvoker0::Invoke(4, L_29);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1025>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1034>
 			goto IL_0182;
 		}
 	}
@@ -9926,9 +10062,9 @@ IL_014e_1:
 CATCH_016a:
 	{
 		Exception_t* L_30 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1026>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1035>
 		V_0 = L_30;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1028>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1037>
 		Exception_t* L_31 = V_0;
 		NullCheck(L_31);
 		String_t* L_32;
@@ -9936,23 +10072,23 @@ CATCH_016a:
 		String_t* L_33;
 		L_33 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral314329E023F3CB1DE693F425A25A7799C491CFA8)), L_32, NULL);
 		Cout_println_m0A635C7677DEEFAE9B526557274A125FEBCFC801(L_33, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1029>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1038>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0182;
 	}
 
 IL_0182:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1030>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1039>
 		il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
 		((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___isAutoConect = (bool)1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1031>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1040>
 		((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___countDieConnect = 0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1032>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1041>
 		((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___testConnect = (-1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1033>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1042>
 		((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___loadScreen = (bool)1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1034>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1043>
 		return;
 	}
 }
@@ -9960,7 +10096,7 @@ IL_0182:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_paintCloud_m720FE2AD098A29A62D5542DC4FBE0EACC1ECD82D (mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* ___0_g, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1038>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1047>
 		return;
 	}
 }
@@ -9968,7 +10104,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_paintCloud_m720FE2AD098A29A62
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_updateBG_m0DA2ADB124D125B3F3CC13CCE3AE21A57CA0ED66 (const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1042>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1051>
 		return;
 	}
 }
@@ -10010,16 +10146,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_fillRect_m192C5D5EA43618DD8C5
 	int32_t G_B8_4 = 0;
 	mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* G_B8_5 = NULL;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1046>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1055>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_0 = ___0_g;
 		int32_t L_1 = ___1_color;
 		NullCheck(L_0);
 		mGraphics_setColor_m6D037E4A78016A5277A10A76AFAB06F3A0733156(L_0, L_1, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1047>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1056>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		int32_t L_2 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmy;
 		V_0 = L_2;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1048>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1057>
 		int32_t L_3 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_4 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
@@ -10029,7 +10165,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_fillRect_m192C5D5EA43618DD8C5
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1050>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1059>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_5 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
 		V_0 = L_5;
@@ -10037,7 +10173,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_fillRect_m192C5D5EA43618DD8C5
 
 IL_001b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1052>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1061>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_6 = ___0_g;
 		int32_t L_7 = ___2_x;
 		int32_t L_8 = ___3_y;
@@ -10117,7 +10253,7 @@ IL_003f:
 	{
 		NullCheck(G_B8_5);
 		mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(G_B8_5, G_B8_4, G_B8_3, G_B8_2, ((int32_t)il2cpp_codegen_add(G_B8_1, G_B8_0)), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1053>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1062>
 		return;
 	}
 }
@@ -10173,10 +10309,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_paintBackgroundtLayer_mDA59FE
 	try
 	{
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1059>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1068>
 			int32_t L_0 = ___1_layer;
 			V_0 = ((int32_t)il2cpp_codegen_subtract(L_0, 1));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1060>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1069>
 			int32_t L_1 = V_0;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_2 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
@@ -10211,7 +10347,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_paintBackgroundtLayer_mDA59FE
 
 IL_002b_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1062>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1071>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_7 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_8;
@@ -10220,14 +10356,14 @@ IL_002b_1:
 			int32_t L_9 = L_8->___mautroi;
 			NullCheck(L_7);
 			mGraphics_setColor_m6D037E4A78016A5277A10A76AFAB06F3A0733156(L_7, L_9, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1063>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1072>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_10 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_11 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
 			int32_t L_12 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
 			NullCheck(L_10);
 			mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(L_10, 0, 0, L_11, L_12, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1064>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1073>
 			int32_t L_13 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if ((((int32_t)L_13) == ((int32_t)2)))
 			{
@@ -10253,18 +10389,18 @@ IL_002b_1:
 
 IL_0065_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1066>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1075>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_16 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			GameCanvas_drawSun1_m75087D4E7F05B31303ACC006BB25ADB2B2F259D8(L_16, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1067>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1076>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_17 = ___0_g;
 			GameCanvas_drawSun2_m60C3DF58337B2E5B13EE9D7BB3403C3FFCC447B8(L_17, NULL);
 		}
 
 IL_0071_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1069>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1078>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_18;
 			L_18 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
@@ -10284,7 +10420,7 @@ IL_0071_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1071>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1080>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_21 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(FireWorkEff_t71D65CF112B76982F4FFB439AD7CA7D8790AD940_il2cpp_TypeInfo_var);
 			FireWorkEff_paint_mD60F0845696084F7EF080B701EF74410C66E0498(L_21, NULL);
@@ -10293,7 +10429,7 @@ IL_0071_1:
 
 IL_0095_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1076>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1085>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_22 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
 			if (!L_22)
@@ -10316,13 +10452,13 @@ IL_0095_1:
 
 IL_00a5_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1078>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1087>
 			goto IL_03f3;
 		}
 
 IL_00aa_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1080>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1089>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_27 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveX;
 			int32_t L_28 = V_0;
@@ -10335,7 +10471,7 @@ IL_00aa_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1082>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1091>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_31 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveX;
 			int32_t L_32 = V_0;
@@ -10352,11 +10488,11 @@ IL_00aa_1:
 
 IL_00c9_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1084>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1093>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			int32_t L_39 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmy;
 			V_1 = L_39;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1085>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1094>
 			int32_t L_40 = V_1;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_41 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
@@ -10366,7 +10502,7 @@ IL_00c9_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1087>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1096>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_42 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
 			V_1 = L_42;
@@ -10374,7 +10510,7 @@ IL_00c9_1:
 
 IL_00dd_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1089>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1098>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_43 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___layerSpeed;
 			int32_t L_44 = V_0;
@@ -10387,7 +10523,7 @@ IL_00dd_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1091>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1100>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			int32_t L_47 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmx;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
@@ -10412,7 +10548,7 @@ IL_00dd_1:
 
 IL_010a_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1093>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1102>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_60 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_61 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
@@ -10464,7 +10600,7 @@ IL_0127_1:
 		{
 			NullCheck(G_B22_4);
 			mGraphics_drawImage_mB4F389D1F0ADBB67BD4DE66B5371C7CCED9B3110(G_B22_4, G_B22_3, G_B22_2, ((int32_t)il2cpp_codegen_subtract(G_B22_1, G_B22_0)), 0, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1091>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1100>
 			int32_t L_73 = V_3;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_74 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___bgW;
@@ -10477,7 +10613,7 @@ IL_0127_1:
 
 IL_0138_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1091>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1100>
 			int32_t L_78 = V_3;
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			int32_t L_79 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gW;
@@ -10492,14 +10628,14 @@ IL_0138_1:
 
 IL_0142_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1098>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1107>
 			V_4 = 0;
 			goto IL_0178_1;
 		}
 
 IL_0147_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1100>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1109>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_80 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_81 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
@@ -10551,7 +10687,7 @@ IL_0165_1:
 		{
 			NullCheck(G_B29_4);
 			mGraphics_drawImage_mB4F389D1F0ADBB67BD4DE66B5371C7CCED9B3110(G_B29_4, G_B29_3, G_B29_2, ((int32_t)il2cpp_codegen_subtract(G_B29_1, G_B29_0)), 0, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1098>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1107>
 			int32_t L_93 = V_4;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_94 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___bgW;
@@ -10564,7 +10700,7 @@ IL_0165_1:
 
 IL_0178_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1098>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1107>
 			int32_t L_98 = V_4;
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			int32_t L_99 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gW;
@@ -10576,7 +10712,7 @@ IL_0178_1:
 
 IL_0181_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1103>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1112>
 			int32_t L_100 = ___3_color1;
 			if ((((int32_t)L_100) == ((int32_t)(-1))))
 			{
@@ -10584,7 +10720,7 @@ IL_0181_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1105>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1114>
 			int32_t L_101 = V_0;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_102 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg;
@@ -10594,7 +10730,7 @@ IL_0181_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1107>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1116>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_103 = ___0_g;
 			int32_t L_104 = ___3_color1;
 			int32_t L_105 = V_1;
@@ -10614,7 +10750,7 @@ IL_0181_1:
 
 IL_01ad_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1111>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1120>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_113 = ___0_g;
 			int32_t L_114 = ___3_color1;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
@@ -10651,7 +10787,7 @@ IL_01ad_1:
 
 IL_01e9_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1114>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1123>
 			int32_t L_137 = ___4_color2;
 			if ((((int32_t)L_137) == ((int32_t)(-1))))
 			{
@@ -10659,7 +10795,7 @@ IL_01e9_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1116>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1125>
 			int32_t L_138 = V_0;
 			if (L_138)
 			{
@@ -10667,7 +10803,7 @@ IL_01e9_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1118>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1127>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_139 = ___0_g;
 			int32_t L_140 = ___4_color2;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
@@ -10701,7 +10837,7 @@ IL_01e9_1:
 
 IL_0226_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1122>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1131>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_160 = ___0_g;
 			int32_t L_161 = ___4_color2;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
@@ -10738,7 +10874,7 @@ IL_0226_1:
 
 IL_0260_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1125>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1134>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_184 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
@@ -10749,7 +10885,7 @@ IL_0260_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1127>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1136>
 			int32_t L_186 = ___1_layer;
 			if ((!(((uint32_t)L_186) == ((uint32_t)1))))
 			{
@@ -10765,7 +10901,7 @@ IL_0260_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1129>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1138>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_188 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_189 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun2;
@@ -10788,7 +10924,7 @@ IL_0260_1:
 
 IL_02b1_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1131>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1140>
 			int32_t L_199 = ___1_layer;
 			if ((!(((uint32_t)L_199) == ((uint32_t)1))))
 			{
@@ -10804,7 +10940,7 @@ IL_02b1_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1133>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1142>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_201 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_202 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
@@ -10824,7 +10960,7 @@ IL_02b1_1:
 			int32_t L_212 = V_1;
 			NullCheck(L_201);
 			mGraphics_drawImage_mB4F389D1F0ADBB67BD4DE66B5371C7CCED9B3110(L_201, L_204, ((int32_t)il2cpp_codegen_add(((-((int32_t)(L_205>>((int32_t)(L_208&((int32_t)31))))))), ((int32_t)200))), ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_211, ((int32_t)(L_212>>3)))), ((int32_t)30))), 0, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1134>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1143>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_213 = ___0_g;
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_214 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
 			NullCheck(L_214);
@@ -10858,7 +10994,7 @@ IL_02b1_1:
 
 IL_0340_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1136>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1145>
 			int32_t L_234 = ___1_layer;
 			if ((!(((uint32_t)L_234) == ((uint32_t)3))))
 			{
@@ -10874,14 +11010,14 @@ IL_0340_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1138>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1147>
 			V_5 = 0;
 			goto IL_038b_1;
 		}
 
 IL_0351_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1140>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1149>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_236 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_237 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgCaycot;
@@ -10899,14 +11035,14 @@ IL_0351_1:
 			int32_t L_245 = V_1;
 			NullCheck(L_236);
 			mGraphics_drawImage_mB4F389D1F0ADBB67BD4DE66B5371C7CCED9B3110(L_236, L_237, ((int32_t)il2cpp_codegen_add(((-((int32_t)(L_238>>((int32_t)(L_241&((int32_t)31))))))), ((int32_t)300))), ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_multiply(L_242, L_244)), ((int32_t)(L_245>>3)))), 0, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1138>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1147>
 			int32_t L_246 = V_5;
 			V_5 = ((int32_t)il2cpp_codegen_add(L_246, 1));
 		}
 
 IL_038b_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1138>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1147>
 			int32_t L_247 = V_5;
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_248 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___pxh;
@@ -10923,7 +11059,7 @@ IL_038b_1:
 
 IL_039f_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1144>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1153>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			int32_t L_251 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmx;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
@@ -10938,7 +11074,7 @@ IL_039f_1:
 			int32_t L_258 = L_257;
 			int32_t L_259 = (L_256)->GetAt(static_cast<il2cpp_array_size_t>(L_258));
 			V_2 = ((-((int32_t)(((int32_t)il2cpp_codegen_add(L_251, L_255))>>((int32_t)(L_259&((int32_t)31)))))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1145>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1154>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_260 = ___0_g;
 			int32_t L_261 = V_2;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_262 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
@@ -10960,7 +11096,7 @@ IL_039f_1:
 
 IL_03d7_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1147>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1156>
 			goto IL_03f3;
 		}
 	}
@@ -10977,9 +11113,9 @@ IL_03d7_1:
 CATCH_03d9:
 	{
 		Exception_t* L_273 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1148>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1157>
 		V_6 = L_273;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1150>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1159>
 		Exception_t* L_274 = V_6;
 		NullCheck(L_274);
 		String_t* L_275;
@@ -10987,14 +11123,14 @@ CATCH_03d9:
 		String_t* L_276;
 		L_276 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral5C2BC2FE3D9D4194CDE154CD1A124A9DD6726BA2)), L_275, NULL);
 		Cout_LogError_m76D25E80FED10E31F38A00D4C6A10C91BDC2879A(L_276, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1151>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1160>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_03f3;
 	}
 
 IL_03f3:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1152>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1161>
 		return;
 	}
 }
@@ -11008,7 +11144,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_drawSun1_m75087D4E7F05B31303A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1156>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1165>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun;
 		if (!L_0)
@@ -11017,7 +11153,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_drawSun1_m75087D4E7F05B31303A
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1158>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1167>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_1 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_2 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun;
@@ -11029,7 +11165,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_drawSun1_m75087D4E7F05B31303A
 
 IL_001d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1160>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1169>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		bool L_5 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isBoltEff;
 		if (L_5)
@@ -11038,13 +11174,13 @@ IL_001d:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1162>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1171>
 		return;
 	}
 
 IL_0025:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1164>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1173>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_6 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___gameTick;
 		if (((int32_t)(L_6%((int32_t)200))))
@@ -11053,14 +11189,14 @@ IL_0025:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1166>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1175>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___boltActive = (bool)1;
 	}
 
 IL_0038:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1168>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1177>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		bool L_7 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___boltActive;
 		if (!L_7)
@@ -11069,11 +11205,11 @@ IL_0038:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1170>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1179>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_8 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___tBolt;
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___tBolt = ((int32_t)il2cpp_codegen_add(L_8, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1171>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1180>
 		int32_t L_9 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___tBolt;
 		if ((!(((uint32_t)L_9) == ((uint32_t)((int32_t)10)))))
 		{
@@ -11081,16 +11217,16 @@ IL_0038:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1173>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1182>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___tBolt = 0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1174>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1183>
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___boltActive = (bool)0;
 	}
 
 IL_0060:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1176>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1185>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_10 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___tBolt;
 		if (((int32_t)(L_10%2)))
@@ -11099,11 +11235,11 @@ IL_0060:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1178>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1187>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_11 = ___0_g;
 		NullCheck(L_11);
 		mGraphics_setColor_m6D037E4A78016A5277A10A76AFAB06F3A0733156(L_11, ((int32_t)16777215), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1179>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1188>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_12 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_13 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
@@ -11114,7 +11250,7 @@ IL_0060:
 
 IL_0086:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1182>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1191>
 		return;
 	}
 }
@@ -11128,7 +11264,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_drawSun2_m60C3DF58337B2E5B13E
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1186>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1195>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun2;
 		if (!L_0)
@@ -11137,7 +11273,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_drawSun2_m60C3DF58337B2E5B13E
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1188>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1197>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_1 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_2 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun2;
@@ -11149,7 +11285,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_drawSun2_m60C3DF58337B2E5B13E
 
 IL_001d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1190>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1199>
 		return;
 	}
 }
@@ -11163,7 +11299,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameCanvas_isHDVersion_m9D36F691F26C3CBB
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1194>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1203>
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		if ((((int32_t)L_0) <= ((int32_t)1)))
@@ -11172,13 +11308,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameCanvas_isHDVersion_m9D36F691F26C3CBB
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1196>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1205>
 		return (bool)1;
 	}
 
 IL_000a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1198>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1207>
 		return (bool)0;
 	}
 }
@@ -11200,7 +11336,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_paint_ios_bg_m624C30DA0AD1BF5
 	int32_t V_1 = 0;
 	int32_t G_B10_0 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1203>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1212>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_StaticFields*)il2cpp_codegen_static_fields_for(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var))->___clientType;
 		if ((((int32_t)L_0) == ((int32_t)5)))
@@ -11209,13 +11345,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_paint_ios_bg_m624C30DA0AD1BF5
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1205>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1214>
 		return;
 	}
 
 IL_0009:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1207>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1216>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_1 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBgIOS;
 		if (!L_1)
@@ -11224,25 +11360,25 @@ IL_0009:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1209>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1218>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_2 = ___0_g;
 		NullCheck(L_2);
 		mGraphics_setColor_m6D037E4A78016A5277A10A76AFAB06F3A0733156(L_2, 0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1210>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1219>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_3 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_4 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
 		int32_t L_5 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
 		NullCheck(L_3);
 		mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(L_3, 0, 0, L_4, L_5, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1211>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1220>
 		V_0 = 0;
 		goto IL_005a;
 	}
 
 IL_002d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1213>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1222>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_6 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_7 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBgIOS;
@@ -11257,14 +11393,14 @@ IL_002d:
 		int32_t L_13 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___HCENTER;
 		NullCheck(L_6);
 		mGraphics_drawImage_mB4F389D1F0ADBB67BD4DE66B5371C7CCED9B3110(L_6, L_7, ((int32_t)il2cpp_codegen_multiply(L_9, L_10)), ((int32_t)(L_11/2)), ((int32_t)(L_12|L_13)), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1211>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1220>
 		int32_t L_14 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_14, 1));
 	}
 
 IL_005a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1211>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1220>
 		int32_t L_15 = V_0;
 		if ((((int32_t)L_15) < ((int32_t)3)))
 		{
@@ -11277,7 +11413,7 @@ IL_005a:
 
 IL_005f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1218>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1227>
 		il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 		int32_t L_16 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___bgID;
 		if (((int32_t)(L_16%2)))
@@ -11298,7 +11434,7 @@ IL_006b:
 IL_006c:
 	{
 		V_1 = G_B10_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1219>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1228>
 		String_t* L_17;
 		L_17 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_1), NULL);
 		String_t* L_18;
@@ -11309,7 +11445,7 @@ IL_006c:
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBgIOS = L_19;
 		Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBgIOS), (void*)L_19);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1221>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1230>
 		return;
 	}
 }
@@ -11357,7 +11493,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_paintBGGameScr_mBC2360D6708EF
 	int32_t G_B54_0 = 0;
 	mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* G_B54_1 = NULL;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1225>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1234>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		bool L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isLoadBGok;
 		if (L_0)
@@ -11366,11 +11502,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_paintBGGameScr_mBC2360D6708EF
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1227>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1236>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_1 = ___0_g;
 		NullCheck(L_1);
 		mGraphics_setColor_m6D037E4A78016A5277A10A76AFAB06F3A0733156(L_1, 0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1228>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1237>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_2 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_3 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
@@ -11381,7 +11517,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_paintBGGameScr_mBC2360D6708EF
 
 IL_0020:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1230>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1239>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		bool L_5 = ((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_StaticFields*)il2cpp_codegen_static_fields_for(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var))->___isLoadingMap;
 		if (!L_5)
@@ -11390,19 +11526,19 @@ IL_0020:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1232>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1241>
 		return;
 	}
 
 IL_0028:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1234>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1243>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		int32_t L_6 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gW;
 		V_0 = L_6;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1235>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1244>
 		int32_t L_7 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gH;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1236>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1245>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_8 = ___0_g;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_9 = ___0_g;
 		NullCheck(L_9);
@@ -11414,7 +11550,7 @@ IL_0028:
 		L_12 = mGraphics_getTranslateY_mC8B2DF28F2BED3BFAAB16A3522AE8029D63F99EA(L_11, NULL);
 		NullCheck(L_8);
 		mGraphics_translate_m935DBC9CDE2048589DFCE243A3462166E912EDEC(L_8, ((-L_10)), ((-L_12)), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1237>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1246>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_13 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___GiamDungLuong;
 		if (!L_13)
@@ -11423,21 +11559,21 @@ IL_0028:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1239>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1248>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_14 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_15;
 		L_15 = ModFunc_GetColor_mC6E07450474078B9997371B623B95EBE453BC6FA(NULL);
 		NullCheck(L_14);
 		mGraphics_setColor_m2662BED37D8011AAF8DE9BAA5FF2C6064A200D67(L_14, L_15, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1240>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1249>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_16 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_17 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
 		int32_t L_18 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
 		NullCheck(L_16);
 		mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(L_16, 0, 0, L_17, L_18, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1241>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1250>
 		return;
 	}
 
@@ -11447,7 +11583,7 @@ IL_006d:
 	try
 	{
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1245>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1254>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			bool L_19 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___paintBG;
 			if (!L_19)
@@ -11456,7 +11592,7 @@ IL_006d:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1247>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1256>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_20 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
@@ -11468,7 +11604,7 @@ IL_006d:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1249>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1258>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_22 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___mapID;
 			if ((((int32_t)L_22) == ((int32_t)((int32_t)137))))
@@ -11519,24 +11655,24 @@ IL_006d:
 
 IL_00be_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1251>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1260>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_28 = ___0_g;
 			NullCheck(L_28);
 			mGraphics_setColor_m6D037E4A78016A5277A10A76AFAB06F3A0733156(L_28, 0, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1252>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1261>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_29 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_30 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
 			int32_t L_31 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
 			NullCheck(L_29);
 			mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(L_29, 0, 0, L_30, L_31, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1253>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1262>
 			goto IL_09fd;
 		}
 
 IL_00dc_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1255>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1264>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_32 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___mapID;
 			if ((!(((uint32_t)L_32) == ((uint32_t)((int32_t)138)))))
@@ -11545,24 +11681,24 @@ IL_00dc_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1257>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1266>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_33 = ___0_g;
 			NullCheck(L_33);
 			mGraphics_setColor_m6D037E4A78016A5277A10A76AFAB06F3A0733156(L_33, ((int32_t)6776679), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1258>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1267>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_34 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_35 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
 			int32_t L_36 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
 			NullCheck(L_34);
 			mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(L_34, 0, 0, L_35, L_36, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1259>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1268>
 			goto IL_09fd;
 		}
 
 IL_010a_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1262>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1271>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_37 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if (L_37)
@@ -11571,7 +11707,7 @@ IL_010a_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1264>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1273>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_38 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_39 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorTop;
@@ -11583,21 +11719,21 @@ IL_010a_1:
 			int32_t L_43 = 3;
 			int32_t L_44 = (L_42)->GetAt(static_cast<il2cpp_array_size_t>(L_43));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_38, 4, 6, L_41, L_44, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1265>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1274>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_45 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_46 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_46);
 			int32_t L_47 = 2;
 			int32_t L_48 = (L_46)->GetAt(static_cast<il2cpp_array_size_t>(L_47));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_45, 3, 4, (-1), L_48, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1266>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1275>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_49 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_50 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_50);
 			int32_t L_51 = 1;
 			int32_t L_52 = (L_50)->GetAt(static_cast<il2cpp_array_size_t>(L_51));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_49, 2, 3, (-1), L_52, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1267>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1276>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_53 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_54 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_54);
@@ -11609,7 +11745,7 @@ IL_010a_1:
 
 IL_015c_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1269>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1278>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_57 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if ((!(((uint32_t)L_57) == ((uint32_t)1))))
@@ -11618,14 +11754,14 @@ IL_015c_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1271>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1280>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_58 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_58, 4, 6, (-1), (-1), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1272>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1281>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_59 = ___0_g;
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_59, 3, 3, (-1), (-1), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1273>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1282>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_60 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_61 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorTop;
 			NullCheck(L_61);
@@ -11639,7 +11775,7 @@ IL_015c_1:
 			int32_t L_67 = 2;
 			int32_t L_68 = (L_66)->GetAt(static_cast<il2cpp_array_size_t>(L_67));
 			GameCanvas_fillRect_m192C5D5EA43618DD8C51CF7D191D211DC25AD186(L_60, L_63, 0, ((-((int32_t)(L_64>>5)))), L_65, L_68, 5, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1274>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1283>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_69 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_70 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_70);
@@ -11656,10 +11792,10 @@ IL_015c_1:
 			int32_t L_79 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmy;
 			int32_t L_80 = V_0;
 			GameCanvas_fillRect_m192C5D5EA43618DD8C51CF7D191D211DC25AD186(L_69, L_72, 0, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_75, L_78)), ((int32_t)(L_79>>3)))), L_80, ((int32_t)70), 3, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1275>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1284>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_81 = ___0_g;
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_81, 2, 2, (-1), (-1), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1276>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1285>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_82 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_83 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_83);
@@ -11671,7 +11807,7 @@ IL_015c_1:
 
 IL_01df_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1278>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1287>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_86 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if ((!(((uint32_t)L_86) == ((uint32_t)2))))
@@ -11680,7 +11816,7 @@ IL_01df_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1280>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1289>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_87 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_88 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorTop;
@@ -11692,35 +11828,35 @@ IL_01df_1:
 			int32_t L_92 = 4;
 			int32_t L_93 = (L_91)->GetAt(static_cast<il2cpp_array_size_t>(L_92));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_87, 5, ((int32_t)10), L_90, L_93, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1281>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1290>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_94 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_95 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorTop;
 			NullCheck(L_95);
 			int32_t L_96 = 2;
 			int32_t L_97 = (L_95)->GetAt(static_cast<il2cpp_array_size_t>(L_96));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_94, 4, 8, (-1), L_97, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1282>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1291>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_98 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_99 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_99);
 			int32_t L_100 = 2;
 			int32_t L_101 = (L_99)->GetAt(static_cast<il2cpp_array_size_t>(L_100));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_98, 3, 5, (-1), L_101, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1283>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1292>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_102 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_103 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_103);
 			int32_t L_104 = 1;
 			int32_t L_105 = (L_103)->GetAt(static_cast<il2cpp_array_size_t>(L_104));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_102, 2, 2, (-1), L_105, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1284>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1293>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_106 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_107 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_107);
 			int32_t L_108 = 0;
 			int32_t L_109 = (L_107)->GetAt(static_cast<il2cpp_array_size_t>(L_108));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_106, 1, 1, (-1), L_109, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1285>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1294>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_110 = ___0_g;
 			GameCanvas_paintCloud_m720FE2AD098A29A62D5542DC4FBE0EACC1ECD82D(L_110, NULL);
 			goto IL_091a_1;
@@ -11728,7 +11864,7 @@ IL_01df_1:
 
 IL_0249_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1287>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1296>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_111 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if ((!(((uint32_t)L_111) == ((uint32_t)3))))
@@ -11737,17 +11873,17 @@ IL_0249_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1289>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1298>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			int32_t L_112 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmy;
 			int32_t L_113 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gH23;
 			V_1 = ((int32_t)il2cpp_codegen_subtract(L_112, ((int32_t)il2cpp_codegen_subtract(((int32_t)325), L_113))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1290>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1299>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_114 = ___0_g;
 			int32_t L_115 = V_1;
 			NullCheck(L_114);
 			mGraphics_translate_m935DBC9CDE2048589DFCE243A3462166E912EDEC(L_114, 0, ((-L_115)), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1291>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1300>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_116 = ___0_g;
 			GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_117;
 			L_117 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
@@ -11811,24 +11947,24 @@ IL_029b_1:
 			int32_t L_132 = V_1;
 			int32_t L_133 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmy;
 			GameCanvas_fillRect_m192C5D5EA43618DD8C51CF7D191D211DC25AD186(G_B29_1, G_B29_0, 0, ((int32_t)il2cpp_codegen_subtract(L_126, ((int32_t)(L_127>>3)))), L_128, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_131, L_132)), ((int32_t)(L_133>>3)))), ((int32_t)100))), 2, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1292>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1301>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_134 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_135 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_135);
 			int32_t L_136 = 2;
 			int32_t L_137 = (L_135)->GetAt(static_cast<il2cpp_array_size_t>(L_136));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_134, 3, 2, (-1), L_137, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1293>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1302>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_138 = ___0_g;
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_138, 2, 0, (-1), (-1), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1294>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1303>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_139 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_140 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_140);
 			int32_t L_141 = 0;
 			int32_t L_142 = (L_140)->GetAt(static_cast<il2cpp_array_size_t>(L_141));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_139, 1, 0, (-1), L_142, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1295>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1304>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_143 = ___0_g;
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_144 = ___0_g;
 			NullCheck(L_144);
@@ -11841,7 +11977,7 @@ IL_029b_1:
 
 IL_02fd_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1297>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1306>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_146 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if ((!(((uint32_t)L_146) == ((uint32_t)4))))
@@ -11850,7 +11986,7 @@ IL_02fd_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1299>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1308>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_147 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_148 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorTop;
@@ -11858,7 +11994,7 @@ IL_02fd_1:
 			int32_t L_149 = 3;
 			int32_t L_150 = (L_148)->GetAt(static_cast<il2cpp_array_size_t>(L_149));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_147, 4, 7, L_150, (-1), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1300>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1309>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_151 = ___0_g;
 			bool L_152;
 			L_152 = GameCanvas_isHDVersion_m9D36F691F26C3CBBDEB82036E8B3994CE0AF3185(NULL);
@@ -11907,7 +12043,7 @@ IL_0330_1:
 		{
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(G_B34_4, G_B34_3, G_B34_2, G_B34_1, G_B34_0, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1301>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1310>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_159 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_160 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorTop;
 			NullCheck(L_160);
@@ -11918,7 +12054,7 @@ IL_0330_1:
 			int32_t L_164 = 1;
 			int32_t L_165 = (L_163)->GetAt(static_cast<il2cpp_array_size_t>(L_164));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_159, 2, 2, L_162, L_165, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1302>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1311>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_166 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_167 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_167);
@@ -11930,7 +12066,7 @@ IL_0330_1:
 
 IL_0360_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1304>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1313>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_170 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if ((!(((uint32_t)L_170) == ((uint32_t)5))))
@@ -11939,7 +12075,7 @@ IL_0360_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1306>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1315>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_171 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_172 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorTop;
@@ -11947,51 +12083,51 @@ IL_0360_1:
 			int32_t L_173 = 3;
 			int32_t L_174 = (L_172)->GetAt(static_cast<il2cpp_array_size_t>(L_173));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_171, 4, ((int32_t)15), L_174, (-1), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1307>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1316>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_175 = ___0_g;
 			GameCanvas_drawSun1_m75087D4E7F05B31303ACC006BB25ADB2B2F259D8(L_175, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1308>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1317>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_176 = ___0_g;
 			NullCheck(L_176);
 			mGraphics_translate_m935DBC9CDE2048589DFCE243A3462166E912EDEC(L_176, ((int32_t)100), ((int32_t)10), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1309>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1318>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_177 = ___0_g;
 			GameCanvas_drawSun1_m75087D4E7F05B31303ACC006BB25ADB2B2F259D8(L_177, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1310>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1319>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_178 = ___0_g;
 			NullCheck(L_178);
 			mGraphics_translate_m935DBC9CDE2048589DFCE243A3462166E912EDEC(L_178, ((int32_t)-100), ((int32_t)-10), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1311>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1320>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_179 = ___0_g;
 			GameCanvas_drawSun2_m60C3DF58337B2E5B13EE9D7BB3403C3FFCC447B8(L_179, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1312>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1321>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_180 = ___0_g;
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_180, 3, ((int32_t)10), (-1), (-1), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1313>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1322>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_181 = ___0_g;
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_181, 2, 6, (-1), (-1), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1314>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1323>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_182 = ___0_g;
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_182, 1, 4, (-1), (-1), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1315>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1324>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_183 = ___0_g;
 			NullCheck(L_183);
 			mGraphics_translate_m935DBC9CDE2048589DFCE243A3462166E912EDEC(L_183, 0, ((int32_t)27), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1316>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1325>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_184 = ___0_g;
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_184, 1, 2, (-1), (-1), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1317>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1326>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_185 = ___0_g;
 			NullCheck(L_185);
 			mGraphics_translate_m935DBC9CDE2048589DFCE243A3462166E912EDEC(L_185, 0, ((int32_t)20), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1318>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1327>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_186 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_187 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_187);
 			int32_t L_188 = 0;
 			int32_t L_189 = (L_187)->GetAt(static_cast<il2cpp_array_size_t>(L_188));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_186, 1, 2, (-1), L_189, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1319>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1328>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_190 = ___0_g;
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_191 = ___0_g;
 			NullCheck(L_191);
@@ -12008,7 +12144,7 @@ IL_0360_1:
 
 IL_0406_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1321>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1330>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_195 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if ((!(((uint32_t)L_195) == ((uint32_t)6))))
@@ -12017,7 +12153,7 @@ IL_0406_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1323>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1332>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_196 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_197 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorTop;
@@ -12029,45 +12165,45 @@ IL_0406_1:
 			int32_t L_201 = 4;
 			int32_t L_202 = (L_200)->GetAt(static_cast<il2cpp_array_size_t>(L_201));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_196, 5, ((int32_t)10), L_199, L_202, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1324>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1333>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_203 = ___0_g;
 			GameCanvas_drawSun1_m75087D4E7F05B31303ACC006BB25ADB2B2F259D8(L_203, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1325>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1334>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_204 = ___0_g;
 			GameCanvas_drawSun2_m60C3DF58337B2E5B13EE9D7BB3403C3FFCC447B8(L_204, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1326>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1335>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_205 = ___0_g;
 			NullCheck(L_205);
 			mGraphics_translate_m935DBC9CDE2048589DFCE243A3462166E912EDEC(L_205, ((int32_t)60), ((int32_t)40), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1327>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1336>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_206 = ___0_g;
 			GameCanvas_drawSun2_m60C3DF58337B2E5B13EE9D7BB3403C3FFCC447B8(L_206, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1328>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1337>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_207 = ___0_g;
 			NullCheck(L_207);
 			mGraphics_translate_m935DBC9CDE2048589DFCE243A3462166E912EDEC(L_207, ((int32_t)-60), ((int32_t)-40), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1329>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1338>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_208 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_209 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_209);
 			int32_t L_210 = 3;
 			int32_t L_211 = (L_209)->GetAt(static_cast<il2cpp_array_size_t>(L_210));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_208, 4, 7, (-1), L_211, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1330>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1339>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_212 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 			BackgroudEffect_paintFarAll_m72BFADDA91F4A6041AF06D356E30E91B9821C061(L_212, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1331>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1340>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_213 = ___0_g;
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_213, 3, 4, (-1), (-1), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1332>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1341>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_214 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_215 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_215);
 			int32_t L_216 = 1;
 			int32_t L_217 = (L_215)->GetAt(static_cast<il2cpp_array_size_t>(L_216));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_214, 2, 3, (-1), L_217, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1333>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1342>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_218 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_219 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_219);
@@ -12079,7 +12215,7 @@ IL_0406_1:
 
 IL_0493_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1335>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1344>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_222 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if ((!(((uint32_t)L_222) == ((uint32_t)7))))
@@ -12088,7 +12224,7 @@ IL_0493_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1337>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1346>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_223 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_224 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorTop;
@@ -12100,13 +12236,13 @@ IL_0493_1:
 			int32_t L_228 = 3;
 			int32_t L_229 = (L_227)->GetAt(static_cast<il2cpp_array_size_t>(L_228));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_223, 4, 6, L_226, L_229, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1338>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1347>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_230 = ___0_g;
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_230, 3, 5, (-1), (-1), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1339>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1348>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_231 = ___0_g;
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_231, 2, 4, (-1), (-1), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1340>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1349>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_232 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_233 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_233);
@@ -12118,7 +12254,7 @@ IL_0493_1:
 
 IL_04da_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1342>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1351>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_236 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if ((!(((uint32_t)L_236) == ((uint32_t)8))))
@@ -12127,7 +12263,7 @@ IL_04da_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1344>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1353>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_237 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_238 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorTop;
@@ -12139,27 +12275,27 @@ IL_04da_1:
 			int32_t L_242 = 3;
 			int32_t L_243 = (L_241)->GetAt(static_cast<il2cpp_array_size_t>(L_242));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_237, 4, 8, L_240, L_243, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1345>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1354>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_244 = ___0_g;
 			GameCanvas_drawSun1_m75087D4E7F05B31303ACC006BB25ADB2B2F259D8(L_244, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1346>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1355>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_245 = ___0_g;
 			GameCanvas_drawSun2_m60C3DF58337B2E5B13EE9D7BB3403C3FFCC447B8(L_245, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1347>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1356>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_246 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_247 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_247);
 			int32_t L_248 = 2;
 			int32_t L_249 = (L_247)->GetAt(static_cast<il2cpp_array_size_t>(L_248));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_246, 3, 4, (-1), L_249, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1348>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1357>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_250 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_251 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_251);
 			int32_t L_252 = 1;
 			int32_t L_253 = (L_251)->GetAt(static_cast<il2cpp_array_size_t>(L_252));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_250, 2, 2, (-1), L_253, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1349>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1358>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_254 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___mapID;
 			if ((((int32_t)L_254) < ((int32_t)((int32_t)92))))
@@ -12207,7 +12343,7 @@ IL_054b_1:
 
 IL_055a_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1351>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1360>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_260 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_261 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
@@ -12220,7 +12356,7 @@ IL_055a_1:
 
 IL_056f_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1354>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1363>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_264 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if ((!(((uint32_t)L_264) == ((uint32_t)((int32_t)9)))))
@@ -12229,7 +12365,7 @@ IL_056f_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1356>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1365>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_265 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_266 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorTop;
@@ -12241,34 +12377,34 @@ IL_056f_1:
 			int32_t L_270 = 3;
 			int32_t L_271 = (L_269)->GetAt(static_cast<il2cpp_array_size_t>(L_270));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_265, 4, 8, L_268, L_271, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1357>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1366>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_272 = ___0_g;
 			GameCanvas_drawSun1_m75087D4E7F05B31303ACC006BB25ADB2B2F259D8(L_272, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1358>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1367>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_273 = ___0_g;
 			GameCanvas_drawSun2_m60C3DF58337B2E5B13EE9D7BB3403C3FFCC447B8(L_273, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1359>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1368>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_274 = ___0_g;
 			NullCheck(L_274);
 			mGraphics_translate_m935DBC9CDE2048589DFCE243A3462166E912EDEC(L_274, ((int32_t)-80), ((int32_t)20), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1360>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1369>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_275 = ___0_g;
 			GameCanvas_drawSun2_m60C3DF58337B2E5B13EE9D7BB3403C3FFCC447B8(L_275, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1361>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1370>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_276 = ___0_g;
 			NullCheck(L_276);
 			mGraphics_translate_m935DBC9CDE2048589DFCE243A3462166E912EDEC(L_276, ((int32_t)80), ((int32_t)-20), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1362>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1371>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_277 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 			BackgroudEffect_paintFarAll_m72BFADDA91F4A6041AF06D356E30E91B9821C061(L_277, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1363>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1372>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_278 = ___0_g;
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_278, 3, 5, (-1), (-1), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1364>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1373>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_279 = ___0_g;
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_279, 2, 3, (-1), (-1), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1365>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1374>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_280 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_281 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_281);
@@ -12280,7 +12416,7 @@ IL_056f_1:
 
 IL_05e3_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1367>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1376>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_284 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if ((!(((uint32_t)L_284) == ((uint32_t)((int32_t)10)))))
@@ -12289,17 +12425,17 @@ IL_05e3_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1369>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1378>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			int32_t L_285 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmy;
 			int32_t L_286 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gH23;
 			V_2 = ((int32_t)il2cpp_codegen_subtract(L_285, ((int32_t)il2cpp_codegen_subtract(((int32_t)380), L_286))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1370>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1379>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_287 = ___0_g;
 			int32_t L_288 = V_2;
 			NullCheck(L_287);
 			mGraphics_translate_m935DBC9CDE2048589DFCE243A3462166E912EDEC(L_287, 0, ((-L_288)), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1371>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1380>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_289 = ___0_g;
 			GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_290;
 			L_290 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
@@ -12348,23 +12484,23 @@ IL_062a_1:
 			int32_t L_303 = V_2;
 			int32_t L_304 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmy;
 			GameCanvas_fillRect_m192C5D5EA43618DD8C51CF7D191D211DC25AD186(G_B54_1, G_B54_0, 0, ((int32_t)il2cpp_codegen_subtract(L_297, ((int32_t)(L_298>>2)))), L_299, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_302, L_303)), ((int32_t)(L_304>>2)))), ((int32_t)100))), 2, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1372>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1381>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_305 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_306 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_306);
 			int32_t L_307 = 1;
 			int32_t L_308 = (L_306)->GetAt(static_cast<il2cpp_array_size_t>(L_307));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_305, 2, 2, (-1), L_308, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1373>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1382>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_309 = ___0_g;
 			GameCanvas_drawSun1_m75087D4E7F05B31303ACC006BB25ADB2B2F259D8(L_309, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1374>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1383>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_310 = ___0_g;
 			GameCanvas_drawSun2_m60C3DF58337B2E5B13EE9D7BB3403C3FFCC447B8(L_310, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1375>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1384>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_311 = ___0_g;
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_311, 1, 0, (-1), (-1), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1376>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1385>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_312 = ___0_g;
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_313 = ___0_g;
 			NullCheck(L_313);
@@ -12377,7 +12513,7 @@ IL_062a_1:
 
 IL_0688_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1378>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1387>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_315 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if ((!(((uint32_t)L_315) == ((uint32_t)((int32_t)11)))))
@@ -12386,7 +12522,7 @@ IL_0688_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1380>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1389>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_316 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_317 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorTop;
@@ -12398,17 +12534,17 @@ IL_0688_1:
 			int32_t L_321 = 2;
 			int32_t L_322 = (L_320)->GetAt(static_cast<il2cpp_array_size_t>(L_321));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_316, 3, 6, L_319, L_322, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1381>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1390>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_323 = ___0_g;
 			GameCanvas_drawSun1_m75087D4E7F05B31303ACC006BB25ADB2B2F259D8(L_323, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1382>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1391>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_324 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_325 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_325);
 			int32_t L_326 = 1;
 			int32_t L_327 = (L_325)->GetAt(static_cast<il2cpp_array_size_t>(L_326));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_324, 2, 3, (-1), L_327, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1383>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1392>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_328 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_329 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_329);
@@ -12420,7 +12556,7 @@ IL_0688_1:
 
 IL_06d2_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1385>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1394>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_332 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if ((!(((uint32_t)L_332) == ((uint32_t)((int32_t)12)))))
@@ -12429,27 +12565,27 @@ IL_06d2_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1387>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1396>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_333 = ___0_g;
 			NullCheck(L_333);
 			mGraphics_setColor_m6D037E4A78016A5277A10A76AFAB06F3A0733156(L_333, ((int32_t)9161471), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1388>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1397>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_334 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_335 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
 			int32_t L_336 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
 			NullCheck(L_334);
 			mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(L_334, 0, 0, L_335, L_336, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1389>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1398>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_337 = ___0_g;
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_337, 3, 4, (-1), ((int32_t)14417919), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1390>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1399>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_338 = ___0_g;
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_338, 2, 3, (-1), ((int32_t)14417919), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1391>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1400>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_339 = ___0_g;
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_339, 1, 2, (-1), ((int32_t)14417919), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1392>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1401>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_340 = ___0_g;
 			GameCanvas_paintCloud_m720FE2AD098A29A62D5542DC4FBE0EACC1ECD82D(L_340, NULL);
 			goto IL_091a_1;
@@ -12457,7 +12593,7 @@ IL_06d2_1:
 
 IL_072d_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1394>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1403>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_341 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if ((!(((uint32_t)L_341) == ((uint32_t)((int32_t)13)))))
@@ -12466,18 +12602,18 @@ IL_072d_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1396>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1405>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_342 = ___0_g;
 			NullCheck(L_342);
 			mGraphics_setColor_m6D037E4A78016A5277A10A76AFAB06F3A0733156(L_342, ((int32_t)15268088), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1397>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1406>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_343 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_344 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
 			int32_t L_345 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
 			NullCheck(L_343);
 			mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(L_343, 0, 0, L_344, L_345, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1398>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1407>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_346 = ___0_g;
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_346, 1, 5, (-1), ((int32_t)15268088), NULL);
 			goto IL_091a_1;
@@ -12485,7 +12621,7 @@ IL_072d_1:
 
 IL_0766_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1400>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1409>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_347 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if ((!(((uint32_t)L_347) == ((uint32_t)((int32_t)15)))))
@@ -12494,25 +12630,25 @@ IL_0766_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1402>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1411>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_348 = ___0_g;
 			NullCheck(L_348);
 			mGraphics_setColor_m6D037E4A78016A5277A10A76AFAB06F3A0733156(L_348, ((int32_t)2631752), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1403>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1412>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_349 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_350 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
 			int32_t L_351 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
 			NullCheck(L_349);
 			mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(L_349, 0, 0, L_350, L_351, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1404>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1413>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_352 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_353 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_353);
 			int32_t L_354 = 1;
 			int32_t L_355 = (L_353)->GetAt(static_cast<il2cpp_array_size_t>(L_354));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_352, 2, 3, (-1), L_355, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1405>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1414>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_356 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_357 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_357);
@@ -12524,7 +12660,7 @@ IL_0766_1:
 
 IL_07b1_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1407>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1416>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_360 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if ((!(((uint32_t)L_360) == ((uint32_t)((int32_t)16)))))
@@ -12533,7 +12669,7 @@ IL_07b1_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1409>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1418>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_361 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_362 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorTop;
@@ -12545,14 +12681,14 @@ IL_07b1_1:
 			int32_t L_366 = 3;
 			int32_t L_367 = (L_365)->GetAt(static_cast<il2cpp_array_size_t>(L_366));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_361, 4, 6, L_364, L_367, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1410>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1419>
 			V_3 = 0;
 			goto IL_07f5_1;
 		}
 
 IL_07d4_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1412>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1421>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_368 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_369 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSunSpec;
@@ -12572,14 +12708,14 @@ IL_07d4_1:
 			int32_t L_380 = (L_377)->GetAt(static_cast<il2cpp_array_size_t>(L_379));
 			NullCheck(L_368);
 			mGraphics_drawImage_mB4F389D1F0ADBB67BD4DE66B5371C7CCED9B3110(L_368, L_372, L_376, L_380, ((int32_t)33), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1410>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1419>
 			int32_t L_381 = V_3;
 			V_3 = ((int32_t)il2cpp_codegen_add(L_381, 1));
 		}
 
 IL_07f5_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1410>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1419>
 			int32_t L_382 = V_3;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_383 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSunSpec;
@@ -12590,7 +12726,7 @@ IL_07f5_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1414>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1423>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_384 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_385 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
@@ -12598,14 +12734,14 @@ IL_07f5_1:
 			int32_t L_386 = 2;
 			int32_t L_387 = (L_385)->GetAt(static_cast<il2cpp_array_size_t>(L_386));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_384, 3, 4, (-1), L_387, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1415>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1424>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_388 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_389 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_389);
 			int32_t L_390 = 1;
 			int32_t L_391 = (L_389)->GetAt(static_cast<il2cpp_array_size_t>(L_390));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_388, 2, 3, (-1), L_391, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1416>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1425>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_392 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_393 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_393);
@@ -12617,7 +12753,7 @@ IL_07f5_1:
 
 IL_0834_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1418>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1427>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_396 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if ((!(((uint32_t)L_396) == ((uint32_t)((int32_t)19)))))
@@ -12626,7 +12762,7 @@ IL_0834_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1420>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1429>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_397 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_398 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorTop;
@@ -12638,35 +12774,35 @@ IL_0834_1:
 			int32_t L_402 = 4;
 			int32_t L_403 = (L_401)->GetAt(static_cast<il2cpp_array_size_t>(L_402));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_397, 5, ((int32_t)10), L_400, L_403, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1421>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1430>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_404 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_405 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorTop;
 			NullCheck(L_405);
 			int32_t L_406 = 2;
 			int32_t L_407 = (L_405)->GetAt(static_cast<il2cpp_array_size_t>(L_406));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_404, 4, 8, (-1), L_407, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1422>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1431>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_408 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_409 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_409);
 			int32_t L_410 = 2;
 			int32_t L_411 = (L_409)->GetAt(static_cast<il2cpp_array_size_t>(L_410));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_408, 3, 5, (-1), L_411, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1423>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1432>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_412 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_413 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_413);
 			int32_t L_414 = 1;
 			int32_t L_415 = (L_413)->GetAt(static_cast<il2cpp_array_size_t>(L_414));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_412, 2, 2, (-1), L_415, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1424>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1433>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_416 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_417 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_417);
 			int32_t L_418 = 0;
 			int32_t L_419 = (L_417)->GetAt(static_cast<il2cpp_array_size_t>(L_418));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_416, 1, 1, (-1), L_419, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1425>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1434>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_420 = ___0_g;
 			GameCanvas_paintCloud_m720FE2AD098A29A62D5542DC4FBE0EACC1ECD82D(L_420, NULL);
 			goto IL_091a_1;
@@ -12674,7 +12810,7 @@ IL_0834_1:
 
 IL_089c_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1429>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1438>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_421 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_422 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
@@ -12700,7 +12836,7 @@ IL_089c_1:
 			int32_t L_436 = 2;
 			int32_t L_437 = (L_435)->GetAt(static_cast<il2cpp_array_size_t>(L_436));
 			GameCanvas_fillRect_m192C5D5EA43618DD8C51CF7D191D211DC25AD186(L_421, L_424, 0, ((int32_t)il2cpp_codegen_add(L_427, L_430)), L_431, ((int32_t)il2cpp_codegen_add(L_434, L_437)), 6, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1430>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1439>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_438 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_439 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorTop;
 			NullCheck(L_439);
@@ -12711,24 +12847,24 @@ IL_089c_1:
 			int32_t L_443 = 3;
 			int32_t L_444 = (L_442)->GetAt(static_cast<il2cpp_array_size_t>(L_443));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_438, 4, 6, L_441, L_444, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1431>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1440>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_445 = ___0_g;
 			GameCanvas_drawSun1_m75087D4E7F05B31303ACC006BB25ADB2B2F259D8(L_445, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1432>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1441>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_446 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_447 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_447);
 			int32_t L_448 = 2;
 			int32_t L_449 = (L_447)->GetAt(static_cast<il2cpp_array_size_t>(L_448));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_446, 3, 4, (-1), L_449, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1433>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1442>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_450 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_451 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_451);
 			int32_t L_452 = 1;
 			int32_t L_453 = (L_451)->GetAt(static_cast<il2cpp_array_size_t>(L_452));
 			GameCanvas_paintBackgroundtLayer_mDA59FEF633EF881761D00DA2E13931250852EC7D(L_450, 2, 3, (-1), L_453, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1434>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1443>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_454 = ___0_g;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_455 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			NullCheck(L_455);
@@ -12739,24 +12875,24 @@ IL_089c_1:
 
 IL_091a_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1436>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1445>
 			goto IL_09fd;
 		}
 
 IL_091f_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1438>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1447>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_458 = ___0_g;
 			NullCheck(L_458);
 			mGraphics_setColor_m6D037E4A78016A5277A10A76AFAB06F3A0733156(L_458, ((int32_t)2315859), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1439>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1448>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_459 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_460 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
 			int32_t L_461 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
 			NullCheck(L_459);
 			mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(L_459, 0, 0, L_460, L_461, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1440>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1449>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_462 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___tam;
 			if (!L_462)
 			{
@@ -12764,7 +12900,7 @@ IL_091f_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1442>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1451>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			int32_t L_463 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmx;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
@@ -12778,7 +12914,7 @@ IL_091f_1:
 
 IL_095a_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1444>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1453>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_466 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_467 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___tam;
@@ -12788,7 +12924,7 @@ IL_095a_1:
 			int32_t L_470 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
 			NullCheck(L_466);
 			mGraphics_drawImage_mB4F389D1F0ADBB67BD4DE66B5371C7CCED9B3110(L_466, L_467, L_468, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(((int32_t)(L_469>>3)), ((int32_t)(L_470/2)))), ((int32_t)50))), 0, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1442>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1451>
 			int32_t L_471 = V_4;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_472 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___tam;
 			il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
@@ -12799,7 +12935,7 @@ IL_095a_1:
 
 IL_0989_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1442>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1451>
 			int32_t L_474 = V_4;
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			int32_t L_475 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gW;
@@ -12811,11 +12947,11 @@ IL_0989_1:
 
 IL_0992_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1447>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1456>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_476 = ___0_g;
 			NullCheck(L_476);
 			mGraphics_setColor_m6D037E4A78016A5277A10A76AFAB06F3A0733156(L_476, ((int32_t)5084791), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1448>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1457>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_477 = ___0_g;
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			int32_t L_478 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmy;
@@ -12829,7 +12965,7 @@ IL_0992_1:
 			int32_t L_483 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
 			NullCheck(L_477);
 			mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(L_477, 0, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(((int32_t)(L_478>>3)), ((int32_t)(L_479/2)))), ((int32_t)50))), L_481)), L_482, L_483, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1449>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1458>
 			goto IL_09fd;
 		}
 	}
@@ -12846,19 +12982,19 @@ IL_0992_1:
 CATCH_09c9:
 	{
 		Exception_t* L_484 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1450>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1452>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1459>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1461>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_485 = ___0_g;
 		NullCheck(L_485);
 		mGraphics_setColor_m6D037E4A78016A5277A10A76AFAB06F3A0733156(L_485, 0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1453>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1462>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_486 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var)));
 		int32_t L_487 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))))->___w;
 		int32_t L_488 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))))->___h;
 		NullCheck(L_486);
 		mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(L_486, 0, 0, L_487, L_488, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1454>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1463>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_489 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var)));
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_490 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))))->___imgBg;
@@ -12866,14 +13002,14 @@ CATCH_09c9:
 		int32_t L_492 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))))->___h;
 		NullCheck(L_489);
 		mGraphics_drawImageScale_m0DA8AEFA4E4E86307421FAE41AE4CF6879A0D315(L_489, L_490, 0, 0, L_491, L_492, 0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1455>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1464>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_09fd;
 	}
 
 IL_09fd:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1456>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1465>
 		return;
 	}
 }
@@ -12881,7 +13017,7 @@ IL_09fd:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_resetBg_m62166EFEF94B89617B2BDBF36E467F17B939C6E1 (const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1460>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1469>
 		return;
 	}
 }
@@ -12902,7 +13038,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_getYBackground_m2FE49015CADC9
 	try
 	{
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1466>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1475>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			int32_t L_0 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gH23;
 			V_0 = L_0;
@@ -12997,7 +13133,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_getYBackground_m2FE49015CADC9
 
 IL_0061_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1470>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1479>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			int32_t L_3 = V_0;
@@ -13007,7 +13143,7 @@ IL_0061_1:
 			int32_t L_6 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_5));
 			NullCheck(L_2);
 			(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_3, L_6)), ((int32_t)70))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1471>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1480>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_7 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_8);
@@ -13019,7 +13155,7 @@ IL_0061_1:
 			int32_t L_13 = (L_11)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
 			NullCheck(L_7);
 			(L_7)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_10, L_13)), ((int32_t)20))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1472>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1481>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_14 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_15 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_15);
@@ -13031,7 +13167,7 @@ IL_0061_1:
 			int32_t L_20 = (L_18)->GetAt(static_cast<il2cpp_array_size_t>(L_19));
 			NullCheck(L_14);
 			(L_14)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_17, L_20)), ((int32_t)30))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1473>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1482>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_21 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_22 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_22);
@@ -13043,13 +13179,13 @@ IL_0061_1:
 			int32_t L_27 = (L_25)->GetAt(static_cast<il2cpp_array_size_t>(L_26));
 			NullCheck(L_21);
 			(L_21)->SetAt(static_cast<il2cpp_array_size_t>(3), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_24, L_27)), ((int32_t)50))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1474>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1483>
 			goto IL_067a_1;
 		}
 
 IL_00c4_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1476>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1485>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_28 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			int32_t L_29 = V_0;
@@ -13059,7 +13195,7 @@ IL_00c4_1:
 			int32_t L_32 = (L_30)->GetAt(static_cast<il2cpp_array_size_t>(L_31));
 			NullCheck(L_28);
 			(L_28)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_29, L_32)), ((int32_t)120))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1477>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1486>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_33 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_34 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_34);
@@ -13071,7 +13207,7 @@ IL_00c4_1:
 			int32_t L_39 = (L_37)->GetAt(static_cast<il2cpp_array_size_t>(L_38));
 			NullCheck(L_33);
 			(L_33)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_36, L_39)), ((int32_t)40))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1478>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1487>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_40 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_41 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_41);
@@ -13079,7 +13215,7 @@ IL_00c4_1:
 			int32_t L_43 = (L_41)->GetAt(static_cast<il2cpp_array_size_t>(L_42));
 			NullCheck(L_40);
 			(L_40)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)((int32_t)il2cpp_codegen_subtract(L_43, ((int32_t)90))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1479>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1488>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_44 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_45 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_45);
@@ -13087,13 +13223,13 @@ IL_00c4_1:
 			int32_t L_47 = (L_45)->GetAt(static_cast<il2cpp_array_size_t>(L_46));
 			NullCheck(L_44);
 			(L_44)->SetAt(static_cast<il2cpp_array_size_t>(3), (int32_t)((int32_t)il2cpp_codegen_subtract(L_47, ((int32_t)25))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1480>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1489>
 			goto IL_067a_1;
 		}
 
 IL_0117_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1482>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1491>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_48 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			int32_t L_49 = V_0;
@@ -13103,7 +13239,7 @@ IL_0117_1:
 			int32_t L_52 = (L_50)->GetAt(static_cast<il2cpp_array_size_t>(L_51));
 			NullCheck(L_48);
 			(L_48)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_49, L_52)), ((int32_t)150))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1483>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1492>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_53 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_54 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_54);
@@ -13115,7 +13251,7 @@ IL_0117_1:
 			int32_t L_59 = (L_57)->GetAt(static_cast<il2cpp_array_size_t>(L_58));
 			NullCheck(L_53);
 			(L_53)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_56, L_59)), ((int32_t)60))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1484>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1493>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_60 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_61 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_61);
@@ -13127,7 +13263,7 @@ IL_0117_1:
 			int32_t L_66 = (L_64)->GetAt(static_cast<il2cpp_array_size_t>(L_65));
 			NullCheck(L_60);
 			(L_60)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_63, L_66)), ((int32_t)40))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1485>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1494>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_67 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_68 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_68);
@@ -13139,7 +13275,7 @@ IL_0117_1:
 			int32_t L_73 = (L_71)->GetAt(static_cast<il2cpp_array_size_t>(L_72));
 			NullCheck(L_67);
 			(L_67)->SetAt(static_cast<il2cpp_array_size_t>(3), (int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_70, L_73)), ((int32_t)10))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1486>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1495>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_74 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_75 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_75);
@@ -13151,13 +13287,13 @@ IL_0117_1:
 			int32_t L_80 = (L_78)->GetAt(static_cast<il2cpp_array_size_t>(L_79));
 			NullCheck(L_74);
 			(L_74)->SetAt(static_cast<il2cpp_array_size_t>(4), (int32_t)((int32_t)il2cpp_codegen_subtract(L_77, L_80)));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1487>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1496>
 			goto IL_067a_1;
 		}
 
 IL_0193_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1489>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1498>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_81 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			int32_t L_82 = V_0;
@@ -13167,7 +13303,7 @@ IL_0193_1:
 			int32_t L_85 = (L_83)->GetAt(static_cast<il2cpp_array_size_t>(L_84));
 			NullCheck(L_81);
 			(L_81)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_82, L_85)), ((int32_t)10))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1490>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1499>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_86 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_87 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_87);
@@ -13175,7 +13311,7 @@ IL_0193_1:
 			int32_t L_89 = (L_87)->GetAt(static_cast<il2cpp_array_size_t>(L_88));
 			NullCheck(L_86);
 			(L_86)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)((int32_t)il2cpp_codegen_add(L_89, ((int32_t)80))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1491>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1500>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_90 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_91 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_91);
@@ -13187,13 +13323,13 @@ IL_0193_1:
 			int32_t L_96 = (L_94)->GetAt(static_cast<il2cpp_array_size_t>(L_95));
 			NullCheck(L_90);
 			(L_90)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_93, L_96)), ((int32_t)10))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1492>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1501>
 			goto IL_067a_1;
 		}
 
 IL_01d5_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1494>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1503>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_97 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			int32_t L_98 = V_0;
@@ -13203,7 +13339,7 @@ IL_01d5_1:
 			int32_t L_101 = (L_99)->GetAt(static_cast<il2cpp_array_size_t>(L_100));
 			NullCheck(L_97);
 			(L_97)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_98, L_101)), ((int32_t)130))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1495>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1504>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_102 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_103 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_103);
@@ -13215,7 +13351,7 @@ IL_01d5_1:
 			int32_t L_108 = (L_106)->GetAt(static_cast<il2cpp_array_size_t>(L_107));
 			NullCheck(L_102);
 			(L_102)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)((int32_t)il2cpp_codegen_subtract(L_105, L_108)));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1496>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1505>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_109 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_110 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_110);
@@ -13227,7 +13363,7 @@ IL_01d5_1:
 			int32_t L_115 = (L_113)->GetAt(static_cast<il2cpp_array_size_t>(L_114));
 			NullCheck(L_109);
 			(L_109)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_112, L_115)), ((int32_t)20))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1497>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1506>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_116 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_117 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_117);
@@ -13239,13 +13375,13 @@ IL_01d5_1:
 			int32_t L_122 = (L_120)->GetAt(static_cast<il2cpp_array_size_t>(L_121));
 			NullCheck(L_116);
 			(L_116)->SetAt(static_cast<il2cpp_array_size_t>(3), (int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_119, L_122)), ((int32_t)80))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1498>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1507>
 			goto IL_067a_1;
 		}
 
 IL_0238_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1500>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1509>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_123 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			int32_t L_124 = V_0;
@@ -13255,7 +13391,7 @@ IL_0238_1:
 			int32_t L_127 = (L_125)->GetAt(static_cast<il2cpp_array_size_t>(L_126));
 			NullCheck(L_123);
 			(L_123)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_124, L_127)), ((int32_t)40))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1501>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1510>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_128 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_129 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_129);
@@ -13267,7 +13403,7 @@ IL_0238_1:
 			int32_t L_134 = (L_132)->GetAt(static_cast<il2cpp_array_size_t>(L_133));
 			NullCheck(L_128);
 			(L_128)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_131, L_134)), ((int32_t)10))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1502>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1511>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_135 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_136 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_136);
@@ -13279,7 +13415,7 @@ IL_0238_1:
 			int32_t L_141 = (L_139)->GetAt(static_cast<il2cpp_array_size_t>(L_140));
 			NullCheck(L_135);
 			(L_135)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_138, L_141)), ((int32_t)15))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1503>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1512>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_142 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_143 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_143);
@@ -13291,13 +13427,13 @@ IL_0238_1:
 			int32_t L_148 = (L_146)->GetAt(static_cast<il2cpp_array_size_t>(L_147));
 			NullCheck(L_142);
 			(L_142)->SetAt(static_cast<il2cpp_array_size_t>(3), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_145, L_148)), ((int32_t)50))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1504>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1513>
 			goto IL_067a_1;
 		}
 
 IL_029b_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1506>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1515>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_149 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			int32_t L_150 = V_0;
@@ -13307,7 +13443,7 @@ IL_029b_1:
 			int32_t L_153 = (L_151)->GetAt(static_cast<il2cpp_array_size_t>(L_152));
 			NullCheck(L_149);
 			(L_149)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_150, L_153)), ((int32_t)100))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1507>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1516>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_154 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_155 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_155);
@@ -13319,7 +13455,7 @@ IL_029b_1:
 			int32_t L_160 = (L_158)->GetAt(static_cast<il2cpp_array_size_t>(L_159));
 			NullCheck(L_154);
 			(L_154)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_157, L_160)), ((int32_t)30))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1508>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1517>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_161 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_162 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_162);
@@ -13331,7 +13467,7 @@ IL_029b_1:
 			int32_t L_167 = (L_165)->GetAt(static_cast<il2cpp_array_size_t>(L_166));
 			NullCheck(L_161);
 			(L_161)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_164, L_167)), ((int32_t)10))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1509>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1518>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_168 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_169 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_169);
@@ -13343,7 +13479,7 @@ IL_029b_1:
 			int32_t L_174 = (L_172)->GetAt(static_cast<il2cpp_array_size_t>(L_173));
 			NullCheck(L_168);
 			(L_168)->SetAt(static_cast<il2cpp_array_size_t>(3), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_171, L_174)), ((int32_t)15))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1510>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1519>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_175 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_176 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_176);
@@ -13355,13 +13491,13 @@ IL_029b_1:
 			int32_t L_181 = (L_179)->GetAt(static_cast<il2cpp_array_size_t>(L_180));
 			NullCheck(L_175);
 			(L_175)->SetAt(static_cast<il2cpp_array_size_t>(4), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_178, L_181)), ((int32_t)15))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1511>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1520>
 			goto IL_067a_1;
 		}
 
 IL_0317_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1513>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1522>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_182 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			int32_t L_183 = V_0;
@@ -13371,7 +13507,7 @@ IL_0317_1:
 			int32_t L_186 = (L_184)->GetAt(static_cast<il2cpp_array_size_t>(L_185));
 			NullCheck(L_182);
 			(L_182)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_183, L_186)), ((int32_t)20))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1514>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1523>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_187 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_188 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_188);
@@ -13383,7 +13519,7 @@ IL_0317_1:
 			int32_t L_193 = (L_191)->GetAt(static_cast<il2cpp_array_size_t>(L_192));
 			NullCheck(L_187);
 			(L_187)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_190, L_193)), ((int32_t)15))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1515>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1524>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_194 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_195 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_195);
@@ -13395,7 +13531,7 @@ IL_0317_1:
 			int32_t L_200 = (L_198)->GetAt(static_cast<il2cpp_array_size_t>(L_199));
 			NullCheck(L_194);
 			(L_194)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_197, L_200)), ((int32_t)20))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1516>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1525>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_201 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_202 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_202);
@@ -13407,19 +13543,19 @@ IL_0317_1:
 			int32_t L_207 = (L_205)->GetAt(static_cast<il2cpp_array_size_t>(L_206));
 			NullCheck(L_201);
 			(L_201)->SetAt(static_cast<il2cpp_array_size_t>(3), (int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_204, L_207)), ((int32_t)10))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1517>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1526>
 			goto IL_067a_1;
 		}
 
 IL_037a_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1519>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1528>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_208 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			int32_t L_209 = V_0;
 			NullCheck(L_208);
 			(L_208)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_209, ((int32_t)103))), ((int32_t)150))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1520>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1529>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_210 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___mapID;
 			if ((!(((uint32_t)L_210) == ((uint32_t)((int32_t)103)))))
@@ -13428,7 +13564,7 @@ IL_037a_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1522>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1531>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_211 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_211);
@@ -13439,7 +13575,7 @@ IL_037a_1:
 
 IL_03a5_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1524>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1533>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_214 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_215 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
@@ -13452,7 +13588,7 @@ IL_03a5_1:
 			int32_t L_220 = (L_218)->GetAt(static_cast<il2cpp_array_size_t>(L_219));
 			NullCheck(L_214);
 			(L_214)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_217, L_220)), ((int32_t)10))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1525>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1534>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_221 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_222 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_222);
@@ -13464,7 +13600,7 @@ IL_03a5_1:
 			int32_t L_227 = (L_225)->GetAt(static_cast<il2cpp_array_size_t>(L_226));
 			NullCheck(L_221);
 			(L_221)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_224, L_227)), ((int32_t)40))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1526>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1535>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_228 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_229 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_229);
@@ -13476,13 +13612,13 @@ IL_03a5_1:
 			int32_t L_234 = (L_232)->GetAt(static_cast<il2cpp_array_size_t>(L_233));
 			NullCheck(L_228);
 			(L_228)->SetAt(static_cast<il2cpp_array_size_t>(3), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_231, L_234)), ((int32_t)10))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1527>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1536>
 			goto IL_067a_1;
 		}
 
 IL_03f5_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1529>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1538>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_235 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			int32_t L_236 = V_0;
@@ -13492,7 +13628,7 @@ IL_03f5_1:
 			int32_t L_239 = (L_237)->GetAt(static_cast<il2cpp_array_size_t>(L_238));
 			NullCheck(L_235);
 			(L_235)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_236, L_239)), ((int32_t)100))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1530>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1539>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_240 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_241 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_241);
@@ -13504,7 +13640,7 @@ IL_03f5_1:
 			int32_t L_246 = (L_244)->GetAt(static_cast<il2cpp_array_size_t>(L_245));
 			NullCheck(L_240);
 			(L_240)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_243, L_246)), ((int32_t)22))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1531>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1540>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_247 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_248 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_248);
@@ -13516,7 +13652,7 @@ IL_03f5_1:
 			int32_t L_253 = (L_251)->GetAt(static_cast<il2cpp_array_size_t>(L_252));
 			NullCheck(L_247);
 			(L_247)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_250, L_253)), ((int32_t)50))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1532>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1541>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_254 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_255 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_255);
@@ -13528,13 +13664,13 @@ IL_03f5_1:
 			int32_t L_260 = (L_258)->GetAt(static_cast<il2cpp_array_size_t>(L_259));
 			NullCheck(L_254);
 			(L_254)->SetAt(static_cast<il2cpp_array_size_t>(3), (int32_t)((int32_t)il2cpp_codegen_subtract(L_257, L_260)));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1533>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1542>
 			goto IL_067a_1;
 		}
 
 IL_0455_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1535>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1544>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_261 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			int32_t L_262 = V_0;
@@ -13544,7 +13680,7 @@ IL_0455_1:
 			int32_t L_265 = (L_263)->GetAt(static_cast<il2cpp_array_size_t>(L_264));
 			NullCheck(L_261);
 			(L_261)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_262, L_265)), ((int32_t)45))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1536>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1545>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_266 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_267 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_267);
@@ -13556,13 +13692,13 @@ IL_0455_1:
 			int32_t L_272 = (L_270)->GetAt(static_cast<il2cpp_array_size_t>(L_271));
 			NullCheck(L_266);
 			(L_266)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_269, L_272)), ((int32_t)10))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1537>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1546>
 			goto IL_067a_1;
 		}
 
 IL_0486_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1539>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1548>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_273 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			int32_t L_274 = V_0;
@@ -13572,7 +13708,7 @@ IL_0486_1:
 			int32_t L_277 = (L_275)->GetAt(static_cast<il2cpp_array_size_t>(L_276));
 			NullCheck(L_273);
 			(L_273)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_274, L_277)), ((int32_t)60))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1540>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1549>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_278 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_279 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_279);
@@ -13584,7 +13720,7 @@ IL_0486_1:
 			int32_t L_284 = (L_282)->GetAt(static_cast<il2cpp_array_size_t>(L_283));
 			NullCheck(L_278);
 			(L_278)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_281, L_284)), 5)));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1541>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1550>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_285 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_286 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_286);
@@ -13596,19 +13732,19 @@ IL_0486_1:
 			int32_t L_291 = (L_289)->GetAt(static_cast<il2cpp_array_size_t>(L_290));
 			NullCheck(L_285);
 			(L_285)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_288, L_291)), ((int32_t)15))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1542>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1551>
 			goto IL_067a_1;
 		}
 
 IL_04cf_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1544>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1553>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_292 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			int32_t L_293 = V_0;
 			NullCheck(L_292);
 			(L_292)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)il2cpp_codegen_add(L_293, ((int32_t)40))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1545>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1554>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_294 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_295 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_295);
@@ -13616,7 +13752,7 @@ IL_04cf_1:
 			int32_t L_297 = (L_295)->GetAt(static_cast<il2cpp_array_size_t>(L_296));
 			NullCheck(L_294);
 			(L_294)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)((int32_t)il2cpp_codegen_subtract(L_297, ((int32_t)40))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1546>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1555>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_298 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_299 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_299);
@@ -13624,19 +13760,19 @@ IL_04cf_1:
 			int32_t L_301 = (L_299)->GetAt(static_cast<il2cpp_array_size_t>(L_300));
 			NullCheck(L_298);
 			(L_298)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)((int32_t)il2cpp_codegen_subtract(L_301, ((int32_t)40))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1547>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1556>
 			goto IL_067a_1;
 		}
 
 IL_0501_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1549>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1558>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_302 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			int32_t L_303 = V_0;
 			NullCheck(L_302);
 			(L_302)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)il2cpp_codegen_subtract(L_303, ((int32_t)80))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1550>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1559>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_304 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_305 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_305);
@@ -13644,19 +13780,19 @@ IL_0501_1:
 			int32_t L_307 = (L_305)->GetAt(static_cast<il2cpp_array_size_t>(L_306));
 			NullCheck(L_304);
 			(L_304)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)L_307);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1551>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1560>
 			goto IL_067a_1;
 		}
 
 IL_051f_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1553>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1562>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_308 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			int32_t L_309 = V_0;
 			NullCheck(L_308);
 			(L_308)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)il2cpp_codegen_subtract(L_309, ((int32_t)20))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1554>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1563>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_310 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_311 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_311);
@@ -13664,13 +13800,13 @@ IL_051f_1:
 			int32_t L_313 = (L_311)->GetAt(static_cast<il2cpp_array_size_t>(L_312));
 			NullCheck(L_310);
 			(L_310)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)((int32_t)il2cpp_codegen_subtract(L_313, ((int32_t)80))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1555>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1564>
 			goto IL_067a_1;
 		}
 
 IL_0540_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1557>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1566>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_314 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			int32_t L_315 = V_0;
@@ -13680,7 +13816,7 @@ IL_0540_1:
 			int32_t L_318 = (L_316)->GetAt(static_cast<il2cpp_array_size_t>(L_317));
 			NullCheck(L_314);
 			(L_314)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_315, L_318)), ((int32_t)75))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1558>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1567>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_319 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_320 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_320);
@@ -13692,7 +13828,7 @@ IL_0540_1:
 			int32_t L_325 = (L_323)->GetAt(static_cast<il2cpp_array_size_t>(L_324));
 			NullCheck(L_319);
 			(L_319)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_322, L_325)), ((int32_t)50))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1559>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1568>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_326 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_327 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_327);
@@ -13704,7 +13840,7 @@ IL_0540_1:
 			int32_t L_332 = (L_330)->GetAt(static_cast<il2cpp_array_size_t>(L_331));
 			NullCheck(L_326);
 			(L_326)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_329, L_332)), ((int32_t)50))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1560>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1569>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_333 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_334 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_334);
@@ -13716,13 +13852,13 @@ IL_0540_1:
 			int32_t L_339 = (L_337)->GetAt(static_cast<il2cpp_array_size_t>(L_338));
 			NullCheck(L_333);
 			(L_333)->SetAt(static_cast<il2cpp_array_size_t>(3), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_336, L_339)), ((int32_t)90))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1561>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1570>
 			goto IL_067a_1;
 		}
 
 IL_05a3_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1563>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1572>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_340 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			int32_t L_341 = V_0;
@@ -13732,7 +13868,7 @@ IL_05a3_1:
 			int32_t L_344 = (L_342)->GetAt(static_cast<il2cpp_array_size_t>(L_343));
 			NullCheck(L_340);
 			(L_340)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_341, L_344)), ((int32_t)150))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1564>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1573>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_345 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_346 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_346);
@@ -13744,7 +13880,7 @@ IL_05a3_1:
 			int32_t L_351 = (L_349)->GetAt(static_cast<il2cpp_array_size_t>(L_350));
 			NullCheck(L_345);
 			(L_345)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_348, L_351)), ((int32_t)60))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1565>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1574>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_352 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_353 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_353);
@@ -13756,7 +13892,7 @@ IL_05a3_1:
 			int32_t L_358 = (L_356)->GetAt(static_cast<il2cpp_array_size_t>(L_357));
 			NullCheck(L_352);
 			(L_352)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_355, L_358)), ((int32_t)40))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1566>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1575>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_359 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_360 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_360);
@@ -13768,7 +13904,7 @@ IL_05a3_1:
 			int32_t L_365 = (L_363)->GetAt(static_cast<il2cpp_array_size_t>(L_364));
 			NullCheck(L_359);
 			(L_359)->SetAt(static_cast<il2cpp_array_size_t>(3), (int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_362, L_365)), ((int32_t)10))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1567>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1576>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_366 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_367 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_367);
@@ -13780,13 +13916,13 @@ IL_05a3_1:
 			int32_t L_372 = (L_370)->GetAt(static_cast<il2cpp_array_size_t>(L_371));
 			NullCheck(L_366);
 			(L_366)->SetAt(static_cast<il2cpp_array_size_t>(4), (int32_t)((int32_t)il2cpp_codegen_subtract(L_369, L_372)));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1568>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1577>
 			goto IL_067a_1;
 		}
 
 IL_061c_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1570>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1579>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_373 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			int32_t L_374 = V_0;
@@ -13796,7 +13932,7 @@ IL_061c_1:
 			int32_t L_377 = (L_375)->GetAt(static_cast<il2cpp_array_size_t>(L_376));
 			NullCheck(L_373);
 			(L_373)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_374, L_377)), ((int32_t)75))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1571>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1580>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_378 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_379 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_379);
@@ -13808,7 +13944,7 @@ IL_061c_1:
 			int32_t L_384 = (L_382)->GetAt(static_cast<il2cpp_array_size_t>(L_383));
 			NullCheck(L_378);
 			(L_378)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_381, L_384)), ((int32_t)50))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1572>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1581>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_385 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_386 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_386);
@@ -13820,7 +13956,7 @@ IL_061c_1:
 			int32_t L_391 = (L_389)->GetAt(static_cast<il2cpp_array_size_t>(L_390));
 			NullCheck(L_385);
 			(L_385)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(L_388, L_391)), ((int32_t)50))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1573>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1582>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_392 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_393 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_393);
@@ -13836,7 +13972,7 @@ IL_061c_1:
 
 IL_067a_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1576>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1585>
 			goto IL_069f;
 		}
 	}
@@ -13854,31 +13990,31 @@ CATCH_067c:
 	{
 		{
 			Exception_t* L_399 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1577>
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1579>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1586>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1588>
 			il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var)));
 			int32_t L_400 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))))->___gH23;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1580>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1589>
 			V_1 = 0;
 			goto IL_0693;
 		}
 
 IL_0687:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1582>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1591>
 			il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var)));
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_401 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))))->___yb;
 			int32_t L_402 = V_1;
 			NullCheck(L_401);
 			(L_401)->SetAt(static_cast<il2cpp_array_size_t>(L_402), (int32_t)1);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1580>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1589>
 			int32_t L_403 = V_1;
 			V_1 = ((int32_t)il2cpp_codegen_add(L_403, 1));
 		}
 
 IL_0693:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1580>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1589>
 			int32_t L_404 = V_1;
 			il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var)));
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_405 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))))->___yb;
@@ -13889,7 +14025,7 @@ IL_0693:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1584>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1593>
 			IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 			goto IL_069f;
 		}
@@ -13897,7 +14033,7 @@ IL_0693:
 
 IL_069f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1585>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1594>
 		return;
 	}
 }
@@ -14033,10 +14169,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_loadBG_mAA676E2E917550F4E8157
 	try
 	{
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1591>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1600>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isLoadBGok = (bool)1;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1592>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1601>
 			int32_t L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if ((!(((uint32_t)L_0) == ((uint32_t)((int32_t)12)))))
 			{
@@ -14044,7 +14180,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_loadBG_mAA676E2E917550F4E8157
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1594>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1603>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_1 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___pxh;
 			il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
@@ -14054,7 +14190,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_loadBG_mAA676E2E917550F4E8157
 
 IL_001e_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1598>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1607>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_2 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___pxh;
 			il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
@@ -14063,14 +14199,14 @@ IL_001e_1:
 
 IL_002e_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1600>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1609>
 			il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 			BackgroudEffect_clearImage_mD2FC32757DEE05EA411EA2792CFFCD429180E7F2(NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1601>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1610>
 			int32_t L_3 = ___0_typeBG;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			GameCanvas_randomRaintEff_m27A8C928D647036EA30AF9F2232B71BD5777B62B(L_3, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1602>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1611>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_4 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___lastBgID;
 			int32_t L_5 = ___0_typeBG;
@@ -14100,61 +14236,61 @@ IL_004d_1:
 
 IL_0051_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1604>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1613>
 			goto IL_0ffe;
 		}
 
 IL_0056_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1606>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1615>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___transY = ((int32_t)12);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1607>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1616>
 			int32_t L_9 = ___0_typeBG;
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___lastBgID = ((int8_t)L_9);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1608>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1617>
 			int32_t L_10 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___bgType;
 			((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___lastType = ((int8_t)L_10);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1609>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1618>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_11 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)5);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_12 = L_11;
 			RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_13 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____2801FC54A131FE93DB81E56387DB4D65FBBE282FF90A4F85BE7C0ED6AFA80F97_FieldInfo_var) };
 			RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_12, L_13, NULL);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___layerSpeed = L_12;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___layerSpeed), (void*)L_12);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1610>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1619>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_14 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)5);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveX = L_14;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveX), (void*)L_14);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1611>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1620>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_15 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)5);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveXSpeed = L_15;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveXSpeed), (void*)L_15);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1612>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1621>
 			int32_t L_16 = ___0_typeBG;
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg = L_16;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1613>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1622>
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isBoltEff = (bool)0;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1614>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1623>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			int32_t L_17 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmy;
 			((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___firstY = L_17;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1615>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1624>
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG = (ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288*)NULL;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG), (void*)(ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288*)NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1616>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1625>
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgCloud = (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)NULL;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgCloud), (void*)(Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1617>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1626>
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun = (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)NULL;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun), (void*)(Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1618>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1627>
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgCaycot = (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)NULL;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgCaycot), (void*)(Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1619>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1628>
 			((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___firstY = (-1);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1620>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1629>
 			int32_t L_18 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			V_0 = L_18;
 			int32_t L_19 = V_0;
@@ -14248,22 +14384,22 @@ IL_0056_1:
 
 IL_0130_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1623>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1632>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_20;
 			L_20 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(_stringLiteral1A4C9DCF414D4AE5D41F0A4178781C1511044343, NULL);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgCaycot = L_20;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgCaycot), (void*)L_20);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1624>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1633>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_21 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)4);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_22 = L_21;
 			RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_23 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____49C16B6F0EF802F3AAF7FC52DC1E6925199EDDC6E255028182BBA4E236F8F855_FieldInfo_var) };
 			RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_22, L_23, NULL);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___layerSpeed = L_22;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___layerSpeed), (void*)L_22);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1625>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1634>
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg = 4;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1626>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1635>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_24 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___bgType;
 			if ((!(((uint32_t)L_24) == ((uint32_t)2))))
@@ -14272,27 +14408,27 @@ IL_0130_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1628>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1637>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___transY = 8;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1630>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1639>
 			goto IL_031e_1;
 		}
 
 IL_0171_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1632>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1641>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___transY = 7;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1633>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1642>
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg = 4;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1634>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1643>
 			goto IL_031e_1;
 		}
 
 IL_0182_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1636>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1645>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_25 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)5);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_26 = L_25;
 			NullCheck(L_26);
@@ -14300,34 +14436,34 @@ IL_0182_1:
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveX = L_26;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveX), (void*)L_26);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1637>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1646>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_27 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)5);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_28 = L_27;
 			NullCheck(L_28);
 			(L_28)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)2);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveXSpeed = L_28;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveXSpeed), (void*)L_28);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1638>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1647>
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg = 5;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1639>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1648>
 			goto IL_031e_1;
 		}
 
 IL_01ab_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1641>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1650>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg = 3;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1642>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1651>
 			goto IL_031e_1;
 		}
 
 IL_01b6_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1644>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1653>
 			il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 			BackgroudEffect_addEffect_m6327BD605C2ED37D83857F43F2AB248F5A986329(3, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1645>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1654>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_29 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)5);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_30 = L_29;
 			NullCheck(L_30);
@@ -14335,31 +14471,31 @@ IL_01b6_1:
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveX = L_30;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveX), (void*)L_30);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1646>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1655>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_31 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)5);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_32 = L_31;
 			NullCheck(L_32);
 			(L_32)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)1);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveXSpeed = L_32;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveXSpeed), (void*)L_32);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1647>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1656>
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg = 4;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1648>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1657>
 			goto IL_031e_1;
 		}
 
 IL_01e5_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1650>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1659>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg = 4;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1651>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1660>
 			goto IL_031e_1;
 		}
 
 IL_01f0_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1653>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1662>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_33 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)5);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_34 = L_33;
 			NullCheck(L_34);
@@ -14367,78 +14503,78 @@ IL_01f0_1:
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveX = L_34;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveX), (void*)L_34);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1654>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1663>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_35 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)5);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_36 = L_35;
 			NullCheck(L_36);
 			(L_36)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)2);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveXSpeed = L_36;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveXSpeed), (void*)L_36);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1655>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1664>
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg = 5;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1656>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1665>
 			goto IL_031e_1;
 		}
 
 IL_0219_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1658>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1667>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg = 4;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1659>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1668>
 			goto IL_031e_1;
 		}
 
 IL_0224_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1661>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1670>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___transY = 8;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1662>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1671>
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg = 4;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1663>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1672>
 			goto IL_031e_1;
 		}
 
 IL_0235_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1665>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1674>
 			il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 			BackgroudEffect_addEffect_m6327BD605C2ED37D83857F43F2AB248F5A986329(((int32_t)9), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1666>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1675>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg = 4;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1667>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1676>
 			goto IL_031e_1;
 		}
 
 IL_0247_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1669>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1678>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg = 2;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1670>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1679>
 			goto IL_031e_1;
 		}
 
 IL_0252_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1672>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1681>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___transY = 7;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1673>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1682>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_37 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___layerSpeed;
 			NullCheck(L_37);
 			(L_37)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)0);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1674>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1683>
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg = 3;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1675>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1684>
 			goto IL_031e_1;
 		}
 
 IL_026b_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1677>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1686>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_38 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)5);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_39 = L_38;
 			NullCheck(L_39);
@@ -14449,7 +14585,7 @@ IL_026b_1:
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveX = L_40;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveX), (void*)L_40);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1678>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1687>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_41 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)5);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_42 = L_41;
 			NullCheck(L_42);
@@ -14459,36 +14595,36 @@ IL_026b_1:
 			(L_43)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)1);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveXSpeed = L_43;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveXSpeed), (void*)L_43);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1679>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1688>
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg = 3;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1680>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1689>
 			goto IL_031e_1;
 		}
 
 IL_029c_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1682>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1691>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg = 2;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1683>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1692>
 			goto IL_031e_1;
 		}
 
 IL_02a4_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1685>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1694>
 			il2cpp_codegen_runtime_class_init_inline(Res_t42939C8A70541C5F8BBAC618E2AE68A048453E10_il2cpp_TypeInfo_var);
 			Res_outz_mF51EC000D16B49E001011B2C1BAD2F66E72C33D3(_stringLiteralC70099C0F9B6DAF6DFAC274D4C2683D45F3F2F65, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1686>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1695>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg = 2;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1687>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1696>
 			goto IL_031e_1;
 		}
 
 IL_02b6_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1689>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1698>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_44 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)4);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_45 = L_44;
 			RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_46 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____49C16B6F0EF802F3AAF7FC52DC1E6925199EDDC6E255028182BBA4E236F8F855_FieldInfo_var) };
@@ -14496,15 +14632,15 @@ IL_02b6_1:
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___layerSpeed = L_45;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___layerSpeed), (void*)L_45);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1690>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1699>
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg = 4;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1691>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1700>
 			goto IL_031e_1;
 		}
 
 IL_02d4_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1693>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1702>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_47 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)5);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_48 = L_47;
 			NullCheck(L_48);
@@ -14515,7 +14651,7 @@ IL_02d4_1:
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveX = L_49;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveX), (void*)L_49);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1694>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1703>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_50 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)5);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_51 = L_50;
 			NullCheck(L_51);
@@ -14525,15 +14661,15 @@ IL_02d4_1:
 			(L_52)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)1);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveXSpeed = L_52;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveXSpeed), (void*)L_52);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1695>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1704>
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg = 5;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1696>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1705>
 			goto IL_031e_1;
 		}
 
 IL_0302_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1698>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1707>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_53 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)4);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_54 = L_53;
 			RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_55 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____49C16B6F0EF802F3AAF7FC52DC1E6925199EDDC6E255028182BBA4E236F8F855_FieldInfo_var) };
@@ -14541,13 +14677,13 @@ IL_0302_1:
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___layerSpeed = L_54;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___layerSpeed), (void*)L_54);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1699>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1708>
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg = 4;
 		}
 
 IL_031e_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1702>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1711>
 			int32_t L_56 = ___0_typeBG;
 			if ((((int32_t)L_56) > ((int32_t)((int32_t)16))))
 			{
@@ -14555,7 +14691,7 @@ IL_031e_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1704>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1713>
 			il2cpp_codegen_runtime_class_init_inline(StaticObj_t15843870B235E7BABF322688916C45037C592835_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_57 = ((StaticObj_t15843870B235E7BABF322688916C45037C592835_StaticFields*)il2cpp_codegen_static_fields_for(StaticObj_t15843870B235E7BABF322688916C45037C592835_il2cpp_TypeInfo_var))->___SKYCOLOR;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
@@ -14573,7 +14709,7 @@ IL_0338_1:
 		try
 		{
 			{
-				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1710>
+				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1719>
 				il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 				String_t* L_61;
 				L_61 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg), NULL);
@@ -14583,7 +14719,7 @@ IL_0338_1:
 				String_t* L_63;
 				L_63 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(_stringLiteralCD27019656C5A4838643BC91AD43698DC29D06CF, L_61, L_62, _stringLiteralA15C898F015A9B0BC3268E8883CD03008A56DE26, NULL);
 				V_1 = L_63;
-				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1711>
+				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1720>
 				il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 				int32_t L_64 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___bgType;
 				if (!L_64)
@@ -14592,7 +14728,7 @@ IL_0338_1:
 				}
 			}
 			{
-				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1713>
+				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1722>
 				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_65 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)6);
 				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_66 = L_65;
 				NullCheck(L_66);
@@ -14628,16 +14764,16 @@ IL_0338_1:
 
 IL_03ad_2:
 			{
-				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1715>
+				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1724>
 				Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_76 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)1);
 				V_2 = L_76;
-				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1716>
+				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1725>
 				String_t* L_77 = V_1;
 				il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 				Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_78;
 				L_78 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(L_77, NULL);
 				V_3 = L_78;
-				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1717>
+				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1726>
 				Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_79 = V_3;
 				Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_80 = V_3;
 				il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
@@ -14645,13 +14781,13 @@ IL_03ad_2:
 				L_81 = mGraphics_getRealImageWidth_m95DBB7D6ADA744F17A88039901CEBABE375ED43B_inline(L_80, NULL);
 				NullCheck(L_79);
 				Image_getRGB_m5C830FF522660E224E47BC22D7E67452CE2EB01B(L_79, (&V_2), 0, 1, ((int32_t)(L_81/2)), 0, 1, 1, NULL);
-				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1718>
+				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1727>
 				Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_82 = V_2;
 				NullCheck(L_82);
 				int32_t L_83 = 0;
 				int32_t L_84 = (L_82)->GetAt(static_cast<il2cpp_array_size_t>(L_83));
 				((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___skyColor = L_84;
-				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1719>
+				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1728>
 				goto IL_03f1_1;
 			}
 		}
@@ -14668,8 +14804,8 @@ IL_03ad_2:
 CATCH_03da_1:
 		{
 			Exception_t* L_85 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1720>
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1722>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1729>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1731>
 			il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&StaticObj_t15843870B235E7BABF322688916C45037C592835_il2cpp_TypeInfo_var)));
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_86 = ((StaticObj_t15843870B235E7BABF322688916C45037C592835_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&StaticObj_t15843870B235E7BABF322688916C45037C592835_il2cpp_TypeInfo_var))))->___SKYCOLOR;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_87 = ((StaticObj_t15843870B235E7BABF322688916C45037C592835_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&StaticObj_t15843870B235E7BABF322688916C45037C592835_il2cpp_TypeInfo_var))))->___SKYCOLOR;
@@ -14679,14 +14815,14 @@ CATCH_03da_1:
 			int32_t L_89 = (L_86)->GetAt(static_cast<il2cpp_array_size_t>(L_88));
 			il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var)));
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))))->___skyColor = L_89;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1723>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1732>
 			IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 			goto IL_03f1_1;
 		}
 
 IL_03f1_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1725>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1734>
 			il2cpp_codegen_runtime_class_init_inline(StaticObj_t15843870B235E7BABF322688916C45037C592835_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_90 = ((StaticObj_t15843870B235E7BABF322688916C45037C592835_StaticFields*)il2cpp_codegen_static_fields_for(StaticObj_t15843870B235E7BABF322688916C45037C592835_il2cpp_TypeInfo_var))->___SKYCOLOR;
 			NullCheck(L_90);
@@ -14694,20 +14830,20 @@ IL_03f1_1:
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorTop = L_91;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorTop), (void*)L_91);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1726>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1735>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_92 = ((StaticObj_t15843870B235E7BABF322688916C45037C592835_StaticFields*)il2cpp_codegen_static_fields_for(StaticObj_t15843870B235E7BABF322688916C45037C592835_il2cpp_TypeInfo_var))->___SKYCOLOR;
 			NullCheck(L_92);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_93 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)((int32_t)(((RuntimeArray*)L_92)->max_length)));
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton = L_93;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton), (void*)L_93);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1727>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1736>
 			V_4 = 0;
 			goto IL_043e_1;
 		}
 
 IL_0418_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1729>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1738>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_94 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorTop;
 			int32_t L_95 = V_4;
@@ -14719,7 +14855,7 @@ IL_0418_1:
 			int32_t L_99 = (L_96)->GetAt(static_cast<il2cpp_array_size_t>(L_98));
 			NullCheck(L_94);
 			(L_94)->SetAt(static_cast<il2cpp_array_size_t>(L_95), (int32_t)L_99);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1730>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1739>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_100 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			int32_t L_101 = V_4;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_102 = ((StaticObj_t15843870B235E7BABF322688916C45037C592835_StaticFields*)il2cpp_codegen_static_fields_for(StaticObj_t15843870B235E7BABF322688916C45037C592835_il2cpp_TypeInfo_var))->___SKYCOLOR;
@@ -14729,14 +14865,14 @@ IL_0418_1:
 			int32_t L_105 = (L_102)->GetAt(static_cast<il2cpp_array_size_t>(L_104));
 			NullCheck(L_100);
 			(L_100)->SetAt(static_cast<il2cpp_array_size_t>(L_101), (int32_t)L_105);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1727>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1736>
 			int32_t L_106 = V_4;
 			V_4 = ((int32_t)il2cpp_codegen_add(L_106, 1));
 		}
 
 IL_043e_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1727>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1736>
 			int32_t L_107 = V_4;
 			il2cpp_codegen_runtime_class_init_inline(StaticObj_t15843870B235E7BABF322688916C45037C592835_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_108 = ((StaticObj_t15843870B235E7BABF322688916C45037C592835_StaticFields*)il2cpp_codegen_static_fields_for(StaticObj_t15843870B235E7BABF322688916C45037C592835_il2cpp_TypeInfo_var))->___SKYCOLOR;
@@ -14747,7 +14883,7 @@ IL_043e_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1732>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1741>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			bool L_109 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___lowGraphic;
 			if (!L_109)
@@ -14756,45 +14892,45 @@ IL_043e_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1734>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1743>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_110;
 			L_110 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(_stringLiteralFF93A7DBF8279F0AB9981143B30C7A8B159A1E57, NULL);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___tam = L_110;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___tam), (void*)L_110);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1735>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1744>
 			goto IL_0ffe;
 		}
 
 IL_0464_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1737>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1746>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_111 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg;
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_112 = (ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288*)(ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288*)SZArrayNew(ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288_il2cpp_TypeInfo_var, (uint32_t)L_111);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG = L_112;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG), (void*)L_112);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1738>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1747>
 			int32_t L_113 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_114 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)L_113);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___bgW = L_114;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___bgW), (void*)L_114);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1739>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1748>
 			int32_t L_115 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_116 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)L_115);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___bgH = L_116;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___bgH), (void*)L_116);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1740>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1749>
 			int32_t L_117 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_118 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)L_117);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton = L_118;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton), (void*)L_118);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1741>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1750>
 			int32_t L_119 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_120 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)L_119);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorTop = L_120;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorTop), (void*)L_120);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1742>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1751>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_121 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___bgType;
 			if ((!(((uint32_t)L_121) == ((uint32_t)((int32_t)100)))))
@@ -14803,7 +14939,7 @@ IL_0464_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1744>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1753>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_122 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_123;
@@ -14811,35 +14947,35 @@ IL_0464_1:
 			NullCheck(L_122);
 			ArrayElementTypeCheck (L_122, L_123);
 			(L_122)->SetAt(static_cast<il2cpp_array_size_t>(0), (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)L_123);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1745>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1754>
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_124 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_125;
 			L_125 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(_stringLiteral6D57FEB860A50A7A79C0871DC4EFEC4D5D7D865A, NULL);
 			NullCheck(L_124);
 			ArrayElementTypeCheck (L_124, L_125);
 			(L_124)->SetAt(static_cast<il2cpp_array_size_t>(1), (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)L_125);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1746>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1755>
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_126 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_127;
 			L_127 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(_stringLiteral4E4D9E976F6DE25437036C302362494F1CB5EBD5, NULL);
 			NullCheck(L_126);
 			ArrayElementTypeCheck (L_126, L_127);
 			(L_126)->SetAt(static_cast<il2cpp_array_size_t>(2), (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)L_127);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1747>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1756>
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_128 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_129;
 			L_129 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(_stringLiteral6BE41C2C3D6C079B989223A8B05FCBC9AD470BB4, NULL);
 			NullCheck(L_128);
 			ArrayElementTypeCheck (L_128, L_129);
 			(L_128)->SetAt(static_cast<il2cpp_array_size_t>(3), (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)L_129);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1748>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1757>
 			V_5 = 0;
 			goto IL_061a_1;
 		}
 
 IL_0507_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1750>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1759>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_130 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
 			int32_t L_131 = V_5;
@@ -14852,10 +14988,10 @@ IL_0507_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1752>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1761>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_134 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)1);
 			V_6 = L_134;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1753>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1762>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_135 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
 			int32_t L_136 = V_5;
@@ -14872,7 +15008,7 @@ IL_0507_1:
 			L_143 = mGraphics_getRealImageWidth_m95DBB7D6ADA744F17A88039901CEBABE375ED43B_inline(L_142, NULL);
 			NullCheck(L_138);
 			Image_getRGB_m5C830FF522660E224E47BC22D7E67452CE2EB01B(L_138, (&V_6), 0, 1, ((int32_t)(L_143/2)), 0, 1, 1, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1754>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1763>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_144 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorTop;
 			int32_t L_145 = V_5;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_146 = V_6;
@@ -14881,10 +15017,10 @@ IL_0507_1:
 			int32_t L_148 = (L_146)->GetAt(static_cast<il2cpp_array_size_t>(L_147));
 			NullCheck(L_144);
 			(L_144)->SetAt(static_cast<il2cpp_array_size_t>(L_145), (int32_t)L_148);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1755>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1764>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_149 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)1);
 			V_6 = L_149;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1756>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1765>
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_150 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
 			int32_t L_151 = V_5;
 			NullCheck(L_150);
@@ -14906,7 +15042,7 @@ IL_0507_1:
 			L_163 = mGraphics_getRealImageHeight_m77ADF099A530A4EA9D01A4F0DD440D0CAC524884_inline(L_162, NULL);
 			NullCheck(L_153);
 			Image_getRGB_m5C830FF522660E224E47BC22D7E67452CE2EB01B(L_153, (&V_6), 0, 1, ((int32_t)(L_158/2)), ((int32_t)il2cpp_codegen_subtract(L_163, 1)), 1, 1, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1757>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1766>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_164 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			int32_t L_165 = V_5;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_166 = V_6;
@@ -14915,7 +15051,7 @@ IL_0507_1:
 			int32_t L_168 = (L_166)->GetAt(static_cast<il2cpp_array_size_t>(L_167));
 			NullCheck(L_164);
 			(L_164)->SetAt(static_cast<il2cpp_array_size_t>(L_165), (int32_t)L_168);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1758>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1767>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_169 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___bgW;
 			int32_t L_170 = V_5;
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_171 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
@@ -14927,7 +15063,7 @@ IL_0507_1:
 			L_175 = mGraphics_getImageWidth_mA3B8B13BC6B4D4AB97574EE27D4D8BC17C232691(L_174, NULL);
 			NullCheck(L_169);
 			(L_169)->SetAt(static_cast<il2cpp_array_size_t>(L_170), (int32_t)L_175);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1759>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1768>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_176 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___bgH;
 			int32_t L_177 = V_5;
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_178 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
@@ -14944,7 +15080,7 @@ IL_0507_1:
 
 IL_05bc_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1761>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1770>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_183 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg;
 			if ((((int32_t)L_183) <= ((int32_t)1)))
@@ -14953,7 +15089,7 @@ IL_05bc_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1763>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1772>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_184 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
 			int32_t L_185 = V_5;
@@ -14966,7 +15102,7 @@ IL_05bc_1:
 			NullCheck(L_184);
 			ArrayElementTypeCheck (L_184, L_188);
 			(L_184)->SetAt(static_cast<il2cpp_array_size_t>(L_185), (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)L_188);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1764>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1773>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_189 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___bgW;
 			int32_t L_190 = V_5;
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_191 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
@@ -14979,7 +15115,7 @@ IL_05bc_1:
 			L_195 = mGraphics_getImageWidth_mA3B8B13BC6B4D4AB97574EE27D4D8BC17C232691(L_194, NULL);
 			NullCheck(L_189);
 			(L_189)->SetAt(static_cast<il2cpp_array_size_t>(L_190), (int32_t)L_195);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1765>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1774>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_196 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___bgH;
 			int32_t L_197 = V_5;
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_198 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
@@ -14995,14 +15131,14 @@ IL_05bc_1:
 
 IL_0614_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1748>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1757>
 			int32_t L_203 = V_5;
 			V_5 = ((int32_t)il2cpp_codegen_add(L_203, 1));
 		}
 
 IL_061a_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1748>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1757>
 			int32_t L_204 = V_5;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_205 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg;
@@ -15017,14 +15153,14 @@ IL_061a_1:
 
 IL_062b_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1771>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1780>
 			V_7 = 0;
 			goto IL_07c7_1;
 		}
 
 IL_0633_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1773>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1782>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			String_t* L_206;
 			L_206 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg), NULL);
@@ -15033,7 +15169,7 @@ IL_0633_1:
 			String_t* L_208;
 			L_208 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(_stringLiteralCD27019656C5A4838643BC91AD43698DC29D06CF, L_206, L_207, _stringLiteralA15C898F015A9B0BC3268E8883CD03008A56DE26, NULL);
 			V_8 = L_208;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1774>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1783>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_209 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___bgType;
 			if (!L_209)
@@ -15042,7 +15178,7 @@ IL_0633_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1776>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1785>
 			StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_210 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)6);
 			StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_211 = L_210;
 			NullCheck(L_211);
@@ -15077,7 +15213,7 @@ IL_0633_1:
 
 IL_06a5_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1778>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1787>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_221 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
 			int32_t L_222 = V_7;
@@ -15087,7 +15223,7 @@ IL_06a5_1:
 			NullCheck(L_221);
 			ArrayElementTypeCheck (L_221, L_224);
 			(L_221)->SetAt(static_cast<il2cpp_array_size_t>(L_222), (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)L_224);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1779>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1788>
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_225 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
 			int32_t L_226 = V_7;
 			NullCheck(L_225);
@@ -15099,10 +15235,10 @@ IL_06a5_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1781>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1790>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_229 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)1);
 			V_9 = L_229;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1782>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1791>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_230 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
 			int32_t L_231 = V_7;
@@ -15119,7 +15255,7 @@ IL_06a5_1:
 			L_238 = mGraphics_getRealImageWidth_m95DBB7D6ADA744F17A88039901CEBABE375ED43B_inline(L_237, NULL);
 			NullCheck(L_233);
 			Image_getRGB_m5C830FF522660E224E47BC22D7E67452CE2EB01B(L_233, (&V_9), 0, 1, ((int32_t)(L_238/2)), 0, 1, 1, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1783>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1792>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_239 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorTop;
 			int32_t L_240 = V_7;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_241 = V_9;
@@ -15128,10 +15264,10 @@ IL_06a5_1:
 			int32_t L_243 = (L_241)->GetAt(static_cast<il2cpp_array_size_t>(L_242));
 			NullCheck(L_239);
 			(L_239)->SetAt(static_cast<il2cpp_array_size_t>(L_240), (int32_t)L_243);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1784>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1793>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_244 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)1);
 			V_9 = L_244;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1785>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1794>
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_245 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
 			int32_t L_246 = V_7;
 			NullCheck(L_245);
@@ -15153,7 +15289,7 @@ IL_06a5_1:
 			L_258 = mGraphics_getRealImageHeight_m77ADF099A530A4EA9D01A4F0DD440D0CAC524884_inline(L_257, NULL);
 			NullCheck(L_248);
 			Image_getRGB_m5C830FF522660E224E47BC22D7E67452CE2EB01B(L_248, (&V_9), 0, 1, ((int32_t)(L_253/2)), ((int32_t)il2cpp_codegen_subtract(L_258, 1)), 1, 1, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1786>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1795>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_259 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___colorBotton;
 			int32_t L_260 = V_7;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_261 = V_9;
@@ -15162,7 +15298,7 @@ IL_06a5_1:
 			int32_t L_263 = (L_261)->GetAt(static_cast<il2cpp_array_size_t>(L_262));
 			NullCheck(L_259);
 			(L_259)->SetAt(static_cast<il2cpp_array_size_t>(L_260), (int32_t)L_263);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1787>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1796>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_264 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___bgW;
 			int32_t L_265 = V_7;
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_266 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
@@ -15174,7 +15310,7 @@ IL_06a5_1:
 			L_270 = mGraphics_getImageWidth_mA3B8B13BC6B4D4AB97574EE27D4D8BC17C232691(L_269, NULL);
 			NullCheck(L_264);
 			(L_264)->SetAt(static_cast<il2cpp_array_size_t>(L_265), (int32_t)L_270);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1788>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1797>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_271 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___bgH;
 			int32_t L_272 = V_7;
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_273 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
@@ -15191,7 +15327,7 @@ IL_06a5_1:
 
 IL_0769_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1790>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1799>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_278 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg;
 			if ((((int32_t)L_278) <= ((int32_t)1)))
@@ -15200,7 +15336,7 @@ IL_0769_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1792>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1801>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_279 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
 			int32_t L_280 = V_7;
@@ -15213,7 +15349,7 @@ IL_0769_1:
 			NullCheck(L_279);
 			ArrayElementTypeCheck (L_279, L_283);
 			(L_279)->SetAt(static_cast<il2cpp_array_size_t>(L_280), (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)L_283);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1793>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1802>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_284 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___bgW;
 			int32_t L_285 = V_7;
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_286 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
@@ -15226,7 +15362,7 @@ IL_0769_1:
 			L_290 = mGraphics_getImageWidth_mA3B8B13BC6B4D4AB97574EE27D4D8BC17C232691(L_289, NULL);
 			NullCheck(L_284);
 			(L_284)->SetAt(static_cast<il2cpp_array_size_t>(L_285), (int32_t)L_290);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1794>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1803>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_291 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___bgH;
 			int32_t L_292 = V_7;
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_293 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgBG;
@@ -15242,14 +15378,14 @@ IL_0769_1:
 
 IL_07c1_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1771>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1780>
 			int32_t L_298 = V_7;
 			V_7 = ((int32_t)il2cpp_codegen_add(L_298, 1));
 		}
 
 IL_07c7_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1771>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1780>
 			int32_t L_299 = V_7;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_300 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg;
@@ -15261,18 +15397,18 @@ IL_07c7_1:
 
 IL_07d3_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1798>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1807>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_301 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			GameCanvas_getYBackground_m2FE49015CADC9A00803DAEC36AF9C7A1536BE3E9(L_301, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1799>
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1800>
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1801>
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1802>
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1803>
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1804>
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1805>
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1806>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1808>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1809>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1810>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1811>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1812>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1813>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1814>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1815>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_302 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)5);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_303 = L_302;
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
@@ -15297,17 +15433,17 @@ IL_07d3_1:
 			(L_311)->SetAt(static_cast<il2cpp_array_size_t>(4), (int32_t)((int32_t)il2cpp_codegen_subtract(((int32_t)(L_312/2)), ((int32_t)120))));
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___cloudX = L_311;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___cloudX), (void*)L_311);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1807>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1816>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_313 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)5);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_314 = L_313;
 			RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_315 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____1C4002114678138F166A43B14AFF6F6A176629A0F06506084B1A7E9680351B34_FieldInfo_var) };
 			RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_314, L_315, NULL);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___cloudY = L_314;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___cloudY), (void*)L_314);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1808>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1817>
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSunSpec = (ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288*)NULL;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSunSpec), (void*)(ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288*)NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1809>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1818>
 			int32_t L_316 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if (!L_316)
 			{
@@ -15315,7 +15451,7 @@ IL_07d3_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1811>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1820>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_317 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if ((!(((uint32_t)L_317) == ((uint32_t)2))))
@@ -15324,23 +15460,23 @@ IL_07d3_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1813>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1822>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_318;
 			L_318 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(_stringLiteral8B67530CBA4D465A0CA07276CC1F6EF345907B89, NULL);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun = L_318;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun), (void*)L_318);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1814>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1823>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			int32_t L_319 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gW;
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunX = ((int32_t)il2cpp_codegen_add(((int32_t)(L_319/2)), ((int32_t)50)));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1815>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1824>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_320 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_320);
 			int32_t L_321 = 4;
 			int32_t L_322 = (L_320)->GetAt(static_cast<il2cpp_array_size_t>(L_321));
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunY = ((int32_t)il2cpp_codegen_subtract(L_322, ((int32_t)40)));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1816>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1825>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_323;
 			L_323 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(_stringLiteral0CBBEB8825D151BCAE6C217D7423439090B811A7, NULL);
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
@@ -15351,7 +15487,7 @@ IL_07d3_1:
 
 IL_0898_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1818>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1827>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_324 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if ((!(((uint32_t)L_324) == ((uint32_t)((int32_t)19)))))
@@ -15360,7 +15496,7 @@ IL_0898_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1820>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1829>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_325;
 			L_325 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(_stringLiteral1EBD10856098E11E3F1474BE2E6BD8A751A9FC3F, NULL);
@@ -15372,7 +15508,7 @@ IL_0898_1:
 
 IL_08b5_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1822>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1831>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_326 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if ((!(((uint32_t)L_326) == ((uint32_t)4))))
@@ -15381,17 +15517,17 @@ IL_08b5_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1824>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1833>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_327;
 			L_327 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(_stringLiteralF0540515B20754C399BC0C83FFE77290669FF61C, NULL);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun = L_327;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun), (void*)L_327);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1825>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1834>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			int32_t L_328 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gW;
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunX = ((int32_t)il2cpp_codegen_add(((int32_t)(L_328/2)), ((int32_t)30)));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1826>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1835>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_329 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_329);
 			int32_t L_330 = 3;
@@ -15402,7 +15538,7 @@ IL_08b5_1:
 
 IL_08ec_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1828>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1837>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_332 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if ((!(((uint32_t)L_332) == ((uint32_t)7))))
@@ -15411,7 +15547,7 @@ IL_08ec_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1830>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1839>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_333 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___bgType;
 			if (L_333)
@@ -15448,7 +15584,7 @@ IL_091e_1:
 			L_338 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(L_337, NULL);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun = L_338;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun), (void*)L_338);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1831>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1840>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_339 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___bgType;
 			if (L_339)
@@ -15485,21 +15621,21 @@ IL_0959_1:
 			L_344 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(L_343, NULL);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun2 = L_344;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun2), (void*)L_344);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1832>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1841>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			int32_t L_345 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gW;
 			int32_t L_346 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gW;
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunX = ((int32_t)il2cpp_codegen_subtract(L_345, ((int32_t)(L_346/3))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1833>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1842>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_347 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_347);
 			int32_t L_348 = 3;
 			int32_t L_349 = (L_347)->GetAt(static_cast<il2cpp_array_size_t>(L_348));
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunY = ((int32_t)il2cpp_codegen_subtract(L_349, ((int32_t)80)));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1834>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1843>
 			int32_t L_350 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunX;
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunX2 = ((int32_t)il2cpp_codegen_subtract(L_350, ((int32_t)100)));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1835>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1844>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_351 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_351);
 			int32_t L_352 = 3;
@@ -15510,7 +15646,7 @@ IL_0959_1:
 
 IL_09af_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1837>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1846>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_354 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if ((!(((uint32_t)L_354) == ((uint32_t)6))))
@@ -15519,7 +15655,7 @@ IL_09af_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1839>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1848>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_355 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___bgType;
 			if (L_355)
@@ -15556,7 +15692,7 @@ IL_09e1_1:
 			L_360 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(L_359, NULL);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun = L_360;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun), (void*)L_360);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1840>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1849>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_361 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___bgType;
 			if (L_361)
@@ -15593,21 +15729,21 @@ IL_0a1c_1:
 			L_366 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(L_365, NULL);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun2 = L_366;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun2), (void*)L_366);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1841>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1850>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			int32_t L_367 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gW;
 			int32_t L_368 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gW;
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunX = ((int32_t)il2cpp_codegen_subtract(L_367, ((int32_t)(L_368/3))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1842>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1851>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_369 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_369);
 			int32_t L_370 = 4;
 			int32_t L_371 = (L_369)->GetAt(static_cast<il2cpp_array_size_t>(L_370));
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunY = L_371;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1843>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1852>
 			int32_t L_372 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunX;
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunX2 = ((int32_t)il2cpp_codegen_subtract(L_372, ((int32_t)100)));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1844>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1853>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_373 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_373);
 			int32_t L_374 = 4;
@@ -15618,7 +15754,7 @@ IL_0a1c_1:
 
 IL_0a6f_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1846>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1855>
 			int32_t L_376 = ___0_typeBG;
 			if ((!(((uint32_t)L_376) == ((uint32_t)5))))
 			{
@@ -15626,7 +15762,7 @@ IL_0a6f_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1848>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1857>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_377 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___bgType;
 			if (L_377)
@@ -15663,7 +15799,7 @@ IL_0a9d_1:
 			L_382 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(L_381, NULL);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun = L_382;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun), (void*)L_382);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1849>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1858>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_383 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___bgType;
 			if (L_383)
@@ -15700,20 +15836,20 @@ IL_0ad8_1:
 			L_388 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(L_387, NULL);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun2 = L_388;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun2), (void*)L_388);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1850>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1859>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			int32_t L_389 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gW;
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunX = ((int32_t)il2cpp_codegen_subtract(((int32_t)(L_389/2)), ((int32_t)50)));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1851>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1860>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_390 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_390);
 			int32_t L_391 = 3;
 			int32_t L_392 = (L_390)->GetAt(static_cast<il2cpp_array_size_t>(L_391));
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunY = ((int32_t)il2cpp_codegen_add(L_392, ((int32_t)20)));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1852>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1861>
 			int32_t L_393 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gW;
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunX2 = ((int32_t)il2cpp_codegen_add(((int32_t)(L_393/2)), ((int32_t)20)));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1853>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1862>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_394 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_394);
 			int32_t L_395 = 3;
@@ -15724,7 +15860,7 @@ IL_0ad8_1:
 
 IL_0b2d_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1855>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1864>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_397 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___typeBg;
 			if ((!(((uint32_t)L_397) == ((uint32_t)8))))
@@ -15741,7 +15877,7 @@ IL_0b2d_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1857>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1866>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_399 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___bgType;
 			if (L_399)
@@ -15778,7 +15914,7 @@ IL_0b6b_1:
 			L_404 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(L_403, NULL);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun = L_404;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun), (void*)L_404);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1858>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1867>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_405 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___bgType;
 			if (L_405)
@@ -15815,20 +15951,20 @@ IL_0ba6_1:
 			L_410 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(L_409, NULL);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun2 = L_410;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun2), (void*)L_410);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1859>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1868>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			int32_t L_411 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gW;
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunX = ((int32_t)il2cpp_codegen_subtract(((int32_t)(L_411/2)), ((int32_t)30)));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1860>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1869>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_412 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_412);
 			int32_t L_413 = 3;
 			int32_t L_414 = (L_412)->GetAt(static_cast<il2cpp_array_size_t>(L_413));
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunY = ((int32_t)il2cpp_codegen_add(L_414, ((int32_t)60)));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1861>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1870>
 			int32_t L_415 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gW;
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunX2 = ((int32_t)il2cpp_codegen_add(((int32_t)(L_415/2)), ((int32_t)20)));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1862>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1871>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_416 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_416);
 			int32_t L_417 = 3;
@@ -15894,7 +16030,7 @@ IL_0bfb_1:
 
 IL_0c35_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1869>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1878>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_420 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___bgType;
 			if (L_420)
@@ -15931,7 +16067,7 @@ IL_0c5c_1:
 			L_425 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(L_424, NULL);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun = L_425;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun), (void*)L_425);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1870>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1879>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_426 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___bgType;
 			if (L_426)
@@ -15968,33 +16104,33 @@ IL_0c97_1:
 			L_431 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(L_430, NULL);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun2 = L_431;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun2), (void*)L_431);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1871>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1880>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			int32_t L_432 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gW;
 			int32_t L_433 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gW;
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunX = ((int32_t)il2cpp_codegen_subtract(L_432, ((int32_t)(L_433/3))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1872>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1881>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_434 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_434);
 			int32_t L_435 = 4;
 			int32_t L_436 = (L_434)->GetAt(static_cast<il2cpp_array_size_t>(L_435));
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunY = ((int32_t)il2cpp_codegen_add(L_436, ((int32_t)20)));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1873>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1882>
 			int32_t L_437 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunX;
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunX2 = ((int32_t)il2cpp_codegen_subtract(L_437, ((int32_t)80)));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1874>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1883>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_438 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_438);
 			int32_t L_439 = 4;
 			int32_t L_440 = (L_438)->GetAt(static_cast<il2cpp_array_size_t>(L_439));
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunY2 = ((int32_t)il2cpp_codegen_add(L_440, ((int32_t)40)));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1875>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1884>
 			goto IL_0fe0_1;
 		}
 
 IL_0ced_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1877>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1886>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_441 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___bgType;
 			if (L_441)
@@ -16031,7 +16167,7 @@ IL_0d14_1:
 			L_446 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(L_445, NULL);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun = L_446;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun), (void*)L_446);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1878>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1887>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_447 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___bgType;
 			if (L_447)
@@ -16068,33 +16204,33 @@ IL_0d4f_1:
 			L_452 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(L_451, NULL);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun2 = L_452;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun2), (void*)L_452);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1879>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1888>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			int32_t L_453 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gW;
 			int32_t L_454 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gW;
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunX = ((int32_t)il2cpp_codegen_subtract(L_453, ((int32_t)(L_454/3))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1880>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1889>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_455 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_455);
 			int32_t L_456 = 1;
 			int32_t L_457 = (L_455)->GetAt(static_cast<il2cpp_array_size_t>(L_456));
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunY = ((int32_t)il2cpp_codegen_subtract(L_457, ((int32_t)30)));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1881>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1890>
 			int32_t L_458 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunX;
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunX2 = ((int32_t)il2cpp_codegen_subtract(L_458, ((int32_t)80)));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1882>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1891>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_459 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_459);
 			int32_t L_460 = 1;
 			int32_t L_461 = (L_459)->GetAt(static_cast<il2cpp_array_size_t>(L_460));
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunY2 = L_461;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1883>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1892>
 			goto IL_0fe0_1;
 		}
 
 IL_0da2_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1885>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1894>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_462 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___bgType;
 			if (L_462)
@@ -16131,7 +16267,7 @@ IL_0dc9_1:
 			L_467 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(L_466, NULL);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun = L_467;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun), (void*)L_467);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1886>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1895>
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 			int32_t L_468 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___bgType;
 			if (L_468)
@@ -16168,23 +16304,23 @@ IL_0e04_1:
 			L_473 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(L_472, NULL);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun2 = L_473;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun2), (void*)L_473);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1887>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1896>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			int32_t L_474 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gW;
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunX = ((int32_t)il2cpp_codegen_subtract(((int32_t)(L_474/2)), ((int32_t)30)));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1888>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1897>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_475 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_475);
 			int32_t L_476 = 2;
 			int32_t L_477 = (L_475)->GetAt(static_cast<il2cpp_array_size_t>(L_476));
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunY = ((int32_t)il2cpp_codegen_subtract(L_477, ((int32_t)30)));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1889>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1898>
 			goto IL_0fe0_1;
 		}
 
 IL_0e3b_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1891>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1900>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_478 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)5);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_479 = L_478;
 			RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_480 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____F4A8F6B65008EA8872E1F35055E46B4E2A57D4996E3ECDCD5BE36C20421DCB80_FieldInfo_var) };
@@ -16192,13 +16328,13 @@ IL_0e3b_1:
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___cloudY = L_479;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___cloudY), (void*)L_479);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1892>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1901>
 			goto IL_0fe0_1;
 		}
 
 IL_0e56_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1895>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1904>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_481 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)7);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_482 = L_481;
 			RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_483 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____5764403FDC46230578CF9BADD27D1E4FCE92F9BE2F48455B39D0549D5E9F266F_FieldInfo_var) };
@@ -16206,16 +16342,16 @@ IL_0e56_1:
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___cloudX = L_482;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___cloudX), (void*)L_482);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1896>
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1897>
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1898>
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1899>
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1900>
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1901>
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1902>
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1903>
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1904>
 			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1905>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1906>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1907>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1908>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1909>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1910>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1911>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1912>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1913>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1914>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_484 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)7);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_485 = L_484;
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_486 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
@@ -16268,20 +16404,20 @@ IL_0e56_1:
 			(L_509)->SetAt(static_cast<il2cpp_array_size_t>(6), (int32_t)((int32_t)il2cpp_codegen_subtract(L_512, ((int32_t)40))));
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___cloudY = L_509;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___cloudY), (void*)L_509);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1906>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1915>
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_513 = (ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288*)(ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288*)SZArrayNew(ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288_il2cpp_TypeInfo_var, (uint32_t)7);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSunSpec = L_513;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSunSpec), (void*)L_513);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1907>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1916>
 			V_10 = 0;
 			goto IL_0f2d_1;
 		}
 
 IL_0ede_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1909>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1918>
 			V_11 = ((int32_t)161);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1910>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1919>
 			int32_t L_514 = V_10;
 			if (!L_514)
 			{
@@ -16319,13 +16455,13 @@ IL_0ede_1:
 
 IL_0efd_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1912>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1921>
 			V_11 = ((int32_t)160);
 		}
 
 IL_0f04_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1914>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1923>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_519 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSunSpec;
 			int32_t L_520 = V_10;
@@ -16338,14 +16474,14 @@ IL_0f04_1:
 			NullCheck(L_519);
 			ArrayElementTypeCheck (L_519, L_523);
 			(L_519)->SetAt(static_cast<il2cpp_array_size_t>(L_520), (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)L_523);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1907>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1916>
 			int32_t L_524 = V_10;
 			V_10 = ((int32_t)il2cpp_codegen_add(L_524, 1));
 		}
 
 IL_0f2d_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1907>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1916>
 			int32_t L_525 = V_10;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_526 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSunSpec;
@@ -16356,13 +16492,13 @@ IL_0f2d_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1916>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1925>
 			goto IL_0fe0_1;
 		}
 
 IL_0f3d_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1919>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1928>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_527 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)5);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_528 = L_527;
 			NullCheck(L_528);
@@ -16373,7 +16509,7 @@ IL_0f3d_1:
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveX = L_529;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveX), (void*)L_529);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1920>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1929>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_530 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)5);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_531 = L_530;
 			NullCheck(L_531);
@@ -16383,25 +16519,25 @@ IL_0f3d_1:
 			(L_532)->SetAt(static_cast<il2cpp_array_size_t>(2), (int32_t)1);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveXSpeed = L_532;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___moveXSpeed), (void*)L_532);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1921>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1930>
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___nBg = 5;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1922>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1931>
 			goto IL_0fe0_1;
 		}
 
 IL_0f6b_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1924>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1933>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgCloud = (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)NULL;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgCloud), (void*)(Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1925>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1934>
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun = (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)NULL;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun), (void*)(Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1926>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1935>
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun2 = (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)NULL;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun2), (void*)(Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1927>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1936>
 			String_t* L_533;
 			L_533 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&___0_typeBG), NULL);
 			il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
@@ -16444,12 +16580,12 @@ IL_0fab_1:
 			L_539 = GameCanvas_loadImageRMS_mE30B0A92A35294333F1D9552CF84359DB1EAE2DD(L_538, NULL);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun = L_539;
 			Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgSun), (void*)L_539);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1928>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1937>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			int32_t L_540 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gW;
 			int32_t L_541 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___gW;
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___sunX = ((int32_t)il2cpp_codegen_subtract(L_540, ((int32_t)(L_541/3))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1929>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1938>
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_542 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___yb;
 			NullCheck(L_542);
 			int32_t L_543 = 2;
@@ -16459,10 +16595,10 @@ IL_0fab_1:
 
 IL_0fe0_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1934>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1943>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___paintBG = (bool)0;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1935>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1944>
 			bool L_545 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___paintBG;
 			if (L_545)
 			{
@@ -16470,14 +16606,14 @@ IL_0fe0_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1937>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1946>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___paintBG = (bool)1;
 		}
 
 IL_0ff3_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1939>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1948>
 			goto IL_0ffe;
 		}
 	}
@@ -16494,18 +16630,18 @@ IL_0ff3_1:
 CATCH_0ff5:
 	{
 		Exception_t* L_546 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1940>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1942>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1949>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1951>
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var)));
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))))->___isLoadBGok = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1943>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1952>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0ffe;
 	}
 
 IL_0ffe:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1944>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1953>
 		return;
 	}
 }
@@ -16522,14 +16658,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_randomRaintEff_m27A8C928D6470
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1948>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1957>
 		V_0 = 0;
 		goto IL_0022;
 	}
 
 IL_0004:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1950>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1959>
 		int32_t L_0 = ___0_typeBG;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_1 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___bgRain;
@@ -16552,23 +16688,23 @@ IL_0004:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1952>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1961>
 		il2cpp_codegen_runtime_class_init_inline(BackgroudEffect_t377D8A5E7D52B7FE1064C49DFC59250E9C0019E3_il2cpp_TypeInfo_var);
 		BackgroudEffect_addEffect_m6327BD605C2ED37D83857F43F2AB248F5A986329(0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1953>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1962>
 		return;
 	}
 
 IL_001e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1948>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1957>
 		int32_t L_6 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_6, 1));
 	}
 
 IL_0022:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1948>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1957>
 		int32_t L_7 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___bgRain;
@@ -16579,7 +16715,7 @@ IL_0022:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1956>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1965>
 		return;
 	}
 }
@@ -16594,13 +16730,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_keyPressedz_m9B20B1DC5CE29F50
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1960>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1969>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		int64_t L_0;
 		L_0 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___lastTimePress = L_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1961>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1970>
 		int32_t L_1 = ___0_keyCode;
 		if ((((int32_t)L_1) < ((int32_t)((int32_t)48))))
 		{
@@ -16698,7 +16834,7 @@ IL_001e:
 
 IL_004a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1963>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1972>
 		int32_t L_14 = ___0_keyCode;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyAsciiPress = L_14;
@@ -16706,10 +16842,10 @@ IL_004a:
 
 IL_0050:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1965>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1974>
 		int32_t L_15 = ___0_keyCode;
 		GameCanvas_mapKeyPress_mF6C89FAACAC0AE52239DA21CCDE804684A1FF7E1(__this, L_15, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1966>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1975>
 		return;
 	}
 }
@@ -16726,7 +16862,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_mapKeyPress_mF6C89FAACAC0AE52
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1970>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1979>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972* L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog;
 		if (!L_0)
@@ -16735,21 +16871,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_mapKeyPress_mF6C89FAACAC0AE52
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1972>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1981>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972* L_1 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog;
 		int32_t L_2 = ___0_keyCode;
 		NullCheck(L_1);
 		VirtualActionInvoker1< int32_t >::Invoke(5, L_1, L_2);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1973>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1982>
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyAsciiPress = 0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1974>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1983>
 		return;
 	}
 
 IL_0019:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1976>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1985>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_3 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		int32_t L_4 = ___0_keyCode;
@@ -16981,7 +17117,7 @@ IL_0086:
 
 IL_00fc:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1981>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1990>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_17 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		if (((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6*)IsInstClass((RuntimeObject*)L_17, GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var)))
@@ -17011,32 +17147,32 @@ IL_0114:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1983>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1992>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_clearKeyHold_mDD0A8BA5104A9DF2FC4FAB603E2884002043DC08(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1984>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1993>
 		GameCanvas_clearKeyPressed_m697A4B25890475A4D47ACED73091A4C853FA2906(NULL);
 		return;
 	}
 
 IL_012b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1988>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1997>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_21 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_21);
 		(L_21)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)21)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1989>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1998>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_22 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_22);
 		(L_22)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)21)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1991>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2000>
 		return;
 	}
 
 IL_013e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1994>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2003>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_23 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		if (((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6*)IsInstClass((RuntimeObject*)L_23, GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var)))
@@ -17066,32 +17202,32 @@ IL_0156:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1996>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2005>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_clearKeyHold_mDD0A8BA5104A9DF2FC4FAB603E2884002043DC08(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:1997>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2006>
 		GameCanvas_clearKeyPressed_m697A4B25890475A4D47ACED73091A4C853FA2906(NULL);
 		return;
 	}
 
 IL_016d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2001>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2010>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_27 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_27);
 		(L_27)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)22)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2002>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2011>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_28 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_28);
 		(L_28)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)22)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2004>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2013>
 		return;
 	}
 
 IL_0180:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2006>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2015>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_29 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		if (((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6*)IsInstClass((RuntimeObject*)L_29, GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var)))
@@ -17121,32 +17257,32 @@ IL_0198:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2008>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2017>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_clearKeyHold_mDD0A8BA5104A9DF2FC4FAB603E2884002043DC08(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2009>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2018>
 		GameCanvas_clearKeyPressed_m697A4B25890475A4D47ACED73091A4C853FA2906(NULL);
 		return;
 	}
 
 IL_01af:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2013>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2022>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_33 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_33);
 		(L_33)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)23)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2014>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2023>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_34 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_34);
 		(L_34)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)23)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2016>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2025>
 		return;
 	}
 
 IL_01c2:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2018>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2027>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_35 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		if (((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6*)IsInstClass((RuntimeObject*)L_35, GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var)))
@@ -17176,32 +17312,32 @@ IL_01da:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2020>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2029>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_clearKeyHold_mDD0A8BA5104A9DF2FC4FAB603E2884002043DC08(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2021>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2030>
 		GameCanvas_clearKeyPressed_m697A4B25890475A4D47ACED73091A4C853FA2906(NULL);
 		return;
 	}
 
 IL_01f1:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2025>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2034>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_39 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_39);
 		(L_39)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)24)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2026>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2035>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_40 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_40);
 		(L_40)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)24)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2028>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2037>
 		return;
 	}
 
 IL_0204:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2031>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2040>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_41 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		if (((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6*)IsInstClass((RuntimeObject*)L_41, GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var)))
@@ -17231,56 +17367,56 @@ IL_021c:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2033>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2042>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_clearKeyHold_mDD0A8BA5104A9DF2FC4FAB603E2884002043DC08(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2034>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2043>
 		GameCanvas_clearKeyPressed_m697A4B25890475A4D47ACED73091A4C853FA2906(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2035>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2044>
 		return;
 	}
 
 IL_0233:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2037>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2046>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_45 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_45);
 		(L_45)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)25)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2038>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2047>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_46 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_46);
 		(L_46)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)25)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2039>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2048>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_47 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_47);
 		(L_47)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)15)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2040>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2049>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_48 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_48);
 		(L_48)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)15)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2041>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2050>
 		return;
 	}
 
 IL_0258:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2043>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2052>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_49 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_49);
 		(L_49)->SetAt(static_cast<il2cpp_array_size_t>(0), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2044>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2053>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_50 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_50);
 		(L_50)->SetAt(static_cast<il2cpp_array_size_t>(0), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2045>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2054>
 		return;
 	}
 
 IL_0269:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2047>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2056>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_51 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E* L_52 = ((CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_StaticFields*)il2cpp_codegen_static_fields_for(CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_il2cpp_TypeInfo_var))->___instance;
@@ -17320,22 +17456,22 @@ IL_0269:
 
 IL_029d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2049>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2058>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_58 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_58);
 		(L_58)->SetAt(static_cast<il2cpp_array_size_t>(1), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2050>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2059>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_59 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_59);
 		(L_59)->SetAt(static_cast<il2cpp_array_size_t>(1), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2052>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2061>
 		return;
 	}
 
 IL_02ae:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2054>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2063>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_60 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E* L_61 = ((CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_StaticFields*)il2cpp_codegen_static_fields_for(CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_il2cpp_TypeInfo_var))->___instance;
@@ -17375,112 +17511,112 @@ IL_02ae:
 
 IL_02e2:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2056>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2065>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_67 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_67);
 		(L_67)->SetAt(static_cast<il2cpp_array_size_t>(3), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2057>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2066>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_68 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_68);
 		(L_68)->SetAt(static_cast<il2cpp_array_size_t>(3), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2059>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2068>
 		return;
 	}
 
 IL_02f3:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2061>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2070>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_69 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_69);
 		(L_69)->SetAt(static_cast<il2cpp_array_size_t>(7), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2062>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2071>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_70 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_70);
 		(L_70)->SetAt(static_cast<il2cpp_array_size_t>(7), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2063>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2072>
 		return;
 	}
 
 IL_0304:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2065>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2074>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_71 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_71);
 		(L_71)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)9)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2066>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2075>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_72 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_72);
 		(L_72)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)9)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2067>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2076>
 		return;
 	}
 
 IL_0317:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2069>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2078>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_73 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_73);
 		(L_73)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)10)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2070>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2079>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_74 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_74);
 		(L_74)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)10)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2071>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2080>
 		return;
 	}
 
 IL_032a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2073>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2082>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_75 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_75);
 		(L_75)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)11)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2074>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2083>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_76 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_76);
 		(L_76)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)11)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2075>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2084>
 		return;
 	}
 
 IL_033d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2078>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2087>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_77 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_77);
 		(L_77)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)12)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2079>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2088>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_78 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_78);
 		(L_78)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)12)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2080>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2089>
 		return;
 	}
 
 IL_0350:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2083>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2092>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_79 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_79);
 		(L_79)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)13)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2084>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2093>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_80 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_80);
 		(L_80)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)13)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2085>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2094>
 		return;
 	}
 
 IL_0363:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2087>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2096>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_81 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E* L_82 = ((CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_StaticFields*)il2cpp_codegen_static_fields_for(CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_il2cpp_TypeInfo_var))->___instance;
@@ -17520,22 +17656,22 @@ IL_0363:
 
 IL_0397:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2089>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2098>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_88 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_88);
 		(L_88)->SetAt(static_cast<il2cpp_array_size_t>(2), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2090>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2099>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_89 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_89);
 		(L_89)->SetAt(static_cast<il2cpp_array_size_t>(2), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2092>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2101>
 		return;
 	}
 
 IL_03a8:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2094>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2103>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_90 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E* L_91 = ((CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_StaticFields*)il2cpp_codegen_static_fields_for(CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_il2cpp_TypeInfo_var))->___instance;
@@ -17575,22 +17711,22 @@ IL_03a8:
 
 IL_03dc:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2096>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2105>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_97 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_97);
 		(L_97)->SetAt(static_cast<il2cpp_array_size_t>(4), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2097>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2106>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_98 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_98);
 		(L_98)->SetAt(static_cast<il2cpp_array_size_t>(4), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2099>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2108>
 		return;
 	}
 
 IL_03ed:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2101>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2110>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_99 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E* L_100 = ((CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_StaticFields*)il2cpp_codegen_static_fields_for(CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_il2cpp_TypeInfo_var))->___instance;
@@ -17630,22 +17766,22 @@ IL_03ed:
 
 IL_0421:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2103>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2112>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_106 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_106);
 		(L_106)->SetAt(static_cast<il2cpp_array_size_t>(6), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2104>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2113>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_107 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_107);
 		(L_107)->SetAt(static_cast<il2cpp_array_size_t>(6), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2106>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2115>
 		return;
 	}
 
 IL_0432:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2108>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2117>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_108 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E* L_109 = ((CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_StaticFields*)il2cpp_codegen_static_fields_for(CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_il2cpp_TypeInfo_var))->___instance;
@@ -17685,22 +17821,22 @@ IL_0432:
 
 IL_0466:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2110>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2119>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_115 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_115);
 		(L_115)->SetAt(static_cast<il2cpp_array_size_t>(8), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2111>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2120>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_116 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_116);
 		(L_116)->SetAt(static_cast<il2cpp_array_size_t>(8), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2113>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2122>
 		return;
 	}
 
 IL_0477:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2115>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2124>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_117 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E* L_118 = ((CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_StaticFields*)il2cpp_codegen_static_fields_for(CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_il2cpp_TypeInfo_var))->___instance;
@@ -17740,57 +17876,57 @@ IL_0477:
 
 IL_04a2:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2117>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2126>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_124 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_124);
 		(L_124)->SetAt(static_cast<il2cpp_array_size_t>(5), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2118>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2127>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_125 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_125);
 		(L_125)->SetAt(static_cast<il2cpp_array_size_t>(5), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2120>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2129>
 		return;
 	}
 
 IL_04b3:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2122>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2131>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_126 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_126);
 		(L_126)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)14)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2123>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2132>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_127 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_127);
 		(L_127)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)14)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2124>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2133>
 		return;
 	}
 
 IL_04c6:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2126>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2135>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_128 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_128);
 		(L_128)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)16)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2127>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2136>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_129 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_129);
 		(L_129)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)16)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2128>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2137>
 		return;
 	}
 
 IL_04d9:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2130>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2139>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_130 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_130);
 		(L_130)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)17)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2131>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2140>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_131 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_131);
 		(L_131)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)17)), (bool)1);
@@ -17798,7 +17934,7 @@ IL_04d9:
 
 IL_04eb:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2134>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2143>
 		return;
 	}
 }
@@ -17812,13 +17948,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_keyReleasedz_mA76F9964CA8A9ED
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2138>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2147>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyAsciiPress = 0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2139>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2148>
 		int32_t L_0 = ___0_keyCode;
 		GameCanvas_mapKeyRelease_mC992A8AEBAA0CC667E7BA13290609201702F7AF1(__this, L_0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2140>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2149>
 		return;
 	}
 }
@@ -18060,89 +18196,89 @@ IL_0062:
 
 IL_00d8:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2148>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2157>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_12 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_12);
 		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)21)), (bool)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2149>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2158>
 		return;
 	}
 
 IL_00e2:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2152>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2161>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_13 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_13);
 		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)22)), (bool)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2153>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2162>
 		return;
 	}
 
 IL_00ec:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2155>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2164>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_14 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_14);
 		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)23)), (bool)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2156>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2165>
 		return;
 	}
 
 IL_00f6:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2158>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2167>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_15 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_15);
 		(L_15)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)24)), (bool)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2159>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2168>
 		return;
 	}
 
 IL_0100:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2162>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2171>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_16 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_16);
 		(L_16)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)25)), (bool)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2163>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2172>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_17 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyReleased;
 		NullCheck(L_17);
 		(L_17)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)25)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2164>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2173>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_18 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_18);
 		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)15)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2165>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2174>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_19 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_19);
 		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)15)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2166>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2175>
 		return;
 	}
 
 IL_0125:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2168>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2177>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_20 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_20);
 		(L_20)->SetAt(static_cast<il2cpp_array_size_t>(0), (bool)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2169>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2178>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_21 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyReleased;
 		NullCheck(L_21);
 		(L_21)->SetAt(static_cast<il2cpp_array_size_t>(0), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2170>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2179>
 		return;
 	}
 
 IL_0136:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2172>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2181>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_22 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E* L_23 = ((CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_StaticFields*)il2cpp_codegen_static_fields_for(CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_il2cpp_TypeInfo_var))->___instance;
@@ -18182,22 +18318,22 @@ IL_0136:
 
 IL_016a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2174>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2183>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_29 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_29);
 		(L_29)->SetAt(static_cast<il2cpp_array_size_t>(1), (bool)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2175>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2184>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_30 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyReleased;
 		NullCheck(L_30);
 		(L_30)->SetAt(static_cast<il2cpp_array_size_t>(1), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2177>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2186>
 		return;
 	}
 
 IL_017b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2179>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2188>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_31 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E* L_32 = ((CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_StaticFields*)il2cpp_codegen_static_fields_for(CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_il2cpp_TypeInfo_var))->___instance;
@@ -18237,112 +18373,112 @@ IL_017b:
 
 IL_01af:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2181>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2190>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_38 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_38);
 		(L_38)->SetAt(static_cast<il2cpp_array_size_t>(3), (bool)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2182>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2191>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_39 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyReleased;
 		NullCheck(L_39);
 		(L_39)->SetAt(static_cast<il2cpp_array_size_t>(3), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2184>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2193>
 		return;
 	}
 
 IL_01c0:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2186>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2195>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_40 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_40);
 		(L_40)->SetAt(static_cast<il2cpp_array_size_t>(7), (bool)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2187>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2196>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_41 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyReleased;
 		NullCheck(L_41);
 		(L_41)->SetAt(static_cast<il2cpp_array_size_t>(7), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2188>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2197>
 		return;
 	}
 
 IL_01d1:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2190>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2199>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_42 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_42);
 		(L_42)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)9)), (bool)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2191>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2200>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_43 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyReleased;
 		NullCheck(L_43);
 		(L_43)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)9)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2192>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2201>
 		return;
 	}
 
 IL_01e4:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2194>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2203>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_44 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_44);
 		(L_44)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)10)), (bool)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2195>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2204>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_45 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyReleased;
 		NullCheck(L_45);
 		(L_45)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)10)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2196>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2205>
 		return;
 	}
 
 IL_01f7:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2198>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2207>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_46 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_46);
 		(L_46)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)11)), (bool)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2199>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2208>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_47 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyReleased;
 		NullCheck(L_47);
 		(L_47)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)11)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2200>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2209>
 		return;
 	}
 
 IL_020a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2203>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2212>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_48 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_48);
 		(L_48)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)12)), (bool)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2204>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2213>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_49 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyReleased;
 		NullCheck(L_49);
 		(L_49)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)12)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2205>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2214>
 		return;
 	}
 
 IL_021d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2208>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2217>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_50 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_50);
 		(L_50)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)13)), (bool)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2209>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2218>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_51 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyReleased;
 		NullCheck(L_51);
 		(L_51)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)13)), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2210>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2219>
 		return;
 	}
 
 IL_0230:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2212>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2221>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_52 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E* L_53 = ((CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_StaticFields*)il2cpp_codegen_static_fields_for(CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_il2cpp_TypeInfo_var))->___instance;
@@ -18382,22 +18518,22 @@ IL_0230:
 
 IL_0264:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2214>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2223>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_59 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_59);
 		(L_59)->SetAt(static_cast<il2cpp_array_size_t>(2), (bool)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2215>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2224>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_60 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyReleased;
 		NullCheck(L_60);
 		(L_60)->SetAt(static_cast<il2cpp_array_size_t>(2), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2217>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2226>
 		return;
 	}
 
 IL_0275:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2219>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2228>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_61 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E* L_62 = ((CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_StaticFields*)il2cpp_codegen_static_fields_for(CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_il2cpp_TypeInfo_var))->___instance;
@@ -18437,22 +18573,22 @@ IL_0275:
 
 IL_02a9:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2221>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2230>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_68 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_68);
 		(L_68)->SetAt(static_cast<il2cpp_array_size_t>(4), (bool)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2222>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2231>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_69 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyReleased;
 		NullCheck(L_69);
 		(L_69)->SetAt(static_cast<il2cpp_array_size_t>(4), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2224>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2233>
 		return;
 	}
 
 IL_02ba:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2226>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2235>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_70 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E* L_71 = ((CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_StaticFields*)il2cpp_codegen_static_fields_for(CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_il2cpp_TypeInfo_var))->___instance;
@@ -18492,22 +18628,22 @@ IL_02ba:
 
 IL_02ee:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2228>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2237>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_77 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_77);
 		(L_77)->SetAt(static_cast<il2cpp_array_size_t>(6), (bool)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2229>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2238>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_78 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyReleased;
 		NullCheck(L_78);
 		(L_78)->SetAt(static_cast<il2cpp_array_size_t>(6), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2231>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2240>
 		return;
 	}
 
 IL_02ff:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2233>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2242>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_79 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E* L_80 = ((CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_StaticFields*)il2cpp_codegen_static_fields_for(CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_il2cpp_TypeInfo_var))->___instance;
@@ -18547,22 +18683,22 @@ IL_02ff:
 
 IL_032d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2235>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2244>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_86 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_86);
 		(L_86)->SetAt(static_cast<il2cpp_array_size_t>(8), (bool)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2236>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2245>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_87 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyReleased;
 		NullCheck(L_87);
 		(L_87)->SetAt(static_cast<il2cpp_array_size_t>(8), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2238>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2247>
 		return;
 	}
 
 IL_033e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2240>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2249>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_88 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E* L_89 = ((CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_StaticFields*)il2cpp_codegen_static_fields_for(CrackBallScr_t177C8A366920DFE8E8BF66FF3F18F8654BDD987E_il2cpp_TypeInfo_var))->___instance;
@@ -18602,49 +18738,49 @@ IL_033e:
 
 IL_0369:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2242>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2251>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_95 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_95);
 		(L_95)->SetAt(static_cast<il2cpp_array_size_t>(5), (bool)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2243>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2252>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_96 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyReleased;
 		NullCheck(L_96);
 		(L_96)->SetAt(static_cast<il2cpp_array_size_t>(5), (bool)1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2245>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2254>
 		return;
 	}
 
 IL_037a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2247>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2256>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_97 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_97);
 		(L_97)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)14)), (bool)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2248>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2257>
 		return;
 	}
 
 IL_0384:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2250>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2259>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_98 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_98);
 		(L_98)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)16)), (bool)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2251>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2260>
 		return;
 	}
 
 IL_038e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2253>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2262>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_99 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
 		NullCheck(L_99);
 		(L_99)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)17)), (bool)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2254>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2263>
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_100 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyReleased;
 		NullCheck(L_100);
 		(L_100)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)17)), (bool)1);
@@ -18652,7 +18788,7 @@ IL_038e:
 
 IL_03a0:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2257>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2266>
 		return;
 	}
 }
@@ -18666,14 +18802,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_pointerMouse_m736A7BC7458B3C7
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2261>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2270>
 		int32_t L_0 = ___0_x;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___pxMouse = L_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2262>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2271>
 		int32_t L_1 = ___1_y;
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___pyMouse = L_1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2263>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2272>
 		return;
 	}
 }
@@ -18687,11 +18823,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_scrollMouse_m01EF998748D0549D
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2267>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2276>
 		int32_t L_0 = ___0_a;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___pXYScrollMouse = L_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2268>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2277>
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_1 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 		if (!L_1)
 		{
@@ -18709,7 +18845,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_scrollMouse_m01EF998748D0549D
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2270>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2279>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_4 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 		int32_t L_5 = ___0_a;
@@ -18719,7 +18855,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_scrollMouse_m01EF998748D0549D
 
 IL_0024:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2272>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2281>
 		return;
 	}
 }
@@ -18735,7 +18871,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_pointerDragged_mC04A1BD24D456
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2276>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2285>
 		int32_t L_0 = ___0_x;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_1 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___pxLast;
@@ -18762,28 +18898,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_pointerDragged_mC04A1BD24D456
 
 IL_0020:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2278>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2287>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerClick = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2279>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2288>
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerDown = (bool)1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2280>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2289>
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerMove = (bool)1;
 	}
 
 IL_0032:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2282>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2291>
 		int32_t L_6 = ___0_x;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___px = L_6;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2283>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2292>
 		int32_t L_7 = ___1_y;
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___py = L_7;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2284>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2293>
 		int32_t L_8 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___curPos;
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___curPos = ((int32_t)il2cpp_codegen_add(L_8, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2285>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2294>
 		int32_t L_9 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___curPos;
 		if ((((int32_t)L_9) <= ((int32_t)3)))
 		{
@@ -18791,14 +18927,14 @@ IL_0032:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2287>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2296>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___curPos = 0;
 	}
 
 IL_0058:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2289>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2298>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		PositionU5BU5D_t54DA6F0529B557D8E004F11779884D1A5C12DA77* L_10 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___arrPos;
 		int32_t L_11 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___curPos;
@@ -18809,7 +18945,7 @@ IL_0058:
 		NullCheck(L_10);
 		ArrayElementTypeCheck (L_10, L_14);
 		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(L_11), (Position_tB64FC298B6BB082C817D6A63D76AD323A23EEE9D*)L_14);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2290>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2299>
 		return;
 	}
 }
@@ -18824,41 +18960,41 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_pointerPressed_m7097422DD39A2
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2294>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2303>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerJustRelease = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2295>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2304>
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerJustDown = (bool)1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2296>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2305>
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerDown = (bool)1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2297>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2306>
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerClick = (bool)1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2298>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2307>
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerMove = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2299>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2308>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		int64_t L_0;
 		L_0 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___lastTimePress = L_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2300>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2309>
 		int32_t L_1 = ___0_x;
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___pxFirst = L_1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2301>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2310>
 		int32_t L_2 = ___1_y;
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___pyFirst = L_2;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2302>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2311>
 		int32_t L_3 = ___0_x;
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___pxLast = L_3;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2303>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2312>
 		int32_t L_4 = ___1_y;
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___pyLast = L_4;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2304>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2313>
 		int32_t L_5 = ___0_x;
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___px = L_5;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2305>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2314>
 		int32_t L_6 = ___1_y;
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___py = L_6;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2306>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2315>
 		return;
 	}
 }
@@ -18873,23 +19009,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_pointerReleased_mA50C6D63261F
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2310>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2319>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerDown = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2311>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2320>
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerJustRelease = (bool)1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2312>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2321>
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerMove = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2313>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2322>
 		il2cpp_codegen_runtime_class_init_inline(mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54_il2cpp_TypeInfo_var);
 		((mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54_StaticFields*)il2cpp_codegen_static_fields_for(mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54_il2cpp_TypeInfo_var))->___keyTouch = (-1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2314>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2323>
 		int32_t L_0 = ___0_x;
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___px = L_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2315>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2324>
 		int32_t L_1 = ___1_y;
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___py = L_1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2316>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2325>
 		return;
 	}
 }
@@ -18903,7 +19039,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameCanvas_isPointerHoldIn_m234C35FAF5C1
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2320>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2329>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		bool L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerDown;
 		if (L_0)
@@ -18920,13 +19056,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameCanvas_isPointerHoldIn_m234C35FAF5C1
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2322>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2331>
 		return (bool)0;
 	}
 
 IL_0010:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2324>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2333>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_2 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___px;
 		int32_t L_3 = ___0_x;
@@ -18965,13 +19101,13 @@ IL_0010:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2326>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2335>
 		return (bool)1;
 	}
 
 IL_0036:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2328>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2337>
 		return (bool)0;
 	}
 }
@@ -18985,7 +19121,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameCanvas_isMouseFocus_mA37676FA41DA06F
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2333>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2342>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___pxMouse;
 		int32_t L_1 = ___0_x;
@@ -19024,67 +19160,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameCanvas_isMouseFocus_mA37676FA41DA06F
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2335>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2344>
 		return (bool)1;
 	}
 
 IL_0026:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2337>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2346>
 		return (bool)0;
 	}
 }
 // Method Definition Index: 11907
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_clearKeyPressed_m697A4B25890475A4D47ACED73091A4C853FA2906 (const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	int32_t V_0 = 0;
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2342>
-		V_0 = 0;
-		goto IL_0010;
-	}
-
-IL_0004:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2344>
-		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
-		int32_t L_1 = V_0;
-		NullCheck(L_0);
-		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(L_1), (bool)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2342>
-		int32_t L_2 = V_0;
-		V_0 = ((int32_t)il2cpp_codegen_add(L_2, 1));
-	}
-
-IL_0010:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2342>
-		int32_t L_3 = V_0;
-		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_4 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
-		NullCheck(L_4);
-		if ((((int32_t)L_3) < ((int32_t)((int32_t)(((RuntimeArray*)L_4)->max_length)))))
-		{
-			goto IL_0004;
-		}
-	}
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2346>
-		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerJustRelease = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2347>
-		return;
-	}
-}
-// Method Definition Index: 11908
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_clearKeyHold_mDD0A8BA5104A9DF2FC4FAB603E2884002043DC08 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -19103,7 +19190,7 @@ IL_0004:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2353>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
+		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		int32_t L_1 = V_0;
 		NullCheck(L_0);
 		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(L_1), (bool)0);
@@ -19117,7 +19204,7 @@ IL_0010:
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2351>
 		int32_t L_3 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_4 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
+		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_4 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		NullCheck(L_4);
 		if ((((int32_t)L_3) < ((int32_t)((int32_t)(((RuntimeArray*)L_4)->max_length)))))
 		{
@@ -19126,6 +19213,55 @@ IL_0010:
 	}
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2355>
+		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerJustRelease = (bool)0;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2356>
+		return;
+	}
+}
+// Method Definition Index: 11908
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_clearKeyHold_mDD0A8BA5104A9DF2FC4FAB603E2884002043DC08 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2360>
+		V_0 = 0;
+		goto IL_0010;
+	}
+
+IL_0004:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2362>
+		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
+		int32_t L_1 = V_0;
+		NullCheck(L_0);
+		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(L_1), (bool)0);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2360>
+		int32_t L_2 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_2, 1));
+	}
+
+IL_0010:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2360>
+		int32_t L_3 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_4 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyHold;
+		NullCheck(L_4);
+		if ((((int32_t)L_3) < ((int32_t)((int32_t)(((RuntimeArray*)L_4)->max_length)))))
+		{
+			goto IL_0004;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2364>
 		return;
 	}
 }
@@ -19158,24 +19294,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_paintChangeMap_mF8D730E81D8A3
 	mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* G_B3_2 = NULL;
 	mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* G_B3_3 = NULL;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2359>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2368>
 		String_t* L_0 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty;
 		V_0 = L_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2360>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2369>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_1 = ___0_g;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_resetTrans_m5DBEC43F3ABD75A005AFB195F2EC5F7D065BA531(L_1, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2361>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2370>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_2 = ___0_g;
 		NullCheck(L_2);
 		mGraphics_setColor_m6D037E4A78016A5277A10A76AFAB06F3A0733156(L_2, 0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2362>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2371>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_3 = ___0_g;
 		int32_t L_4 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
 		int32_t L_5 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
 		NullCheck(L_3);
 		mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(L_3, 0, 0, L_4, L_5, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2363>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2372>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_6 = ___0_g;
 		int32_t L_7 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
 		int32_t L_8 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
@@ -19183,12 +19319,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_paintChangeMap_mF8D730E81D8A3
 		int32_t L_9 = ((StaticObj_t15843870B235E7BABF322688916C45037C592835_StaticFields*)il2cpp_codegen_static_fields_for(StaticObj_t15843870B235E7BABF322688916C45037C592835_il2cpp_TypeInfo_var))->___BOTTOM_HCENTER;
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		ModFunc_PaintLogoGif_m48846C6DC813A53E821361FEC5CF56DC08A788BD(L_6, ((int32_t)(L_7/2)), ((int32_t)il2cpp_codegen_subtract(((int32_t)(L_8/2)), ((int32_t)24))), L_9, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2364>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2373>
 		int32_t L_10 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___hw;
 		int32_t L_11 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_12 = ___0_g;
 		GameCanvas_paintShukiren_mD7183E7074EE739174359566799C014889CDC592(L_10, ((int32_t)il2cpp_codegen_add(((int32_t)(L_11/2)), ((int32_t)24))), L_12, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2365>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2374>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_13 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_white;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_14 = ___0_g;
@@ -19238,7 +19374,7 @@ IL_0085:
 		int32_t L_22 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
 		NullCheck(G_B3_3);
 		mFont_drawString_mE5879DD7F938280DDF297FA968795F864878BF88(G_B3_3, G_B3_2, L_20, ((int32_t)(L_21/2)), ((int32_t)(L_22/2)), 2, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2366>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2375>
 		return;
 	}
 }
@@ -19275,14 +19411,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_paint_mDC7A499C850926A89D6DBF
 	try
 	{
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2372>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2381>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___debugPaint;
 			NullCheck(L_0);
 			MyVector_removeAllElements_mF2D6466281DBBB597BBEDED74C9214256D0CE7D1(L_0, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2373>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2382>
 			GameCanvas_debug_mA8D3DBDA2658AF8393B6F962FB25739A5146D01E(_stringLiteral57D3ED8BE577695284D8CC64B5963CE729A2AC73, 1, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2374>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2383>
 			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_1 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 			if (!L_1)
 			{
@@ -19290,7 +19426,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_paint_mDC7A499C850926A89D6DBF
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2376>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2385>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_2 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_3 = __this->___g;
@@ -19300,10 +19436,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_paint_mDC7A499C850926A89D6DBF
 
 IL_002c_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2378>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2387>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			GameCanvas_debug_mA8D3DBDA2658AF8393B6F962FB25739A5146D01E(_stringLiteral8FA829CFC665FE18E4BBE0966FD5719CD9CA6784, 1, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2379>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2388>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_4 = __this->___g;
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_5 = __this->___g;
 			NullCheck(L_5);
@@ -19315,13 +19451,13 @@ IL_002c_1:
 			L_8 = mGraphics_getTranslateY_mC8B2DF28F2BED3BFAAB16A3522AE8029D63F99EA(L_7, NULL);
 			NullCheck(L_4);
 			mGraphics_translate_m935DBC9CDE2048589DFCE243A3462166E912EDEC(L_4, ((-L_6)), ((-L_8)), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2380>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2389>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_9 = __this->___g;
 			int32_t L_10 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
 			int32_t L_11 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
 			NullCheck(L_9);
 			mGraphics_setClip_m40F6AC445C68B4E10ABA519E1A2EDC421FC39797(L_9, 0, 0, L_10, L_11, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2381>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2390>
 			Panel_t49349297CB778B2219539905F16B94090BD93138* L_12 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 			if (!L_12)
 			{
@@ -19339,13 +19475,13 @@ IL_002c_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2383>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2392>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Panel_t49349297CB778B2219539905F16B94090BD93138* L_15 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_16 = __this->___g;
 			NullCheck(L_15);
 			Panel_paint_mDE1E60D0260F16040A70B3BBA159218E3F632B80(L_15, L_16, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2384>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2393>
 			Panel_t49349297CB778B2219539905F16B94090BD93138* L_17 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel2;
 			if (!L_17)
 			{
@@ -19363,7 +19499,7 @@ IL_002c_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2386>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2395>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Panel_t49349297CB778B2219539905F16B94090BD93138* L_20 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel2;
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_21 = __this->___g;
@@ -19373,7 +19509,7 @@ IL_002c_1:
 
 IL_00bd_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2388>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2397>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Panel_t49349297CB778B2219539905F16B94090BD93138* L_22 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 			NullCheck(L_22);
@@ -19396,7 +19532,7 @@ IL_00bd_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2390>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2399>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Panel_t49349297CB778B2219539905F16B94090BD93138* L_27 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 			NullCheck(L_27);
@@ -19408,7 +19544,7 @@ IL_00bd_1:
 
 IL_00ef_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2392>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2401>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Panel_t49349297CB778B2219539905F16B94090BD93138* L_30 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel2;
 			if (!L_30)
@@ -19439,7 +19575,7 @@ IL_00ef_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2394>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2403>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Panel_t49349297CB778B2219539905F16B94090BD93138* L_36 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel2;
 			NullCheck(L_36);
@@ -19451,14 +19587,14 @@ IL_00ef_1:
 
 IL_0128_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2397>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2406>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_39 = __this->___g;
 			il2cpp_codegen_runtime_class_init_inline(Res_t42939C8A70541C5F8BBAC618E2AE68A048453E10_il2cpp_TypeInfo_var);
 			Res_paintOnScreenDebug_mCF07A7C7A3534EF9357BE21EA4EE100EFDB71E32(L_39, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2398>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2407>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_40 = __this->___g;
 			InfoDlg_paint_m460C696F5B4CF4ACBAA316CA13A8D7E5C2A0689F(L_40, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2399>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2408>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972* L_41 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog;
 			if (!L_41)
@@ -19467,10 +19603,10 @@ IL_0128_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2401>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2410>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			GameCanvas_debug_mA8D3DBDA2658AF8393B6F962FB25739A5146D01E(_stringLiteralC0598C70215326FB56D5A33092DF3C688D2C1A8B, 1, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2402>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2411>
 			Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972* L_42 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog;
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_43 = __this->___g;
 			NullCheck(L_42);
@@ -19480,7 +19616,7 @@ IL_0128_1:
 
 IL_0162_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2404>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2413>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05* L_44 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___menu;
 			NullCheck(L_44);
@@ -19491,10 +19627,10 @@ IL_0162_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2406>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2415>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			GameCanvas_debug_mA8D3DBDA2658AF8393B6F962FB25739A5146D01E(_stringLiteral00B2080DCB76C37DF111B38B8BFD654C84B557A4, 1, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2407>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2416>
 			Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05* L_46 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___menu;
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_47 = __this->___g;
 			NullCheck(L_46);
@@ -19503,18 +19639,18 @@ IL_0162_1:
 
 IL_0189_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2409>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2418>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_48 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_49 = __this->___g;
 			NullCheck(L_48);
 			InfoMe_paint_m063A11CC6082A0B3AA63852CFE9976475F233B6A(L_48, L_49, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2410>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2419>
 			InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_50 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info2;
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_51 = __this->___g;
 			NullCheck(L_50);
 			InfoMe_paint_m063A11CC6082A0B3AA63852CFE9976475F233B6A(L_50, L_51, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2411>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2420>
 			GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_52;
 			L_52 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 			NullCheck(L_52);
@@ -19525,7 +19661,7 @@ IL_0189_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2413>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2422>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_54;
 			L_54 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
@@ -19538,7 +19674,7 @@ IL_0189_1:
 
 IL_01ca_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2415>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2424>
 			il2cpp_codegen_runtime_class_init_inline(ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_il2cpp_TypeInfo_var);
 			ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0* L_57 = ((ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_StaticFields*)il2cpp_codegen_static_fields_for(ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_il2cpp_TypeInfo_var))->___currChatPopup;
 			if (!L_57)
@@ -19547,7 +19683,7 @@ IL_01ca_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2417>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2426>
 			il2cpp_codegen_runtime_class_init_inline(ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_il2cpp_TypeInfo_var);
 			ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0* L_58 = ((ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_StaticFields*)il2cpp_codegen_static_fields_for(ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_il2cpp_TypeInfo_var))->___currChatPopup;
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_59 = __this->___g;
@@ -19557,10 +19693,10 @@ IL_01ca_1:
 
 IL_01e1_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2419>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2428>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_60 = __this->___g;
 			Hint_paint_m10A1FAE412957FCF23058139C4BF5FF60F76B784(L_60, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2420>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2429>
 			il2cpp_codegen_runtime_class_init_inline(ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_il2cpp_TypeInfo_var);
 			ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0* L_61 = ((ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_StaticFields*)il2cpp_codegen_static_fields_for(ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_il2cpp_TypeInfo_var))->___serverChatPopUp;
 			if (!L_61)
@@ -19569,7 +19705,7 @@ IL_01e1_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2422>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2431>
 			il2cpp_codegen_runtime_class_init_inline(ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_il2cpp_TypeInfo_var);
 			ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0* L_62 = ((ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_StaticFields*)il2cpp_codegen_static_fields_for(ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_il2cpp_TypeInfo_var))->___serverChatPopUp;
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_63 = __this->___g;
@@ -19579,14 +19715,14 @@ IL_01e1_1:
 
 IL_0203_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2424>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2433>
 			V_1 = 0;
 			goto IL_024a_1;
 		}
 
 IL_0207_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2426>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2435>
 			il2cpp_codegen_runtime_class_init_inline(Effect2_t2F7589AFBD1F7C942731940554DA852A2BC48391_il2cpp_TypeInfo_var);
 			MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_64 = ((Effect2_t2F7589AFBD1F7C942731940554DA852A2BC48391_StaticFields*)il2cpp_codegen_static_fields_for(Effect2_t2F7589AFBD1F7C942731940554DA852A2BC48391_il2cpp_TypeInfo_var))->___vEffect2;
 			int32_t L_65 = V_1;
@@ -19594,7 +19730,7 @@ IL_0207_1:
 			RuntimeObject* L_66;
 			L_66 = MyVector_elementAt_m2058CB2FBF87C401368BB43AE172A9BB65956E4E(L_64, L_65, NULL);
 			V_2 = ((Effect2_t2F7589AFBD1F7C942731940554DA852A2BC48391*)CastclassClass((RuntimeObject*)L_66, Effect2_t2F7589AFBD1F7C942731940554DA852A2BC48391_il2cpp_TypeInfo_var));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2427>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2436>
 			Effect2_t2F7589AFBD1F7C942731940554DA852A2BC48391* L_67 = V_2;
 			if (!((ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0*)IsInstClass((RuntimeObject*)L_67, ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_il2cpp_TypeInfo_var)))
 			{
@@ -19626,7 +19762,7 @@ IL_0207_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2429>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2438>
 			Effect2_t2F7589AFBD1F7C942731940554DA852A2BC48391* L_74 = V_2;
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_75 = __this->___g;
 			NullCheck(L_74);
@@ -19635,14 +19771,14 @@ IL_0207_1:
 
 IL_0246_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2424>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2433>
 			int32_t L_76 = V_1;
 			V_1 = ((int32_t)il2cpp_codegen_add(L_76, 1));
 		}
 
 IL_024a_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2424>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2433>
 			int32_t L_77 = V_1;
 			il2cpp_codegen_runtime_class_init_inline(Effect2_t2F7589AFBD1F7C942731940554DA852A2BC48391_il2cpp_TypeInfo_var);
 			MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_78 = ((Effect2_t2F7589AFBD1F7C942731940554DA852A2BC48391_StaticFields*)il2cpp_codegen_static_fields_for(Effect2_t2F7589AFBD1F7C942731940554DA852A2BC48391_il2cpp_TypeInfo_var))->___vEffect2;
@@ -19655,7 +19791,7 @@ IL_024a_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2432>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2441>
 			il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 			bool L_80 = ((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_StaticFields*)il2cpp_codegen_static_fields_for(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var))->___isLoadingMap;
 			if (L_80)
@@ -19690,10 +19826,10 @@ IL_024a_1:
 
 IL_0276_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2434>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2443>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_84 = __this->___g;
 			GameCanvas_paintChangeMap_mF8D730E81D8A30D6B80D58D837DD64DC85B22235(__this, L_84, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2435>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2444>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_85 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___timeLoading;
 			if ((((int32_t)L_85) <= ((int32_t)0)))
@@ -19710,10 +19846,10 @@ IL_0276_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2437>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2446>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			GameCanvas_startWaitDlg_m4CBE5A82851E8F38DD8613086941E346B09F703A(NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2438>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2447>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			int64_t L_87;
 			L_87 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
@@ -19724,18 +19860,18 @@ IL_0276_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2440>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2449>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			int32_t L_89 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___timeLoading;
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___timeLoading = ((int32_t)il2cpp_codegen_subtract(L_89, 1));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2441>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2450>
 			String_t* L_90;
 			L_90 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___timeLoading), NULL);
 			String_t* L_91;
 			L_91 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral1CC42C1BE76514385FB8989C70C8CA9510A3DD35, L_90, NULL);
 			il2cpp_codegen_runtime_class_init_inline(Res_t42939C8A70541C5F8BBAC618E2AE68A048453E10_il2cpp_TypeInfo_var);
 			Res_outz_mF51EC000D16B49E001011B2C1BAD2F66E72C33D3(L_91, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2442>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2451>
 			int32_t L_92 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___timeLoading;
 			if (L_92)
 			{
@@ -19743,14 +19879,14 @@ IL_0276_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2444>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2453>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___timeLoading = ((int32_t)15);
 		}
 
 IL_02dd_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2446>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2455>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			int64_t L_93;
 			L_93 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
@@ -19760,7 +19896,7 @@ IL_02dd_1:
 
 IL_02e7_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2449>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2458>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			int64_t L_94;
 			L_94 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
@@ -19772,13 +19908,13 @@ IL_02e7_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2451>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2460>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			int64_t L_96;
 			L_96 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___timeBreakLoading = ((int64_t)il2cpp_codegen_add(L_96, ((int64_t)((int32_t)30000))));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2452>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2461>
 			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_97 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 			if (!L_97)
 			{
@@ -19786,7 +19922,7 @@ IL_02e7_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2454>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2463>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_98 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 			if (!((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6*)IsInstClass((RuntimeObject*)L_98, GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var)))
@@ -19795,7 +19931,7 @@ IL_02e7_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2456>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2465>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_99;
 			L_99 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
@@ -19806,7 +19942,7 @@ IL_02e7_1:
 
 IL_0323_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2458>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2467>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_100 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 			if (((SplashScr_t4390DA782283C7115B8F6F55E3526C9BB443C367*)IsInstClass((RuntimeObject*)L_100, SplashScr_t4390DA782283C7115B8F6F55E3526C9BB443C367_il2cpp_TypeInfo_var)))
@@ -19823,7 +19959,7 @@ IL_0323_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2460>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2469>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* L_102;
 			L_102 = GameCanvas_gI_mB1A629F4B3454E987DF9AC3FF55A67B636AAE50B_inline(NULL);
@@ -19833,23 +19969,23 @@ IL_0323_1:
 
 IL_0345_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2465>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2474>
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			GameCanvas_debug_mA8D3DBDA2658AF8393B6F962FB25739A5146D01E(_stringLiteral0F3B334658CC4A0F53F716F475CFA88852286437, 1, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2466>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2475>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_103 = __this->___g;
 			GameCanvas_resetTrans_m5DBEC43F3ABD75A005AFB195F2EC5F7D065BA531(L_103, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2467>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2476>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_104 = __this->___g;
 			il2cpp_codegen_runtime_class_init_inline(EffecMn_t7BBBF6893ECE79ED57FD347042288DBB9258D4AB_il2cpp_TypeInfo_var);
 			EffecMn_paintLayer4_m56541440A01AEDBBCF0EB10A4FDB508F8D500F52(L_104, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2468>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2477>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_105 = __this->___g;
 			GameCanvas_resetTrans_m5DBEC43F3ABD75A005AFB195F2EC5F7D065BA531(L_105, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2469>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2478>
 			int32_t L_106 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
 			V_0 = ((int32_t)(L_106/4));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2470>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2479>
 			mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_107 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 			if (!L_107)
 			{
@@ -19873,7 +20009,7 @@ IL_0345_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2472>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2481>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_110 = __this->___g;
 			int32_t L_111 = V_0;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
@@ -19885,7 +20021,7 @@ IL_0345_1:
 			L_114 = mFont_getHeight_m625C82CB2D06270446C328ADC46F5BF55F15EC12(L_113, NULL);
 			NullCheck(L_110);
 			mGraphics_setClip_m40F6AC445C68B4E10ABA519E1A2EDC421FC39797(L_110, ((int32_t)60), L_111, ((int32_t)il2cpp_codegen_subtract(L_112, ((int32_t)120))), ((int32_t)il2cpp_codegen_add(L_114, 2)), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2473>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2482>
 			mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_115 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_grey;
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_116 = __this->___g;
 			String_t* L_117 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___thongBaoTest;
@@ -19893,7 +20029,7 @@ IL_0345_1:
 			int32_t L_119 = V_0;
 			NullCheck(L_115);
 			mFont_drawString_mE5879DD7F938280DDF297FA968795F864878BF88(L_115, L_116, L_117, L_118, ((int32_t)il2cpp_codegen_add(L_119, 1)), 0, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2474>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2483>
 			mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_120 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7_yellow;
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_121 = __this->___g;
 			String_t* L_122 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___thongBaoTest;
@@ -19901,7 +20037,7 @@ IL_0345_1:
 			int32_t L_124 = V_0;
 			NullCheck(L_120);
 			mFont_drawString_mE5879DD7F938280DDF297FA968795F864878BF88(L_120, L_121, L_122, L_123, L_124, 0, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2475>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2484>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_125 = __this->___g;
 			int32_t L_126 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
 			int32_t L_127 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___h;
@@ -19911,7 +20047,7 @@ IL_0345_1:
 
 IL_0409_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2477>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2486>
 			goto IL_040e;
 		}
 	}
@@ -19928,15 +20064,15 @@ IL_0409_1:
 CATCH_040b:
 	{
 		Exception_t* L_128 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2478>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2480>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2487>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2489>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_040e;
 	}
 
 IL_040e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2481>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2490>
 		return;
 	}
 }
@@ -19950,7 +20086,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_endDlg_mF330D2BC3ED545241DDA7
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2485>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2494>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		InputDlg_t6F73BE4C724386EBC959FAF67DC93E27990D4C83* L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___inputDlg;
 		if (!L_0)
@@ -19959,7 +20095,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_endDlg_mF330D2BC3ED545241DDA7
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2487>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2496>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		InputDlg_t6F73BE4C724386EBC959FAF67DC93E27990D4C83* L_1 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___inputDlg;
 		NullCheck(L_1);
@@ -19970,13 +20106,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_endDlg_mF330D2BC3ED545241DDA7
 
 IL_001b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2489>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2498>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog = (Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog), (void*)(Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972*)NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2490>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2499>
 		InfoDlg_hide_m814AC3464EB8EF2DB1324DDD359DD8CF01A864B8(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2491>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2500>
 		return;
 	}
 }
@@ -19994,11 +20130,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_startOKDlg_mE90D8FA242593766F
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2495>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2504>
 		String_t* L_0 = ___0_info;
 		il2cpp_codegen_runtime_class_init_inline(AutoMapPanel_tBEC66D8461BA41AB4269C697948E16DB38E4C471_il2cpp_TypeInfo_var);
 		AutoMapPanel_OnServerMessage_m96C676D2AD8A9127714464424AA88A0784BB9C3A(L_0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2496>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2505>
 		String_t* L_1 = ___0_info;
 		il2cpp_codegen_runtime_class_init_inline(AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643_il2cpp_TypeInfo_var);
 		bool L_2;
@@ -20009,16 +20145,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_startOKDlg_mE90D8FA242593766F
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2498>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2507>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2500>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2509>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_closeKeyBoard_m525A107125B26DF7B2F03C4FCDEFE77E3C36DD10(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2501>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2510>
 		MsgDlg_t18C7F17B45CFF10B5E71FEDA2D94FE2C0A5259CE* L_3 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___msgdlg;
 		String_t* L_4 = ___0_info;
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
@@ -20028,11 +20164,11 @@ IL_000f:
 		Command__ctor_m8EFC72AD8087CE3EFDD2AF9864C76C1C399810ED(L_7, L_5, L_6, ((int32_t)8882), NULL, NULL);
 		NullCheck(L_3);
 		MsgDlg_setInfo_m40FCBCC1BB8CC323E3A7C4CFF638CDCC9D85DEEF(L_3, L_4, (Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1*)NULL, L_7, (Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1*)NULL, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2502>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2511>
 		MsgDlg_t18C7F17B45CFF10B5E71FEDA2D94FE2C0A5259CE* L_8 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___msgdlg;
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog = L_8;
 		Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog), (void*)L_8);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2503>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2512>
 		return;
 	}
 }
@@ -20048,10 +20184,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_startWaitDlg_mDA55DF5A96D535D
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2507>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2516>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_closeKeyBoard_m525A107125B26DF7B2F03C4FCDEFE77E3C36DD10(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2508>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2517>
 		MsgDlg_t18C7F17B45CFF10B5E71FEDA2D94FE2C0A5259CE* L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___msgdlg;
 		String_t* L_1 = ___0_info;
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
@@ -20061,15 +20197,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_startWaitDlg_mDA55DF5A96D535D
 		Command__ctor_m8EFC72AD8087CE3EFDD2AF9864C76C1C399810ED(L_4, L_2, L_3, ((int32_t)8882), NULL, NULL);
 		NullCheck(L_0);
 		MsgDlg_setInfo_m40FCBCC1BB8CC323E3A7C4CFF638CDCC9D85DEEF(L_0, L_1, (Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1*)NULL, L_4, (Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1*)NULL, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2509>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2518>
 		MsgDlg_t18C7F17B45CFF10B5E71FEDA2D94FE2C0A5259CE* L_5 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___msgdlg;
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog = L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog), (void*)L_5);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2510>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2519>
 		MsgDlg_t18C7F17B45CFF10B5E71FEDA2D94FE2C0A5259CE* L_6 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___msgdlg;
 		NullCheck(L_6);
 		L_6->___isWait = (bool)1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2511>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2520>
 		return;
 	}
 }
@@ -20087,11 +20223,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_startOKDlg_m8605AA6EFBA6819BF
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2515>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2524>
 		String_t* L_0 = ___0_info;
 		il2cpp_codegen_runtime_class_init_inline(AutoMapPanel_tBEC66D8461BA41AB4269C697948E16DB38E4C471_il2cpp_TypeInfo_var);
 		AutoMapPanel_OnServerMessage_m96C676D2AD8A9127714464424AA88A0784BB9C3A(L_0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2516>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2525>
 		String_t* L_1 = ___0_info;
 		il2cpp_codegen_runtime_class_init_inline(AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643_il2cpp_TypeInfo_var);
 		bool L_2;
@@ -20102,16 +20238,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_startOKDlg_m8605AA6EFBA6819BF
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2518>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2527>
 		return;
 	}
 
 IL_000f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2520>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2529>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_closeKeyBoard_m525A107125B26DF7B2F03C4FCDEFE77E3C36DD10(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2521>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2530>
 		MsgDlg_t18C7F17B45CFF10B5E71FEDA2D94FE2C0A5259CE* L_3 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___msgdlg;
 		String_t* L_4 = ___0_info;
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
@@ -20121,15 +20257,15 @@ IL_000f:
 		Command__ctor_m8EFC72AD8087CE3EFDD2AF9864C76C1C399810ED(L_7, L_5, L_6, ((int32_t)8882), NULL, NULL);
 		NullCheck(L_3);
 		MsgDlg_setInfo_m40FCBCC1BB8CC323E3A7C4CFF638CDCC9D85DEEF(L_3, L_4, (Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1*)NULL, L_7, (Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1*)NULL, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2522>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2531>
 		MsgDlg_t18C7F17B45CFF10B5E71FEDA2D94FE2C0A5259CE* L_8 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___msgdlg;
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog = L_8;
 		Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog), (void*)L_8);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2523>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2532>
 		MsgDlg_t18C7F17B45CFF10B5E71FEDA2D94FE2C0A5259CE* L_9 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___msgdlg;
 		NullCheck(L_9);
 		L_9->___isWait = (bool)1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2524>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2533>
 		return;
 	}
 }
@@ -20144,13 +20280,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_startWaitDlg_m4CBE5A82851E8F3
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2528>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2537>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_closeKeyBoard_m525A107125B26DF7B2F03C4FCDEFE77E3C36DD10(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2529>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2538>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_StaticFields*)il2cpp_codegen_static_fields_for(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var))->___isLoadingMap = (bool)1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2530>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2539>
 		return;
 	}
 }
@@ -20166,10 +20302,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_startOK_mBD90D8C4981E41498469
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2534>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2543>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_closeKeyBoard_m525A107125B26DF7B2F03C4FCDEFE77E3C36DD10(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2535>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2544>
 		MsgDlg_t18C7F17B45CFF10B5E71FEDA2D94FE2C0A5259CE* L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___msgdlg;
 		String_t* L_1 = ___0_info;
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
@@ -20181,11 +20317,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_startOK_mBD90D8C4981E41498469
 		Command__ctor_m8EFC72AD8087CE3EFDD2AF9864C76C1C399810ED(L_6, L_2, L_3, L_4, L_5, NULL);
 		NullCheck(L_0);
 		MsgDlg_setInfo_m40FCBCC1BB8CC323E3A7C4CFF638CDCC9D85DEEF(L_0, L_1, (Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1*)NULL, L_6, (Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1*)NULL, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2536>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2545>
 		MsgDlg_t18C7F17B45CFF10B5E71FEDA2D94FE2C0A5259CE* L_7 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___msgdlg;
 		NullCheck(L_7);
 		VirtualActionInvoker0::Invoke(7, L_7);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2537>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2546>
 		return;
 	}
 }
@@ -20202,10 +20338,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_startYesNoDlg_m513493D2DC6AF1
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2541>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2550>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_closeKeyBoard_m525A107125B26DF7B2F03C4FCDEFE77E3C36DD10(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2542>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2551>
 		MsgDlg_t18C7F17B45CFF10B5E71FEDA2D94FE2C0A5259CE* L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___msgdlg;
 		String_t* L_1 = ___0_info;
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
@@ -20229,11 +20365,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_startYesNoDlg_m513493D2DC6AF1
 		Command__ctor_m8EFC72AD8087CE3EFDD2AF9864C76C1C399810ED(L_16, L_12, L_13, L_14, L_15, NULL);
 		NullCheck(L_0);
 		MsgDlg_setInfo_m40FCBCC1BB8CC323E3A7C4CFF638CDCC9D85DEEF(L_0, L_1, L_6, L_11, L_16, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2543>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2552>
 		MsgDlg_t18C7F17B45CFF10B5E71FEDA2D94FE2C0A5259CE* L_17 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___msgdlg;
 		NullCheck(L_17);
 		VirtualActionInvoker0::Invoke(7, L_17);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2544>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2553>
 		return;
 	}
 }
@@ -20247,21 +20383,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_startYesNoDlg_m04F2A21CF54DCF
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2548>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2557>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_closeKeyBoard_m525A107125B26DF7B2F03C4FCDEFE77E3C36DD10(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2549>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2558>
 		MsgDlg_t18C7F17B45CFF10B5E71FEDA2D94FE2C0A5259CE* L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___msgdlg;
 		String_t* L_1 = ___0_info;
 		Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_2 = ___1_cmdYes;
 		Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_3 = ___2_cmdNo;
 		NullCheck(L_0);
 		MsgDlg_setInfo_m40FCBCC1BB8CC323E3A7C4CFF638CDCC9D85DEEF(L_0, L_1, L_2, (Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1*)NULL, L_3, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2550>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2559>
 		MsgDlg_t18C7F17B45CFF10B5E71FEDA2D94FE2C0A5259CE* L_4 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___msgdlg;
 		NullCheck(L_4);
 		VirtualActionInvoker0::Invoke(7, L_4);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2551>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2560>
 		return;
 	}
 }
@@ -20275,17 +20411,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_startserverThongBao_mFC85A242
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2555>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2564>
 		String_t* L_0 = ___0_msgSv;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___thongBaoTest = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___thongBaoTest), (void*)L_0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2556>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2565>
 		int32_t L_1 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___w;
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___xThongBaoTranslate = ((int32_t)il2cpp_codegen_subtract(L_1, ((int32_t)60)));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2557>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2566>
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___dir_ = (-1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2558>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2567>
 		return;
 	}
 }
@@ -20293,7 +20429,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_startserverThongBao_mFC85A242
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameCanvas_isGetResourceFromServer_mD6D8FC0E6AA01257EED7D340E38665504B5678F7 (const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2565>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2574>
 		return (bool)1;
 	}
 }
@@ -20315,7 +20451,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Image_t88AA1A2EF052D8D9F2559D593A4EB7853C3059
 	SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* V_3 = NULL;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 2> __active_exceptions;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2571>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2580>
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
 		String_t* L_0 = ((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___res;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
@@ -20325,23 +20461,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Image_t88AA1A2EF052D8D9F2559D593A4EB7853C3059
 		String_t* L_3;
 		L_3 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(L_0, _stringLiteral45E4848AD99097C61F497058628EC311A69F1B78, L_1, L_2, NULL);
 		___0_path = L_3;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2572>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2581>
 		String_t* L_4 = ___0_path;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		String_t* L_5;
 		L_5 = GameCanvas_cutPng_m479D883CB0D967AB60CAE5839F473A16AF14C3F0(L_4, NULL);
 		___0_path = L_5;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2573>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2582>
 		V_0 = (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)NULL;
 	}
 	try
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2576>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2585>
 		String_t* L_6 = ___0_path;
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_7;
 		L_7 = Image_createImage_mAE35E2D9090F867E18A42F31AE84B179D2592C2A(L_6, NULL);
 		V_0 = L_7;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2577>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2586>
 		goto IL_008a;
 	}
 	catch(Il2CppExceptionWrapper& e)
@@ -20358,19 +20494,19 @@ CATCH_002f:
 	{
 		{
 			Exception_t* L_8 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2578>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2587>
 			V_1 = L_8;
 		}
 		try
 		{
 			{
-				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2582>
+				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2591>
 				String_t* L_9 = ___0_path;
 				il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Res_t42939C8A70541C5F8BBAC618E2AE68A048453E10_il2cpp_TypeInfo_var)));
 				StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_10;
 				L_10 = Res_split_m2045920D16E70F48BC3F71B37E42244B39F6282E(L_9, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral86BBAACC00198DBB3046818AD3FC2AA10AE48DE1)), 0, NULL);
 				V_2 = L_10;
-				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2583>
+				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2592>
 				il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var)));
 				String_t* L_11;
 				L_11 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))))->___zoomLevel), NULL);
@@ -20386,7 +20522,7 @@ CATCH_002f:
 				SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_17;
 				L_17 = Rms_loadRMS_m99C8DC9373B72F46873B7E6A81E133CF8CB7560B(L_16, NULL);
 				V_3 = L_17;
-				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2584>
+				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2593>
 				SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_18 = V_3;
 				if (!L_18)
 				{
@@ -20394,20 +20530,20 @@ CATCH_002f:
 				}
 			}
 			{
-				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2586>
+				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2595>
 				SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_19 = V_3;
 				SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* L_20 = V_3;
 				NullCheck(L_20);
 				Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_21;
 				L_21 = Image_createImage_m6456BF1921AE4642B505D0E32865AF09CBA3C5A2(L_19, 0, ((int32_t)(((RuntimeArray*)L_20)->max_length)), NULL);
 				V_0 = L_21;
-				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2587>
+				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2596>
 				V_3 = (SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913*)NULL;
 			}
 
 IL_006e_1:
 			{
-				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2589>
+				//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2598>
 				goto IL_0088;
 			}
 		}
@@ -20424,8 +20560,8 @@ IL_006e_1:
 CATCH_0070:
 		{
 			Exception_t* L_22 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2590>
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2592>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2599>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2601>
 			Exception_t* L_23 = V_1;
 			NullCheck(L_23);
 			String_t* L_24;
@@ -20433,14 +20569,14 @@ CATCH_0070:
 			String_t* L_25;
 			L_25 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral0AE6AD32031DBC404FEBBC9208A2658DBDF7BD46)), L_24, NULL);
 			Cout_LogError_m76D25E80FED10E31F38A00D4C6A10C91BDC2879A(L_25, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2593>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2602>
 			IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 			goto IL_0088;
 		}
 
 IL_0088:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2594>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2603>
 			IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 			goto IL_008a;
 		}
@@ -20448,7 +20584,7 @@ IL_0088:
 
 IL_008a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2595>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2604>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_26 = V_0;
 		return L_26;
 	}
@@ -20469,10 +20605,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Image_t88AA1A2EF052D8D9F2559D593A4EB7853C3059
 	Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* V_1 = NULL;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2600>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2609>
 		String_t* L_0 = ___0_path;
 		V_0 = L_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2601>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2610>
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
 		String_t* L_1 = ((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___res;
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
@@ -20482,7 +20618,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Image_t88AA1A2EF052D8D9F2559D593A4EB7853C3059
 		String_t* L_4;
 		L_4 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(L_1, _stringLiteral45E4848AD99097C61F497058628EC311A69F1B78, L_2, L_3, NULL);
 		___0_path = L_4;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2602>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2611>
 		String_t* L_5 = ___0_path;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		String_t* L_6;
@@ -20491,7 +20627,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Image_t88AA1A2EF052D8D9F2559D593A4EB7853C3059
 	}
 	try
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2606>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2615>
 		String_t* L_7 = ___0_path;
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_8;
 		L_8 = Image_createImage_mAE35E2D9090F867E18A42F31AE84B179D2592C2A(L_7, NULL);
@@ -20511,8 +20647,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Image_t88AA1A2EF052D8D9F2559D593A4EB7853C3059
 CATCH_002f:
 	{
 		Exception_t* L_9 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2608>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2610>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2617>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2619>
 		String_t* L_10 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var)));
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_11;
@@ -20524,7 +20660,7 @@ CATCH_002f:
 
 IL_0039:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2612>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2621>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_12 = V_1;
 		return L_12;
 	}
@@ -20544,31 +20680,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Image_t88AA1A2EF052D8D9F2559D593A4EB7853C3059
 	Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* V_0 = NULL;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2616>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2625>
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
 		String_t* L_0 = ((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___res;
 		String_t* L_1 = ___0_path;
 		String_t* L_2;
 		L_2 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_0, _stringLiteral5A66873F00A2F44EA5431195E563C5A695D6F541, L_1, NULL);
 		___0_path = L_2;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2617>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2626>
 		String_t* L_3 = ___0_path;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		String_t* L_4;
 		L_4 = GameCanvas_cutPng_m479D883CB0D967AB60CAE5839F473A16AF14C3F0(L_3, NULL);
 		___0_path = L_4;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2618>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2627>
 		V_0 = (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)NULL;
 	}
 	try
 	{
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2621>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2630>
 			String_t* L_5 = ___0_path;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_6;
 			L_6 = Image_createImage_mAE35E2D9090F867E18A42F31AE84B179D2592C2A(L_5, NULL);
 			V_0 = L_6;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2622>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2631>
 			il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 			int32_t L_7 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 			if ((((int32_t)L_7) == ((int32_t)4)))
@@ -20577,7 +20713,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Image_t88AA1A2EF052D8D9F2559D593A4EB7853C3059
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2624>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2633>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_8 = V_0;
 			il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 			GameCanvas_resizeImage_mEC9C03EABB1A1274FE60442A7065F8965985DD1A(L_8, NULL);
@@ -20585,7 +20721,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Image_t88AA1A2EF052D8D9F2559D593A4EB7853C3059
 
 IL_0031_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2626>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2635>
 			goto IL_0036;
 		}
 	}
@@ -20602,15 +20738,15 @@ IL_0031_1:
 CATCH_0033:
 	{
 		Exception_t* L_9 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2627>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2629>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2636>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2638>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0036;
 	}
 
 IL_0036:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2630>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2639>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_10 = V_0;
 		return L_10;
 	}
@@ -20628,7 +20764,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11
 	}
 	RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* V_0 = NULL;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2635>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2644>
 		int32_t L_0 = ___1_targetX;
 		int32_t L_1 = ___2_targetY;
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_2 = (RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27*)il2cpp_codegen_object_new(RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27_il2cpp_TypeInfo_var);
@@ -20636,17 +20772,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_3 = L_2;
 		RenderTexture_set_active_m5EE8E2327EF9B306C1425014CC34C41A8384E7AB(L_3, NULL);
 		V_0 = L_3;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2636>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2645>
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_4 = ___0_texture2D;
 		RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27* L_5 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Graphics_t99CD970FFEA58171C70F54DF0C06D315BD452F2C_il2cpp_TypeInfo_var);
 		Graphics_Blit_m8D99E16B74C7D3C8F79F4F142C59DB6B38114504(L_4, L_5, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2637>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2646>
 		int32_t L_6 = ___1_targetX;
 		int32_t L_7 = ___2_targetY;
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_8 = (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4*)il2cpp_codegen_object_new(Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_il2cpp_TypeInfo_var);
 		Texture2D__ctor_m3BA82E87442B7F69E118477069AE11101B9DF796(L_8, L_6, L_7, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2638>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2647>
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_9 = L_8;
 		int32_t L_10 = ___1_targetX;
 		int32_t L_11 = ___2_targetY;
@@ -20655,11 +20791,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11
 		Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23_inline((&L_12), (0.0f), (0.0f), ((float)L_10), ((float)L_11), NULL);
 		NullCheck(L_9);
 		Texture2D_ReadPixels_m6B45DF7C051BF599C72ED09691F21A6C769EEBD9(L_9, L_12, 0, 0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2639>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2648>
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_13 = L_9;
 		NullCheck(L_13);
 		Texture2D_Apply_mA014182C9EE0BBF6EEE3B286854F29E50EB972DC(L_13, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2640>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2649>
 		return L_13;
 	}
 }
@@ -20677,24 +20813,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_resizeImage_mEC9C03EABB1A1274
 	int32_t V_1 = 0;
 	int32_t V_2 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2645>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2654>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_0 = ___0_img;
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___w;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2646>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2655>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_2 = ___0_img;
 		NullCheck(L_2);
 		int32_t L_3 = L_2->___h;
 		V_0 = ((int32_t)(L_3/4));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2647>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2656>
 		il2cpp_codegen_runtime_class_init_inline(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var);
 		int32_t L_4 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		V_1 = ((int32_t)il2cpp_codegen_multiply(((int32_t)(L_1/4)), L_4));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2648>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2657>
 		int32_t L_5 = V_0;
 		int32_t L_6 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___zoomLevel;
 		V_2 = ((int32_t)il2cpp_codegen_multiply(L_5, L_6));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2649>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2658>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_7 = ___0_img;
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_8 = ___0_img;
 		NullCheck(L_8);
@@ -20707,7 +20843,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_resizeImage_mEC9C03EABB1A1274
 		NullCheck(L_7);
 		L_7->___texture = L_12;
 		Il2CppCodeGenWriteBarrier((void**)(&L_7->___texture), (void*)L_12);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2650>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2659>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_13 = ___0_img;
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_14 = ___0_img;
 		NullCheck(L_14);
@@ -20717,7 +20853,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_resizeImage_mEC9C03EABB1A1274
 		L_16 = VirtualFuncInvoker0< int32_t >::Invoke(4, L_15);
 		NullCheck(L_13);
 		L_13->___w = L_16;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2651>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2660>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_17 = ___0_img;
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_18 = ___0_img;
 		NullCheck(L_18);
@@ -20727,12 +20863,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_resizeImage_mEC9C03EABB1A1274
 		L_20 = VirtualFuncInvoker0< int32_t >::Invoke(6, L_19);
 		NullCheck(L_17);
 		L_17->___h = L_20;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2652>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2661>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_21 = ___0_img;
 		NullCheck(L_21);
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_22 = L_21->___texture;
 		Image_setTextureQuality_mE725F4B9CB217AC2596D8C6FB73E8DEBBA41518A(L_22, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2653>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2662>
 		return;
 	}
 }
@@ -20751,10 +20887,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* GameCanvas_cutPng_m479D883CB0D967AB
 	}
 	String_t* V_0 = NULL;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2657>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2666>
 		String_t* L_0 = ___0_str;
 		V_0 = L_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2658>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2667>
 		String_t* L_1 = ___0_str;
 		NullCheck(L_1);
 		bool L_2;
@@ -20765,7 +20901,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* GameCanvas_cutPng_m479D883CB0D967AB
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2660>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2669>
 		String_t* L_3 = ___0_str;
 		String_t* L_4 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty;
 		NullCheck(L_3);
@@ -20777,7 +20913,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* GameCanvas_cutPng_m479D883CB0D967AB
 
 IL_0022:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2662>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2671>
 		String_t* L_6 = ___0_str;
 		NullCheck(L_6);
 		bool L_7;
@@ -20788,7 +20924,7 @@ IL_0022:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2664>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2673>
 		String_t* L_8 = ___0_str;
 		String_t* L_9 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty;
 		NullCheck(L_8);
@@ -20800,7 +20936,7 @@ IL_0022:
 
 IL_0042:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2666>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2675>
 		String_t* L_11 = ___0_str;
 		NullCheck(L_11);
 		bool L_12;
@@ -20811,7 +20947,7 @@ IL_0042:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2668>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2677>
 		String_t* L_13 = ___0_str;
 		String_t* L_14 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty;
 		NullCheck(L_13);
@@ -20823,7 +20959,7 @@ IL_0042:
 
 IL_0062:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2670>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2679>
 		String_t* L_16 = ___0_str;
 		NullCheck(L_16);
 		bool L_17;
@@ -20834,7 +20970,7 @@ IL_0062:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2672>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2681>
 		String_t* L_18 = ___0_str;
 		String_t* L_19 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty;
 		NullCheck(L_18);
@@ -20845,7 +20981,7 @@ IL_0062:
 
 IL_0080:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2674>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2683>
 		String_t* L_21 = V_0;
 		return L_21;
 	}
@@ -20862,7 +20998,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameCanvas_startDust_m4830EAAA8EC4916B18
 	int32_t V_0 = 0;
 	int32_t G_B5_0 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2679>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2688>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		bool L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___lowGraphic;
 		if (!L_0)
@@ -20871,13 +21007,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameCanvas_startDust_m4830EAAA8EC4916B18
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2681>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2690>
 		return (bool)0;
 	}
 
 IL_0009:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2683>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2692>
 		int32_t L_1 = ___0_dir;
 		if ((!(((uint32_t)L_1) == ((uint32_t)1))))
 		{
@@ -20897,7 +21033,7 @@ IL_0010:
 IL_0011:
 	{
 		V_0 = G_B5_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2684>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2693>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_2 = __this->___dustState;
 		int32_t L_3 = V_0;
 		NullCheck(L_2);
@@ -20909,30 +21045,30 @@ IL_0011:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2686>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2695>
 		return (bool)0;
 	}
 
 IL_001f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2688>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2697>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_6 = __this->___dustState;
 		int32_t L_7 = V_0;
 		NullCheck(L_6);
 		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (int32_t)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2689>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2698>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_8 = __this->___dustX;
 		int32_t L_9 = V_0;
 		int32_t L_10 = ___1_x;
 		NullCheck(L_8);
 		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(L_9), (int32_t)L_10);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2690>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2699>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_11 = __this->___dustY;
 		int32_t L_12 = V_0;
 		int32_t L_13 = ___2_y;
 		NullCheck(L_11);
 		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(L_12), (int32_t)L_13);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2691>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2700>
 		return (bool)1;
 	}
 }
@@ -20952,7 +21088,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_loadWaterSplash_mB2F7CA4B26A7
 	int32_t V_0 = 0;
 	int32_t V_1 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2696>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2705>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		bool L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___lowGraphic;
 		if (L_0)
@@ -20961,19 +21097,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_loadWaterSplash_mB2F7CA4B26A7
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2698>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2707>
 		ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_1 = (ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288*)(ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288*)SZArrayNew(ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288_il2cpp_TypeInfo_var, (uint32_t)3);
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgWS = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgWS), (void*)L_1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2699>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2708>
 		V_0 = 0;
 		goto IL_003c;
 	}
 
 IL_0016:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2701>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2710>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288* L_2 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgWS;
 		int32_t L_3 = V_0;
@@ -20986,14 +21122,14 @@ IL_0016:
 		NullCheck(L_2);
 		ArrayElementTypeCheck (L_2, L_6);
 		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(L_3), (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)L_6);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2699>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2708>
 		int32_t L_7 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_7, 1));
 	}
 
 IL_003c:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2699>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2708>
 		int32_t L_8 = V_0;
 		if ((((int32_t)L_8) < ((int32_t)3)))
 		{
@@ -21001,24 +21137,24 @@ IL_003c:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2703>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2712>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_9 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)2);
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___wsX = L_9;
 		Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___wsX), (void*)L_9);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2704>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2713>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_10 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)2);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___wsY = L_10;
 		Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___wsY), (void*)L_10);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2705>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2714>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_11 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)2);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___wsState = L_11;
 		Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___wsState), (void*)L_11);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2706>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2715>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_12 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)2);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___wsF = L_12;
 		Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___wsF), (void*)L_12);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2707>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2716>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_13 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___wsState;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_14 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___wsState;
 		int32_t L_15 = (-1);
@@ -21032,7 +21168,7 @@ IL_003c:
 
 IL_007e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2709>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2718>
 		return;
 	}
 }
@@ -21047,7 +21183,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_updateDust_m7B7DDE0CBF8B130B9
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2713>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2722>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		bool L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___lowGraphic;
 		if (!L_0)
@@ -21056,20 +21192,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_updateDust_m7B7DDE0CBF8B130B9
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2715>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2724>
 		return;
 	}
 
 IL_0008:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2717>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2726>
 		V_0 = 0;
 		goto IL_0078;
 	}
 
 IL_000c:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2719>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2728>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_1 = __this->___dustState;
 		int32_t L_2 = V_0;
 		NullCheck(L_1);
@@ -21081,14 +21217,14 @@ IL_000c:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2721>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2730>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_5 = __this->___dustState;
 		int32_t L_6 = V_0;
 		NullCheck(L_5);
 		int32_t* L_7 = ((L_5)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_6)));
 		int32_t L_8 = *((int32_t*)L_7);
 		*((int32_t*)L_7) = (int32_t)((int32_t)il2cpp_codegen_add(L_8, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2722>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2731>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_9 = __this->___dustState;
 		int32_t L_10 = V_0;
 		NullCheck(L_9);
@@ -21100,7 +21236,7 @@ IL_000c:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2724>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2733>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_13 = __this->___dustState;
 		int32_t L_14 = V_0;
 		NullCheck(L_13);
@@ -21109,7 +21245,7 @@ IL_000c:
 
 IL_003c:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2726>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2735>
 		int32_t L_15 = V_0;
 		if (L_15)
 		{
@@ -21117,7 +21253,7 @@ IL_003c:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2728>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2737>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_16 = __this->___dustX;
 		int32_t L_17 = V_0;
 		NullCheck(L_16);
@@ -21129,7 +21265,7 @@ IL_003c:
 
 IL_0052:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2732>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2741>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_20 = __this->___dustX;
 		int32_t L_21 = V_0;
 		NullCheck(L_20);
@@ -21140,7 +21276,7 @@ IL_0052:
 
 IL_0063:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2734>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2743>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_24 = __this->___dustY;
 		int32_t L_25 = V_0;
 		NullCheck(L_24);
@@ -21151,14 +21287,14 @@ IL_0063:
 
 IL_0074:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2717>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2726>
 		int32_t L_28 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_28, 1));
 	}
 
 IL_0078:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2717>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2726>
 		int32_t L_29 = V_0;
 		if ((((int32_t)L_29) < ((int32_t)2)))
 		{
@@ -21166,7 +21302,7 @@ IL_0078:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2737>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2746>
 		return;
 	}
 }
@@ -21180,7 +21316,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameCanvas_isPaint_mB73779CD207AF2611AF2
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2741>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2750>
 		int32_t L_0 = ___0_x;
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		int32_t L_1 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmx;
@@ -21190,13 +21326,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameCanvas_isPaint_mB73779CD207AF2611AF2
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2743>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2752>
 		return (bool)0;
 	}
 
 IL_000a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2745>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2754>
 		int32_t L_2 = ___0_x;
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		int32_t L_3 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmx;
@@ -21207,13 +21343,13 @@ IL_000a:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2747>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2756>
 		return (bool)0;
 	}
 
 IL_001a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2749>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2758>
 		int32_t L_5 = ___1_y;
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		int32_t L_6 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmy;
@@ -21223,13 +21359,13 @@ IL_001a:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2751>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2760>
 		return (bool)0;
 	}
 
 IL_0024:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2753>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2762>
 		int32_t L_7 = ___1_y;
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		int32_t L_8 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___cmy;
@@ -21240,13 +21376,13 @@ IL_0024:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2755>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2764>
 		return (bool)0;
 	}
 
 IL_0037:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2757>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2766>
 		return (bool)1;
 	}
 }
@@ -21269,7 +21405,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_loadDust_mD912F5B0537D351E832
 	int32_t V_2 = 0;
 	int32_t V_3 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2762>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2771>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		bool L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___lowGraphic;
 		if (!L_0)
@@ -21278,13 +21414,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_loadDust_mD912F5B0537D351E832
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2764>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2773>
 		return;
 	}
 
 IL_0008:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2766>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2775>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		ImageU5BU5DU5BU5D_t929E943844CCA2D629ADE637CC149CBDBD3A8672* L_1 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgDust;
 		if (L_1)
@@ -21293,19 +21429,19 @@ IL_0008:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2768>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2777>
 		ImageU5BU5DU5BU5D_t929E943844CCA2D629ADE637CC149CBDBD3A8672* L_2 = (ImageU5BU5DU5BU5D_t929E943844CCA2D629ADE637CC149CBDBD3A8672*)(ImageU5BU5DU5BU5D_t929E943844CCA2D629ADE637CC149CBDBD3A8672*)SZArrayNew(ImageU5BU5DU5BU5D_t929E943844CCA2D629ADE637CC149CBDBD3A8672_il2cpp_TypeInfo_var, (uint32_t)2);
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgDust = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgDust), (void*)L_2);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2769>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2778>
 		V_0 = 0;
 		goto IL_002f;
 	}
 
 IL_001e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2771>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2780>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		ImageU5BU5DU5BU5D_t929E943844CCA2D629ADE637CC149CBDBD3A8672* L_3 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgDust;
 		int32_t L_4 = V_0;
@@ -21313,14 +21449,14 @@ IL_001e:
 		NullCheck(L_3);
 		ArrayElementTypeCheck (L_3, L_5);
 		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(L_4), (ImageU5BU5D_t81AEB0E7716FBD0993208104AF9289B5C8CFC288*)L_5);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2769>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2778>
 		int32_t L_6 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_6, 1));
 	}
 
 IL_002f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2769>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2778>
 		int32_t L_7 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		ImageU5BU5DU5BU5D_t929E943844CCA2D629ADE637CC149CBDBD3A8672* L_8 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgDust;
@@ -21331,21 +21467,21 @@ IL_002f:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2773>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2782>
 		V_1 = 0;
 		goto IL_0078;
 	}
 
 IL_003d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2775>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2784>
 		V_2 = 0;
 		goto IL_0070;
 	}
 
 IL_0041:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2777>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2786>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		ImageU5BU5DU5BU5D_t929E943844CCA2D629ADE637CC149CBDBD3A8672* L_9 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgDust;
 		int32_t L_10 = V_1;
@@ -21364,14 +21500,14 @@ IL_0041:
 		NullCheck(L_12);
 		ArrayElementTypeCheck (L_12, L_17);
 		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(L_13), (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)L_17);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2775>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2784>
 		int32_t L_18 = V_2;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_18, 1));
 	}
 
 IL_0070:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2775>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2784>
 		int32_t L_19 = V_2;
 		if ((((int32_t)L_19) < ((int32_t)5)))
 		{
@@ -21379,14 +21515,14 @@ IL_0070:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2773>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2782>
 		int32_t L_20 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_20, 1));
 	}
 
 IL_0078:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2773>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2782>
 		int32_t L_21 = V_1;
 		if ((((int32_t)L_21) < ((int32_t)2)))
 		{
@@ -21396,19 +21532,19 @@ IL_0078:
 
 IL_007c:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2781>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2790>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_22 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)2);
 		__this->___dustX = L_22;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___dustX), (void*)L_22);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2782>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2791>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_23 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)2);
 		__this->___dustY = L_23;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___dustY), (void*)L_23);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2783>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2792>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_24 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)2);
 		__this->___dustState = L_24;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___dustState), (void*)L_24);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2784>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2793>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_25 = __this->___dustState;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_26 = __this->___dustState;
 		int32_t L_27 = (-1);
@@ -21418,7 +21554,7 @@ IL_007c:
 		int32_t L_28 = V_3;
 		NullCheck(L_25);
 		(L_25)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)L_28);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2785>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2794>
 		return;
 	}
 }
@@ -21434,7 +21570,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_paintShukiren_mD7183E7074EE73
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2789>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2798>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_0 = ___2_g;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_1 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___imgShuriken;
@@ -21447,7 +21583,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_paintShukiren_mD7183E7074EE73
 		int32_t L_6 = ((mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_StaticFields*)il2cpp_codegen_static_fields_for(mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE_il2cpp_TypeInfo_var))->___VCENTER;
 		NullCheck(L_0);
 		mGraphics_drawRegion_m0848120CE73023DFD40EB85D4AEB769C05AFB247(L_0, L_1, 0, ((int32_t)il2cpp_codegen_multiply(L_2, ((int32_t)16))), ((int32_t)16), ((int32_t)16), 0, L_3, L_4, ((int32_t)(L_5|L_6)), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2790>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2799>
 		return;
 	}
 }
@@ -21455,9 +21591,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_paintShukiren_mD7183E7074EE73
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_resetToLoginScrz_m172CADB7BE7E4351FD02CD0DCA9C136BE7BA5EA5 (GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2794>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2803>
 		__this->___resetToLoginScr = (bool)1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2795>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2804>
 		return;
 	}
 }
@@ -21471,7 +21607,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameCanvas_isPointer_m04836C0B0E776ACCB7
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2799>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2808>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		bool L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerDown;
 		if (L_0)
@@ -21488,13 +21624,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameCanvas_isPointer_m04836C0B0E776ACCB7
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2801>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2810>
 		return (bool)0;
 	}
 
 IL_0010:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2803>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2812>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_2 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___px;
 		int32_t L_3 = ___0_x;
@@ -21533,13 +21669,13 @@ IL_0010:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2805>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2814>
 		return (bool)1;
 	}
 
 IL_0036:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2807>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2816>
 		return (bool)0;
 	}
 }
@@ -21883,31 +22019,31 @@ IL_010b:
 
 IL_013f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2815>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2824>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2816>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2825>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___imgLogoBig = (Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___imgLogoBig), (void*)(Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908*)NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2817>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2826>
 		il2cpp_codegen_runtime_class_init_inline(SmallImage_tF792A43A543EDAADA02E96089CBAA7938E1F4742_il2cpp_TypeInfo_var);
 		SmallImage_loadBigRMS_mFFBE1CAABAC21B857CA8C51114C1DC5EB8A84A2E(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2818>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2827>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		mSystem_gcc_m54AAF2EA79CA21C076A0602C47E00A39C3C3C6D5(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2819>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2828>
 		il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
 		((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___bigOk = (bool)1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2820>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2829>
 		((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___loadScreen = (bool)1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2821>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2830>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_11;
 		L_11 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 		NullCheck(L_11);
 		GameScr_loadGameScr_mC1EF1856E30097F74C8EA0794C74AD5CBAAAA6DD(L_11, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2822>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2831>
 		mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54* L_12 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentScreen;
 		LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_13 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
 		if ((((RuntimeObject*)(mScreen_tEDD089CBB83B4F3A2F7891873EB18A6C5E999F54*)L_12) == ((RuntimeObject*)(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8*)L_13)))
@@ -21916,57 +22052,57 @@ IL_013f:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2824>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2833>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_14 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
 		NullCheck(L_14);
 		ServerListScreen_switchToMe2_m7CA67389432B2D38C1E60474209E249E3785984D(L_14, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2826>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2835>
 		return;
 	}
 
 IL_0184:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2828>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2837>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		mSystem_closeBanner_mD26F4D364350DE8453C798ADE4D7BC73AD11F28B(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2829>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2838>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2830>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2839>
 		return;
 	}
 
 IL_018f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2832>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2841>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2833>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2842>
 		return;
 	}
 
 IL_0195:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2835>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2844>
 		RuntimeObject* L_15 = ___1_p;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2836>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2845>
 		return;
 	}
 
 IL_019d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2838>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2847>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2839>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2848>
 		GameCanvas_connect_m1F9B4F03D35F651662A28F78F5F6E9AEE53EE04C(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2840>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2849>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_16;
 		L_16 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		NullCheck(L_16);
 		Service_setClientType_mD8390A1CB8178636B963C26B3B988B5A5F894561(L_16, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2841>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2850>
 		LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_17 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
 		if (L_17)
 		{
@@ -21974,7 +22110,7 @@ IL_019d:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2843>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2852>
 		LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_18 = (LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8*)il2cpp_codegen_object_new(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var);
 		LoginScr__ctor_m3EB45EC8F390B05EC0EBF83FE469EE4336DD8BD5(L_18, NULL);
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
@@ -21984,30 +22120,30 @@ IL_019d:
 
 IL_01c2:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2845>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2854>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_19 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
 		NullCheck(L_19);
 		LoginScr_doLogin_m2FE7AD3446FDF0B894B7716CC49012E76190B708(L_19, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2846>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2855>
 		return;
 	}
 
 IL_01cd:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2849>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2858>
 		RuntimeObject* L_20 = ___1_p;
 		V_0 = ((String_t*)CastclassSealed((RuntimeObject*)L_20, String_t_il2cpp_TypeInfo_var));
 	}
 	try
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2852>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2861>
 		il2cpp_codegen_runtime_class_init_inline(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var);
 		GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F* L_21 = ((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___instance;
 		String_t* L_22 = V_0;
 		NullCheck(L_21);
 		GameMidlet_platformRequest_m9509E1221938E9901549E69C1906944EC2342FEF(L_21, L_22, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2853>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2862>
 		goto IL_01e4;
 	}
 	catch(Il2CppExceptionWrapper& e)
@@ -22023,188 +22159,188 @@ IL_01cd:
 CATCH_01e1:
 	{
 		Exception_t* L_23 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2854>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2856>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2863>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2865>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_01e4;
 	}
 
 IL_01e4:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2857>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2866>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog = (Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog), (void*)(Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972*)NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2858>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2867>
 		return;
 	}
 
 IL_01eb:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2861>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2870>
 		InfoDlg_hide_m814AC3464EB8EF2DB1324DDD359DD8CF01A864B8(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2862>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2871>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog = (Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___currentDialog), (void*)(Dialog_t1A3474C8E604C61E022BDF82747C68A6C1E11972*)NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2863>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2872>
 		il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
 		((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___isAutoConect = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2864>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2873>
 		((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___countDieConnect = 0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2865>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2874>
 		return;
 	}
 
 IL_0203:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2867>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2876>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2868>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2877>
 		LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_24 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
 		NullCheck(L_24);
 		VirtualActionInvoker0::Invoke(4, L_24);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2869>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2878>
 		return;
 	}
 
 IL_0213:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2871>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2880>
 		il2cpp_codegen_runtime_class_init_inline(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var);
 		GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F* L_25 = ((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___instance;
 		NullCheck(L_25);
 		GameMidlet_exit_m8489C4D38909A62878B20F8D2FF06D8817102732(L_25, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2872>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2881>
 		return;
 	}
 
 IL_021e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2875>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2884>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2876>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2885>
 		RuntimeObject* L_26 = ___1_p;
 		V_1 = ((String_t*)CastclassSealed((RuntimeObject*)L_26, String_t_il2cpp_TypeInfo_var));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2877>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2886>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_27;
 		L_27 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		String_t* L_28 = V_1;
 		NullCheck(L_27);
 		Service_addFriend_m8698A9238446C4CA6FAA064C57C022089E7E68CB(L_27, L_28, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2878>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2887>
 		return;
 	}
 
 IL_0236:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2882>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2891>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2883>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2892>
 		RuntimeObject* L_29 = ___1_p;
 		V_2 = ((*(int32_t*)((int32_t*)(int32_t*)UnBox(L_29, Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var))));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2884>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2893>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_30;
 		L_30 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		int32_t L_31 = V_2;
 		NullCheck(L_30);
 		Service_addPartyAccept_m73396E9AABF34C8CA5DA62C8E69A0D3905448128(L_30, L_31, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2885>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2894>
 		return;
 	}
 
 IL_024e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2889>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2898>
 		RuntimeObject* L_32 = ___1_p;
 		V_3 = ((*(int32_t*)((int32_t*)(int32_t*)UnBox(L_32, Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var))));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2890>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2899>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_33;
 		L_33 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		int32_t L_34 = V_3;
 		NullCheck(L_33);
 		Service_addPartyCancel_m2AECD9EA835DBD8D4A56A60A9AD62225A65CC37A(L_33, L_34, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2891>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2900>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2892>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2901>
 		return;
 	}
 
 IL_0266:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2896>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2905>
 		RuntimeObject* L_35 = ___1_p;
 		V_4 = ((String_t*)CastclassSealed((RuntimeObject*)L_35, String_t_il2cpp_TypeInfo_var));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2897>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2906>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2898>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2907>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_36;
 		L_36 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		String_t* L_37 = V_4;
 		NullCheck(L_36);
 		Service_acceptPleaseParty_m667454C7D677AFD2EFA59B11D8D6E72A1A2A2D7E(L_36, L_37, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2899>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2908>
 		return;
 	}
 
 IL_0280:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2903>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2912>
 		RuntimeObject* L_38 = ___1_p;
 		V_5 = ((*(int32_t*)((int32_t*)(int32_t*)UnBox(L_38, Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var))));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2904>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2913>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2905>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2914>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_39;
 		L_39 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		int32_t L_40 = V_5;
 		NullCheck(L_39);
 		Service_acceptInviteTrade_m9053E6727183AEE5BA2B303D7AD9CC38D0C551C6(L_39, L_40, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2906>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2915>
 		return;
 	}
 
 IL_029a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2909>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2918>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2910>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2919>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_41;
 		L_41 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		NullCheck(L_41);
 		Service_cancelInviteTrade_m38A04D137E061D2EAEEF460963972E81C439E6B4(L_41, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2911>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2920>
 		return;
 	}
 
 IL_02aa:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2914>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2923>
 		RuntimeObject* L_42 = ___1_p;
 		V_6 = ((ItemU5BU5D_t4DD3B0CDED4FDEE29D6C29225CED0468C194295B*)Castclass((RuntimeObject*)L_42, ItemU5BU5D_t4DD3B0CDED4FDEE29D6C29225CED0468C194295B_il2cpp_TypeInfo_var));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2915>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2924>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2916>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2925>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_43;
 		L_43 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		ItemU5BU5D_t4DD3B0CDED4FDEE29D6C29225CED0468C194295B* L_44 = V_6;
 		NullCheck(L_43);
 		Service_crystalCollectLock_m4B0A57CCA2C4CD82F44767AB30FE42A89E31DB9F(L_43, L_44, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2917>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2926>
 		return;
 	}
 
 IL_02c4:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2920>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2929>
 		String_t* L_45 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty;
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_46;
@@ -22214,7 +22350,7 @@ IL_02c4:
 		il2cpp_codegen_runtime_class_init_inline(ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_il2cpp_TypeInfo_var);
 		ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0* L_48;
 		L_48 = ChatPopup_addChatPopup_mDA9653FC067F5437BE2B3CB30E01E53DE7C87D5A(L_45, 1, L_47, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2921>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2930>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_49;
 		L_49 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_50;
@@ -22231,16 +22367,16 @@ IL_02c4:
 		int32_t L_55 = L_54->___menuSelectedItem;
 		NullCheck(L_49);
 		Service_menu_m5001B2EEB2CBA8DB1F557329328EE0EE3B29747A(L_49, L_53, L_55, 0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2922>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2931>
 		return;
 	}
 
 IL_0304:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2925>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2934>
 		RuntimeObject* L_56 = ___1_p;
 		V_7 = ((*(int16_t*)((int16_t*)(int16_t*)UnBox(L_56, Int16_tB8EF286A9C33492FA6E6D6E67320BE93E794A175_il2cpp_TypeInfo_var))));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2926>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2935>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_57;
 		L_57 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		int16_t L_58 = V_7;
@@ -22253,33 +22389,33 @@ IL_0304:
 		L_61 = TField_getText_mFCD7D323EF26FC195005BA96783EE50137C5A47A_inline(L_60, NULL);
 		NullCheck(L_57);
 		Service_textBoxId_mA238E0B1406249200C52E04F9EB47084B32E2278(L_57, L_58, L_61, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2927>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2936>
 		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2928>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2937>
 		return;
 	}
 
 IL_032d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2932>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2941>
 		RuntimeObject* L_62 = ___1_p;
 		V_8 = ((*(int16_t*)((int16_t*)(int16_t*)UnBox(L_62, Int16_tB8EF286A9C33492FA6E6D6E67320BE93E794A175_il2cpp_TypeInfo_var))));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2933>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2942>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_63;
 		L_63 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		int16_t L_64 = V_8;
 		NullCheck(L_63);
 		Service_menuId_m205C9AEF00B5A2F86EFD9BAA6B97F59C412CDDB5(L_63, L_64, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2934>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2943>
 		return;
 	}
 
 IL_0342:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2938>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2947>
 		RuntimeObject* L_65 = ___1_p;
 		V_9 = ((StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)Castclass((RuntimeObject*)L_65, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2939>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2948>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_66;
 		L_66 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -22291,13 +22427,13 @@ IL_0342:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2943>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2952>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05* L_68 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___menu;
 		NullCheck(L_68);
 		int32_t L_69 = L_68->___menuSelectedItem;
 		V_10 = L_69;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2944>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2953>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_70 = V_9;
 		NullCheck(L_70);
 		if ((((int32_t)((int32_t)(((RuntimeArray*)L_70)->max_length))) <= ((int32_t)1)))
@@ -22306,18 +22442,18 @@ IL_0342:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2946>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2955>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_71 = (MyVector_t5E551DE127AB217F3BF51644B186993381C11E30*)il2cpp_codegen_object_new(MyVector_t5E551DE127AB217F3BF51644B186993381C11E30_il2cpp_TypeInfo_var);
 		MyVector__ctor_m9CAA74C33B5605E7806E3F1C9E1D78A97AE10692(L_71, NULL);
 		V_11 = L_71;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2947>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2956>
 		V_12 = 0;
 		goto IL_03a2;
 	}
 
 IL_0378:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2949>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2958>
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_72 = V_11;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_73 = V_9;
 		int32_t L_74 = V_12;
@@ -22333,14 +22469,14 @@ IL_0378:
 		Command__ctor_m8EFC72AD8087CE3EFDD2AF9864C76C1C399810ED(L_81, L_76, L_77, ((int32_t)88821), L_80, NULL);
 		NullCheck(L_72);
 		MyVector_addElement_mEAC138D2FA33E278970E8870AF36E6F9B335916E(L_72, L_81, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2947>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2956>
 		int32_t L_82 = V_12;
 		V_12 = ((int32_t)il2cpp_codegen_add(L_82, 1));
 	}
 
 IL_03a2:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2947>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2956>
 		int32_t L_83 = V_12;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_84 = V_9;
 		NullCheck(L_84);
@@ -22350,7 +22486,7 @@ IL_03a2:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2951>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2960>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Menu_t818E8DA587A0E558DE9BC83947BABC9A6FDD0C05* L_85 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___menu;
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_86 = V_11;
@@ -22361,7 +22497,7 @@ IL_03a2:
 
 IL_03ba:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2955>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2964>
 		String_t* L_87 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty;
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_88;
@@ -22371,7 +22507,7 @@ IL_03ba:
 		il2cpp_codegen_runtime_class_init_inline(ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_il2cpp_TypeInfo_var);
 		ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0* L_90;
 		L_90 = ChatPopup_addChatPopup_mDA9653FC067F5437BE2B3CB30E01E53DE7C87D5A(L_87, 1, L_89, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2956>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2965>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_91;
 		L_91 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_92;
@@ -22385,16 +22521,16 @@ IL_03ba:
 		int32_t L_96 = V_10;
 		NullCheck(L_91);
 		Service_menu_m5001B2EEB2CBA8DB1F557329328EE0EE3B29747A(L_91, L_95, L_96, 0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2958>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2967>
 		return;
 	}
 
 IL_03f2:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2962>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2971>
 		RuntimeObject* L_97 = ___1_p;
 		V_13 = ((*(int32_t*)((int32_t*)(int32_t*)UnBox(L_97, Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var))));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2963>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2972>
 		String_t* L_98 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty;
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_99;
@@ -22404,7 +22540,7 @@ IL_03f2:
 		il2cpp_codegen_runtime_class_init_inline(ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_il2cpp_TypeInfo_var);
 		ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0* L_101;
 		L_101 = ChatPopup_addChatPopup_mDA9653FC067F5437BE2B3CB30E01E53DE7C87D5A(L_98, 1, L_100, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2964>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2973>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_102;
 		L_102 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_103;
@@ -22422,13 +22558,13 @@ IL_03f2:
 		int32_t L_109 = L_108->___menuSelectedItem;
 		NullCheck(L_102);
 		Service_menu_m5001B2EEB2CBA8DB1F557329328EE0EE3B29747A(L_102, L_106, L_107, L_109, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2965>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2974>
 		return;
 	}
 
 IL_043b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2968>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2977>
 		String_t* L_110 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty;
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_111;
@@ -22438,7 +22574,7 @@ IL_043b:
 		il2cpp_codegen_runtime_class_init_inline(ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_il2cpp_TypeInfo_var);
 		ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0* L_113;
 		L_113 = ChatPopup_addChatPopup_mDA9653FC067F5437BE2B3CB30E01E53DE7C87D5A(L_110, 1, L_112, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2969>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2978>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_114;
 		L_114 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_115;
@@ -22455,79 +22591,79 @@ IL_043b:
 		int32_t L_120 = L_119->___menuSelectedItem;
 		NullCheck(L_114);
 		Service_menu_m5001B2EEB2CBA8DB1F557329328EE0EE3B29747A(L_114, L_118, L_120, 0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2970>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2979>
 		return;
 	}
 
 IL_047b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2972>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2981>
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
 		String_t* L_121 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___SENTMSG;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_startOKDlg_mE90D8FA242593766F2C9B055069F898DF654E1EB(L_121, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2973>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2982>
 		return;
 	}
 
 IL_0486:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2975>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2984>
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
 		String_t* L_122 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___NOSENDMSG;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_startOKDlg_mE90D8FA242593766F2C9B055069F898DF654E1EB(L_122, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2976>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2985>
 		return;
 	}
 
 IL_0491:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2978>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2987>
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
 		String_t* L_123 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___sendMsgSuccess;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_startOKDlg_m8605AA6EFBA6819BF3DE0BEFEE93AAE2BBE373FC(L_123, (bool)0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2979>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2988>
 		return;
 	}
 
 IL_049d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2981>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2990>
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
 		String_t* L_124 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___cannotSendMsg;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_startOKDlg_m8605AA6EFBA6819BF3DE0BEFEE93AAE2BBE373FC(L_124, (bool)0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2982>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2991>
 		return;
 	}
 
 IL_04a9:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2984>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2993>
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
 		String_t* L_125 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___sendGuessMsgSuccess;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_startOKDlg_mE90D8FA242593766F2C9B055069F898DF654E1EB(L_125, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2985>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2994>
 		return;
 	}
 
 IL_04b4:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2987>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2996>
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
 		String_t* L_126 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___sendMsgFail;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_startOKDlg_mE90D8FA242593766F2C9B055069F898DF654E1EB(L_126, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2988>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2997>
 		return;
 	}
 
 IL_04bf:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2991>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3000>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		InputDlg_t6F73BE4C724386EBC959FAF67DC93E27990D4C83* L_127 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___inputDlg;
 		NullCheck(L_127);
@@ -22536,7 +22672,7 @@ IL_04bf:
 		String_t* L_129;
 		L_129 = TField_getText_mFCD7D323EF26FC195005BA96783EE50137C5A47A_inline(L_128, NULL);
 		V_14 = L_129;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2992>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3001>
 		String_t* L_130 = V_14;
 		String_t* L_131 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty;
 		NullCheck(L_130);
@@ -22548,29 +22684,29 @@ IL_04bf:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2994>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3003>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_133;
 		L_133 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		String_t* L_134 = V_14;
 		RuntimeObject* L_135 = ___1_p;
 		NullCheck(L_133);
 		Service_changeName_m1738B645A212A5990811E599602501D6F3F9E6EB(L_133, L_134, ((*(int32_t*)((int32_t*)(int32_t*)UnBox(L_135, Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var)))), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2995>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3004>
 		InfoDlg_showWait_m5671B6DDD1A8D769CD88E92006B12D1CF646B252(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:2997>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3006>
 		return;
 	}
 
 IL_04f9:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3000>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3009>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		InputDlg_t6F73BE4C724386EBC959FAF67DC93E27990D4C83* L_136 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___inputDlg;
 		NullCheck(L_136);
 		TField_t56E19AE85CA63279C53042EF348814217A9F0E70* L_137 = L_136->___tfInput;
 		NullCheck(L_137);
 		TField_setMaxTextLenght_m61EBFB02EBBFD04345FCF29A2FE30D03120575FD_inline(L_137, 6, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3001>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3010>
 		InputDlg_t6F73BE4C724386EBC959FAF67DC93E27990D4C83* L_138 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___inputDlg;
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
 		String_t* L_139 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___INPUT_PRIVATE_PASS;
@@ -22582,13 +22718,13 @@ IL_04f9:
 		int32_t L_143 = ((TField_t56E19AE85CA63279C53042EF348814217A9F0E70_StaticFields*)il2cpp_codegen_static_fields_for(TField_t56E19AE85CA63279C53042EF348814217A9F0E70_il2cpp_TypeInfo_var))->___INPUT_TYPE_NUMERIC;
 		NullCheck(L_138);
 		InputDlg_show_m83EC1651520EB88F91ED1B67B423DA507B5F63CE(L_138, L_139, L_142, L_143, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3002>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3011>
 		return;
 	}
 
 IL_0533:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3005>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3014>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		InputDlg_t6F73BE4C724386EBC959FAF67DC93E27990D4C83* L_144 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___inputDlg;
 		NullCheck(L_144);
@@ -22597,9 +22733,9 @@ IL_0533:
 		String_t* L_146;
 		L_146 = TField_getText_mFCD7D323EF26FC195005BA96783EE50137C5A47A_inline(L_145, NULL);
 		V_15 = L_146;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3006>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3015>
 		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3007>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3016>
 		String_t* L_147 = V_15;
 		NullCheck(L_147);
 		int32_t L_148;
@@ -22623,12 +22759,12 @@ IL_0533:
 
 IL_0561:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3009>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3018>
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
 		String_t* L_152 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___ALERT_PRIVATE_PASS_1;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_startOKDlg_mE90D8FA242593766F2C9B055069F898DF654E1EB(L_152, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3010>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3019>
 		return;
 	}
 
@@ -22637,7 +22773,7 @@ IL_056c:
 	}
 	try
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3014>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3023>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_153;
 		L_153 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		String_t* L_154 = V_15;
@@ -22645,7 +22781,7 @@ IL_056c:
 		L_155 = Int32_Parse_m273CA1A9C7717C99641291A95C543711C0202AF0(L_154, NULL);
 		NullCheck(L_153);
 		Service_activeAccProtect_m39180815BC984C296E1556C65B1233351A8DA4E1(L_153, L_155, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3015>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3024>
 		goto IL_06ef;
 	}
 	catch(Il2CppExceptionWrapper& e)
@@ -22661,14 +22797,14 @@ IL_056c:
 CATCH_0583:
 	{
 		Exception_t* L_156 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3017>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3026>
 		V_16 = L_156;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3019>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3028>
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var)));
 		String_t* L_157 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))))->___ALERT_PRIVATE_PASS_2;
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var)));
 		GameCanvas_startOKDlg_mE90D8FA242593766F2C9B055069F898DF654E1EB(L_157, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3020>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3029>
 		Exception_t* L_158 = V_16;
 		NullCheck(L_158);
 		String_t* L_159;
@@ -22676,14 +22812,14 @@ CATCH_0583:
 		String_t* L_160;
 		L_160 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral14320ECFDA80A4FB42588E2C62E3B9EED82BC6EE)), L_159, NULL);
 		Cout_println_m0A635C7677DEEFAE9B526557274A125FEBCFC801(L_160, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3021>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3030>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_06ef;
 	}
 
 IL_05aa:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3026>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3035>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		InputDlg_t6F73BE4C724386EBC959FAF67DC93E27990D4C83* L_161 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___inputDlg;
 		NullCheck(L_161);
@@ -22692,12 +22828,12 @@ IL_05aa:
 		String_t* L_163;
 		L_163 = TField_getText_mFCD7D323EF26FC195005BA96783EE50137C5A47A_inline(L_162, NULL);
 		V_17 = L_163;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3027>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3036>
 		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
 	}
 	try
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3030>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3039>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_164;
 		L_164 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		String_t* L_165 = V_17;
@@ -22708,7 +22844,7 @@ IL_05aa:
 		L_167 = Int32_Parse_m273CA1A9C7717C99641291A95C543711C0202AF0(L_166, NULL);
 		NullCheck(L_164);
 		Service_openLockAccProtect_mA917329EA5B1675895C66B60D10CFCB527254D40(L_164, L_167, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3031>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3040>
 		goto IL_06ef;
 	}
 	catch(Il2CppExceptionWrapper& e)
@@ -22724,9 +22860,9 @@ IL_05aa:
 CATCH_05db:
 	{
 		Exception_t* L_168 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3033>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3042>
 		V_18 = L_168;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3035>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3044>
 		Exception_t* L_169 = V_18;
 		NullCheck(L_169);
 		String_t* L_170;
@@ -22734,14 +22870,14 @@ CATCH_05db:
 		String_t* L_171;
 		L_171 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral8A8D04EB0352E622350FCDFDF9CCD664482CE240)), L_170, NULL);
 		Cout_println_m0A635C7677DEEFAE9B526557274A125FEBCFC801(L_171, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3036>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3045>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_06ef;
 	}
 
 IL_05f8:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3041>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3050>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		InputDlg_t6F73BE4C724386EBC959FAF67DC93E27990D4C83* L_172 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___inputDlg;
 		NullCheck(L_172);
@@ -22750,9 +22886,9 @@ IL_05f8:
 		String_t* L_174;
 		L_174 = TField_getText_mFCD7D323EF26FC195005BA96783EE50137C5A47A_inline(L_173, NULL);
 		V_19 = L_174;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3042>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3051>
 		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3043>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3052>
 		String_t* L_175 = V_19;
 		NullCheck(L_175);
 		int32_t L_176;
@@ -22776,12 +22912,12 @@ IL_05f8:
 
 IL_0626:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3045>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3054>
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
 		String_t* L_180 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___ALERT_PRIVATE_PASS_1;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_startOKDlg_mE90D8FA242593766F2C9B055069F898DF654E1EB(L_180, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3046>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3055>
 		return;
 	}
 
@@ -22790,13 +22926,13 @@ IL_0631:
 	}
 	try
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3050>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3059>
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
 		String_t* L_181 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___cancelAccountProtection;
 		String_t* L_182 = V_19;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_startYesNoDlg_m513493D2DC6AF1E2B0275D459B133002694292AF(L_181, ((int32_t)888391), L_182, ((int32_t)8882), NULL, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3051>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3060>
 		goto IL_06ef;
 	}
 	catch(Il2CppExceptionWrapper& e)
@@ -22812,26 +22948,26 @@ IL_0631:
 CATCH_064e:
 	{
 		Exception_t* L_183 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3053>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3055>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3062>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3064>
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var)));
 		String_t* L_184 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))))->___ALERT_PRIVATE_PASS_2;
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var)));
 		GameCanvas_startOKDlg_mE90D8FA242593766F2C9B055069F898DF654E1EB(L_184, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3056>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3065>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_06ef;
 	}
 
 IL_065e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3061>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3070>
 		RuntimeObject* L_185 = ___1_p;
 		V_20 = ((String_t*)CastclassSealed((RuntimeObject*)L_185, String_t_il2cpp_TypeInfo_var));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3062>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3071>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3063>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3072>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_186;
 		L_186 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		String_t* L_187 = V_20;
@@ -22839,13 +22975,13 @@ IL_065e:
 		L_188 = Int32_Parse_m273CA1A9C7717C99641291A95C543711C0202AF0(L_187, NULL);
 		NullCheck(L_186);
 		Service_clearAccProtect_mD6635E7C94DF7BA99A7DCF6DCD222B0B16E0953F(L_186, L_188, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3064>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3073>
 		return;
 	}
 
 IL_067d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3067>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3076>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_189;
 		L_189 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
@@ -22854,13 +22990,13 @@ IL_067d:
 		int32_t L_191 = L_190->___menuSelectedItem;
 		NullCheck(L_189);
 		Service_menu_m5001B2EEB2CBA8DB1F557329328EE0EE3B29747A(L_189, 4, L_191, 0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3068>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3077>
 		return;
 	}
 
 IL_0694:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3070>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3079>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_192 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
 		if (L_192)
@@ -22869,7 +23005,7 @@ IL_0694:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3072>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3081>
 		LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_193 = (LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8*)il2cpp_codegen_object_new(LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8_il2cpp_TypeInfo_var);
 		LoginScr__ctor_m3EB45EC8F390B05EC0EBF83FE469EE4336DD8BD5(L_193, NULL);
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
@@ -22879,46 +23015,19 @@ IL_0694:
 
 IL_06a5:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3074>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3083>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_194 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
 		NullCheck(L_194);
 		LoginScr_doLogin_m2FE7AD3446FDF0B894B7716CC49012E76190B708(L_194, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3075>
-		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
-		Main_closeKeyBoard_m76FEE5AC26F6C81EA78B551AEB93A1E24907BE69(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3076>
-		return;
-	}
-
-IL_06b5:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3078>
-		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3079>
-		return;
-	}
-
-IL_06bb:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3081>
-		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3082>
-		return;
-	}
-
-IL_06c1:
-	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3084>
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
-		((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___numberQuit = 0;
+		Main_closeKeyBoard_m76FEE5AC26F6C81EA78B551AEB93A1E24907BE69(NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3085>
 		return;
 	}
 
-IL_06c8:
+IL_06b5:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3087>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
@@ -22927,12 +23036,39 @@ IL_06c8:
 		return;
 	}
 
-IL_06ce:
+IL_06bb:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3090>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3091>
+		return;
+	}
+
+IL_06c1:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3093>
+		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
+		((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___numberQuit = 0;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3094>
+		return;
+	}
+
+IL_06c8:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3096>
+		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3097>
+		return;
+	}
+
+IL_06ce:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3099>
+		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3100>
 		il2cpp_codegen_runtime_class_init_inline(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var);
 		bool L_195 = ((ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_StaticFields*)il2cpp_codegen_static_fields_for(ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064_il2cpp_TypeInfo_var))->___loadScreen;
 		if (!L_195)
@@ -22941,7 +23077,7 @@ IL_06ce:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3093>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3102>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_196 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
 		NullCheck(L_196);
@@ -22951,7 +23087,7 @@ IL_06ce:
 
 IL_06e5:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3097>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3106>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		ServerListScreen_t48AD1C6778082BF8D0FDB993DBD57C490F544064* L_197 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___serverScreen;
 		NullCheck(L_197);
@@ -22960,7 +23096,7 @@ IL_06e5:
 
 IL_06ef:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3101>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3110>
 		return;
 	}
 }
@@ -22975,27 +23111,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameCanvas_clearAllPointerEvent_m92D47FD
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3105>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3114>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerClick = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3106>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3115>
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerDown = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3107>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3116>
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerJustDown = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3108>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3117>
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPointerJustRelease = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3109>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3118>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_0;
 		L_0 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 		NullCheck(L_0);
 		L_0->___lastSingleClick = ((int64_t)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3110>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3119>
 		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_1;
 		L_1 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
 		NullCheck(L_1);
 		L_1->___isPointerDowning = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3111>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/GameCanvas.cs:3120>
 		return;
 	}
 }
@@ -27899,7 +28035,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void TField_setMaxTextLenght_m61E
 		return;
 	}
 }
-// Method Definition Index: 18729
+// Method Definition Index: 18777
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23_inline (Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D* __this, float ___0_x, float ___1_y, float ___2_width, float ___3_height, const RuntimeMethod* method) 
 {
 	{

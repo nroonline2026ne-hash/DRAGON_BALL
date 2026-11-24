@@ -280,6 +280,7 @@ struct Sender_tF2641EB36B3ECC16C299E33A2F99C8C4178BBE64;
 IL2CPP_EXTERN_C RuntimeClass* AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AutoChatPanel_t9F210BA1E16FA865E87E0BFDAE2748AD9E951F2F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AutoFlag_tC8B9BEE4162120C587BC0E7EB6CF8577AB745217_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AutoHelperMn_t00BEB9A8D06F630A47D620FB0E3908B7FF4D34EA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AutoItemPanel_t2E7F7F6C9261D64F40BC7170592CE01D10978E50_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AutoKaioken_t86EF32C170CE546280F2F0C9D306D191E987E468_il2cpp_TypeInfo_var;
@@ -328,6 +329,7 @@ IL2CPP_EXTERN_C RuntimeClass* ItemObject_t755B394AFC69522A556F5EBA9AD67B1D4E2D90
 IL2CPP_EXTERN_C RuntimeClass* ItemU5BU5D_t4DD3B0CDED4FDEE29D6C29225CED0468C194295B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ItemViewerPanel_tA0F6DC147E5219D70EDB24C89874DCB4AC55A386_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Item_tFAF77888D49883A321EB596A7D93CB5615D37E95_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t09285A24144E3C0C3CAE5BB5E7F320E4CAEA7716_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var;
@@ -6514,6 +6516,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ItemViewerPanel_Show_mC19EBD10C8AD934320
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoItemPanel_Show_mBEA7123C0BFF2F1658A7273F661117EDF40B8429 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoChatPanel_Show_m179AE516FD2DEE68FFE44526277B568B1897DEB9 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoSkillPanel_Show_mFA1CCB2FBFE2EBC98C752E1CF6E9E2B3095D89F7 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KsGoldPanel_Show_mD4750C2F0A6EF9487D6CF43C1CA2F46B8668D18C (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoFusionPanel_Show_m526A7280AEBE222EC17A2ED3B831C7C41650448A (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_changeStatusInventory_mE07827A40261FD4C6655FEFDDD5176173C5ED82D (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoHelperMn_SaveConfig_mFE377236643CACC8C90031DD9B48F1846EA8F86D (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_changeStatusAnPlayer_mECA5A090680B1AB0024E0BF5424ACC5C45E084BC (const RuntimeMethod* method) ;
@@ -87178,6 +87182,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_DoFireModFunc_m21AA79DAC79F31C347A
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AutoChatPanel_t9F210BA1E16FA865E87E0BFDAE2748AD9E951F2F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AutoFlag_tC8B9BEE4162120C587BC0E7EB6CF8577AB745217_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AutoHelperMn_t00BEB9A8D06F630A47D620FB0E3908B7FF4D34EA_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AutoItemPanel_t2E7F7F6C9261D64F40BC7170592CE01D10978E50_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AutoKaioken_t86EF32C170CE546280F2F0C9D306D191E987E468_il2cpp_TypeInfo_var);
@@ -87189,6 +87194,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_DoFireModFunc_m21AA79DAC79F31C347A
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GraphicPanel_t19507AE5DD776EAC4C5B5180F4995435555A4071_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ItemViewerPanel_tA0F6DC147E5219D70EDB24C89874DCB4AC55A386_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MiniGamePanel_t329F32B3DC9CF0322300A7F08D06EA4E8C24176B_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ModFunc_AutoPhaLe_mF49067ADE5136018D2AC9E7637FA5F97E2E22AAC_RuntimeMethod_var);
@@ -87285,45 +87291,45 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_DoFireModFunc_m21AA79DAC79F31C347A
 	String_t* G_B53_0 = NULL;
 	String_t* G_B53_1 = NULL;
 	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B53_2 = NULL;
-	String_t* G_B71_0 = NULL;
-	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B71_1 = NULL;
-	String_t* G_B70_0 = NULL;
-	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B70_1 = NULL;
+	String_t* G_B73_0 = NULL;
+	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B73_1 = NULL;
 	String_t* G_B72_0 = NULL;
-	String_t* G_B72_1 = NULL;
-	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B72_2 = NULL;
-	String_t* G_B75_0 = NULL;
-	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B75_1 = NULL;
+	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B72_1 = NULL;
 	String_t* G_B74_0 = NULL;
-	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B74_1 = NULL;
+	String_t* G_B74_1 = NULL;
+	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B74_2 = NULL;
+	String_t* G_B77_0 = NULL;
+	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B77_1 = NULL;
 	String_t* G_B76_0 = NULL;
-	String_t* G_B76_1 = NULL;
-	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B76_2 = NULL;
-	String_t* G_B79_0 = NULL;
-	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B79_1 = NULL;
+	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B76_1 = NULL;
 	String_t* G_B78_0 = NULL;
-	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B78_1 = NULL;
+	String_t* G_B78_1 = NULL;
+	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B78_2 = NULL;
+	String_t* G_B81_0 = NULL;
+	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B81_1 = NULL;
 	String_t* G_B80_0 = NULL;
-	String_t* G_B80_1 = NULL;
-	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B80_2 = NULL;
-	String_t* G_B83_0 = NULL;
+	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B80_1 = NULL;
 	String_t* G_B82_0 = NULL;
-	int32_t G_B84_0 = 0;
-	String_t* G_B84_1 = NULL;
-	String_t* G_B86_0 = NULL;
-	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B86_1 = NULL;
+	String_t* G_B82_1 = NULL;
+	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B82_2 = NULL;
 	String_t* G_B85_0 = NULL;
-	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B85_1 = NULL;
+	String_t* G_B84_0 = NULL;
+	int32_t G_B86_0 = 0;
+	String_t* G_B86_1 = NULL;
+	String_t* G_B88_0 = NULL;
+	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B88_1 = NULL;
 	String_t* G_B87_0 = NULL;
-	String_t* G_B87_1 = NULL;
-	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B87_2 = NULL;
-	String_t* G_B90_0 = NULL;
-	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B90_1 = NULL;
+	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B87_1 = NULL;
 	String_t* G_B89_0 = NULL;
-	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B89_1 = NULL;
+	String_t* G_B89_1 = NULL;
+	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B89_2 = NULL;
+	String_t* G_B92_0 = NULL;
+	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B92_1 = NULL;
 	String_t* G_B91_0 = NULL;
-	String_t* G_B91_1 = NULL;
-	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B91_2 = NULL;
+	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B91_1 = NULL;
+	String_t* G_B93_0 = NULL;
+	String_t* G_B93_1 = NULL;
+	InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* G_B93_2 = NULL;
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14251>
 		int32_t L_0 = __this->___selected;
@@ -87362,12 +87368,12 @@ IL_000a:
 			}
 			case 3:
 			{
-				goto IL_0491;
+				goto IL_04b9;
 			}
 		}
 	}
 	{
-		goto IL_0602;
+		goto IL_062a;
 	}
 
 IL_0033:
@@ -87402,7 +87408,7 @@ IL_0033:
 		}
 	}
 	{
-		goto IL_0602;
+		goto IL_062a;
 	}
 
 IL_0056:
@@ -87459,7 +87465,7 @@ IL_0099:
 		NullCheck(G_B9_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B9_2, L_12, 0, NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14266>
-		goto IL_0602;
+		goto IL_062a;
 	}
 
 IL_00ae:
@@ -87511,7 +87517,7 @@ IL_00e7:
 		NullCheck(G_B13_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B13_2, L_19, 0, NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14270>
-		goto IL_0602;
+		goto IL_062a;
 	}
 
 IL_00fc:
@@ -87563,7 +87569,7 @@ IL_0135:
 		NullCheck(G_B17_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B17_2, L_26, 0, NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14274>
-		goto IL_0602;
+		goto IL_062a;
 	}
 
 IL_014a:
@@ -87615,7 +87621,7 @@ IL_0183:
 		NullCheck(G_B21_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B21_2, L_33, 0, NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14278>
-		goto IL_0602;
+		goto IL_062a;
 	}
 
 IL_0198:
@@ -87675,7 +87681,7 @@ IL_01d8:
 		L_41 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(G_B26_1, G_B26_0, _stringLiteral90DDBA8CD7718C4D17401A2FB40063983BEA0BA3, NULL);
 		NullCheck(G_B26_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B26_2, L_41, 0, NULL);
-		goto IL_0602;
+		goto IL_062a;
 	}
 
 IL_01ed:
@@ -87686,7 +87692,7 @@ IL_01ed:
 		NullCheck(L_42);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_42, _stringLiteral2F59C50B9815AAFEC65AEAE5FB99EE3E0C68C926, 0, NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14289>
-		goto IL_0602;
+		goto IL_062a;
 	}
 
 IL_0202:
@@ -87697,7 +87703,7 @@ IL_0202:
 		il2cpp_codegen_runtime_class_init_inline(MiniGamePanel_t329F32B3DC9CF0322300A7F08D06EA4E8C24176B_il2cpp_TypeInfo_var);
 		MiniGamePanel_Show_m042402BBBBD0BAF6FB654D5CA7B78CEC8BEE0276(0, NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14293>
-		goto IL_0602;
+		goto IL_062a;
 	}
 
 IL_0213:
@@ -87728,7 +87734,7 @@ IL_0213:
 		}
 	}
 	{
-		goto IL_0602;
+		goto IL_062a;
 	}
 
 IL_0232:
@@ -87806,7 +87812,7 @@ IL_0291:
 		NullCheck(G_B36_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B36_2, L_55, 0, NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14306>
-		goto IL_0602;
+		goto IL_062a;
 	}
 
 IL_02a6:
@@ -87876,7 +87882,7 @@ IL_02f1:
 		NullCheck(G_B42_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B42_2, L_64, 0, NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14314>
-		goto IL_0602;
+		goto IL_062a;
 	}
 
 IL_0306:
@@ -87928,7 +87934,7 @@ IL_033f:
 		NullCheck(G_B46_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B46_2, L_71, 0, NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14318>
-		goto IL_0602;
+		goto IL_062a;
 	}
 
 IL_0354:
@@ -88014,7 +88020,7 @@ IL_03ab:
 		NullCheck(G_B53_2);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B53_2, L_80, 0, NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14334>
-		goto IL_0602;
+		goto IL_062a;
 	}
 
 IL_03c0:
@@ -88025,7 +88031,7 @@ IL_03c0:
 		il2cpp_codegen_runtime_class_init_inline(AutoFlag_tC8B9BEE4162120C587BC0E7EB6CF8577AB745217_il2cpp_TypeInfo_var);
 		AutoFlag_ShowMenu_m3ED62241E4F6093C2EA66B49D9D1E4E29D3DDC3F(NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14338>
-		goto IL_0602;
+		goto IL_062a;
 	}
 
 IL_03d0:
@@ -88035,47 +88041,55 @@ IL_03d0:
 		{
 			case 0:
 			{
-				goto IL_03ff;
+				goto IL_0407;
 			}
 			case 1:
 			{
-				goto IL_0410;
+				goto IL_0418;
 			}
 			case 2:
 			{
-				goto IL_0420;
+				goto IL_0428;
 			}
 			case 3:
 			{
-				goto IL_0430;
+				goto IL_0438;
 			}
 			case 4:
 			{
-				goto IL_0440;
+				goto IL_0448;
 			}
 			case 5:
 			{
-				goto IL_0450;
+				goto IL_0458;
 			}
 			case 6:
 			{
-				goto IL_0461;
+				goto IL_0469;
 			}
 			case 7:
 			{
-				goto IL_0471;
+				goto IL_0479;
 			}
 			case 8:
 			{
-				goto IL_0481;
+				goto IL_0489;
+			}
+			case 9:
+			{
+				goto IL_0499;
+			}
+			case 10:
+			{
+				goto IL_04a9;
 			}
 		}
 	}
 	{
-		goto IL_0602;
+		goto IL_062a;
 	}
 
-IL_03ff:
+IL_0407:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14345>
 		Panel_hideNow_mA3330CE25C06054E376BB41701E5FC364B71D888(__this, NULL);
@@ -88083,10 +88097,10 @@ IL_03ff:
 		il2cpp_codegen_runtime_class_init_inline(AutoUpPanel_t678638F617E385A069DD4AFB491CC91FB3E8519F_il2cpp_TypeInfo_var);
 		AutoUpPanel_Show_m5905AFC6C70094423B1B586E1AA5FE6726E836E1(0, NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14347>
-		goto IL_0602;
+		goto IL_062a;
 	}
 
-IL_0410:
+IL_0418:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14349>
 		Panel_hideNow_mA3330CE25C06054E376BB41701E5FC364B71D888(__this, NULL);
@@ -88094,10 +88108,10 @@ IL_0410:
 		il2cpp_codegen_runtime_class_init_inline(AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643_il2cpp_TypeInfo_var);
 		AutoBossPanel_Show_m36A4DB17D6DFF5B6AE95A9DC6049A8CA421821FB(NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14351>
-		goto IL_0602;
+		goto IL_062a;
 	}
 
-IL_0420:
+IL_0428:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14353>
 		Panel_hideNow_mA3330CE25C06054E376BB41701E5FC364B71D888(__this, NULL);
@@ -88105,10 +88119,10 @@ IL_0420:
 		il2cpp_codegen_runtime_class_init_inline(AutoMapPanel_tBEC66D8461BA41AB4269C697948E16DB38E4C471_il2cpp_TypeInfo_var);
 		AutoMapPanel_Show_m0E2914C18A242280C7F39CF33A8A837DEE14B957(NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14355>
-		goto IL_0602;
+		goto IL_062a;
 	}
 
-IL_0430:
+IL_0438:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14357>
 		Panel_hideNow_mA3330CE25C06054E376BB41701E5FC364B71D888(__this, NULL);
@@ -88116,10 +88130,10 @@ IL_0430:
 		il2cpp_codegen_runtime_class_init_inline(GraphicPanel_t19507AE5DD776EAC4C5B5180F4995435555A4071_il2cpp_TypeInfo_var);
 		GraphicPanel_Show_m3D33D6F49567D648FF499B49B1D024A95EB20E9A(NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14359>
-		goto IL_0602;
+		goto IL_062a;
 	}
 
-IL_0440:
+IL_0448:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14361>
 		Panel_hideNow_mA3330CE25C06054E376BB41701E5FC364B71D888(__this, NULL);
@@ -88127,10 +88141,10 @@ IL_0440:
 		il2cpp_codegen_runtime_class_init_inline(AutoKaioken_t86EF32C170CE546280F2F0C9D306D191E987E468_il2cpp_TypeInfo_var);
 		AutoKaioken_ShowMenuKaioken_mEB2BA2DE426B07D97AA0A84EE864291B1DD53135(NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14363>
-		goto IL_0602;
+		goto IL_062a;
 	}
 
-IL_0450:
+IL_0458:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14365>
 		Panel_hideNow_mA3330CE25C06054E376BB41701E5FC364B71D888(__this, NULL);
@@ -88138,10 +88152,10 @@ IL_0450:
 		il2cpp_codegen_runtime_class_init_inline(ItemViewerPanel_tA0F6DC147E5219D70EDB24C89874DCB4AC55A386_il2cpp_TypeInfo_var);
 		ItemViewerPanel_Show_mC19EBD10C8AD9343206C7487F5ACA68FD2F0866D((bool)0, NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14367>
-		goto IL_0602;
+		goto IL_062a;
 	}
 
-IL_0461:
+IL_0469:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14369>
 		Panel_hideNow_mA3330CE25C06054E376BB41701E5FC364B71D888(__this, NULL);
@@ -88149,10 +88163,10 @@ IL_0461:
 		il2cpp_codegen_runtime_class_init_inline(AutoItemPanel_t2E7F7F6C9261D64F40BC7170592CE01D10978E50_il2cpp_TypeInfo_var);
 		AutoItemPanel_Show_mBEA7123C0BFF2F1658A7273F661117EDF40B8429(NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14371>
-		goto IL_0602;
+		goto IL_062a;
 	}
 
-IL_0471:
+IL_0479:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14373>
 		Panel_hideNow_mA3330CE25C06054E376BB41701E5FC364B71D888(__this, NULL);
@@ -88160,10 +88174,10 @@ IL_0471:
 		il2cpp_codegen_runtime_class_init_inline(AutoChatPanel_t9F210BA1E16FA865E87E0BFDAE2748AD9E951F2F_il2cpp_TypeInfo_var);
 		AutoChatPanel_Show_m179AE516FD2DEE68FFE44526277B568B1897DEB9(NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14375>
-		goto IL_0602;
+		goto IL_062a;
 	}
 
-IL_0481:
+IL_0489:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14377>
 		Panel_hideNow_mA3330CE25C06054E376BB41701E5FC364B71D888(__this, NULL);
@@ -88171,185 +88185,207 @@ IL_0481:
 		il2cpp_codegen_runtime_class_init_inline(AutoSkillPanel_t2C390C00559138A3B1918283862FAA9E278E04C4_il2cpp_TypeInfo_var);
 		AutoSkillPanel_Show_mFA1CCB2FBFE2EBC98C752E1CF6E9E2B3095D89F7(NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14379>
-		goto IL_0602;
+		goto IL_062a;
 	}
 
-IL_0491:
+IL_0499:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14381>
+		Panel_hideNow_mA3330CE25C06054E376BB41701E5FC364B71D888(__this, NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14382>
+		il2cpp_codegen_runtime_class_init_inline(KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var);
+		KsGoldPanel_Show_mD4750C2F0A6EF9487D6CF43C1CA2F46B8668D18C(NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14383>
+		goto IL_062a;
+	}
+
+IL_04a9:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14385>
+		Panel_hideNow_mA3330CE25C06054E376BB41701E5FC364B71D888(__this, NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14386>
+		il2cpp_codegen_runtime_class_init_inline(AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561_il2cpp_TypeInfo_var);
+		AutoFusionPanel_Show_m526A7280AEBE222EC17A2ED3B831C7C41650448A(NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14387>
+		goto IL_062a;
+	}
+
+IL_04b9:
 	{
 		int32_t L_82 = V_1;
 		switch (L_82)
 		{
 			case 0:
 			{
-				goto IL_04b4;
+				goto IL_04dc;
 			}
 			case 1:
 			{
-				goto IL_04be;
+				goto IL_04e6;
 			}
 			case 2:
 			{
-				goto IL_04fd;
+				goto IL_0525;
 			}
 			case 3:
 			{
-				goto IL_0534;
+				goto IL_055c;
 			}
 			case 4:
 			{
-				goto IL_056b;
+				goto IL_0593;
 			}
 			case 5:
 			{
-				goto IL_05d0;
+				goto IL_05f8;
 			}
 		}
 	}
 	{
-		goto IL_0602;
+		goto IL_062a;
 	}
 
-IL_04b4:
+IL_04dc:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14386>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14394>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		ModFunc_changeStatusInventory_mE07827A40261FD4C6655FEFDDD5176173C5ED82D(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14387>
-		goto IL_0602;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14395>
+		goto IL_062a;
 	}
 
-IL_04be:
+IL_04e6:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14389>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14397>
 		il2cpp_codegen_runtime_class_init_inline(AutoHelperMn_t00BEB9A8D06F630A47D620FB0E3908B7FF4D34EA_il2cpp_TypeInfo_var);
 		bool L_83 = ((AutoHelperMn_t00BEB9A8D06F630A47D620FB0E3908B7FF4D34EA_StaticFields*)il2cpp_codegen_static_fields_for(AutoHelperMn_t00BEB9A8D06F630A47D620FB0E3908B7FF4D34EA_il2cpp_TypeInfo_var))->___isAutoDefend;
 		((AutoHelperMn_t00BEB9A8D06F630A47D620FB0E3908B7FF4D34EA_StaticFields*)il2cpp_codegen_static_fields_for(AutoHelperMn_t00BEB9A8D06F630A47D620FB0E3908B7FF4D34EA_il2cpp_TypeInfo_var))->___isAutoDefend = (bool)((((int32_t)L_83) == ((int32_t)0))? 1 : 0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14390>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14398>
 		AutoHelperMn_SaveConfig_mFE377236643CACC8C90031DD9B48F1846EA8F86D(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14391>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14399>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_84 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		bool L_85 = ((AutoHelperMn_t00BEB9A8D06F630A47D620FB0E3908B7FF4D34EA_StaticFields*)il2cpp_codegen_static_fields_for(AutoHelperMn_t00BEB9A8D06F630A47D620FB0E3908B7FF4D34EA_il2cpp_TypeInfo_var))->___isAutoDefend;
 		if (L_85)
 		{
-			G_B71_0 = _stringLiteral5B852629BA6963262BB90A1A12B8CF88CFB72D64;
-			G_B71_1 = L_84;
-			goto IL_04e8;
+			G_B73_0 = _stringLiteral5B852629BA6963262BB90A1A12B8CF88CFB72D64;
+			G_B73_1 = L_84;
+			goto IL_0510;
 		}
-		G_B70_0 = _stringLiteral5B852629BA6963262BB90A1A12B8CF88CFB72D64;
-		G_B70_1 = L_84;
+		G_B72_0 = _stringLiteral5B852629BA6963262BB90A1A12B8CF88CFB72D64;
+		G_B72_1 = L_84;
 	}
 	{
-		G_B72_0 = _stringLiteral790ECFC4A4BF650CA871AB72675B7587CE35D09A;
-		G_B72_1 = G_B70_0;
-		G_B72_2 = G_B70_1;
-		goto IL_04ed;
+		G_B74_0 = _stringLiteral790ECFC4A4BF650CA871AB72675B7587CE35D09A;
+		G_B74_1 = G_B72_0;
+		G_B74_2 = G_B72_1;
+		goto IL_0515;
 	}
 
-IL_04e8:
+IL_0510:
 	{
-		G_B72_0 = _stringLiteralC26F227944481D07167337871C3B612C14BC15C0;
-		G_B72_1 = G_B71_0;
-		G_B72_2 = G_B71_1;
+		G_B74_0 = _stringLiteralC26F227944481D07167337871C3B612C14BC15C0;
+		G_B74_1 = G_B73_0;
+		G_B74_2 = G_B73_1;
 	}
 
-IL_04ed:
+IL_0515:
 	{
 		String_t* L_86;
-		L_86 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B72_1, G_B72_0, NULL);
-		NullCheck(G_B72_2);
-		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B72_2, L_86, 0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14392>
-		goto IL_0602;
+		L_86 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B74_1, G_B74_0, NULL);
+		NullCheck(G_B74_2);
+		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B74_2, L_86, 0, NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14400>
+		goto IL_062a;
 	}
 
-IL_04fd:
+IL_0525:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14394>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14402>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		ModFunc_changeStatusAnPlayer_mECA5A090680B1AB0024E0BF5424ACC5C45E084BC(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14395>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14403>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_87 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		bool L_88 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___AnPlayer;
 		if (L_88)
 		{
-			G_B75_0 = _stringLiteralFCD1B54CACFE63316499555B06F8092646771CF7;
-			G_B75_1 = L_87;
-			goto IL_051a;
+			G_B77_0 = _stringLiteralFCD1B54CACFE63316499555B06F8092646771CF7;
+			G_B77_1 = L_87;
+			goto IL_0542;
 		}
-		G_B74_0 = _stringLiteralFCD1B54CACFE63316499555B06F8092646771CF7;
-		G_B74_1 = L_87;
+		G_B76_0 = _stringLiteralFCD1B54CACFE63316499555B06F8092646771CF7;
+		G_B76_1 = L_87;
 	}
 	{
-		G_B76_0 = _stringLiteral674058287FDE988EC7647257DF00D2996A36BE4F;
-		G_B76_1 = G_B74_0;
-		G_B76_2 = G_B74_1;
-		goto IL_051f;
+		G_B78_0 = _stringLiteral674058287FDE988EC7647257DF00D2996A36BE4F;
+		G_B78_1 = G_B76_0;
+		G_B78_2 = G_B76_1;
+		goto IL_0547;
 	}
 
-IL_051a:
+IL_0542:
 	{
-		G_B76_0 = _stringLiteral88CF6BF9D8F24A728BEAF03F22D5F1FAAD8F0987;
-		G_B76_1 = G_B75_0;
-		G_B76_2 = G_B75_1;
+		G_B78_0 = _stringLiteral88CF6BF9D8F24A728BEAF03F22D5F1FAAD8F0987;
+		G_B78_1 = G_B77_0;
+		G_B78_2 = G_B77_1;
 	}
 
-IL_051f:
+IL_0547:
 	{
 		String_t* L_89;
-		L_89 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(G_B76_1, G_B76_0, _stringLiteral73A03D3620D4BB9C31404FCB677427656BB3169C, NULL);
-		NullCheck(G_B76_2);
-		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B76_2, L_89, 0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14396>
-		goto IL_0602;
+		L_89 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(G_B78_1, G_B78_0, _stringLiteral73A03D3620D4BB9C31404FCB677427656BB3169C, NULL);
+		NullCheck(G_B78_2);
+		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B78_2, L_89, 0, NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14404>
+		goto IL_062a;
 	}
 
-IL_0534:
+IL_055c:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14398>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14406>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		ModFunc_changeStatusShowID_mB387FA6217E3E30838C7690E887A9EE65A7226E1(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14399>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14407>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_90 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		bool L_91 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isShowID;
 		if (L_91)
 		{
-			G_B79_0 = _stringLiteralFCD1B54CACFE63316499555B06F8092646771CF7;
-			G_B79_1 = L_90;
-			goto IL_0551;
+			G_B81_0 = _stringLiteralFCD1B54CACFE63316499555B06F8092646771CF7;
+			G_B81_1 = L_90;
+			goto IL_0579;
 		}
-		G_B78_0 = _stringLiteralFCD1B54CACFE63316499555B06F8092646771CF7;
-		G_B78_1 = L_90;
+		G_B80_0 = _stringLiteralFCD1B54CACFE63316499555B06F8092646771CF7;
+		G_B80_1 = L_90;
 	}
 	{
-		G_B80_0 = _stringLiteral674058287FDE988EC7647257DF00D2996A36BE4F;
-		G_B80_1 = G_B78_0;
-		G_B80_2 = G_B78_1;
-		goto IL_0556;
+		G_B82_0 = _stringLiteral674058287FDE988EC7647257DF00D2996A36BE4F;
+		G_B82_1 = G_B80_0;
+		G_B82_2 = G_B80_1;
+		goto IL_057e;
 	}
 
-IL_0551:
+IL_0579:
 	{
-		G_B80_0 = _stringLiteral88CF6BF9D8F24A728BEAF03F22D5F1FAAD8F0987;
-		G_B80_1 = G_B79_0;
-		G_B80_2 = G_B79_1;
+		G_B82_0 = _stringLiteral88CF6BF9D8F24A728BEAF03F22D5F1FAAD8F0987;
+		G_B82_1 = G_B81_0;
+		G_B82_2 = G_B81_1;
 	}
 
-IL_0556:
+IL_057e:
 	{
 		String_t* L_92;
-		L_92 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(G_B80_1, G_B80_0, _stringLiteral42FE991B75556F8E30A44868C5E1BE0CF7DC8437, NULL);
-		NullCheck(G_B80_2);
-		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B80_2, L_92, 0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14400>
-		goto IL_0602;
+		L_92 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(G_B82_1, G_B82_0, _stringLiteral42FE991B75556F8E30A44868C5E1BE0CF7DC8437, NULL);
+		NullCheck(G_B82_2);
+		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B82_2, L_92, 0, NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14408>
+		goto IL_062a;
 	}
 
-IL_056b:
+IL_0593:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14402>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14410>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_93;
 		L_93 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
@@ -88359,35 +88395,35 @@ IL_056b:
 		bool L_95 = L_94->___isIntroOff;
 		NullCheck(L_93);
 		L_93->___isIntroOff = (bool)((((int32_t)L_95) == ((int32_t)0))? 1 : 0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14403>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14411>
 		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_96;
 		L_96 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
 		NullCheck(L_96);
 		bool L_97 = L_96->___isIntroOff;
 		if (L_97)
 		{
-			G_B83_0 = _stringLiteral5EA7F0A4F915C846BBD145D83C103DBABAD56E79;
-			goto IL_0596;
+			G_B85_0 = _stringLiteral5EA7F0A4F915C846BBD145D83C103DBABAD56E79;
+			goto IL_05be;
 		}
-		G_B82_0 = _stringLiteral5EA7F0A4F915C846BBD145D83C103DBABAD56E79;
+		G_B84_0 = _stringLiteral5EA7F0A4F915C846BBD145D83C103DBABAD56E79;
 	}
 	{
-		G_B84_0 = 0;
-		G_B84_1 = G_B82_0;
-		goto IL_0597;
+		G_B86_0 = 0;
+		G_B86_1 = G_B84_0;
+		goto IL_05bf;
 	}
 
-IL_0596:
+IL_05be:
 	{
-		G_B84_0 = 1;
-		G_B84_1 = G_B83_0;
+		G_B86_0 = 1;
+		G_B86_1 = G_B85_0;
 	}
 
-IL_0597:
+IL_05bf:
 	{
 		il2cpp_codegen_runtime_class_init_inline(Rms_t233B1849E61744F4CE2C667927199ADDA6438C4A_il2cpp_TypeInfo_var);
-		Rms_saveRMSInt_m6429922F24AC570BC8C569486E3BD135B981A8C7(G_B84_1, G_B84_0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14404>
+		Rms_saveRMSInt_m6429922F24AC570BC8C569486E3BD135B981A8C7(G_B86_1, G_B86_0, NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14412>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_98 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
@@ -88397,86 +88433,86 @@ IL_0597:
 		bool L_100 = L_99->___isIntroOff;
 		if (L_100)
 		{
-			G_B86_0 = _stringLiteralFCD1B54CACFE63316499555B06F8092646771CF7;
-			G_B86_1 = L_98;
-			goto IL_05b9;
+			G_B88_0 = _stringLiteralFCD1B54CACFE63316499555B06F8092646771CF7;
+			G_B88_1 = L_98;
+			goto IL_05e1;
 		}
-		G_B85_0 = _stringLiteralFCD1B54CACFE63316499555B06F8092646771CF7;
-		G_B85_1 = L_98;
+		G_B87_0 = _stringLiteralFCD1B54CACFE63316499555B06F8092646771CF7;
+		G_B87_1 = L_98;
 	}
 	{
-		G_B87_0 = _stringLiteral674058287FDE988EC7647257DF00D2996A36BE4F;
-		G_B87_1 = G_B85_0;
-		G_B87_2 = G_B85_1;
-		goto IL_05be;
+		G_B89_0 = _stringLiteral674058287FDE988EC7647257DF00D2996A36BE4F;
+		G_B89_1 = G_B87_0;
+		G_B89_2 = G_B87_1;
+		goto IL_05e6;
 	}
 
-IL_05b9:
+IL_05e1:
 	{
-		G_B87_0 = _stringLiteral88CF6BF9D8F24A728BEAF03F22D5F1FAAD8F0987;
-		G_B87_1 = G_B86_0;
-		G_B87_2 = G_B86_1;
+		G_B89_0 = _stringLiteral88CF6BF9D8F24A728BEAF03F22D5F1FAAD8F0987;
+		G_B89_1 = G_B88_0;
+		G_B89_2 = G_B88_1;
 	}
 
-IL_05be:
+IL_05e6:
 	{
 		String_t* L_101;
-		L_101 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(G_B87_1, G_B87_0, _stringLiteral007C830FD9175BCDD860DF72E435BF7725A31D6C, NULL);
-		NullCheck(G_B87_2);
-		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B87_2, L_101, 0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14405>
-		goto IL_0602;
+		L_101 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(G_B89_1, G_B89_0, _stringLiteral007C830FD9175BCDD860DF72E435BF7725A31D6C, NULL);
+		NullCheck(G_B89_2);
+		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B89_2, L_101, 0, NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14413>
+		goto IL_062a;
 	}
 
-IL_05d0:
+IL_05f8:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14407>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14415>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		ModFunc_changeStatusBackground_m5C61A73ABF0FAF98084D03FB4BEA0829FE141300(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14408>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14416>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_102 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		bool L_103 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___GiamDungLuong;
 		if (L_103)
 		{
-			G_B90_0 = _stringLiteralFCD1B54CACFE63316499555B06F8092646771CF7;
-			G_B90_1 = L_102;
-			goto IL_05ed;
+			G_B92_0 = _stringLiteralFCD1B54CACFE63316499555B06F8092646771CF7;
+			G_B92_1 = L_102;
+			goto IL_0615;
 		}
-		G_B89_0 = _stringLiteralFCD1B54CACFE63316499555B06F8092646771CF7;
-		G_B89_1 = L_102;
+		G_B91_0 = _stringLiteralFCD1B54CACFE63316499555B06F8092646771CF7;
+		G_B91_1 = L_102;
 	}
 	{
-		G_B91_0 = _stringLiteral674058287FDE988EC7647257DF00D2996A36BE4F;
-		G_B91_1 = G_B89_0;
-		G_B91_2 = G_B89_1;
-		goto IL_05f2;
+		G_B93_0 = _stringLiteral674058287FDE988EC7647257DF00D2996A36BE4F;
+		G_B93_1 = G_B91_0;
+		G_B93_2 = G_B91_1;
+		goto IL_061a;
 	}
 
-IL_05ed:
+IL_0615:
 	{
-		G_B91_0 = _stringLiteral88CF6BF9D8F24A728BEAF03F22D5F1FAAD8F0987;
-		G_B91_1 = G_B90_0;
-		G_B91_2 = G_B90_1;
+		G_B93_0 = _stringLiteral88CF6BF9D8F24A728BEAF03F22D5F1FAAD8F0987;
+		G_B93_1 = G_B92_0;
+		G_B93_2 = G_B92_1;
 	}
 
-IL_05f2:
+IL_061a:
 	{
 		String_t* L_104;
-		L_104 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(G_B91_1, G_B91_0, _stringLiteral82D85EBAE38056B994D68BF792CA4F4F5B705254, NULL);
-		NullCheck(G_B91_2);
-		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B91_2, L_104, 0, NULL);
+		L_104 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(G_B93_1, G_B93_0, _stringLiteral82D85EBAE38056B994D68BF792CA4F4F5B705254, NULL);
+		NullCheck(G_B93_2);
+		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(G_B93_2, L_104, 0, NULL);
 	}
 
-IL_0602:
+IL_062a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14413>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14421>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE* L_105;
 		L_105 = SoundMn_gI_mC638F7F795F36F9E04F30A3613B22693B6E6B4D7(NULL);
 		NullCheck(L_105);
 		SoundMn_GetStrModFunc_mDE5B2C09925417140EB50876923403BDD0A8C97E(L_105, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14414>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14422>
 		return;
 	}
 }
@@ -88485,19 +88521,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_setTypeAccount_mE6017A9CE36E348E81
 {
 	int32_t V_0 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14418>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14426>
 		__this->___type = ((int32_t)20);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14419>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14427>
 		Panel_setType_m47510E148D8B90A6FD03479D7BA0491DB01B3BC4(__this, 0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14420>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14428>
 		Panel_setTabAccount_m7556EB46154EF1F4DC0219F1817F6F165972C8BB(__this, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14421>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14429>
 		int32_t L_0 = 0;
 		V_0 = L_0;
 		__this->___cmtoX = L_0;
 		int32_t L_1 = V_0;
 		__this->___cmx = L_1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14422>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14430>
 		return;
 	}
 }
@@ -88522,7 +88558,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_setTabAccount_m7556EB46154EF1F4DC0
 	int32_t G_B13_0 = 0;
 	Panel_t49349297CB778B2219539905F16B94090BD93138* G_B13_1 = NULL;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14426>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14434>
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
 		bool L_0 = ((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___IphoneVersionApp;
 		if (!L_0)
@@ -88531,13 +88567,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_setTabAccount_m7556EB46154EF1F4DC0
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14428>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14429>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14430>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14431>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14432>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14433>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14434>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14436>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14437>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14438>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14439>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14440>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14441>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14442>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)4);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2 = L_1;
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
@@ -88559,7 +88595,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_setTabAccount_m7556EB46154EF1F4DC0
 		il2cpp_codegen_runtime_class_init_inline(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var);
 		((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___strAccount = L_8;
 		Il2CppCodeGenWriteBarrier((void**)(&((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___strAccount), (void*)L_8);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14435>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14443>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		bool L_10 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___canAutoPlay;
 		if (!L_10)
@@ -88568,14 +88604,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_setTabAccount_m7556EB46154EF1F4DC0
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14437>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14438>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14439>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14440>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14441>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14442>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14443>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14444>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14445>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14446>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14447>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14448>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14449>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14450>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14451>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14452>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_11 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_12 = L_11;
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
@@ -88606,14 +88642,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_setTabAccount_m7556EB46154EF1F4DC0
 
 IL_0074:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14449>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14450>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14451>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14452>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14453>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14454>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14455>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14456>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14457>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14458>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14459>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14460>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14461>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14462>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14463>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14464>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_22 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_23 = L_22;
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
@@ -88639,7 +88675,7 @@ IL_0074:
 		il2cpp_codegen_runtime_class_init_inline(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var);
 		((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___strAccount = L_31;
 		Il2CppCodeGenWriteBarrier((void**)(&((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___strAccount), (void*)L_31);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14457>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14465>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		bool L_33 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___canAutoPlay;
 		if (!L_33)
@@ -88648,15 +88684,15 @@ IL_0074:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14459>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14460>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14461>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14462>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14463>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14464>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14465>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14466>
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14467>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14468>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14469>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14470>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14471>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14472>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14473>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14474>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14475>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_34 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)6);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_35 = L_34;
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
@@ -88690,7 +88726,7 @@ IL_0074:
 
 IL_00e9:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14469>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14477>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		int32_t L_47 = ((mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_StaticFields*)il2cpp_codegen_static_fields_for(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var))->___clientType;
 		if ((((int32_t)L_47) == ((int32_t)2)))
@@ -88717,14 +88753,14 @@ IL_00f9:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14471>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14472>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14473>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14474>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14475>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14476>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14477>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14478>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14479>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14480>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14481>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14482>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14483>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14484>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14485>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14486>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_50 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)5);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_51 = L_50;
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
@@ -88750,7 +88786,7 @@ IL_00f9:
 		il2cpp_codegen_runtime_class_init_inline(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var);
 		((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___strAccount = L_59;
 		Il2CppCodeGenWriteBarrier((void**)(&((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___strAccount), (void*)L_59);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14479>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14487>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		bool L_61 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___canAutoPlay;
 		if (!L_61)
@@ -88759,15 +88795,15 @@ IL_00f9:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14481>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14482>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14483>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14484>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14485>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14486>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14487>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14488>
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14489>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14490>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14491>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14492>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14493>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14494>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14495>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14496>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14497>
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_62 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)6);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_63 = L_62;
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
@@ -88801,14 +88837,14 @@ IL_00f9:
 
 IL_0176:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14493>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14501>
 		il2cpp_codegen_runtime_class_init_inline(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_75 = ((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___strAccount;
 		NullCheck(L_75);
 		__this->___currentListLength = ((int32_t)(((RuntimeArray*)L_75)->max_length));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14494>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14502>
 		__this->___ITEM_HEIGHT = ((int32_t)24);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14495>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14503>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		bool L_76 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isTouch;
 		if (L_76)
@@ -88834,12 +88870,12 @@ IL_0197:
 	{
 		NullCheck(G_B13_1);
 		G_B13_1->___selected = G_B13_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14496>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14504>
 		int32_t L_77 = __this->___currentListLength;
 		int32_t L_78 = __this->___ITEM_HEIGHT;
 		int32_t L_79 = __this->___hScroll;
 		__this->___cmyLim = ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_multiply(L_77, L_78)), L_79));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14497>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14505>
 		int32_t L_80 = __this->___cmyLim;
 		if ((((int32_t)L_80) >= ((int32_t)0)))
 		{
@@ -88847,13 +88883,13 @@ IL_0197:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14499>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14507>
 		__this->___cmyLim = 0;
 	}
 
 IL_01c6:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14501>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14509>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_81 = __this->___cmyLast;
 		int32_t L_82 = __this->___currentTabIndex;
 		NullCheck(L_81);
@@ -88864,7 +88900,7 @@ IL_01c6:
 		__this->___cmtoY = L_85;
 		int32_t L_86 = V_0;
 		__this->___cmy = L_86;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14502>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14510>
 		int32_t L_87 = __this->___cmy;
 		if ((((int32_t)L_87) >= ((int32_t)0)))
 		{
@@ -88872,7 +88908,7 @@ IL_01c6:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14504>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14512>
 		int32_t L_88 = 0;
 		V_0 = L_88;
 		__this->___cmtoY = L_88;
@@ -88882,7 +88918,7 @@ IL_01c6:
 
 IL_01fb:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14506>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14514>
 		int32_t L_90 = __this->___cmy;
 		int32_t L_91 = __this->___cmyLim;
 		if ((((int32_t)L_90) <= ((int32_t)L_91)))
@@ -88891,7 +88927,7 @@ IL_01fb:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14508>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14516>
 		int32_t L_92 = __this->___cmyLim;
 		int32_t L_93 = L_92;
 		V_0 = L_93;
@@ -88902,7 +88938,7 @@ IL_01fb:
 
 IL_021e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14510>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14518>
 		return;
 	}
 }
@@ -88926,7 +88962,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_paintAccount_m4FB0F98322A34064E0E1
 	int32_t G_B6_0 = 0;
 	mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* G_B6_1 = NULL;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14514>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14522>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_0 = ___0_g;
 		int32_t L_1 = __this->___xScroll;
 		int32_t L_2 = __this->___yScroll;
@@ -88934,33 +88970,33 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_paintAccount_m4FB0F98322A34064E0E1
 		int32_t L_4 = __this->___hScroll;
 		NullCheck(L_0);
 		mGraphics_setClip_m40F6AC445C68B4E10ABA519E1A2EDC421FC39797(L_0, L_1, L_2, L_3, L_4, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14515>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14523>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_5 = ___0_g;
 		int32_t L_6 = __this->___cmy;
 		NullCheck(L_5);
 		mGraphics_translate_m935DBC9CDE2048589DFCE243A3462166E912EDEC(L_5, 0, ((-L_6)), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14516>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14524>
 		V_0 = 0;
 		goto IL_00de;
 	}
 
 IL_0033:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14518>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14526>
 		int32_t L_7 = __this->___xScroll;
 		V_1 = L_7;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14519>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14527>
 		int32_t L_8 = __this->___yScroll;
 		int32_t L_9 = V_0;
 		int32_t L_10 = __this->___ITEM_HEIGHT;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_8, ((int32_t)il2cpp_codegen_multiply(L_9, L_10))));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14520>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14528>
 		int32_t L_11 = __this->___wScroll;
 		V_3 = ((int32_t)il2cpp_codegen_subtract(L_11, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14521>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14529>
 		int32_t L_12 = __this->___ITEM_HEIGHT;
 		V_4 = ((int32_t)il2cpp_codegen_subtract(L_12, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14522>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14530>
 		int32_t L_13 = V_2;
 		int32_t L_14 = __this->___cmy;
 		int32_t L_15 = __this->___yScroll;
@@ -88981,7 +89017,7 @@ IL_0033:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14524>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14532>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_21 = ___0_g;
 		int32_t L_22 = V_0;
 		int32_t L_23 = __this->___selected;
@@ -89011,7 +89047,7 @@ IL_00a1:
 	{
 		NullCheck(G_B6_1);
 		mGraphics_setColor_m6D037E4A78016A5277A10A76AFAB06F3A0733156(G_B6_1, G_B6_0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14525>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14533>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_25 = ___0_g;
 		int32_t L_26 = V_1;
 		int32_t L_27 = V_2;
@@ -89019,7 +89055,7 @@ IL_00a1:
 		int32_t L_29 = V_4;
 		NullCheck(L_25);
 		mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(L_25, L_26, L_27, L_28, L_29, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14526>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14534>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_30 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_dark;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_31 = ___0_g;
@@ -89039,14 +89075,14 @@ IL_00a1:
 
 IL_00da:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14516>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14524>
 		int32_t L_40 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_40, 1));
 	}
 
 IL_00de:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14516>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14524>
 		int32_t L_41 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_42 = ((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___strAccount;
@@ -89057,10 +89093,10 @@ IL_00de:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14529>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14537>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_43 = ___0_g;
 		Panel_paintScrollArrow_m6CA01F0E02A2E0D814D8E2AFC811C79BC8AAC62B(__this, L_43, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14530>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14538>
 		return;
 	}
 }
@@ -89085,7 +89121,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_doFireAccount_mC7190A54376C98CCB0D
 	String_t* V_1 = NULL;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14534>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14542>
 		int32_t L_0 = __this->___selected;
 		if ((((int32_t)L_0) >= ((int32_t)0)))
 		{
@@ -89093,13 +89129,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_doFireAccount_mC7190A54376C98CCB0D
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14536>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14544>
 		return;
 	}
 
 IL_000a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14538>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14546>
 		int32_t L_1 = __this->___selected;
 		V_0 = L_1;
 		int32_t L_2 = V_0;
@@ -89137,10 +89173,10 @@ IL_000a:
 
 IL_0030:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14541>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14549>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		GameCanvas_endDlg_mF330D2BC3ED545241DDA7ACEAEEB80198E8EEC62(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14542>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14550>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_3 = __this->___chatTField;
 		if (L_3)
 		{
@@ -89148,12 +89184,12 @@ IL_0030:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14544>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14552>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_4 = (ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529*)il2cpp_codegen_object_new(ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529_il2cpp_TypeInfo_var);
 		ChatTextField__ctor_m39A88529ABD59FD42BE02E550995BE6A5B1DCF3B(L_4, NULL);
 		__this->___chatTField = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___chatTField), (void*)L_4);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14545>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14553>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_5 = __this->___chatTField;
 		NullCheck(L_5);
 		TField_t56E19AE85CA63279C53042EF348814217A9F0E70* L_6 = L_5->___tfChat;
@@ -89167,11 +89203,11 @@ IL_0030:
 		int32_t L_10 = L_9->___height;
 		NullCheck(L_6);
 		L_6->___y = ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_7, ((int32_t)35))), L_10));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14546>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14554>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_11 = __this->___chatTField;
 		NullCheck(L_11);
 		ChatTextField_initChatTextField_mB0E8F55C54D3888E1C5ED9827D5099D54978299F(L_11, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14547>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14555>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_12 = __this->___chatTField;
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_13 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 		NullCheck(L_12);
@@ -89181,21 +89217,21 @@ IL_0030:
 
 IL_008b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14549>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14557>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_14 = __this->___chatTField;
 		NullCheck(L_14);
 		TField_t56E19AE85CA63279C53042EF348814217A9F0E70* L_15 = L_14->___tfChat;
 		String_t* L_16 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty;
 		NullCheck(L_15);
 		TField_setText_m082270065C3961E053A902D7C7BCC3B932CF4FAE(L_15, L_16, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14550>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14558>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_17 = __this->___chatTField;
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
 		String_t* L_18 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___input_Inventory_Pass;
 		NullCheck(L_17);
 		L_17->___strChat = L_18;
 		Il2CppCodeGenWriteBarrier((void**)(&L_17->___strChat), (void*)L_18);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14551>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14559>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_19 = __this->___chatTField;
 		NullCheck(L_19);
 		TField_t56E19AE85CA63279C53042EF348814217A9F0E70* L_20 = L_19->___tfChat;
@@ -89203,23 +89239,23 @@ IL_008b:
 		NullCheck(L_20);
 		L_20->___name = L_21;
 		Il2CppCodeGenWriteBarrier((void**)(&L_20->___name), (void*)L_21);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14552>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14560>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_22 = __this->___chatTField;
 		String_t* L_23 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty;
 		NullCheck(L_22);
 		L_22->___to = L_23;
 		Il2CppCodeGenWriteBarrier((void**)(&L_22->___to), (void*)L_23);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14553>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14561>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_24 = __this->___chatTField;
 		NullCheck(L_24);
 		L_24->___isShow = (bool)1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14554>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14562>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_25 = __this->___chatTField;
 		NullCheck(L_25);
 		TField_t56E19AE85CA63279C53042EF348814217A9F0E70* L_26 = L_25->___tfChat;
 		NullCheck(L_26);
 		L_26->___isFocus = (bool)1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14555>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14563>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_27 = __this->___chatTField;
 		NullCheck(L_27);
 		TField_t56E19AE85CA63279C53042EF348814217A9F0E70* L_28 = L_27->___tfChat;
@@ -89227,7 +89263,7 @@ IL_008b:
 		int32_t L_29 = ((TField_t56E19AE85CA63279C53042EF348814217A9F0E70_StaticFields*)il2cpp_codegen_static_fields_for(TField_t56E19AE85CA63279C53042EF348814217A9F0E70_il2cpp_TypeInfo_var))->___INPUT_TYPE_NUMERIC;
 		NullCheck(L_28);
 		TField_setIputType_m72F29E07E1F1F559628ABB8FFC773EDB68298B46(L_28, L_29, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14556>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14564>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		bool L_30 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isTouch;
 		if (!L_30)
@@ -89236,7 +89272,7 @@ IL_008b:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14558>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14566>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_31 = __this->___chatTField;
 		NullCheck(L_31);
 		TField_t56E19AE85CA63279C53042EF348814217A9F0E70* L_32 = L_31->___tfChat;
@@ -89246,7 +89282,7 @@ IL_008b:
 
 IL_011e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14560>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14568>
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
 		bool L_33 = ((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___isPC;
 		if (L_33)
@@ -89255,7 +89291,7 @@ IL_011e:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14562>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14570>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_34 = __this->___chatTField;
 		String_t* L_35 = ((String_t_StaticFields*)il2cpp_codegen_static_fields_for(String_t_il2cpp_TypeInfo_var))->___Empty;
 		NullCheck(L_34);
@@ -89264,7 +89300,7 @@ IL_011e:
 
 IL_0136:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14564>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14572>
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
 		bool L_36 = ((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___isWindowsPhone;
 		if (!L_36)
@@ -89273,7 +89309,7 @@ IL_0136:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14566>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14574>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_37 = __this->___chatTField;
 		NullCheck(L_37);
 		TField_t56E19AE85CA63279C53042EF348814217A9F0E70* L_38 = L_37->___tfChat;
@@ -89283,41 +89319,41 @@ IL_0136:
 		NullCheck(L_38);
 		L_38->___strInfo = L_40;
 		Il2CppCodeGenWriteBarrier((void**)(&L_38->___strInfo), (void*)L_40);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14568>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14576>
 		return;
 	}
 
 IL_015c:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14570>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14578>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_41;
 		L_41 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		NullCheck(L_41);
 		Service_friend_mF5341FC7293208FD09E971E2249321AD9C3CD35E(L_41, (int8_t)0, (-1), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14571>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14579>
 		InfoDlg_showWait_m5671B6DDD1A8D769CD88E92006B12D1CF646B252(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14572>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14580>
 		return;
 	}
 
 IL_016e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14574>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14582>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_42;
 		L_42 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		NullCheck(L_42);
 		Service_enemy_m131593B64BADEEFDEA81212B2541A3260AF75732(L_42, (int8_t)0, (-1), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14575>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14583>
 		InfoDlg_showWait_m5671B6DDD1A8D769CD88E92006B12D1CF646B252(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14576>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14584>
 		return;
 	}
 
 IL_0180:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14578>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14586>
 		Panel_setTypeMessage_m43D712273653B4889F6FE3652873DE5903759EBF(__this, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14579>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14587>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_43 = __this->___chatTField;
 		if (L_43)
 		{
@@ -89325,12 +89361,12 @@ IL_0180:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14581>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14589>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_44 = (ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529*)il2cpp_codegen_object_new(ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529_il2cpp_TypeInfo_var);
 		ChatTextField__ctor_m39A88529ABD59FD42BE02E550995BE6A5B1DCF3B(L_44, NULL);
 		__this->___chatTField = L_44;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___chatTField), (void*)L_44);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14582>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14590>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_45 = __this->___chatTField;
 		NullCheck(L_45);
 		TField_t56E19AE85CA63279C53042EF348814217A9F0E70* L_46 = L_45->___tfChat;
@@ -89344,23 +89380,23 @@ IL_0180:
 		int32_t L_50 = L_49->___height;
 		NullCheck(L_46);
 		L_46->___y = ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_47, ((int32_t)35))), L_50));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14583>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14591>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_51 = __this->___chatTField;
 		NullCheck(L_51);
 		ChatTextField_initChatTextField_mB0E8F55C54D3888E1C5ED9827D5099D54978299F(L_51, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14584>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14592>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_52 = __this->___chatTField;
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_53 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 		NullCheck(L_52);
 		L_52->___parentScreen = L_53;
 		Il2CppCodeGenWriteBarrier((void**)(&L_52->___parentScreen), (void*)L_53);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14586>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14594>
 		return;
 	}
 
 IL_01e0:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14588>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14596>
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
 		int8_t L_54 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___language;
 		if ((!(((uint32_t)L_54) == ((uint32_t)2))))
@@ -89369,7 +89405,7 @@ IL_01e0:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14590>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14598>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_55 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
 		NullCheck(L_55);
@@ -89380,18 +89416,18 @@ IL_01e0:
 		String_t* L_58;
 		L_58 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral41AAB8F21798223B4F139619E2663096BB5FAF1E, L_57, NULL);
 		V_1 = L_58;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14591>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14599>
 		Panel_hideNow_mA3330CE25C06054E376BB41701E5FC364B71D888(__this, NULL);
 	}
 	try
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14594>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14602>
 		il2cpp_codegen_runtime_class_init_inline(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var);
 		GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F* L_59 = ((GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_StaticFields*)il2cpp_codegen_static_fields_for(GameMidlet_tFD9198A8DAC9B07B11E740D3AA194381385FC93F_il2cpp_TypeInfo_var))->___instance;
 		String_t* L_60 = V_1;
 		NullCheck(L_59);
 		GameMidlet_platformRequest_m9509E1221938E9901549E69C1906944EC2342FEF(L_59, L_60, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14595>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14603>
 		goto IL_0257;
 	}
 	catch(Il2CppExceptionWrapper& e)
@@ -89407,23 +89443,23 @@ IL_01e0:
 CATCH_0215:
 	{
 		Exception_t* L_61 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14599>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14607>
 		NullCheck(L_61);
 		String_t* L_62;
 		L_62 = VirtualFuncInvoker0< String_t* >::Invoke(8, L_61);
 		NullCheck(L_62);
 		String_t* L_63;
 		L_63 = VirtualFuncInvoker0< String_t* >::Invoke(3, L_62);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14600>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14608>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0257;
 	}
 
 IL_0222:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14603>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14611>
 		Panel_hideNow_mA3330CE25C06054E376BB41701E5FC364B71D888(__this, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14604>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14612>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_64;
 		L_64 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -89437,7 +89473,7 @@ IL_0222:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14606>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14614>
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
 		String_t* L_67 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___finishBomong;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
@@ -89447,24 +89483,24 @@ IL_0222:
 
 IL_0246:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14610>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14618>
 		MoneyCharge_t9A12AE2DBB7671A331710D61A47FF9BF8C5C6FB2* L_68;
 		L_68 = MoneyCharge_gI_m27B74FCFE09577E5CA9856F1DA0AC1673BCE7023(NULL);
 		NullCheck(L_68);
 		VirtualActionInvoker0::Invoke(4, L_68);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14612>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14620>
 		return;
 	}
 
 IL_0251:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14614>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14622>
 		Panel_setTypeAuto_mDE00D652294B8A1D14B3611B52F5A2755B8E479F(__this, NULL);
 	}
 
 IL_0257:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14617>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14625>
 		return;
 	}
 }
@@ -89472,9 +89508,9 @@ IL_0257:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_updateKeyOption_mF0961760D2EE6D83FE62F7D365EB2315934BE2AE (Panel_t49349297CB778B2219539905F16B94090BD93138* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14621>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14629>
 		Panel_updateKeyScrollView_m03F153B7C7B33D1F8922B1B1FA25569EEDEAE8F0(__this, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14622>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14630>
 		return;
 	}
 }
@@ -89482,15 +89518,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_updateKeyOption_mF0961760D2EE6D83F
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_setTypeSpeacialSkill_m38158215479C1426F00D7F4ED2DFD3F79DAA2122 (Panel_t49349297CB778B2219539905F16B94090BD93138* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14626>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14634>
 		__this->___type = ((int32_t)25);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14627>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14635>
 		Panel_setType_m47510E148D8B90A6FD03479D7BA0491DB01B3BC4(__this, 0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14628>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14636>
 		Panel_setTabSpeacialSkill_m3B9C8127C6A4DEA27CD41B1DD12AED812A839CC8(__this, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14629>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14637>
 		__this->___currentTabIndex = 0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14630>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14638>
 		return;
 	}
 }
@@ -89510,9 +89546,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_setTabSpeacialSkill_m3B9C8127C6A4D
 	int32_t G_B9_0 = 0;
 	Panel_t49349297CB778B2219539905F16B94090BD93138* G_B9_1 = NULL;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14634>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14642>
 		__this->___ITEM_HEIGHT = ((int32_t)24);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14635>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14643>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_0;
 		L_0 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -89524,12 +89560,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_setTabSpeacialSkill_m3B9C8127C6A4D
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_4 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
 		NullCheck(L_4);
 		__this->___currentListLength = ((int32_t)(((RuntimeArray*)L_4)->max_length));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14636>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14644>
 		int32_t L_5 = __this->___currentListLength;
 		int32_t L_6 = __this->___ITEM_HEIGHT;
 		int32_t L_7 = __this->___hScroll;
 		__this->___cmyLim = ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_multiply(L_5, L_6)), L_7));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14637>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14645>
 		int32_t L_8 = __this->___cmyLim;
 		if ((((int32_t)L_8) >= ((int32_t)0)))
 		{
@@ -89537,13 +89573,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_setTabSpeacialSkill_m3B9C8127C6A4D
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14639>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14647>
 		__this->___cmyLim = 0;
 	}
 
 IL_004b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14641>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14649>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_9 = __this->___cmyLast;
 		int32_t L_10 = __this->___currentTabIndex;
 		NullCheck(L_9);
@@ -89554,7 +89590,7 @@ IL_004b:
 		__this->___cmtoY = L_13;
 		int32_t L_14 = V_0;
 		__this->___cmy = L_14;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14642>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14650>
 		int32_t L_15 = __this->___cmy;
 		if ((((int32_t)L_15) >= ((int32_t)0)))
 		{
@@ -89562,7 +89598,7 @@ IL_004b:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14644>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14652>
 		int32_t L_16 = 0;
 		V_0 = L_16;
 		__this->___cmtoY = L_16;
@@ -89572,7 +89608,7 @@ IL_004b:
 
 IL_0080:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14646>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14654>
 		int32_t L_18 = __this->___cmy;
 		int32_t L_19 = __this->___cmyLim;
 		if ((((int32_t)L_18) <= ((int32_t)L_19)))
@@ -89581,7 +89617,7 @@ IL_0080:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14648>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14656>
 		int32_t L_20 = __this->___cmyLim;
 		int32_t L_21 = L_20;
 		V_0 = L_21;
@@ -89592,7 +89628,7 @@ IL_0080:
 
 IL_00a3:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14650>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14658>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		bool L_23 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isTouch;
 		if (L_23)
@@ -89618,7 +89654,7 @@ IL_00af:
 	{
 		NullCheck(G_B9_1);
 		G_B9_1->___selected = G_B9_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14651>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14659>
 		return;
 	}
 }
@@ -89626,7 +89662,7 @@ IL_00af:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Panel_isTypeShop_m1429F80BA0C558ACFDCA4151B4E473595735CDEF (Panel_t49349297CB778B2219539905F16B94090BD93138* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14655>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14663>
 		int32_t L_0 = __this->___type;
 		if ((!(((uint32_t)L_0) == ((uint32_t)1))))
 		{
@@ -89634,13 +89670,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Panel_isTypeShop_m1429F80BA0C558ACFDCA41
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14657>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14665>
 		return (bool)1;
 	}
 
 IL_000b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14659>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14667>
 		return (bool)0;
 	}
 }
@@ -89667,7 +89703,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_doNotiRuby_m246E4253DC654CC642CAD9
 	String_t* G_B5_2 = NULL;
 	try
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14666>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14674>
 		Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* L_0 = __this->___currItem;
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_1 = __this->___chatTField;
 		NullCheck(L_1);
@@ -89679,7 +89715,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_doNotiRuby_m246E4253DC654CC642CAD9
 		L_4 = Int32_Parse_m273CA1A9C7717C99641291A95C543711C0202AF0(L_3, NULL);
 		NullCheck(L_0);
 		L_0->___buyRuby = L_4;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14667>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14675>
 		goto IL_003b;
 	}
 	catch(Il2CppExceptionWrapper& e)
@@ -89695,24 +89731,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_doNotiRuby_m246E4253DC654CC642CAD9
 CATCH_0022:
 	{
 		Exception_t* L_5 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14668>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14670>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14676>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14678>
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var)));
 		String_t* L_6 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))))->___input_money_wrong;
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var)));
 		GameCanvas_startOKDlg_mE90D8FA242593766F2C9B055069F898DF654E1EB(L_6, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14671>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14679>
 		ChatTextField_t452A4B90255A7F077FA9E214B18D8A03C8DC3529* L_7 = __this->___chatTField;
 		NullCheck(L_7);
 		L_7->___isShow = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14672>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14680>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0075;
 	}
 
 IL_003b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14674>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14682>
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
 		String_t* L_8 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___YES;
 		int32_t L_9 = ___0_type;
@@ -89744,13 +89780,13 @@ IL_0050:
 		Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_10 = (Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1*)il2cpp_codegen_object_new(Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1_il2cpp_TypeInfo_var);
 		Command__ctor_m8EFC72AD8087CE3EFDD2AF9864C76C1C399810ED(L_10, G_B5_2, G_B5_1, G_B5_0, NULL, NULL);
 		V_0 = L_10;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14675>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14683>
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
 		String_t* L_11 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___NO;
 		Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_12 = (Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1*)il2cpp_codegen_object_new(Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1_il2cpp_TypeInfo_var);
 		Command__ctor_m8EFC72AD8087CE3EFDD2AF9864C76C1C399810ED(L_12, L_11, __this, ((int32_t)11002), NULL, NULL);
 		V_1 = L_12;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14676>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14684>
 		String_t* L_13 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___notiRuby;
 		Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_14 = V_0;
 		Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1* L_15 = V_1;
@@ -89760,7 +89796,7 @@ IL_0050:
 
 IL_0075:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14677>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14685>
 		return;
 	}
 }
@@ -89785,17 +89821,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_paintUpgradeEffect_mD05BF9D34A714C
 	try
 	{
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14683>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14691>
 			int32_t L_0 = ___2_wItem;
 			int32_t L_1 = ___3_hItem;
 			int32_t L_2 = ___4_nline;
 			V_0 = ((int32_t)(((int32_t)il2cpp_codegen_add(((int32_t)(L_0<<1)), ((int32_t)(L_1<<1))))/L_2));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14684>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14692>
 			il2cpp_codegen_runtime_class_init_inline(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_3 = ((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___sizeUpgradeEff;
 			NullCheck(L_3);
 			((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___nsize = ((int32_t)(((RuntimeArray*)L_3)->max_length));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14685>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14693>
 			int32_t L_4 = ___4_nline;
 			if ((((int32_t)L_4) <= ((int32_t)4)))
 			{
@@ -89803,28 +89839,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_paintUpgradeEffect_mD05BF9D34A714C
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14687>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14695>
 			il2cpp_codegen_runtime_class_init_inline(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var);
 			((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___nsize = 2;
 		}
 
 IL_0022_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14689>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14697>
 			V_1 = 0;
 			goto IL_00b0_1;
 		}
 
 IL_0029_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14691>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14699>
 			V_2 = 0;
 			goto IL_00a4_1;
 		}
 
 IL_002d_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14693>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14701>
 			il2cpp_codegen_runtime_class_init_inline(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var);
 			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_5 = ((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___sizeUpgradeEff;
 			int32_t L_6 = V_2;
@@ -89855,7 +89891,7 @@ IL_0044_1:
 IL_0045_1:
 		{
 			V_3 = G_B7_0;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14694>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14702>
 			int32_t L_13 = ___0_x;
 			int32_t L_14 = V_0;
 			int32_t L_15 = V_1;
@@ -89869,7 +89905,7 @@ IL_0045_1:
 			int32_t L_21;
 			L_21 = Panel_upgradeEffectX_mF3F92FEA6F612CAA710C392006FD9D36599B7A7D(((int32_t)il2cpp_codegen_multiply(L_14, L_15)), ((int32_t)il2cpp_codegen_subtract(L_16, ((int32_t)il2cpp_codegen_multiply(L_17, 4)))), L_18, L_19, L_20, NULL);
 			V_4 = ((int32_t)il2cpp_codegen_add(L_13, L_21));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14695>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14703>
 			int32_t L_22 = ___1_y;
 			int32_t L_23 = V_0;
 			int32_t L_24 = V_1;
@@ -89881,7 +89917,7 @@ IL_0045_1:
 			int32_t L_30;
 			L_30 = Panel_upgradeEffectY_mF0A852F7A891E5DD68DE73388FF2797655B5C259(((int32_t)il2cpp_codegen_multiply(L_23, L_24)), ((int32_t)il2cpp_codegen_subtract(L_25, ((int32_t)il2cpp_codegen_multiply(L_26, 4)))), L_27, L_28, L_29, NULL);
 			V_5 = ((int32_t)il2cpp_codegen_add(L_22, L_30));
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14696>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14704>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_31 = ___6_g;
 			Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C15943466E* L_32 = ((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___colorUpgradeEffect;
 			int32_t L_33 = ___5_cl;
@@ -89894,7 +89930,7 @@ IL_0045_1:
 			int32_t L_38 = (L_35)->GetAt(static_cast<il2cpp_array_size_t>(L_37));
 			NullCheck(L_31);
 			mGraphics_setColor_m6D037E4A78016A5277A10A76AFAB06F3A0733156(L_31, L_38, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14697>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14705>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_39 = ___6_g;
 			int32_t L_40 = V_4;
 			int32_t L_41 = V_5;
@@ -89910,14 +89946,14 @@ IL_0045_1:
 			int32_t L_49 = (L_46)->GetAt(static_cast<il2cpp_array_size_t>(L_48));
 			NullCheck(L_39);
 			mGraphics_fillRect_m476E3A5360581B125A81AA6E88257D6EE971E29E(L_39, L_40, L_41, L_45, L_49, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14691>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14699>
 			int32_t L_50 = V_2;
 			V_2 = ((int32_t)il2cpp_codegen_add(L_50, 1));
 		}
 
 IL_00a4_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14691>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14699>
 			int32_t L_51 = V_2;
 			il2cpp_codegen_runtime_class_init_inline(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var);
 			int32_t L_52 = ((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___nsize;
@@ -89927,14 +89963,14 @@ IL_00a4_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14689>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14697>
 			int32_t L_53 = V_1;
 			V_1 = ((int32_t)il2cpp_codegen_add(L_53, 1));
 		}
 
 IL_00b0_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14689>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14697>
 			int32_t L_54 = V_1;
 			int32_t L_55 = ___4_nline;
 			if ((((int32_t)L_54) < ((int32_t)L_55)))
@@ -89943,7 +89979,7 @@ IL_00b0_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14700>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14708>
 			goto IL_00bd;
 		}
 	}
@@ -89960,15 +89996,15 @@ IL_00b0_1:
 CATCH_00ba:
 	{
 		Exception_t* L_56 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14701>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14703>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14709>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14711>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_00bd;
 	}
 
 IL_00bd:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14704>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14712>
 		return;
 	}
 }
@@ -89977,13 +90013,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Panel_upgradeEffectX_mF3F92FEA6F612CA
 {
 	int32_t V_0 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14708>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14716>
 		int32_t L_0 = ___1_tick;
 		int32_t L_1 = ___0_dk;
 		int32_t L_2 = ___2_wItem;
 		int32_t L_3 = ___3_hitem;
 		V_0 = ((int32_t)(((int32_t)il2cpp_codegen_add(L_0, L_1))%((int32_t)il2cpp_codegen_add(((int32_t)(L_2<<1)), ((int32_t)(L_3<<1))))));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14709>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14717>
 		int32_t L_4 = V_0;
 		if ((((int32_t)0) > ((int32_t)L_4)))
 		{
@@ -89999,7 +90035,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Panel_upgradeEffectX_mF3F92FEA6F612CA
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14711>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14719>
 		int32_t L_7 = V_0;
 		int32_t L_8 = ___2_wItem;
 		return ((int32_t)(L_7%L_8));
@@ -90007,7 +90043,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Panel_upgradeEffectX_mF3F92FEA6F612CA
 
 IL_0018:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14713>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14721>
 		int32_t L_9 = ___2_wItem;
 		int32_t L_10 = V_0;
 		if ((((int32_t)L_9) > ((int32_t)L_10)))
@@ -90025,7 +90061,7 @@ IL_0018:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14715>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14723>
 		int32_t L_14 = ___2_wItem;
 		int32_t L_15 = ___4_wSize;
 		return ((int32_t)il2cpp_codegen_subtract(L_14, L_15));
@@ -90033,7 +90069,7 @@ IL_0018:
 
 IL_0027:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14717>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14725>
 		int32_t L_16 = ___2_wItem;
 		int32_t L_17 = ___3_hitem;
 		int32_t L_18 = V_0;
@@ -90052,7 +90088,7 @@ IL_0027:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14719>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14727>
 		int32_t L_22 = ___2_wItem;
 		int32_t L_23 = V_0;
 		int32_t L_24 = ___3_hitem;
@@ -90063,7 +90099,7 @@ IL_0027:
 
 IL_0040:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14721>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14729>
 		return 0;
 	}
 }
@@ -90072,13 +90108,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Panel_upgradeEffectY_mF0A852F7A891E5D
 {
 	int32_t V_0 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14726>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14734>
 		int32_t L_0 = ___1_tick;
 		int32_t L_1 = ___0_dk;
 		int32_t L_2 = ___2_wItem;
 		int32_t L_3 = ___3_hitem;
 		V_0 = ((int32_t)(((int32_t)il2cpp_codegen_add(L_0, L_1))%((int32_t)il2cpp_codegen_add(((int32_t)(L_2<<1)), ((int32_t)(L_3<<1))))));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14727>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14735>
 		int32_t L_4 = V_0;
 		if ((((int32_t)0) > ((int32_t)L_4)))
 		{
@@ -90094,13 +90130,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Panel_upgradeEffectY_mF0A852F7A891E5D
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14729>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14737>
 		return 0;
 	}
 
 IL_0016:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14731>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14739>
 		int32_t L_7 = ___2_wItem;
 		int32_t L_8 = V_0;
 		if ((((int32_t)L_7) > ((int32_t)L_8)))
@@ -90118,7 +90154,7 @@ IL_0016:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14733>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14741>
 		int32_t L_12 = V_0;
 		int32_t L_13 = ___2_wItem;
 		return ((int32_t)(L_12%L_13));
@@ -90126,7 +90162,7 @@ IL_0016:
 
 IL_0024:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14735>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14743>
 		int32_t L_14 = ___2_wItem;
 		int32_t L_15 = ___3_hitem;
 		int32_t L_16 = V_0;
@@ -90145,7 +90181,7 @@ IL_0024:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14737>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14745>
 		int32_t L_20 = ___3_hitem;
 		int32_t L_21 = ___4_wSize;
 		return ((int32_t)il2cpp_codegen_subtract(L_20, L_21));
@@ -90153,7 +90189,7 @@ IL_0024:
 
 IL_0037:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14739>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14747>
 		int32_t L_22 = ___3_hitem;
 		int32_t L_23 = V_0;
 		int32_t L_24 = ___2_wItem;
@@ -90167,16 +90203,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Panel_GetColor_ItemBg_m9643A5070C545D
 {
 	int32_t V_0 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14744>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14745>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14746>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14747>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14748>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14749>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14750>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14751>
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14752>
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14753>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14754>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14755>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14756>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14757>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14758>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14759>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14760>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14761>
 		int32_t L_0 = ___0_id;
 		switch (((int32_t)il2cpp_codegen_subtract(L_0, 1)))
 		{
@@ -90212,49 +90248,49 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Panel_GetColor_ItemBg_m9643A5070C545D
 
 IL_0022:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14746>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14754>
 		V_0 = ((int32_t)1269146);
 		goto IL_0054;
 	}
 
 IL_002a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14747>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14755>
 		V_0 = ((int32_t)2786816);
 		goto IL_0054;
 	}
 
 IL_0032:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14748>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14756>
 		V_0 = ((int32_t)13279744);
 		goto IL_0054;
 	}
 
 IL_003a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14749>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14757>
 		V_0 = ((int32_t)12537346);
 		goto IL_0054;
 	}
 
 IL_0042:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14750>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14758>
 		V_0 = ((int32_t)7078041);
 		goto IL_0054;
 	}
 
 IL_004a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14751>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14759>
 		V_0 = ((int32_t)11599872);
 		goto IL_0054;
 	}
 
 IL_0052:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14752>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14760>
 		V_0 = (-1);
 	}
 
@@ -90268,7 +90304,7 @@ IL_0054:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Panel_GetColor_Item_Upgrade_mD13764C3C33F5275BAB66FD0D3A9F930CB88BD52 (int32_t ___0_lv, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14758>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14766>
 		int32_t L_0 = ___0_lv;
 		if ((((int32_t)L_0) >= ((int32_t)0)))
 		{
@@ -90276,7 +90312,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Panel_GetColor_Item_Upgrade_mD13764C3C
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14760>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14768>
 		return (int8_t)0;
 	}
 
@@ -90337,49 +90373,49 @@ IL_0006:
 
 IL_003a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14766>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14774>
 		return (int8_t)4;
 	}
 
 IL_003c:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14769>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14777>
 		return (int8_t)1;
 	}
 
 IL_003e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14772>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14780>
 		return (int8_t)2;
 	}
 
 IL_0040:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14775>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14783>
 		return (int8_t)3;
 	}
 
 IL_0042:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14777>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14785>
 		return (int8_t)5;
 	}
 
 IL_0044:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14779>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14787>
 		return (int8_t)6;
 	}
 
 IL_0046:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14781>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14789>
 		return (int8_t)0;
 	}
 
 IL_0048:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14783>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14791>
 		return (int8_t)0;
 	}
 }
@@ -90394,7 +90430,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR mFont_tACAC801D855571BA75D16FF2511EB748DFEA9B
 	}
 	mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* V_0 = NULL;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14789>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14797>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_0 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7;
 		V_0 = L_0;
@@ -90449,87 +90485,87 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR mFont_tACAC801D855571BA75D16FF2511EB748DFEA9B
 
 IL_0038:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14793>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14801>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_2 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7;
 		V_0 = L_2;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14794>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14802>
 		goto IL_007e;
 	}
 
 IL_0040:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14796>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14804>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_3 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_dark;
 		V_0 = L_3;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14797>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14805>
 		goto IL_007e;
 	}
 
 IL_0048:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14799>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14807>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_4 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_green;
 		V_0 = L_4;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14800>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14808>
 		goto IL_007e;
 	}
 
 IL_0050:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14802>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14810>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_5 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_blue;
 		V_0 = L_5;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14803>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14811>
 		goto IL_007e;
 	}
 
 IL_0058:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14805>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14813>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_6 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_blue;
 		V_0 = L_6;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14806>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14814>
 		goto IL_007e;
 	}
 
 IL_0060:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14808>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14816>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_7 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_blue;
 		V_0 = L_7;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14809>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14817>
 		goto IL_007e;
 	}
 
 IL_0068:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14811>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14819>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_8 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_blue;
 		V_0 = L_8;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14812>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14820>
 		goto IL_007e;
 	}
 
 IL_0070:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14814>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14822>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_9 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_red;
 		V_0 = L_9;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14815>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14823>
 		goto IL_007e;
 	}
 
 IL_0078:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14817>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14825>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_10 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_yellow;
 		V_0 = L_10;
@@ -90537,7 +90573,7 @@ IL_0078:
 
 IL_007e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14820>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14828>
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_11 = V_0;
 		return L_11;
 	}
@@ -90564,11 +90600,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_paintOptItem_mC2499E6BBD22A8A7597D
 	int32_t V_2 = 0;
 	int32_t V_3 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14825>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14833>
 		V_0 = ((int32_t)12);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14826>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14834>
 		V_1 = ((int32_t)20);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14827>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14835>
 		V_2 = ((int32_t)15);
 		int32_t L_0 = ___1_idOpt;
 		switch (((int32_t)il2cpp_codegen_subtract(L_0, ((int32_t)34))))
@@ -90595,9 +90631,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_paintOptItem_mC2499E6BBD22A8A7597D
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14832>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14840>
 		V_3 = 8;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14833>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14841>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_2 = __this->___imgo_17;
 		if (!L_2)
 		{
@@ -90605,7 +90641,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_paintOptItem_mC2499E6BBD22A8A7597D
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14835>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14843>
 		int32_t L_3 = ___2_param;
 		if ((((int32_t)L_3) <= ((int32_t)0)))
 		{
@@ -90613,7 +90649,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_paintOptItem_mC2499E6BBD22A8A7597D
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14837>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14845>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_4 = ___0_g;
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_5 = __this->___imgo_17;
 		int32_t L_6 = ___3_x;
@@ -90637,7 +90673,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_paintOptItem_mC2499E6BBD22A8A7597D
 
 IL_006d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14839>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14847>
 		int32_t L_16 = ___2_param;
 		int32_t L_17 = V_3;
 		if ((((int32_t)L_16) <= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_17, 3)))))
@@ -90646,7 +90682,7 @@ IL_006d:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14841>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14849>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_18 = ___0_g;
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_19 = __this->___imgo_18;
 		int32_t L_20 = ___3_x;
@@ -90669,7 +90705,7 @@ IL_006d:
 
 IL_00a7:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14843>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14851>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_30 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_white;
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_31 = ___0_g;
@@ -90698,24 +90734,24 @@ IL_00a7:
 
 IL_00ee:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14847>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14855>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_44;
 		L_44 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteral7132F5C1F63D3E6719B5A1EA5B2E706C08B95EDA, NULL);
 		__this->___imgo_17 = L_44;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___imgo_17), (void*)L_44);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14848>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14856>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_45;
 		L_45 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteral7FDD121D89807FD1CCEA2B557E2ED596922D2EB8, NULL);
 		__this->___imgo_18 = L_45;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___imgo_18), (void*)L_45);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14850>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14858>
 		return;
 	}
 
 IL_010f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14853>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14861>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_46 = __this->___imgo_0;
 		if (!L_46)
 		{
@@ -90723,7 +90759,7 @@ IL_010f:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14855>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14863>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_47 = ___0_g;
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_48 = __this->___imgo_0;
 		int32_t L_49 = ___3_x;
@@ -90742,7 +90778,7 @@ IL_010f:
 
 IL_013c:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14859>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14867>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_56;
 		L_56 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteral55316B4376C5400935AA093653329A81B8F148A8, NULL);
@@ -90752,7 +90788,7 @@ IL_013c:
 
 IL_014c:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14861>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14869>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_57 = __this->___imgo_1;
 		if (!L_57)
 		{
@@ -90760,7 +90796,7 @@ IL_014c:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14863>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14871>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_58 = ___0_g;
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_59 = __this->___imgo_1;
 		int32_t L_60 = ___3_x;
@@ -90779,19 +90815,19 @@ IL_014c:
 
 IL_0178:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14867>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14875>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_67;
 		L_67 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteral00E9A5C86E9CD480996DCCF4A8061066630FE209, NULL);
 		__this->___imgo_1 = L_67;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___imgo_1), (void*)L_67);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14869>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14877>
 		return;
 	}
 
 IL_0189:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14871>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14879>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_68 = __this->___imgo_0;
 		if (!L_68)
 		{
@@ -90799,7 +90835,7 @@ IL_0189:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14873>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14881>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_69 = ___0_g;
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_70 = __this->___imgo_0;
 		int32_t L_71 = ___3_x;
@@ -90818,7 +90854,7 @@ IL_0189:
 
 IL_01b6:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14877>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14885>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_78;
 		L_78 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteral55316B4376C5400935AA093653329A81B8F148A8, NULL);
@@ -90828,7 +90864,7 @@ IL_01b6:
 
 IL_01c6:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14879>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14887>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_79 = __this->___imgo_2;
 		if (!L_79)
 		{
@@ -90836,7 +90872,7 @@ IL_01c6:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14881>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14889>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_80 = ___0_g;
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_81 = __this->___imgo_2;
 		int32_t L_82 = ___3_x;
@@ -90855,19 +90891,19 @@ IL_01c6:
 
 IL_01f2:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14885>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14893>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_89;
 		L_89 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteral41DD9AA4C4BAC3AAB8CDF5C7E73622F038981C93, NULL);
 		__this->___imgo_2 = L_89;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___imgo_2), (void*)L_89);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14887>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14895>
 		return;
 	}
 
 IL_0203:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14889>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14897>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_90 = __this->___imgo_0;
 		if (!L_90)
 		{
@@ -90875,7 +90911,7 @@ IL_0203:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14891>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14899>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_91 = ___0_g;
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_92 = __this->___imgo_0;
 		int32_t L_93 = ___3_x;
@@ -90894,7 +90930,7 @@ IL_0203:
 
 IL_0230:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14895>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14903>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_100;
 		L_100 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteral55316B4376C5400935AA093653329A81B8F148A8, NULL);
@@ -90904,7 +90940,7 @@ IL_0230:
 
 IL_0240:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14897>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14905>
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_101 = __this->___imgo_3;
 		if (!L_101)
 		{
@@ -90912,7 +90948,7 @@ IL_0240:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14899>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14907>
 		mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_102 = ___0_g;
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_103 = __this->___imgo_3;
 		int32_t L_104 = ___3_x;
@@ -90931,7 +90967,7 @@ IL_0240:
 
 IL_026c:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14903>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14911>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_111;
 		L_111 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteral93C997B6E4E0DA91184F593E81BE9D00FB156E6D, NULL);
@@ -90941,7 +90977,7 @@ IL_026c:
 
 IL_027c:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14907>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14915>
 		return;
 	}
 }
@@ -90982,17 +91018,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_paintOptItemInventory_m79CB78EADC3
 	int32_t V_6 = 0;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14911>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14919>
 		V_0 = ((int32_t)145);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14912>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14920>
 		V_1 = ((int32_t)12);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14913>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14921>
 		V_2 = ((int32_t)19);
 	}
 	try
 	{
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14916>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14924>
 			Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* L_0 = ___7_item;
 			if (!L_0)
 			{
@@ -91011,7 +91047,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_paintOptItemInventory_m79CB78EADC3
 
 IL_0019_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14918>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14926>
 			goto IL_0a5f;
 		}
 
@@ -91075,9 +91111,9 @@ IL_0045_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14924>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14932>
 			V_3 = 8;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14925>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14933>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_9 = __this->___imgo_17;
 			if (!L_9)
 			{
@@ -91085,7 +91121,7 @@ IL_0045_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14927>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14935>
 			int32_t L_10 = ___2_param;
 			if ((((int32_t)L_10) <= ((int32_t)0)))
 			{
@@ -91093,7 +91129,7 @@ IL_0045_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14929>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14937>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_11 = __this->___imgo_19;
 			if (!L_11)
 			{
@@ -91101,7 +91137,7 @@ IL_0045_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14931>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14939>
 			int32_t L_12 = ___2_param;
 			V_4 = L_12;
 			goto IL_00b9_1;
@@ -91109,7 +91145,7 @@ IL_0045_1:
 
 IL_007e_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14933>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14941>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_13 = ___0_g;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_14 = __this->___imgo_19;
 			int32_t L_15 = ___3_x;
@@ -91128,14 +91164,14 @@ IL_007e_1:
 			L_24 = Image_getHeight_mD92E26605D4EEDF37389EC951FF44F41AF7D28A4(L_23, NULL);
 			NullCheck(L_13);
 			mGraphics_drawImage_mAAA9386DFFCECD62E06D0B58A429AD85B9795755(L_13, L_14, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_15, L_16)), L_18)), L_19)), ((int32_t)il2cpp_codegen_multiply(L_20, 3)))), ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_21, L_22)), L_24)), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14931>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14939>
 			int32_t L_25 = V_4;
 			V_4 = ((int32_t)il2cpp_codegen_add(L_25, 1));
 		}
 
 IL_00b9_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14931>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14939>
 			int32_t L_26 = V_4;
 			int32_t L_27 = V_3;
 			if ((((int32_t)L_26) < ((int32_t)L_27)))
@@ -91149,7 +91185,7 @@ IL_00b9_1:
 
 IL_00c0_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14938>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14946>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_28;
 			L_28 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteral53F32B8964711FB4C977920CFA961191AB4516E2, NULL);
@@ -91159,14 +91195,14 @@ IL_00c0_1:
 
 IL_00d0_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14940>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14948>
 			V_5 = 0;
 			goto IL_0110_1;
 		}
 
 IL_00d5_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14942>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14950>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_29 = ___0_g;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_30 = __this->___imgo_17;
 			int32_t L_31 = ___3_x;
@@ -91185,14 +91221,14 @@ IL_00d5_1:
 			L_40 = Image_getHeight_mD92E26605D4EEDF37389EC951FF44F41AF7D28A4(L_39, NULL);
 			NullCheck(L_29);
 			mGraphics_drawImage_mAAA9386DFFCECD62E06D0B58A429AD85B9795755(L_29, L_30, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_31, L_32)), L_34)), L_35)), ((int32_t)il2cpp_codegen_multiply(L_36, 3)))), ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_37, L_38)), L_40)), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14940>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14948>
 			int32_t L_41 = V_5;
 			V_5 = ((int32_t)il2cpp_codegen_add(L_41, 1));
 		}
 
 IL_0110_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14940>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14948>
 			int32_t L_42 = V_5;
 			int32_t L_43 = ___2_param;
 			int32_t L_44 = V_3;
@@ -91204,7 +91240,7 @@ IL_0110_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14944>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14952>
 			int32_t L_46 = ___2_param;
 			int32_t L_47 = V_3;
 			if ((((int32_t)L_46) <= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_47, 3)))))
@@ -91213,7 +91249,7 @@ IL_0110_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14946>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14954>
 			int32_t L_48 = V_3;
 			V_6 = ((int32_t)il2cpp_codegen_subtract(L_48, 1));
 			goto IL_0165_1;
@@ -91221,7 +91257,7 @@ IL_0110_1:
 
 IL_012a_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14948>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14956>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_49 = ___0_g;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_50 = __this->___imgo_18;
 			int32_t L_51 = ___3_x;
@@ -91240,14 +91276,14 @@ IL_012a_1:
 			L_60 = Image_getHeight_mD92E26605D4EEDF37389EC951FF44F41AF7D28A4(L_59, NULL);
 			NullCheck(L_49);
 			mGraphics_drawImage_mAAA9386DFFCECD62E06D0B58A429AD85B9795755(L_49, L_50, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_51, L_52)), L_54)), L_55)), ((int32_t)il2cpp_codegen_multiply(L_56, 3)))), ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_57, L_58)), L_60)), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14946>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14954>
 			int32_t L_61 = V_6;
 			V_6 = ((int32_t)il2cpp_codegen_add(L_61, 1));
 		}
 
 IL_0165_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14946>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14954>
 			int32_t L_62 = V_6;
 			int32_t L_63 = ___2_param;
 			if ((((int32_t)L_62) < ((int32_t)L_63)))
@@ -91258,7 +91294,7 @@ IL_0165_1:
 
 IL_016a_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14951>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14959>
 			il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 			mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_64 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_dark;
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_65 = ___0_g;
@@ -91287,29 +91323,29 @@ IL_016a_1:
 
 IL_01b4_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14956>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14964>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_78;
 			L_78 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteral53F32B8964711FB4C977920CFA961191AB4516E2, NULL);
 			__this->___imgo_19 = L_78;
 			Il2CppCodeGenWriteBarrier((void**)(&__this->___imgo_19), (void*)L_78);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14957>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14965>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_79;
 			L_79 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteral7132F5C1F63D3E6719B5A1EA5B2E706C08B95EDA, NULL);
 			__this->___imgo_17 = L_79;
 			Il2CppCodeGenWriteBarrier((void**)(&__this->___imgo_17), (void*)L_79);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14958>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14966>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_80;
 			L_80 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteral7FDD121D89807FD1CCEA2B557E2ED596922D2EB8, NULL);
 			__this->___imgo_18 = L_80;
 			Il2CppCodeGenWriteBarrier((void**)(&__this->___imgo_18), (void*)L_80);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14960>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14968>
 			goto IL_0a56_1;
 		}
 
 IL_01e9_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14963>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14971>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_81 = __this->___imgo_0;
 			if (!L_81)
 			{
@@ -91317,7 +91353,7 @@ IL_01e9_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14965>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14973>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_82 = ___0_g;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_83 = __this->___imgo_0;
 			int32_t L_84 = ___3_x;
@@ -91341,7 +91377,7 @@ IL_01e9_1:
 
 IL_0225_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14969>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14977>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_94;
 			L_94 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteral55316B4376C5400935AA093653329A81B8F148A8, NULL);
@@ -91351,7 +91387,7 @@ IL_0225_1:
 
 IL_0235_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14971>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14979>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_95 = __this->___imgo_1;
 			if (!L_95)
 			{
@@ -91359,7 +91395,7 @@ IL_0235_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14973>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14981>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_96 = ___0_g;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_97 = __this->___imgo_1;
 			int32_t L_98 = ___3_x;
@@ -91383,19 +91419,19 @@ IL_0235_1:
 
 IL_0274_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14977>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14985>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_108;
 			L_108 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteral00E9A5C86E9CD480996DCCF4A8061066630FE209, NULL);
 			__this->___imgo_1 = L_108;
 			Il2CppCodeGenWriteBarrier((void**)(&__this->___imgo_1), (void*)L_108);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14979>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14987>
 			goto IL_0a56_1;
 		}
 
 IL_0289_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14981>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14989>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_109 = __this->___imgo_0;
 			if (!L_109)
 			{
@@ -91403,7 +91439,7 @@ IL_0289_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14983>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14991>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_110 = ___0_g;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_111 = __this->___imgo_0;
 			int32_t L_112 = ___3_x;
@@ -91427,7 +91463,7 @@ IL_0289_1:
 
 IL_02c5_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14987>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14995>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_122;
 			L_122 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteral55316B4376C5400935AA093653329A81B8F148A8, NULL);
@@ -91437,7 +91473,7 @@ IL_02c5_1:
 
 IL_02d5_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14989>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14997>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_123 = __this->___imgo_2;
 			if (!L_123)
 			{
@@ -91445,7 +91481,7 @@ IL_02d5_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14991>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14999>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_124 = ___0_g;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_125 = __this->___imgo_2;
 			int32_t L_126 = ___3_x;
@@ -91469,19 +91505,19 @@ IL_02d5_1:
 
 IL_0314_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14995>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15003>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_136;
 			L_136 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteral41DD9AA4C4BAC3AAB8CDF5C7E73622F038981C93, NULL);
 			__this->___imgo_2 = L_136;
 			Il2CppCodeGenWriteBarrier((void**)(&__this->___imgo_2), (void*)L_136);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14997>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15005>
 			goto IL_0a56_1;
 		}
 
 IL_0329_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:14999>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15007>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_137 = __this->___imgo_0;
 			if (!L_137)
 			{
@@ -91489,7 +91525,7 @@ IL_0329_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15001>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15009>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_138 = ___0_g;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_139 = __this->___imgo_0;
 			int32_t L_140 = ___3_x;
@@ -91513,7 +91549,7 @@ IL_0329_1:
 
 IL_0365_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15005>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15013>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_150;
 			L_150 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteral55316B4376C5400935AA093653329A81B8F148A8, NULL);
@@ -91523,7 +91559,7 @@ IL_0365_1:
 
 IL_0375_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15007>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15015>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_151 = __this->___imgo_3;
 			if (!L_151)
 			{
@@ -91531,7 +91567,7 @@ IL_0375_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15009>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15017>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_152 = ___0_g;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_153 = __this->___imgo_3;
 			int32_t L_154 = ___3_x;
@@ -91555,19 +91591,19 @@ IL_0375_1:
 
 IL_03b4_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15013>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15021>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_164;
 			L_164 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteral93C997B6E4E0DA91184F593E81BE9D00FB156E6D, NULL);
 			__this->___imgo_3 = L_164;
 			Il2CppCodeGenWriteBarrier((void**)(&__this->___imgo_3), (void*)L_164);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15015>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15023>
 			goto IL_0a56_1;
 		}
 
 IL_03c9_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15017>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15025>
 			Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* L_165 = ___7_item;
 			NullCheck(L_165);
 			ItemTemplate_t39FD64463B94EBCD96909003E2BB12E876BA17FF* L_166 = L_165->___template;
@@ -91579,7 +91615,7 @@ IL_03c9_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15019>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15027>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_168 = __this->___imgo_5;
 			if (!L_168)
 			{
@@ -91587,7 +91623,7 @@ IL_03c9_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15021>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15029>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_169 = ___0_g;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_170 = __this->___imgo_5;
 			int32_t L_171 = ___3_x;
@@ -91610,7 +91646,7 @@ IL_03c9_1:
 
 IL_0419_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15025>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15033>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_180;
 			L_180 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteralD1D66958472B56B2BCE388AF8418C1B43AFED3FA, NULL);
@@ -91620,7 +91656,7 @@ IL_0419_1:
 
 IL_0429_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15027>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15035>
 			il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 			mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_181 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_dark;
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_182 = ___0_g;
@@ -91648,7 +91684,7 @@ IL_0429_1:
 
 IL_0473_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15029>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15037>
 			Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* L_195 = ___7_item;
 			NullCheck(L_195);
 			ItemTemplate_t39FD64463B94EBCD96909003E2BB12E876BA17FF* L_196 = L_195->___template;
@@ -91660,7 +91696,7 @@ IL_0473_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15031>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15039>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_198 = __this->___imgo_6;
 			if (!L_198)
 			{
@@ -91668,7 +91704,7 @@ IL_0473_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15033>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15041>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_199 = ___0_g;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_200 = __this->___imgo_6;
 			int32_t L_201 = ___3_x;
@@ -91691,7 +91727,7 @@ IL_0473_1:
 
 IL_04c4_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15037>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15045>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_210;
 			L_210 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteralFC99473A6AF1C4106899877687CD961BE942A404, NULL);
@@ -91701,7 +91737,7 @@ IL_04c4_1:
 
 IL_04d4_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15039>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15047>
 			il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 			mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_211 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_dark;
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_212 = ___0_g;
@@ -91729,7 +91765,7 @@ IL_04d4_1:
 
 IL_051e_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15041>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15049>
 			Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* L_225 = ___7_item;
 			NullCheck(L_225);
 			ItemTemplate_t39FD64463B94EBCD96909003E2BB12E876BA17FF* L_226 = L_225->___template;
@@ -91741,7 +91777,7 @@ IL_051e_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15043>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15051>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_228 = __this->___imgo_7;
 			if (!L_228)
 			{
@@ -91749,7 +91785,7 @@ IL_051e_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15045>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15053>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_229 = ___0_g;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_230 = __this->___imgo_7;
 			int32_t L_231 = ___3_x;
@@ -91772,7 +91808,7 @@ IL_051e_1:
 
 IL_056f_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15049>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15057>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_240;
 			L_240 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteralA7994DDB4D79AAE69233F8AC8E8CD87DAD1B4A72, NULL);
@@ -91782,7 +91818,7 @@ IL_056f_1:
 
 IL_057f_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15051>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15059>
 			il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 			mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_241 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_dark;
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_242 = ___0_g;
@@ -91810,7 +91846,7 @@ IL_057f_1:
 
 IL_05c9_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15053>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15061>
 			Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* L_255 = ___7_item;
 			NullCheck(L_255);
 			ItemTemplate_t39FD64463B94EBCD96909003E2BB12E876BA17FF* L_256 = L_255->___template;
@@ -91822,7 +91858,7 @@ IL_05c9_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15055>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15063>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_258 = __this->___imgo_8;
 			if (!L_258)
 			{
@@ -91830,7 +91866,7 @@ IL_05c9_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15057>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15065>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_259 = ___0_g;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_260 = __this->___imgo_8;
 			int32_t L_261 = ___3_x;
@@ -91853,7 +91889,7 @@ IL_05c9_1:
 
 IL_061a_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15061>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15069>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_270;
 			L_270 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteral791E1B69FE6F8AB6199A4E2B38301C2679E279B2, NULL);
@@ -91863,7 +91899,7 @@ IL_061a_1:
 
 IL_062a_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15063>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15071>
 			il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 			mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_271 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_dark;
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_272 = ___0_g;
@@ -91891,7 +91927,7 @@ IL_062a_1:
 
 IL_0674_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15065>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15073>
 			Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* L_285 = ___7_item;
 			NullCheck(L_285);
 			ItemTemplate_t39FD64463B94EBCD96909003E2BB12E876BA17FF* L_286 = L_285->___template;
@@ -91903,7 +91939,7 @@ IL_0674_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15067>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15075>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_288 = __this->___imgo_20;
 			if (!L_288)
 			{
@@ -91911,7 +91947,7 @@ IL_0674_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15069>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15077>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_289 = ___0_g;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_290 = __this->___imgo_20;
 			int32_t L_291 = ___3_x;
@@ -91934,7 +91970,7 @@ IL_0674_1:
 
 IL_06c5_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15073>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15081>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_300;
 			L_300 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteralAAEFC6C7DAE3018204CBD61D10E7DF8825A1FD87, NULL);
@@ -91944,7 +91980,7 @@ IL_06c5_1:
 
 IL_06d5_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15075>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15083>
 			il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 			mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_301 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_dark;
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_302 = ___0_g;
@@ -91968,13 +92004,13 @@ IL_06d5_1:
 			L_314 = Image_getHeight_mD92E26605D4EEDF37389EC951FF44F41AF7D28A4(L_313, NULL);
 			NullCheck(L_301);
 			mFont_drawString_mE5879DD7F938280DDF297FA968795F864878BF88(L_301, L_302, L_305, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_306, L_307)), L_309)), L_310)), 8)), ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_311, L_312)), L_314)), 1)), 1, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15077>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15085>
 			goto IL_0a56_1;
 		}
 
 IL_0724_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15079>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15087>
 			Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* L_315 = ___7_item;
 			NullCheck(L_315);
 			ItemTemplate_t39FD64463B94EBCD96909003E2BB12E876BA17FF* L_316 = L_315->___template;
@@ -92032,7 +92068,7 @@ IL_0724_1:
 
 IL_0777_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15081>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15089>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_330 = __this->___imgo_15;
 			if (!L_330)
 			{
@@ -92040,7 +92076,7 @@ IL_0777_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15083>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15091>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_331 = ___0_g;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_332 = __this->___imgo_15;
 			int32_t L_333 = ___3_x;
@@ -92063,7 +92099,7 @@ IL_0777_1:
 
 IL_07b6_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15087>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15095>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_342;
 			L_342 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteral2B3B106518A813ED567F4F99FF7950D37B5305D5, NULL);
@@ -92073,7 +92109,7 @@ IL_07b6_1:
 
 IL_07c6_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15089>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15097>
 			il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 			mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_343 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_dark;
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_344 = ___0_g;
@@ -92097,13 +92133,13 @@ IL_07c6_1:
 			L_356 = Image_getHeight_mD92E26605D4EEDF37389EC951FF44F41AF7D28A4(L_355, NULL);
 			NullCheck(L_343);
 			mFont_drawString_mE5879DD7F938280DDF297FA968795F864878BF88(L_343, L_344, L_347, ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_348, L_349)), L_351)), L_352)), ((int32_t)11))), ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(L_353, L_354)), L_356)), 2)), 1, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15091>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15099>
 			goto IL_0a56_1;
 		}
 
 IL_0816_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15093>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15101>
 			Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* L_357 = ___7_item;
 			NullCheck(L_357);
 			ItemTemplate_t39FD64463B94EBCD96909003E2BB12E876BA17FF* L_358 = L_357->___template;
@@ -92115,7 +92151,7 @@ IL_0816_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15095>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15103>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_360 = __this->___imgo_00;
 			if (!L_360)
 			{
@@ -92123,7 +92159,7 @@ IL_0816_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15097>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15105>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_361 = ___0_g;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_362 = __this->___imgo_00;
 			int32_t L_363 = ___3_x;
@@ -92147,7 +92183,7 @@ IL_0816_1:
 
 IL_0865_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15101>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15109>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_373;
 			L_373 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteral55316B4376C5400935AA093653329A81B8F148A8, NULL);
@@ -92157,7 +92193,7 @@ IL_0865_1:
 
 IL_0875_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15103>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15111>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_374 = __this->___imgo_23;
 			if (!L_374)
 			{
@@ -92165,7 +92201,7 @@ IL_0875_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15105>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15113>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_375 = ___0_g;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_376 = __this->___imgo_23;
 			int32_t L_377 = ___3_x;
@@ -92189,7 +92225,7 @@ IL_0875_1:
 
 IL_08b1_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15109>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15117>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_387;
 			L_387 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteral87E31485B42E6CFD3A8CE4B3EAAC101F7AD2ADDD, NULL);
@@ -92199,7 +92235,7 @@ IL_08b1_1:
 
 IL_08c1_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15112>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15120>
 			Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* L_388 = ___7_item;
 			NullCheck(L_388);
 			ItemTemplate_t39FD64463B94EBCD96909003E2BB12E876BA17FF* L_389 = L_388->___template;
@@ -92211,7 +92247,7 @@ IL_08c1_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15114>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15122>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_391 = __this->___imgo_00;
 			if (!L_391)
 			{
@@ -92219,7 +92255,7 @@ IL_08c1_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15116>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15124>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_392 = ___0_g;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_393 = __this->___imgo_00;
 			int32_t L_394 = ___3_x;
@@ -92243,7 +92279,7 @@ IL_08c1_1:
 
 IL_090f_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15120>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15128>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_404;
 			L_404 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteral55316B4376C5400935AA093653329A81B8F148A8, NULL);
@@ -92253,7 +92289,7 @@ IL_090f_1:
 
 IL_091f_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15122>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15130>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_405 = __this->___imgo_4;
 			if (!L_405)
 			{
@@ -92261,7 +92297,7 @@ IL_091f_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15124>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15132>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_406 = ___0_g;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_407 = __this->___imgo_4;
 			int32_t L_408 = ___3_x;
@@ -92285,7 +92321,7 @@ IL_091f_1:
 
 IL_095b_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15128>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15136>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_418;
 			L_418 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteralAE2AE0B26ED5E653F5E5775CB40A31242C9A380A, NULL);
@@ -92295,7 +92331,7 @@ IL_095b_1:
 
 IL_096b_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15131>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15139>
 			Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* L_419 = ___7_item;
 			NullCheck(L_419);
 			ItemTemplate_t39FD64463B94EBCD96909003E2BB12E876BA17FF* L_420 = L_419->___template;
@@ -92353,7 +92389,7 @@ IL_096b_1:
 
 IL_09be_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15133>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15141>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_434 = __this->___imgo_00;
 			if (!L_434)
 			{
@@ -92361,7 +92397,7 @@ IL_09be_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15135>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15143>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_435 = ___0_g;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_436 = __this->___imgo_00;
 			int32_t L_437 = ___3_x;
@@ -92385,7 +92421,7 @@ IL_09be_1:
 
 IL_09fa_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15139>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15147>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_447;
 			L_447 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteral55316B4376C5400935AA093653329A81B8F148A8, NULL);
@@ -92395,7 +92431,7 @@ IL_09fa_1:
 
 IL_0a0a_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15141>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15149>
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_448 = __this->___imgo_16;
 			if (!L_448)
 			{
@@ -92403,7 +92439,7 @@ IL_0a0a_1:
 			}
 		}
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15143>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15151>
 			mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* L_449 = ___0_g;
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_450 = __this->___imgo_16;
 			int32_t L_451 = ___3_x;
@@ -92427,7 +92463,7 @@ IL_0a0a_1:
 
 IL_0a46_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15147>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15155>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* L_461;
 			L_461 = mSystem_loadImage_m1AFD07A41950886498F6E1F6BDE1A01DD609C1A1(_stringLiteralB2DCF010FADF4F74C3B16B7E562A5A5BF3986209, NULL);
@@ -92437,7 +92473,7 @@ IL_0a46_1:
 
 IL_0a56_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15152>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15160>
 			goto IL_0a5f;
 		}
 	}
@@ -92454,17 +92490,17 @@ IL_0a56_1:
 CATCH_0a58:
 	{
 		Exception_t* L_462 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15155>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15163>
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var)));
 		Debug_LogException_mAB3F4DC7297ED8FBB49DAA718B70E59A6B0171B0(L_462, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15156>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15164>
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_0a5f;
 	}
 
 IL_0a5f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15157>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15165>
 		return;
 	}
 }
@@ -92481,7 +92517,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_paintOptSlotItem_mD734FCCBB81F2ADD
 	int8_t V_0 = 0x0;
 	int32_t V_1 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15161>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15169>
 		int32_t L_0 = ___1_idOpt;
 		if ((!(((uint32_t)L_0) == ((uint32_t)((int32_t)102)))))
 		{
@@ -92498,18 +92534,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_paintOptSlotItem_mD734FCCBB81F2ADD
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15163>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15171>
 		int32_t L_3 = ___2_param;
 		il2cpp_codegen_runtime_class_init_inline(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var);
 		int8_t L_4;
 		L_4 = Panel_GetColor_Item_Upgrade_mD13764C3C33F5275BAB66FD0D3A9F930CB88BD52(L_3, NULL);
 		V_0 = L_4;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15164>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15172>
 		int32_t L_5 = ___2_param;
 		il2cpp_codegen_runtime_class_init_inline(ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_il2cpp_TypeInfo_var);
 		int32_t L_6 = ((ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_StaticFields*)il2cpp_codegen_static_fields_for(ChatPopup_t58DBCAC770751E27651BF2B4C859C82316AD19F0_il2cpp_TypeInfo_var))->___numSlot;
 		V_1 = ((int32_t)il2cpp_codegen_subtract(L_5, L_6));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15165>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15173>
 		int32_t L_7 = ___3_x;
 		int32_t L_8 = ___4_y;
 		int32_t L_9 = ___5_w;
@@ -92522,7 +92558,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_paintOptSlotItem_mD734FCCBB81F2ADD
 
 IL_002c:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15167>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15175>
 		return;
 	}
 }
@@ -92530,7 +92566,7 @@ IL_002c:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_loadTabModFunc_m1A432A98E0B33F7EEDD5CBEFB4453AFA76D8A8C1 (Panel_t49349297CB778B2219539905F16B94090BD93138* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15171>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15179>
 		int32_t L_0 = __this->___type;
 		if ((!(((uint32_t)L_0) == ((uint32_t)((int32_t)26)))))
 		{
@@ -92538,13 +92574,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_loadTabModFunc_m1A432A98E0B33F7EED
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15173>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15181>
 		Panel_SetTabModFunc_mC1C832C1A44012CD256368B653CFC50880E1706D(__this, NULL);
 	}
 
 IL_0010:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15175>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15183>
 		return;
 	}
 }
@@ -92559,7 +92595,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR mFont_tACAC801D855571BA75D16FF2511EB748DFEA9B
 	}
 	mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* V_0 = NULL;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15179>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15187>
 		int32_t L_0 = ___1_type;
 		if (L_0)
 		{
@@ -92567,16 +92603,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR mFont_tACAC801D855571BA75D16FF2511EB748DFEA9B
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15181>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15182>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15183>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15184>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15185>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15186>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15187>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15188>
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15189>
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15190>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15191>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15192>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15193>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15194>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15195>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15196>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15197>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15198>
 		int32_t L_1 = ___0_id;
 		switch (L_1)
 		{
@@ -92616,7 +92652,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR mFont_tACAC801D855571BA75D16FF2511EB748DFEA9B
 
 IL_0027:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15183>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15191>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_2 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___bigNumber_While;
 		V_0 = L_2;
@@ -92625,7 +92661,7 @@ IL_0027:
 
 IL_002f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15184>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15192>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_3 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___bigNumber_green;
 		V_0 = L_3;
@@ -92634,7 +92670,7 @@ IL_002f:
 
 IL_0037:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15185>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15193>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_4 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___bigNumber_orange;
 		V_0 = L_4;
@@ -92643,7 +92679,7 @@ IL_0037:
 
 IL_003f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15186>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15194>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_5 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___bigNumber_blue;
 		V_0 = L_5;
@@ -92652,7 +92688,7 @@ IL_003f:
 
 IL_0047:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15187>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15195>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_6 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___bigNumber_yellow;
 		V_0 = L_6;
@@ -92661,7 +92697,7 @@ IL_0047:
 
 IL_004f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15188>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15196>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_7 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___bigNumber_red;
 		V_0 = L_7;
@@ -92670,7 +92706,7 @@ IL_004f:
 
 IL_0057:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15189>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15197>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_8 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___bigNumber_While;
 		V_0 = L_8;
@@ -92684,17 +92720,17 @@ IL_005d:
 
 IL_005f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15192>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15193>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15194>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15195>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15196>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15197>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15198>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15199>
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15200>
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15201>
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15202>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15203>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15204>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15205>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15206>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15207>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15208>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15209>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15210>
 		int32_t L_10 = ___0_id;
 		switch (L_10)
 		{
@@ -92738,7 +92774,7 @@ IL_005f:
 
 IL_0087:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15194>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15202>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_11 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_white;
 		V_0 = L_11;
@@ -92747,7 +92783,7 @@ IL_0087:
 
 IL_008f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15195>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15203>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_12 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_green;
 		V_0 = L_12;
@@ -92756,7 +92792,7 @@ IL_008f:
 
 IL_0097:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15196>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15204>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_13 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_yellowSmall2;
 		V_0 = L_13;
@@ -92765,7 +92801,7 @@ IL_0097:
 
 IL_009f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15197>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15205>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_14 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_blue;
 		V_0 = L_14;
@@ -92774,7 +92810,7 @@ IL_009f:
 
 IL_00a7:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15198>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15206>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_15 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_yellow;
 		V_0 = L_15;
@@ -92783,7 +92819,7 @@ IL_00a7:
 
 IL_00af:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15199>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15207>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_16 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_red;
 		V_0 = L_16;
@@ -92792,7 +92828,7 @@ IL_00af:
 
 IL_00b7:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15200>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15208>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_17 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_dark;
 		V_0 = L_17;
@@ -92801,7 +92837,7 @@ IL_00b7:
 
 IL_00bf:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15201>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15209>
 		il2cpp_codegen_runtime_class_init_inline(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var);
 		mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7* L_18 = ((mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_StaticFields*)il2cpp_codegen_static_fields_for(mFont_tACAC801D855571BA75D16FF2511EB748DFEA9BE7_il2cpp_TypeInfo_var))->___tahoma_7b_white;
 		V_0 = L_18;
@@ -92826,7 +92862,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Panel_GetInventoryPopupMenuY_m059795F
 	int32_t V_0 = 0;
 	int32_t G_B8_0 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15207>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15215>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_0 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isInventory;
 		if (!L_0)
@@ -92835,7 +92871,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Panel_GetInventoryPopupMenuY_m059795F
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15209>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15217>
 		bool L_1;
 		L_1 = Panel_isTabBox_m1FC105D7C015D92543A9CD6DF024E933B20342F4(__this, NULL);
 		if (!L_1)
@@ -92844,13 +92880,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Panel_GetInventoryPopupMenuY_m059795F
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15211>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15219>
 		int32_t L_2 = __this->___selected;
 		int32_t L_3 = __this->___CountBoxInRow;
 		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
 		int32_t L_4;
 		L_4 = Math_Max_m530EBA549AFD98CFC2BD29FE86C6376E67DF11CF(0, ((int32_t)(L_2/L_3)), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15212>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15220>
 		int32_t L_5 = __this->___ITEM_HEIGHT;
 		int32_t L_6 = __this->___cmy;
 		int32_t L_7 = __this->___yScroll;
@@ -92859,7 +92895,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Panel_GetInventoryPopupMenuY_m059795F
 
 IL_003d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15214>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15222>
 		bool L_8;
 		L_8 = Panel_isTabInven_m545C188A2CC14F2DCAAF3B5EDD23F22496EA4EFC(__this, NULL);
 		if (!L_8)
@@ -92868,7 +92904,7 @@ IL_003d:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15216>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15224>
 		int32_t L_9 = __this->___selected;
 		if ((((int32_t)L_9) >= ((int32_t)((int32_t)12))))
 		{
@@ -92876,7 +92912,7 @@ IL_003d:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15218>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15226>
 		int32_t L_10 = __this->___selected;
 		if ((((int32_t)L_10) < ((int32_t)6)))
 		{
@@ -92897,7 +92933,7 @@ IL_0062:
 
 IL_0068:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15219>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15227>
 		int32_t L_13 = __this->___cmy;
 		int32_t L_14 = __this->___yScroll;
 		return ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_add(G_B8_0, 1)), ((int32_t)30))), L_13)), L_14));
@@ -92905,12 +92941,12 @@ IL_0068:
 
 IL_007c:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15221>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15229>
 		int32_t L_15 = __this->___selected;
 		V_0 = ((int32_t)(((int32_t)il2cpp_codegen_subtract(L_15, ((int32_t)12)))/6));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15222>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15230>
 		int32_t L_16 = __this->___yScroll;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15223>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15231>
 		int32_t L_17 = V_0;
 		int32_t L_18 = __this->___ITEM_HEIGHT;
 		int32_t L_19 = __this->___cmy;
@@ -92919,7 +92955,7 @@ IL_007c:
 
 IL_00aa:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15226>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15234>
 		int32_t L_20 = __this->___selected;
 		int32_t L_21 = __this->___ITEM_HEIGHT;
 		int32_t L_22 = __this->___cmy;
@@ -92942,7 +92978,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Panel_GetInventorySelect_isbody_m501D5A6
 	int32_t G_B7_0 = 0;
 	int32_t G_B7_1 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15231>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15239>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_0 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isInventory;
 		if (!L_0)
@@ -92951,7 +92987,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Panel_GetInventorySelect_isbody_m501D5A6
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15233>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15241>
 		int32_t L_1 = ___0_select;
 		if ((((int32_t)L_1) < ((int32_t)0)))
 		{
@@ -92970,7 +93006,7 @@ IL_0011:
 
 IL_0013:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15235>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15243>
 		int32_t L_3 = ___0_select;
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_4 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isInventory;
@@ -92997,7 +93033,7 @@ IL_001f:
 	{
 		int32_t L_5 = ___1_subSelect;
 		V_0 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_subtract(G_B7_1, G_B7_0)), ((int32_t)il2cpp_codegen_multiply(L_5, ((int32_t)20)))));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15236>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15244>
 		int32_t L_6 = ___1_subSelect;
 		if (L_6)
 		{
@@ -93005,7 +93041,7 @@ IL_001f:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15238>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15246>
 		int32_t L_7 = V_0;
 		ItemU5BU5D_t4DD3B0CDED4FDEE29D6C29225CED0468C194295B* L_8 = ___2_arrItem;
 		NullCheck(L_8);
@@ -93014,7 +93050,7 @@ IL_001f:
 
 IL_0030:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15240>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15248>
 		return (bool)0;
 	}
 }
@@ -93045,7 +93081,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Panel_GetInventorySelect_body_m088384
 	int32_t G_B32_0 = 0;
 	int32_t G_B32_1 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15245>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15253>
 		bool L_0;
 		L_0 = Panel_isTabBox_m1FC105D7C015D92543A9CD6DF024E933B20342F4(__this, NULL);
 		if (!L_0)
@@ -93054,7 +93090,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Panel_GetInventorySelect_body_m088384
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15247>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15255>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_1 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isInventory;
 		if (!L_1)
@@ -93063,17 +93099,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Panel_GetInventorySelect_body_m088384
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15249>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15257>
 		int32_t L_2 = ___0_select;
 		return L_2;
 	}
 
 IL_0011:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15251>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15259>
 		int32_t L_3 = ___0_select;
 		V_0 = ((int32_t)il2cpp_codegen_subtract(L_3, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15252>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15260>
 		int32_t L_4 = V_0;
 		if ((((int32_t)L_4) >= ((int32_t)0)))
 		{
@@ -93081,17 +93117,17 @@ IL_0011:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15252>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15260>
 		V_0 = 0;
 	}
 
 IL_001b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15253>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15261>
 		int32_t L_5 = ___1_subSelect;
 		int32_t L_6 = V_0;
 		V_1 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_5, ((int32_t)20))), L_6));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15254>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15262>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_7;
 		L_7 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -93103,7 +93139,7 @@ IL_001b:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15256>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15264>
 		int32_t L_9 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_10;
@@ -93117,7 +93153,7 @@ IL_001b:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15258>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15266>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_12;
 		L_12 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -93129,14 +93165,14 @@ IL_001b:
 
 IL_004c:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15261>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15269>
 		int32_t L_14 = V_1;
 		return L_14;
 	}
 
 IL_004e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15263>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15271>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_15 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isInventory;
 		if (!L_15)
@@ -93145,14 +93181,14 @@ IL_004e:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15265>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15273>
 		int32_t L_16 = ___0_select;
 		return L_16;
 	}
 
 IL_0057:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15267>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15275>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_17 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isInventory;
 		if (L_17)
@@ -93161,7 +93197,7 @@ IL_0057:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15270>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15278>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_18;
 		L_18 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -93174,9 +93210,9 @@ IL_0057:
 		ItemU5BU5D_t4DD3B0CDED4FDEE29D6C29225CED0468C194295B* L_21 = L_20->___arrItemBag;
 		NullCheck(L_21);
 		V_2 = ((int32_t)il2cpp_codegen_add(((int32_t)(((RuntimeArray*)L_19)->max_length)), ((int32_t)(((RuntimeArray*)L_21)->max_length))));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15271>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15279>
 		V_3 = ((int32_t)20);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15272>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15280>
 		int32_t L_22 = V_2;
 		int32_t L_23 = V_3;
 		int32_t L_24 = V_2;
@@ -93203,7 +93239,7 @@ IL_008a:
 IL_008b:
 	{
 		V_4 = ((int32_t)il2cpp_codegen_add(G_B15_1, G_B15_0));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15276>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15284>
 		int32_t L_26 = ___1_subSelect;
 		int32_t L_27 = V_4;
 		if ((!(((uint32_t)L_26) == ((uint32_t)((int32_t)il2cpp_codegen_subtract(L_27, 1))))))
@@ -93220,7 +93256,7 @@ IL_008b:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15279>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15287>
 		int32_t L_30 = V_2;
 		int32_t L_31 = V_3;
 		V_5 = ((int32_t)(L_30%L_31));
@@ -93229,17 +93265,17 @@ IL_008b:
 
 IL_00a2:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15284>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15292>
 		int32_t L_32 = V_3;
 		V_5 = L_32;
 	}
 
 IL_00a5:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15288>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15296>
 		int32_t L_33 = ___0_select;
 		V_6 = ((int32_t)il2cpp_codegen_subtract(L_33, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15289>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15297>
 		int32_t L_34 = V_6;
 		if ((((int32_t)L_34) >= ((int32_t)0)))
 		{
@@ -93247,13 +93283,13 @@ IL_00a5:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15289>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15297>
 		V_6 = 0;
 	}
 
 IL_00b2:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15290>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15298>
 		int32_t L_35 = V_6;
 		int32_t L_36 = V_5;
 		if ((((int32_t)L_35) < ((int32_t)L_36)))
@@ -93262,19 +93298,19 @@ IL_00b2:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15293>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15301>
 		int32_t L_37 = V_5;
 		V_6 = ((int32_t)il2cpp_codegen_subtract(L_37, 1));
 	}
 
 IL_00be:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15297>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15305>
 		int32_t L_38 = ___1_subSelect;
 		int32_t L_39 = V_3;
 		int32_t L_40 = V_6;
 		V_7 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_38, L_39)), L_40));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15300>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15308>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_41;
 		L_41 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -93286,7 +93322,7 @@ IL_00be:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15302>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15310>
 		int32_t L_43 = V_7;
 		if ((((int32_t)L_43) >= ((int32_t)0)))
 		{
@@ -93294,13 +93330,13 @@ IL_00be:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15302>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15310>
 		V_7 = 0;
 	}
 
 IL_00da:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15303>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15311>
 		int32_t L_44 = V_7;
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_45;
@@ -93314,20 +93350,20 @@ IL_00da:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15306>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15314>
 		return (-1);
 	}
 
 IL_00ec:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15309>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15317>
 		int32_t L_47 = V_7;
 		return L_47;
 	}
 
 IL_00ef:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15311>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15319>
 		int32_t L_48 = ___0_select;
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_49 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isInventory;
@@ -93382,7 +93418,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Panel_GetInventorySelect_bag_m9257B71
 	int32_t G_B29_0 = 0;
 	int32_t G_B29_1 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15316>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15324>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_0 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isInventory;
 		if (!L_0)
@@ -93391,10 +93427,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Panel_GetInventorySelect_bag_m9257B71
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15318>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15326>
 		int32_t L_1 = ___0_select;
 		V_0 = ((int32_t)il2cpp_codegen_subtract(L_1, ((int32_t)12)));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15319>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15327>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_2;
 		L_2 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -93418,7 +93454,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Panel_GetInventorySelect_bag_m9257B71
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15321>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15329>
 		int32_t L_6 = V_0;
 		if ((((int32_t)L_6) >= ((int32_t)0)))
 		{
@@ -93426,13 +93462,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Panel_GetInventorySelect_bag_m9257B71
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15321>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15329>
 		V_0 = 0;
 	}
 
 IL_002b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15322>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15330>
 		int32_t L_7 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_8;
@@ -93446,7 +93482,7 @@ IL_002b:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15324>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15332>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_10;
 		L_10 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -93458,14 +93494,14 @@ IL_002b:
 
 IL_0049:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15327>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15335>
 		int32_t L_12 = V_0;
 		return L_12;
 	}
 
 IL_004b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15329>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15337>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_13 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isInventory;
 		if (L_13)
@@ -93474,7 +93510,7 @@ IL_004b:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15332>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15340>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_14;
 		L_14 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -93487,9 +93523,9 @@ IL_004b:
 		ItemU5BU5D_t4DD3B0CDED4FDEE29D6C29225CED0468C194295B* L_17 = L_16->___arrItemBag;
 		NullCheck(L_17);
 		V_1 = ((int32_t)il2cpp_codegen_add(((int32_t)(((RuntimeArray*)L_15)->max_length)), ((int32_t)(((RuntimeArray*)L_17)->max_length))));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15333>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15341>
 		V_2 = ((int32_t)20);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15334>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15342>
 		int32_t L_18 = V_1;
 		int32_t L_19 = V_2;
 		int32_t L_20 = V_1;
@@ -93516,7 +93552,7 @@ IL_007e:
 IL_007f:
 	{
 		V_3 = ((int32_t)il2cpp_codegen_add(G_B12_1, G_B12_0));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15338>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15346>
 		int32_t L_22 = ___1_subSelect;
 		int32_t L_23 = V_3;
 		if ((!(((uint32_t)L_22) == ((uint32_t)((int32_t)il2cpp_codegen_subtract(L_23, 1))))))
@@ -93533,7 +93569,7 @@ IL_007f:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15341>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15349>
 		int32_t L_26 = V_1;
 		int32_t L_27 = V_2;
 		V_4 = ((int32_t)(L_26%L_27));
@@ -93542,17 +93578,17 @@ IL_007f:
 
 IL_0094:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15346>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15354>
 		int32_t L_28 = V_2;
 		V_4 = L_28;
 	}
 
 IL_0097:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15350>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15358>
 		int32_t L_29 = ___0_select;
 		V_5 = ((int32_t)il2cpp_codegen_subtract(L_29, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15351>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15359>
 		int32_t L_30 = V_5;
 		if ((((int32_t)L_30) >= ((int32_t)0)))
 		{
@@ -93560,13 +93596,13 @@ IL_0097:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15351>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15359>
 		V_5 = 0;
 	}
 
 IL_00a4:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15352>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15360>
 		int32_t L_31 = V_5;
 		int32_t L_32 = V_4;
 		if ((((int32_t)L_31) < ((int32_t)L_32)))
@@ -93575,22 +93611,22 @@ IL_00a4:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15355>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15363>
 		int32_t L_33 = V_4;
 		V_5 = ((int32_t)il2cpp_codegen_subtract(L_33, 1));
 	}
 
 IL_00b0:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15359>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15367>
 		int32_t L_34 = ___1_subSelect;
 		int32_t L_35 = V_2;
 		int32_t L_36 = V_5;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15360>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15368>
 		ItemU5BU5D_t4DD3B0CDED4FDEE29D6C29225CED0468C194295B* L_37 = ___2_arrItem;
 		NullCheck(L_37);
 		V_6 = ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_34, L_35)), L_36)), ((int32_t)(((RuntimeArray*)L_37)->max_length))));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15363>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15371>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_38;
 		L_38 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -93602,7 +93638,7 @@ IL_00b0:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15365>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15373>
 		int32_t L_40 = V_6;
 		if ((((int32_t)L_40) >= ((int32_t)0)))
 		{
@@ -93610,13 +93646,13 @@ IL_00b0:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15365>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15373>
 		V_6 = 0;
 	}
 
 IL_00d0:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15366>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15374>
 		int32_t L_41 = V_6;
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_42;
@@ -93630,7 +93666,7 @@ IL_00d0:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15368>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15376>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_44;
 		L_44 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -93642,14 +93678,14 @@ IL_00d0:
 
 IL_00f0:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15371>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15379>
 		int32_t L_46 = V_6;
 		return L_46;
 	}
 
 IL_00f3:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15373>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15381>
 		int32_t L_47 = ___0_select;
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_48 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isInventory;
@@ -93690,7 +93726,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Panel_isTabBox_m1FC105D7C015D92543A9CD6D
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15378>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15386>
 		int32_t L_0 = __this->___type;
 		if ((!(((uint32_t)L_0) == ((uint32_t)2))))
 		{
@@ -93715,13 +93751,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Panel_isTabBox_m1FC105D7C015D92543A9CD6D
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15380>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15388>
 		return (bool)1;
 	}
 
 IL_0020:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15382>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15390>
 		return (bool)0;
 	}
 }
@@ -93735,13 +93771,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Panel_isTabInven_m545C188A2CC14F2DCAAF3B
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15387>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15388>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15389>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15390>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15391>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15392>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15393>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15395>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15396>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15397>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15398>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15399>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15400>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15401>
 		int32_t L_0 = __this->___type;
 		if (L_0)
 		{
@@ -93897,13 +93933,13 @@ IL_008c:
 
 IL_00bf:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15395>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15403>
 		return (bool)1;
 	}
 
 IL_00c1:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15397>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15405>
 		return (bool)0;
 	}
 }
@@ -93926,7 +93962,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_updateKeyInvenTab_mF49551DC21DAB5D
 	int32_t G_B16_0 = 0;
 	BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* G_B16_1 = NULL;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15402>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15410>
 		int32_t L_0 = __this->___selected;
 		if ((((int32_t)L_0) >= ((int32_t)0)))
 		{
@@ -93934,13 +93970,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_updateKeyInvenTab_mF49551DC21DAB5D
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15404>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15412>
 		return;
 	}
 
 IL_000a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15406>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15414>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_1 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
@@ -93975,10 +94011,10 @@ IL_001b:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15408>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15416>
 		int32_t L_5 = __this->___newSelected;
 		__this->___newSelected = ((int32_t)il2cpp_codegen_subtract(L_5, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15409>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15417>
 		bool L_6 = __this->___isnewInventory;
 		if (!L_6)
 		{
@@ -93986,13 +94022,13 @@ IL_001b:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15411>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15419>
 		__this->___currentListLength = 5;
 	}
 
 IL_003b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15413>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15421>
 		int32_t L_7 = __this->___newSelected;
 		if ((((int32_t)L_7) >= ((int32_t)0)))
 		{
@@ -94000,9 +94036,9 @@ IL_003b:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15415>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15423>
 		__this->___newSelected = 0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15416>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15424>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		bool L_8 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isFocusPanel2;
 		if (!L_8)
@@ -94011,10 +94047,10 @@ IL_003b:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15418>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15426>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isFocusPanel2 = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15419>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15427>
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_9 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 		NullCheck(L_9);
 		L_9->___selected = 0;
@@ -94022,7 +94058,7 @@ IL_003b:
 
 IL_0063:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15422>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15430>
 		int32_t L_10 = __this->___type;
 		if ((!(((uint32_t)L_10) == ((uint32_t)((int32_t)26)))))
 		{
@@ -94030,17 +94066,17 @@ IL_0063:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15424>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15432>
 		int32_t L_11 = __this->___newSelected;
 		__this->___currentTabIndex = L_11;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15425>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15433>
 		Panel_loadTabModFunc_m1A432A98E0B33F7EEDD5CBEFB4453AFA76D8A8C1(__this, NULL);
 		return;
 	}
 
 IL_0083:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15430>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15438>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4* L_12 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___keyPressed;
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
@@ -94075,16 +94111,16 @@ IL_0094:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15432>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15440>
 		return;
 	}
 
 IL_0098:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15434>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15442>
 		int32_t L_16 = __this->___newSelected;
 		__this->___newSelected = ((int32_t)il2cpp_codegen_add(L_16, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15435>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15443>
 		bool L_17 = __this->___isnewInventory;
 		if (!L_17)
 		{
@@ -94092,13 +94128,13 @@ IL_0098:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15437>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15445>
 		__this->___currentListLength = 5;
 	}
 
 IL_00b5:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15439>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15447>
 		int32_t L_18 = __this->___newSelected;
 		int8_t L_19 = __this->___size_tab;
 		if ((((int32_t)L_18) <= ((int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_19, 1)))))
@@ -94107,10 +94143,10 @@ IL_00b5:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15441>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15449>
 		int8_t L_20 = __this->___size_tab;
 		__this->___newSelected = ((int32_t)il2cpp_codegen_subtract((int32_t)L_20, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15442>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15450>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_21 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel2;
 		if (!L_21)
@@ -94119,10 +94155,10 @@ IL_00b5:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15444>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15452>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isFocusPanel2 = (bool)1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15445>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15453>
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_22 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel2;
 		NullCheck(L_22);
 		L_22->___selected = 0;
@@ -94130,7 +94166,7 @@ IL_00b5:
 
 IL_00eb:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15448>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15456>
 		int32_t L_23 = __this->___type;
 		if ((!(((uint32_t)L_23) == ((uint32_t)((int32_t)26)))))
 		{
@@ -94138,16 +94174,16 @@ IL_00eb:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15450>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15458>
 		int32_t L_24 = __this->___newSelected;
 		__this->___currentTabIndex = L_24;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15451>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15459>
 		Panel_loadTabModFunc_m1A432A98E0B33F7EEDD5CBEFB4453AFA76D8A8C1(__this, NULL);
 	}
 
 IL_0107:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15454>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15462>
 		return;
 	}
 }
@@ -94159,20 +94195,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_updateKeyInventory_m7C733A04CDDB0D
 	bool V_2 = false;
 	int32_t V_3 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15458>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15466>
 		int32_t L_0 = __this->___newSelected;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15459>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15467>
 		bool L_1 = __this->___tabClickedInPointerDown;
 		V_0 = L_1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15460>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15468>
 		Panel_updateKeyScrollView_m03F153B7C7B33D1F8922B1B1FA25569EEDEAE8F0(__this, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15461>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15469>
 		int32_t L_2 = __this->___newSelected;
 		V_1 = L_2;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15462>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15470>
 		bool L_3 = __this->___tabClickedInPointerDown;
 		V_2 = L_3;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15463>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15471>
 		int32_t L_4 = V_1;
 		if ((((int32_t)L_0) == ((int32_t)L_4)))
 		{
@@ -94180,15 +94216,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_updateKeyInventory_m7C733A04CDDB0D
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15465>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15473>
 		__this->___cmtoY = 0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15466>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15474>
 		__this->___cmy = 0;
 	}
 
 IL_0032:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15468>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15476>
 		bool L_5 = V_0;
 		if (!L_5)
 		{
@@ -94201,7 +94237,7 @@ IL_0032:
 
 IL_0037:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15471>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15479>
 		int32_t L_7 = __this->___selected;
 		if (L_7)
 		{
@@ -94216,12 +94252,12 @@ IL_0037:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15473>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15481>
 		Panel_updateKeyInvenTab_mF49551DC21DAB5D959435DE0C737E579767ECFBD(__this, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15474>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15482>
 		int32_t L_9 = __this->___newSelected;
 		V_3 = L_9;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15475>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15483>
 		int32_t L_10 = V_1;
 		int32_t L_11 = V_3;
 		return;
@@ -94229,7 +94265,7 @@ IL_0037:
 
 IL_0059:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15479>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15487>
 		int32_t L_12 = __this->___selected;
 		if (L_12)
 		{
@@ -94242,7 +94278,7 @@ IL_0059:
 
 IL_0068:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15482>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15490>
 		return;
 	}
 }
@@ -94250,7 +94286,7 @@ IL_0068:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Panel_IsTabOption_m1FC782ECF9B0CF1125C712B543B36A1C8B4E27AC (Panel_t49349297CB778B2219539905F16B94090BD93138* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15486>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15494>
 		int8_t L_0 = __this->___size_tab;
 		if ((((int32_t)L_0) <= ((int32_t)0)))
 		{
@@ -94258,7 +94294,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Panel_IsTabOption_m1FC782ECF9B0CF1125C71
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15488>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15496>
 		StringU5BU5DU5BU5D_t8BCC500C5CC1686D9BADCBAA811074FE00F83ACF* L_1 = __this->___currentTabName;
 		NullCheck(L_1);
 		if ((((int32_t)((int32_t)(((RuntimeArray*)L_1)->max_length))) <= ((int32_t)1)))
@@ -94267,7 +94303,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Panel_IsTabOption_m1FC782ECF9B0CF1125C71
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15490>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15498>
 		int32_t L_2 = __this->___selected;
 		if (L_2)
 		{
@@ -94275,13 +94311,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Panel_IsTabOption_m1FC782ECF9B0CF1125C71
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15492>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15500>
 		return (bool)1;
 	}
 
 IL_001e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15495>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15503>
 		int32_t L_3 = __this->___selected;
 		if ((((int32_t)L_3) < ((int32_t)0)))
 		{
@@ -94289,13 +94325,13 @@ IL_001e:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15497>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15505>
 		return (bool)1;
 	}
 
 IL_0029:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15500>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15508>
 		return (bool)0;
 	}
 }
@@ -94315,7 +94351,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Panel_checkCurrentListLength_m4B6C2EA
 	int32_t G_B4_0 = 0;
 	int32_t G_B4_1 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15505>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15513>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
 		bool L_0 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isInventory;
 		if (L_0)
@@ -94324,9 +94360,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Panel_checkCurrentListLength_m4B6C2EA
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15507>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15515>
 		V_0 = ((int32_t)20);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15508>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15516>
 		int32_t L_1 = ___0_arrLength;
 		int32_t L_2 = ___0_arrLength;
 		if ((((int32_t)((int32_t)(L_2%((int32_t)20)))) > ((int32_t)0)))
@@ -94351,10 +94387,10 @@ IL_0018:
 IL_0019:
 	{
 		V_1 = ((int32_t)il2cpp_codegen_add(G_B4_1, G_B4_0));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15509>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15517>
 		int32_t L_3 = V_1;
 		__this->___size_tab = ((int8_t)L_3);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15510>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15518>
 		int32_t L_4 = __this->___newSelected;
 		int32_t L_5 = V_1;
 		if ((((int32_t)L_4) <= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_5, 1)))))
@@ -94363,14 +94399,14 @@ IL_0019:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15512>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15520>
 		int32_t L_6 = V_1;
 		__this->___newSelected = ((int32_t)il2cpp_codegen_subtract(L_6, 1));
 	}
 
 IL_0037:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15514>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15522>
 		int32_t L_7 = ___0_arrLength;
 		if ((((int32_t)((int32_t)(L_7%((int32_t)20)))) <= ((int32_t)0)))
 		{
@@ -94386,25 +94422,25 @@ IL_0037:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15516>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15524>
 		int32_t L_10 = ___0_arrLength;
 		V_0 = ((int32_t)(L_10%((int32_t)20)));
 	}
 
 IL_004e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15518>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15526>
 		int32_t L_11 = V_0;
 		return ((int32_t)il2cpp_codegen_add(L_11, 1));
 	}
 
 IL_0052:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15520>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15528>
 		__this->___size_tab = (int8_t)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15521>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15529>
 		__this->___newSelected = 0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15522>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15530>
 		int32_t L_12 = ___0_arrLength;
 		return ((int32_t)il2cpp_codegen_add(L_12, 1));
 	}
@@ -94425,7 +94461,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Panel_setNewSelected_mFA1A210CC7BC6B240A
 	int32_t G_B3_0 = 0;
 	int32_t G_B3_1 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15527>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15535>
 		int32_t L_0 = ___0_arrLength;
 		int32_t L_1 = ___0_arrLength;
 		if ((((int32_t)((int32_t)(L_1%((int32_t)20)))) > ((int32_t)0)))
@@ -94450,16 +94486,16 @@ IL_000e:
 IL_000f:
 	{
 		V_0 = ((int32_t)il2cpp_codegen_add(G_B3_1, G_B3_0));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15528>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15536>
 		int32_t L_2 = __this->___xScroll;
 		V_1 = L_2;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15529>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15537>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_3 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___px;
 		int32_t L_4 = V_1;
 		int32_t L_5 = __this->___TAB_W_NEW;
 		__this->___newSelected = ((int32_t)(((int32_t)il2cpp_codegen_subtract(L_3, L_4))/L_5));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15530>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15538>
 		int32_t L_6 = __this->___newSelected;
 		int32_t L_7 = V_0;
 		if ((((int32_t)L_6) <= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_7, 1)))))
@@ -94468,14 +94504,14 @@ IL_000f:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15532>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15540>
 		int32_t L_8 = V_0;
 		__this->___newSelected = ((int32_t)il2cpp_codegen_subtract(L_8, 1));
 	}
 
 IL_0040:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15534>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15542>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_9 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___px;
 		int32_t L_10 = V_1;
@@ -94485,13 +94521,13 @@ IL_0040:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15536>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15544>
 		__this->___newSelected = 0;
 	}
 
 IL_004f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15538>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15546>
 		bool L_11;
 		L_11 = Panel_isTabBox_m1FC105D7C015D92543A9CD6DF024E933B20342F4(__this, NULL);
 		if (!L_11)
@@ -94500,17 +94536,17 @@ IL_004f:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15540>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15548>
 		Panel_setTabBox_m0C3EA66980AFD34DF1E3960E6B9ACE90F70B5A2D(__this, NULL);
 		return;
 	}
 
 IL_005e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15544>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15552>
 		bool L_12 = ___1_resetSelect;
 		Panel_setTabInventory_m0CBD493FD937C47C501C21C79D1C0D2CAE230CEB(__this, L_12, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15546>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/Panel.cs:15554>
 		return;
 	}
 }
@@ -95782,7 +95818,7 @@ IL_0034:
 		return;
 	}
 }
-// Method Definition Index: 21400
+// Method Definition Index: 21448
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t HashSet_1_get_Count_mB717B519B4FBD92488427A6798B491B5FA5FB185_gshared_inline (HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2* __this, const RuntimeMethod* method) 
 {
 	{

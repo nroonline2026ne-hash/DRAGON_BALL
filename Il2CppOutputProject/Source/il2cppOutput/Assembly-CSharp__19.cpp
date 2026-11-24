@@ -235,6 +235,7 @@ IL2CPP_EXTERN_C RuntimeClass* Int32U5BU2CU5D_t46F2694E7DAD7B2B05C940EC5B9DE04E40
 IL2CPP_EXTERN_C RuntimeClass* Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ItemMap_t2B30F00DB645DF643CDA7BBE963A58A018175E38_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t36734ACA044956B5B61977FA4D7D11B59AB0202C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t461051A1236F4A7EED3522BF0C23585BC0E66B25_il2cpp_TypeInfo_var;
@@ -487,6 +488,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralBB58AC5492F01A12291FFA7889181CA9C5433D8A
 IL2CPP_EXTERN_C String_t* _stringLiteralBC3076951BF81E27843EF76513630C68F8B6C376;
 IL2CPP_EXTERN_C String_t* _stringLiteralBEFD0903FC76343F85CC4A077B3034B6DFA73362;
 IL2CPP_EXTERN_C String_t* _stringLiteralC0CA786A215C896644D22D4ED0C2073CB3B3EDB9;
+IL2CPP_EXTERN_C String_t* _stringLiteralC2EDF5EA97ACD6C6B0590450BFAA1142F26ACE90;
 IL2CPP_EXTERN_C String_t* _stringLiteralC300E051AA13BF66778DBC32125E6A5FC8B93FC6;
 IL2CPP_EXTERN_C String_t* _stringLiteralC3BC74AAD98970DA86F44A2E4C86281B35B0A880;
 IL2CPP_EXTERN_C String_t* _stringLiteralC609DF85795508F92A05065A497CD8BF516CA266;
@@ -1308,6 +1310,9 @@ struct ItemTemplate_t39FD64463B94EBCD96909003E2BB12E876BA17FF  : public RuntimeO
 	int32_t ___w;
 	int32_t ___h;
 	int32_t ___strRequire;
+};
+struct KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998  : public RuntimeObject
+{
 };
 struct ManualXmap_t0449FC283E5EDA2B50AEA928B2014C2A3AD4EB92  : public RuntimeObject
 {
@@ -2997,6 +3002,18 @@ struct ItemMap_t2B30F00DB645DF643CDA7BBE963A58A018175E38_StaticFields
 	Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___imageAuraItem1;
 	Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___imageAuraItem2;
 	Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* ___imageAuraItem3;
+};
+struct KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_StaticFields
+{
+	KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998* ____instance;
+	bool ___isShow;
+	bool ___isKsGold;
+	int64_t ___minStartHp;
+	int64_t ___stopHp;
+	bool ___useTanSatV2;
+	bool ___autoChangeZoneWhenEmpty;
+	int32_t ___editingIndex;
+	int64_t ___lastBackspaceTime;
 };
 struct ManualXmap_t0449FC283E5EDA2B50AEA928B2014C2A3AD4EB92_StaticFields
 {
@@ -4969,7 +4986,10 @@ inline void List_1_Add_mC05D71B1AE857909B9A82FF62989ADF885BF5A76_inline (List_1_
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ItemTime_isExistItem_mF88FEEBCF42FA1DCE050EE1E7C2ABEE364205725 (int32_t ___0_id, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_CheckAutoBienKhi_mB7B653D4D3BF77A3570A1D33D283FE7EE6D2373E (Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* ___0_myChar, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AutoSkillPanel_UpdateAutoBuffSkills_m8F3FD08F2D20CF04D0ADEC3DF8FDAE3202A40DE2 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool KsGoldPanel_ShouldStopMob_m1807A7FF99D763B2184EB39EA3015F9F4A1B199F (Mob_t394900507F39725FA57379059AA703E63166F45F* ___0_mob, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Mob_t394900507F39725FA57379059AA703E63166F45F* PickMobController_GetMobTanSatV2_m6DBD03B46E2A9312C4F327AF94EECFA54DACFD58 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Service_requestChangeZone_mE2F1CF77C4F0D04BF75E945AD2FA319F79631940 (Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* __this, int32_t ___0_zoneId, int32_t ___1_indexUI, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8 (InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* __this, String_t* ___0_s, int32_t ___1_Type, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SkillInfoPaintU5BU5D_tBEE92C52D32D631EFB53E053A827F512C69E48B4* Char_skillInfoPaint_mA94372DAF5491635C1A6D1D9019D42E55F5C851B (Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* PickMobController_GetSkillAttack2_mFF073BF184A589AA58B601AE1EC91BE17775A7D5 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Service_selectSkill_m33143F9CD16D34BF6148DE78D89B0570F474F3AF (Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* __this, int32_t ___0_skillTemplateId, const RuntimeMethod* method) ;
@@ -4979,8 +4999,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ModFunc_SetUsedSkill_mCFDAA6172A0A073E06
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Math_Max_m530EBA549AFD98CFC2BD29FE86C6376E67DF11CF (int32_t ___0_val1, int32_t ___1_val2, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Math_Min_m53C488772A34D53917BCA2A491E79A0A5356ED52 (int32_t ___0_val1, int32_t ___1_val2, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Mob_t394900507F39725FA57379059AA703E63166F45F* PickMobController_GetMobTanSat_m749F763581868E9C58815A4B3B528CD1F435F2D2 (const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Service_requestChangeZone_mE2F1CF77C4F0D04BF75E945AD2FA319F79631940 (Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* __this, int32_t ___0_zoneId, int32_t ___1_indexUI, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8 (InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* __this, String_t* ___0_s, int32_t ___1_Type, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Math_abs_m9EBB513752A930AECA9ED005549135F97E154308 (int32_t ___0_i, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Service_charMove_m31B59A38B3C84EB5C26193C4AE9BB4E8EA3D84C9 (Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Mob_t394900507F39725FA57379059AA703E63166F45F* PickMobController_GetMobNext_m20502B609CA5111A4CA30B91CD072A70FCEFDBED (const RuntimeMethod* method) ;
@@ -5013,6 +5031,7 @@ inline bool List_1_Contains_m4FA09CFD8E3D62EEC7585357B55EFD427AE18C43 (List_1_t6
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_IsMobTanSat_m0C74F805526A9BC9013F071AEEB585409CA9D636 (Mob_t394900507F39725FA57379059AA703E63166F45F* ___0_mob, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_FilterMobTanSat_m611D723319C9D16B18BD3A64F1404E2DD82561DD (Mob_t394900507F39725FA57379059AA703E63166F45F* ___0_mob, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool KsGoldPanel_CanStartMob_m8DBA53FB14B3A1115533685E11160BF6245CEC15 (Mob_t394900507F39725FA57379059AA703E63166F45F* ___0_mob, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_IsMobNext_m8B24D6B95E6C60BFC4126B0A1B205A714F4E2925 (Mob_t394900507F39725FA57379059AA703E63166F45F* ___0_mob, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Char_isMeCanAttackOtherPlayer_m426902AE9980458FD83E70DE4728C852A0BE9FD8 (Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* __this, Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* ___0_cAtt, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MobTemplate_tCE9A1D97CCEED63161946DB800240D65D1DFD3FE* Mob_getTemplate_m54DB09C957DDC2BCAAB6CDFACF8AAEC76B8C868D (Mob_t394900507F39725FA57379059AA703E63166F45F* __this, const RuntimeMethod* method) ;
@@ -5173,7 +5192,7 @@ inline void List_1_AddWithResize_m378B392086AAB6F400944FA9839516326B3F7BB8 (List
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 14308
+// Method Definition Index: 14356
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Plant__ctor_m23C8EAFBD64DE922A2A6B03C9015AB1D8B6A3067 (Plant_tC9DC066A5B014EA6459A782E415EF51E6A297B71* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5189,7 +5208,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Plant__ctor_m23C8EAFBD64DE922A2A6B03C901
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 14309
+// Method Definition Index: 14357
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Zombie__ctor_m16E72CE809249E67B463814D2FFB9232EC8964D8 (Zombie_t0B9E08750535BFAC1316DDB2598461AF10FD0D59* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5205,7 +5224,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Zombie__ctor_m16E72CE809249E67B463814D2F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 14310
+// Method Definition Index: 14358
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Projectile__ctor_mB8573DFB008AB5E200B0BC3FF473C51DA6D3BD78 (Projectile_tB32686C86C82655FF666553302E1106DC3D06469* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5225,7 +5244,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Projectile__ctor_mB8573DFB008AB5E200B0BC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 14311
+// Method Definition Index: 14359
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SunItem__ctor_mC0B8E814B7AA24E3CFCBA2F71E37EBBBE5ACFD34 (SunItem_tD6E7380654A0BE4291E7823711CB7AF58CE0D89A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5245,7 +5264,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SunItem__ctor_mC0B8E814B7AA24E3CFCBA2F71
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 14312
+// Method Definition Index: 14360
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LawnMower__ctor_mE0A0A296CF70AB81DE0C5C8A9BA91AF2A0A2ED6D (LawnMower_tE4F91C4131789633E7AFC4BC879C6EE4DF9215C5* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5261,7 +5280,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LawnMower__ctor_mE0A0A296CF70AB81DE0C5C8
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 14313
+// Method Definition Index: 14361
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EffectFx__ctor_mBD418F8B56E3A5C84EE0423C73C4C63377D091FF (EffectFx_tD6F3EB703AABE2DD35817B88ECD7FD047818523C* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5277,7 +5296,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EffectFx__ctor_mBD418F8B56E3A5C84EE0423C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 14314
+// Method Definition Index: 14362
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetInfo__ctor_mACE01784FF324002FF92C3D705B716C24AE7CBA7 (SetInfo_tDC63B6B57AF1361DAF2A1B505F8662B2D418974C* __this, const RuntimeMethod* method) 
 {
 	{
@@ -5293,7 +5312,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetInfo__ctor_mACE01784FF324002FF92C3D70
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 14315
+// Method Definition Index: 14363
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SetItemTracker_GetCurrentPlanet_m46BCC05C23BADCA8C8E1423D48389E7792641BB2 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5395,7 +5414,7 @@ IL_0027:
 		return L_7;
 	}
 }
-// Method Definition Index: 14316
+// Method Definition Index: 14364
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetItemTracker_CheckItem_m4855BB7F9C7BD40892B3BA504A4DF6D5D17BDCB5 (Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* ___0_item, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6036,7 +6055,7 @@ IL_0238:
 		return;
 	}
 }
-// Method Definition Index: 14317
+// Method Definition Index: 14365
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SetItemTracker_IsSetItem_mF2F455402D6B994881D20CD2577C50EF515EEF31 (Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* ___0_item, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6350,7 +6369,7 @@ IL_011f:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 14318
+// Method Definition Index: 14366
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SetItemTracker_IsStarOrUpgradedItem_m309F6E02BC722B06E3CB4D93911A01CA1E4F121D (Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* ___0_item, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -6509,7 +6528,7 @@ IL_006a:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 14319
+// Method Definition Index: 14367
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SetItemTracker_IsJunkItem_m55628D5C95EA65326A1A28CD04B97F134BB86715 (Item_tFAF77888D49883A321EB596A7D93CB5615D37E95* ___0_item, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6742,7 +6761,7 @@ IL_00ad:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 14320
+// Method Definition Index: 14368
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetItemTracker_OnItemPicked_m8426261AD2C47021ADD7F0DEC491E67994D89919 (String_t* ___0_text, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7118,7 +7137,7 @@ IL_0128:
 		return;
 	}
 }
-// Method Definition Index: 14321
+// Method Definition Index: 14369
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetItemTracker_ScanBag_mC32199BB31D77C6CF84BB3946DAD151FF35FDAC8 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7346,7 +7365,7 @@ IL_0074:
 		return;
 	}
 }
-// Method Definition Index: 14322
+// Method Definition Index: 14370
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetItemTracker_ResetPlanet_m2955C67C3B480D205ED1ADC670D9612A07D99E5D (int32_t ___0_planet, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7440,7 +7459,7 @@ IL_002b:
 		return;
 	}
 }
-// Method Definition Index: 14323
+// Method Definition Index: 14371
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SetItemTracker_CountSetCollected_mEB284D551F70B13761ED4C4DF81C8E98C9242A14 (int32_t ___0_planet, int32_t ___1_setIdx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7549,7 +7568,7 @@ IL_0031:
 		return L_12;
 	}
 }
-// Method Definition Index: 14324
+// Method Definition Index: 14372
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SetItemTracker_CountCollected_m2C033AB60B1C964D2A3C5428722F70629423C22F (int32_t ___0_planet, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7658,7 +7677,7 @@ IL_0033:
 		return L_12;
 	}
 }
-// Method Definition Index: 14325
+// Method Definition Index: 14373
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetItemTracker_SaveToRms_m50071BF654D2DC39F3521A4BB89D114CAC6BD5E0 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7822,7 +7841,7 @@ IL_005d:
 		return;
 	}
 }
-// Method Definition Index: 14326
+// Method Definition Index: 14374
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetItemTracker_LoadFromRms_m27DB4BD3C5720D10EB3C78C089FF6178CA963F96 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8015,7 +8034,7 @@ IL_007c:
 		return;
 	}
 }
-// Method Definition Index: 14327
+// Method Definition Index: 14375
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetItemTracker__cctor_m30FCA3ED8A83ECFAE1EF571708C5B0A5EEC60AFC (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8933,7 +8952,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetItemTracker__cctor_m30FCA3ED8A83ECFAE
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 14328
+// Method Definition Index: 14376
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShowBoss__ctor_m9FCF3FDBB6D6360AB328084ACF5BA8BDA5697A49 (ShowBoss_t518A4708BE974224E897A04450BB8BD0F5029065* __this, String_t* ___0_a, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9419,7 +9438,7 @@ IL_0354:
 		return;
 	}
 }
-// Method Definition Index: 14329
+// Method Definition Index: 14377
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShowBoss_PaintBoss_mFAB81B36E4B9E85C8333E5437F2E1ED263B004AE (ShowBoss_t518A4708BE974224E897A04450BB8BD0F5029065* __this, mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* ___0_g, int32_t ___1_x, int32_t ___2_y, int32_t ___3_align, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9498,7 +9517,7 @@ IL_002d:
 		return;
 	}
 }
-// Method Definition Index: 14330
+// Method Definition Index: 14378
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShowBoss_PaintKilledBoss_m3EAF0515B414858146714B7100568A8578D74C61 (ShowBoss_t518A4708BE974224E897A04450BB8BD0F5029065* __this, mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* ___0_g, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9728,7 +9747,7 @@ IL_01b4:
 		return;
 	}
 }
-// Method Definition Index: 14331
+// Method Definition Index: 14379
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShowBoss_PaintActiveBoss_m977A194A37B6D41F2C2AF624B84CB351821BB0C3 (ShowBoss_t518A4708BE974224E897A04450BB8BD0F5029065* __this, mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* ___0_g, int32_t ___1_x, int32_t ___2_y, int32_t ___3_align, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9956,7 +9975,7 @@ IL_0103:
 		return;
 	}
 }
-// Method Definition Index: 14332
+// Method Definition Index: 14380
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ShowBoss_GetTimeString_mC1843635771459EC99C748CF8D5ED3DC186CBE03 (ShowBoss_t518A4708BE974224E897A04450BB8BD0F5029065* __this, TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___0_timeSpan, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10052,7 +10071,7 @@ IL_005f:
 		return L_23;
 	}
 }
-// Method Definition Index: 14333
+// Method Definition Index: 14381
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShowBoss_RemoveNotification_mE37C26DDD66A141E594D65A31C7810C17621F87A (ShowBoss_t518A4708BE974224E897A04450BB8BD0F5029065* ___0_notification, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10229,7 +10248,7 @@ IL_007d:
 		return;
 	}
 }
-// Method Definition Index: 14334
+// Method Definition Index: 14382
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShowBoss_UpdateNotifications_m7EBED3A6D1BBFABA294BE968B7B4AC56F90B3C80 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10599,7 +10618,7 @@ IL_013e:
 		return;
 	}
 }
-// Method Definition Index: 14335
+// Method Definition Index: 14383
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShowBoss_HandleChatVip_m79ECBB6A5DC2F8B0E0E901C050F13D4882A14871 (String_t* ___0_chatVip, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10994,7 +11013,7 @@ IL_016f:
 		return;
 	}
 }
-// Method Definition Index: 14336
+// Method Definition Index: 14384
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShowBoss__cctor_mD990CB55739A01DB823DAC54416E131B2FB5700A (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11025,7 +11044,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShowBoss__cctor_mD990CB55739A01DB823DAC5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 14337
+// Method Definition Index: 14385
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TetrisGame_t74AEB30217CCB9920B3C9F8A988072058FCA62A9* TetrisGame_GI_m10E76E8E98FEEF1D7ADFF9096B4941BF65237357 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11060,7 +11079,7 @@ IL_0011:
 		return L_2;
 	}
 }
-// Method Definition Index: 14338
+// Method Definition Index: 14386
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TetrisGame__ctor_m45510C0FA2E9A7FBCD224345DB9A75AE42B53AE6 (TetrisGame_t74AEB30217CCB9920B3C9F8A988072058FCA62A9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11120,7 +11139,7 @@ IL_0036:
 		return;
 	}
 }
-// Method Definition Index: 14339
+// Method Definition Index: 14387
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TetrisGame_ResetGame_mE5CF6B9203BA75EB9A94DCFB912034EF80691E50 (TetrisGame_t74AEB30217CCB9920B3C9F8A988072058FCA62A9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11155,7 +11174,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TetrisGame_ResetGame_mE5CF6B9203BA75EB9A
 		return;
 	}
 }
-// Method Definition Index: 14340
+// Method Definition Index: 14388
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TetrisGame_SpawnPiece_mECD87951BD991E846BE6665E458D2AD283B49FC4 (TetrisGame_t74AEB30217CCB9920B3C9F8A988072058FCA62A9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11218,7 +11237,7 @@ IL_006d:
 		return;
 	}
 }
-// Method Definition Index: 14341
+// Method Definition Index: 14389
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TetrisGame_Collides_m913A62ADE7DF8EDA5B7D6F483151C51385A54238 (TetrisGame_t74AEB30217CCB9920B3C9F8A988072058FCA62A9* __this, int32_t ___0_nx, int32_t ___1_ny, Int32U5BU2CU5D_t46F2694E7DAD7B2B05C940EC5B9DE04E40D0516F* ___2_p, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -11367,7 +11386,7 @@ IL_0063:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 14342
+// Method Definition Index: 14390
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TetrisGame_LockPiece_m0FC8328927209897C7CF7BCA4F4C9EEACE327435 (TetrisGame_t74AEB30217CCB9920B3C9F8A988072058FCA62A9* __this, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -11504,7 +11523,7 @@ IL_007c:
 		return;
 	}
 }
-// Method Definition Index: 14343
+// Method Definition Index: 14391
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TetrisGame_ClearLines_m547D2220C26B992454C362AC826955B8C1E5B6AA (TetrisGame_t74AEB30217CCB9920B3C9F8A988072058FCA62A9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11818,7 +11837,7 @@ IL_013b:
 		return;
 	}
 }
-// Method Definition Index: 14344
+// Method Definition Index: 14392
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TetrisGame_Update_m9935B190E463A8179B01414845B66E7618D60114 (TetrisGame_t74AEB30217CCB9920B3C9F8A988072058FCA62A9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12420,7 +12439,7 @@ IL_02ec:
 		return;
 	}
 }
-// Method Definition Index: 14345
+// Method Definition Index: 14393
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TetrisGame_MoveLeft_m28508AC88F36EB5B2F1F0D6E3CF11B0BA8EC313C (TetrisGame_t74AEB30217CCB9920B3C9F8A988072058FCA62A9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -12447,7 +12466,7 @@ IL_002a:
 		return;
 	}
 }
-// Method Definition Index: 14346
+// Method Definition Index: 14394
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TetrisGame_MoveRight_mA767A97D90474ECDCF2B78161195203FAFE93028 (TetrisGame_t74AEB30217CCB9920B3C9F8A988072058FCA62A9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -12474,7 +12493,7 @@ IL_002a:
 		return;
 	}
 }
-// Method Definition Index: 14347
+// Method Definition Index: 14395
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TetrisGame_SoftDrop_mC881AC080E60F0111CF76918F16271465B4940CD (TetrisGame_t74AEB30217CCB9920B3C9F8A988072058FCA62A9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -12504,7 +12523,7 @@ IL_0038:
 		return;
 	}
 }
-// Method Definition Index: 14348
+// Method Definition Index: 14396
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TetrisGame_HardDrop_m9E65713A9F8842D499AE17FD02A17D60BF413810 (TetrisGame_t74AEB30217CCB9920B3C9F8A988072058FCA62A9* __this, const RuntimeMethod* method) 
 {
 	{
@@ -12541,7 +12560,7 @@ IL_001e:
 		return;
 	}
 }
-// Method Definition Index: 14349
+// Method Definition Index: 14397
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TetrisGame_Rotate_m1D66EFD8944D578E27ADFAA4F4934B9F544CF76B (TetrisGame_t74AEB30217CCB9920B3C9F8A988072058FCA62A9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12705,7 +12724,7 @@ IL_00cf:
 		return;
 	}
 }
-// Method Definition Index: 14350
+// Method Definition Index: 14398
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TetrisGame_Paint_m073AB7406BD7D5CE9DF59CA3090A1696B54D7B96 (TetrisGame_t74AEB30217CCB9920B3C9F8A988072058FCA62A9* __this, mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* ___0_g, int32_t ___1_panelX, int32_t ___2_panelY, int32_t ___3_panelW, int32_t ___4_panelH, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13187,7 +13206,7 @@ IL_036c:
 		return;
 	}
 }
-// Method Definition Index: 14351
+// Method Definition Index: 14399
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TetrisGame_PaintBtn_m2B7F06BF8C159142AB1F128B35A815E977261E67 (TetrisGame_t74AEB30217CCB9920B3C9F8A988072058FCA62A9* __this, mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* ___0_g, int32_t ___1_x, int32_t ___2_y, int32_t ___3_w, int32_t ___4_h, String_t* ___5_label, int32_t ___6_color, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13237,7 +13256,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TetrisGame_PaintBtn_m2B7F06BF8C159142AB1
 		return;
 	}
 }
-// Method Definition Index: 14352
+// Method Definition Index: 14400
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TetrisGame__cctor_m4D79A582EA1F5AB3C96425C155A7B39DDEA4AF13 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13348,7 +13367,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TetrisGame__cctor_m4D79A582EA1F5AB3C9642
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 14353
+// Method Definition Index: 14401
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XiangqiGame_t98EF410571FE7DC4E0980CF574685E54984F81CD* XiangqiGame_GI_mB570FF9487FED10D5499935624D4B3BB339182A2 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13383,7 +13402,7 @@ IL_0011:
 		return L_2;
 	}
 }
-// Method Definition Index: 14354
+// Method Definition Index: 14402
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XiangqiGame__ctor_mD7C335CD5724703F80607F870761FC4D340C2673 (XiangqiGame_t98EF410571FE7DC4E0980CF574685E54984F81CD* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13442,7 +13461,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XiangqiGame__ctor_mD7C335CD5724703F80607
 		return;
 	}
 }
-// Method Definition Index: 14355
+// Method Definition Index: 14403
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XiangqiGame_ResetGame_m388221F73B484EE647097AD0BC1080C6CC07D1BE (XiangqiGame_t98EF410571FE7DC4E0980CF574685E54984F81CD* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13518,7 +13537,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XiangqiGame_ResetGame_m388221F73B484EE64
 		return;
 	}
 }
-// Method Definition Index: 14356
+// Method Definition Index: 14404
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t912CFF29561C85524770BFFF4ED5B5E94811F115* XiangqiGame_GetLegalMoves_m31C027DE86DB0D719D272D1D5E715CE8DD266D98 (XiangqiGame_t98EF410571FE7DC4E0980CF574685E54984F81CD* __this, int32_t ___0_r, int32_t ___1_c, Int32U5BU2CU5D_t46F2694E7DAD7B2B05C940EC5B9DE04E40D0516F* ___2_b, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15094,7 +15113,7 @@ IL_05a2:
 		return L_351;
 	}
 }
-// Method Definition Index: 14357
+// Method Definition Index: 14405
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XiangqiGame_Update_m473DECA7B926C6ABBA88D2B09B0DCC5F74D04E3B (XiangqiGame_t98EF410571FE7DC4E0980CF574685E54984F81CD* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15431,7 +15450,7 @@ IL_019e:
 		return;
 	}
 }
-// Method Definition Index: 14358
+// Method Definition Index: 14406
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XiangqiGame_HandleClick_m37D70664B0CDAFF2DF0510B20F748359EB0017EB (XiangqiGame_t98EF410571FE7DC4E0980CF574685E54984F81CD* __this, int32_t ___0_r, int32_t ___1_c, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15639,7 +15658,7 @@ IL_0110:
 		return;
 	}
 }
-// Method Definition Index: 14359
+// Method Definition Index: 14407
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XiangqiGame_ExecuteMove_mEBE7C5F5B0197733AEE9127E8ACEB10E0BD747E9 (XiangqiGame_t98EF410571FE7DC4E0980CF574685E54984F81CD* __this, int32_t ___0_fr, int32_t ___1_fc, int32_t ___2_tr, int32_t ___3_tc, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15769,7 +15788,7 @@ IL_00b5:
 		return;
 	}
 }
-// Method Definition Index: 14360
+// Method Definition Index: 14408
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XiangqiGame_MakeAiMove_m02C41DE185348A833434F85E46F9B248DB5E9669 (XiangqiGame_t98EF410571FE7DC4E0980CF574685E54984F81CD* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16034,7 +16053,7 @@ IL_0123:
 		return;
 	}
 }
-// Method Definition Index: 14361
+// Method Definition Index: 14409
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XiangqiGame_Paint_mE3BD47E905048D32EC80D807C4EDD86AE614E3E8 (XiangqiGame_t98EF410571FE7DC4E0980CF574685E54984F81CD* __this, mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* ___0_g, int32_t ___1_panelX, int32_t ___2_panelY, int32_t ___3_panelW, int32_t ___4_panelH, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16733,7 +16752,7 @@ IL_042a:
 		return;
 	}
 }
-// Method Definition Index: 14362
+// Method Definition Index: 14410
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Image_t88AA1A2EF052D8D9F2559D593A4EB7853C305908* XiangqiGame_CreateXiangqiImage_m10BDA91D36A4DA289277939A46CDC7306BD964AA (XiangqiGame_t98EF410571FE7DC4E0980CF574685E54984F81CD* __this, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___0_pattern, bool ___1_isRed, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17171,7 +17190,7 @@ IL_01d4:
 		return L_73;
 	}
 }
-// Method Definition Index: 14363
+// Method Definition Index: 14411
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XiangqiGame_InitPieceImages_m9882AF55732A1BFE8E983F23B65359EC868DF197 (XiangqiGame_t98EF410571FE7DC4E0980CF574685E54984F81CD* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17356,7 +17375,7 @@ IL_0146:
 		return;
 	}
 }
-// Method Definition Index: 14364
+// Method Definition Index: 14412
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XiangqiGame_PaintXiangqiPiece_m49728EBBC1645830DB5EA369C3F169AB29EFCEEA (XiangqiGame_t98EF410571FE7DC4E0980CF574685E54984F81CD* __this, mGraphics_t1DA407CAFB073F74C5A08C04CEE397C0913A9BBE* ___0_g, int32_t ___1_cx, int32_t ___2_cy, int32_t ___3_p, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17470,7 +17489,7 @@ IL_004e:
 		return;
 	}
 }
-// Method Definition Index: 14365
+// Method Definition Index: 14413
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* XiangqiGame_GetPieceName_mDE453043DFA8F54BFC9838919437485D215EA69C (int32_t ___0_p, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17606,7 +17625,7 @@ IL_006b:
 		return _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 	}
 }
-// Method Definition Index: 14366
+// Method Definition Index: 14414
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XiangqiGame__cctor_mEBF219D418A50B3FA762CF11051239FDA3842D68 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18228,7 +18247,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XiangqiGame__cctor_mEBF219D418A50B3FA762
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 14367
+// Method Definition Index: 14415
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pos__ctor_mF8FCE067BCB6CA8B20C617900E1B883792C6B460 (Pos_tC45832DB9AB41F73C514FB2499AC6BA2344AABD6* __this, int32_t ___0_r, int32_t ___1_c, const RuntimeMethod* method) 
 {
 	{
@@ -18257,7 +18276,7 @@ IL2CPP_EXTERN_C  void Pos__ctor_mF8FCE067BCB6CA8B20C617900E1B883792C6B460_Adjust
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 14368
+// Method Definition Index: 14416
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoXmap_Update_m433B89DC62A571BFCAB0D915B1C689DDEA072801 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18308,7 +18327,7 @@ IL_0022:
 		return;
 	}
 }
-// Method Definition Index: 14369
+// Method Definition Index: 14417
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoXmap_Info_m9B66AB10662ADFD73C8CC2A9C4890F2CEA360C63 (String_t* ___0_text, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18388,7 +18407,7 @@ IL_0042:
 		return;
 	}
 }
-// Method Definition Index: 14370
+// Method Definition Index: 14418
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoXmap_SelectMapTrans_m3A673727191460B50830425458B3AF7979C59767 (int32_t ___0_selected, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18442,7 +18461,7 @@ IL_0023:
 		return;
 	}
 }
-// Method Definition Index: 14371
+// Method Definition Index: 14419
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoXmap_ShowPanelMapTrans_m6B7ACB1900B073A831258BE87A5681D41C49B590 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18485,7 +18504,7 @@ IL_0022:
 		return;
 	}
 }
-// Method Definition Index: 14372
+// Method Definition Index: 14420
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoXmap_FixBlackScreen_mBA88DA3E175150C5BEC7AF2B38060331371F261A (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18514,7 +18533,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoXmap_FixBlackScreen_mBA88DA3E175150C
 		return;
 	}
 }
-// Method Definition Index: 14373
+// Method Definition Index: 14421
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoXmap__ctor_m54814A25CC1AF5F947E089F8977AD8C0E33442A1 (AutoXmap_t8E1CFA1491EB9591C813694535929855E5892AB1* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18522,7 +18541,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoXmap__ctor_m54814A25CC1AF5F947E089F8
 		return;
 	}
 }
-// Method Definition Index: 14374
+// Method Definition Index: 14422
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoXmap__cctor_m6A23636C26987002822A4C19953C91AA3D2F594D (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18609,7 +18628,7 @@ IL2CPP_EXTERN_C void GroupMap_t7105B8DF16F392D7F7587FA22A899A352E1A9CE8_marshal_
 IL2CPP_EXTERN_C void GroupMap_t7105B8DF16F392D7F7587FA22A899A352E1A9CE8_marshal_com_cleanup(GroupMap_t7105B8DF16F392D7F7587FA22A899A352E1A9CE8_marshaled_com& marshaled)
 {
 }
-// Method Definition Index: 14375
+// Method Definition Index: 14423
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GroupMap__ctor_mE96E1BDAE8C756E80B0D428C453159C11A145811 (GroupMap_t7105B8DF16F392D7F7587FA22A899A352E1A9CE8* __this, String_t* ___0_nameGroup, List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* ___1_idMaps, const RuntimeMethod* method) 
 {
 	{
@@ -18640,7 +18659,7 @@ IL2CPP_EXTERN_C  void GroupMap__ctor_mE96E1BDAE8C756E80B0D428C453159C11A145811_A
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 14376
+// Method Definition Index: 14424
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GroupMapData__ctor_m2A67D679490DA57D06E8A25D3814F52C0DAA0E41 (GroupMapData_tD45A0D76770BC9780E7C1A6F8F9C19DFE575ACD2* __this, List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* ___0_var1, String_t* ___1_var2, const RuntimeMethod* method) 
 {
 	{
@@ -18666,7 +18685,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GroupMapData__ctor_m2A67D679490DA57D06E8
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 14377
+// Method Definition Index: 14425
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ManualXmap_t0449FC283E5EDA2B50AEA928B2014C2A3AD4EB92* ManualXmap_GI_mC0D676D4045600EEE798FECB194B8566FB7A4526 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18698,7 +18717,7 @@ IL_0011:
 		return L_2;
 	}
 }
-// Method Definition Index: 14378
+// Method Definition Index: 14426
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ManualXmap_LoadMapLeft_m380FF485E8369768BB7A9ABE419291858EF1B671 (ManualXmap_t0449FC283E5EDA2B50AEA928B2014C2A3AD4EB92* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18708,7 +18727,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ManualXmap_LoadMapLeft_m380FF485E8369768
 		return;
 	}
 }
-// Method Definition Index: 14379
+// Method Definition Index: 14427
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ManualXmap_LoadMapCenter_mDC4D1381F235EECB8CA8979301D16C8A659ADBE6 (ManualXmap_t0449FC283E5EDA2B50AEA928B2014C2A3AD4EB92* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18718,7 +18737,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ManualXmap_LoadMapCenter_mDC4D1381F235EE
 		return;
 	}
 }
-// Method Definition Index: 14380
+// Method Definition Index: 14428
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ManualXmap_LoadMapRight_m7FF2D6EE62ADEE514D6F8E322CFE7BC02896E2D4 (ManualXmap_t0449FC283E5EDA2B50AEA928B2014C2A3AD4EB92* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18728,7 +18747,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ManualXmap_LoadMapRight_m7FF2D6EE62ADEE5
 		return;
 	}
 }
-// Method Definition Index: 14381
+// Method Definition Index: 14429
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ManualXmap_LoadWaypointsInMap_m3B6EEAED8D2A66527D015687B42EF4793C117AE4 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19046,7 +19065,7 @@ IL_0193:
 		return;
 	}
 }
-// Method Definition Index: 14382
+// Method Definition Index: 14430
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ManualXmap_GetYGround_m60402720576E7DDA464CEF3598BB245A0BD18B38 (int32_t ___0_x, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19118,7 +19137,7 @@ IL_002e:
 		return L_9;
 	}
 }
-// Method Definition Index: 14383
+// Method Definition Index: 14431
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ManualXmap_ResetSavedWaypoints_m3ABC6ABA4150D4F47543D22CF15F78AD657C4F23 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19145,7 +19164,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ManualXmap_ResetSavedWaypoints_m3ABC6ABA
 		return;
 	}
 }
-// Method Definition Index: 14384
+// Method Definition Index: 14432
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ManualXmap_IsNRDMap_m1896F3927C24DD482508884D561EBEBD78305ACA (int32_t ___0_mapID, const RuntimeMethod* method) 
 {
 	{
@@ -19168,7 +19187,7 @@ IL_000e:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 14385
+// Method Definition Index: 14433
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ManualXmap_IsKarinMap_m8032384A364F832D08A151AE949F408FFA088B08 (int32_t ___0_mapID, const RuntimeMethod* method) 
 {
 	{
@@ -19191,7 +19210,7 @@ IL_000e:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 14386
+// Method Definition Index: 14434
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ManualXmap_LoadMap_m49CC2F4EDD64005D3B22FC73157EA3E8A3E15391 (int32_t ___0_position, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19299,7 +19318,7 @@ IL_0058:
 		return;
 	}
 }
-// Method Definition Index: 14387
+// Method Definition Index: 14435
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ManualXmap_MoveToDefaultPosition_mEAD2BB78E40A9824A845722AD9FE23429A73470D (int32_t ___0_position, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19379,7 +19398,7 @@ IL_0045:
 		return;
 	}
 }
-// Method Definition Index: 14388
+// Method Definition Index: 14436
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ManualXmap_GetTargetX_m0CF88F2017AE6F9959F8B5CC6D84B462EAE0DD74 (Waypoint_t10627C403A194C3D7901C1C01F3C6859FE7D6EE6* ___0_waypoint, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19432,7 +19451,7 @@ IL_0026:
 		return ((int32_t)il2cpp_codegen_add((int32_t)L_7, ((int32_t)30)));
 	}
 }
-// Method Definition Index: 14389
+// Method Definition Index: 14437
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ManualXmap_ShouldRequestChangeMap_mEBCA1127A6CE9F91EBB4A277F649BD2226974BD0 (int32_t ___0_position, Waypoint_t10627C403A194C3D7901C1C01F3C6859FE7D6EE6* ___1_waypoint, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19501,7 +19520,7 @@ IL_002b:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 14390
+// Method Definition Index: 14438
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Waypoint_t10627C403A194C3D7901C1C01F3C6859FE7D6EE6* ManualXmap_FindWaypoint_m81FD57ACDB03EF8C3A7A41E31BC4C2D6E4684FD6 (int32_t ___0_position, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19614,7 +19633,7 @@ IL_0055:
 		return (Waypoint_t10627C403A194C3D7901C1C01F3C6859FE7D6EE6*)NULL;
 	}
 }
-// Method Definition Index: 14391
+// Method Definition Index: 14439
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ManualXmap_IsMatchingWaypoint_m3A0EF546F532DD8B29A65F9DB9CD322DABB1B915 (Waypoint_t10627C403A194C3D7901C1C01F3C6859FE7D6EE6* ___0_waypoint, int32_t ___1_position, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
@@ -19689,7 +19708,7 @@ IL_0031:
 		return L_7;
 	}
 }
-// Method Definition Index: 14392
+// Method Definition Index: 14440
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ManualXmap_IsLeftWaypoint_m1E0C58202270BAD3A9236E9182839BFC997743AE (Waypoint_t10627C403A194C3D7901C1C01F3C6859FE7D6EE6* ___0_waypoint, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19793,7 +19812,7 @@ IL_0066:
 		return (bool)((((int32_t)L_16) < ((int32_t)((int32_t)60)))? 1 : 0);
 	}
 }
-// Method Definition Index: 14393
+// Method Definition Index: 14441
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ManualXmap_IsCenterWaypoint_m004388CE18F30B64046943F07EBF6FB9CAEA8E40 (Waypoint_t10627C403A194C3D7901C1C01F3C6859FE7D6EE6* ___0_waypoint, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19859,7 +19878,7 @@ IL_0033:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 14394
+// Method Definition Index: 14442
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ManualXmap_IsRightWaypoint_mACBA434DE59BBE4EED9846147DD9956754E306EA (Waypoint_t10627C403A194C3D7901C1C01F3C6859FE7D6EE6* ___0_waypoint, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19907,7 +19926,7 @@ IL_0022:
 		return (bool)((((int32_t)L_6) > ((int32_t)((int32_t)il2cpp_codegen_subtract(L_7, ((int32_t)60)))))? 1 : 0);
 	}
 }
-// Method Definition Index: 14395
+// Method Definition Index: 14443
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ManualXmap_IsSpecialCenterMap_m565D7EA36519884B9B8A38EAAFA798D9ED57C8E4 (Waypoint_t10627C403A194C3D7901C1C01F3C6859FE7D6EE6* ___0_waypoint, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20015,7 +20034,7 @@ IL_0053:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 14396
+// Method Definition Index: 14444
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ManualXmap_GetTextPopup_m7F33EA5505DDB5BF06AF593876AD2EAC2ACB7033 (PopUp_tF630E983A261AEA5134879E41F79FB0CDE9D32DF* ___0_popUp, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20086,7 +20105,7 @@ IL_0029:
 		return L_16;
 	}
 }
-// Method Definition Index: 14397
+// Method Definition Index: 14445
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ManualXmap_RequestChangeMap_m86F7BD1DFFF8A62F0949B7A73A4AA216702C31F2 (Waypoint_t10627C403A194C3D7901C1C01F3C6859FE7D6EE6* ___0_waypoint, const RuntimeMethod* method) 
 {
 	{
@@ -20119,7 +20138,7 @@ IL_0013:
 		return;
 	}
 }
-// Method Definition Index: 14398
+// Method Definition Index: 14446
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ManualXmap_TeleportInNRDMap_m66E78B0983163459E8426794FE9236841D7F1D0D (int32_t ___0_position, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20273,7 +20292,7 @@ IL_0098:
 		return;
 	}
 }
-// Method Definition Index: 14399
+// Method Definition Index: 14447
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ManualXmap__ctor_m7F0224848230BEB37F70E1A67A2556AA67698814 (ManualXmap_t0449FC283E5EDA2B50AEA928B2014C2A3AD4EB92* __this, const RuntimeMethod* method) 
 {
 	{
@@ -20345,7 +20364,7 @@ IL2CPP_EXTERN_C void MapNext_t04317B5461F84B03683F16E1E864A8E3FA5FE3A2_marshal_c
 	il2cpp_codegen_com_destroy_safe_array(marshaled.___Info);
 	marshaled.___Info = NULL;
 }
-// Method Definition Index: 14400
+// Method Definition Index: 14448
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MapNext__ctor_mDB802FB7F287BCA8BB9093580B52B51B2B7219E3 (MapNext_t04317B5461F84B03683F16E1E864A8E3FA5FE3A2* __this, int32_t ___0_mapID, int32_t ___1_type, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___2_info, const RuntimeMethod* method) 
 {
 	{
@@ -20378,7 +20397,7 @@ IL2CPP_EXTERN_C  void MapNext__ctor_mDB802FB7F287BCA8BB9093580B52B51B2B7219E3_Ad
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 14401
+// Method Definition Index: 14449
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickMob_Update_mD7089C99C7D735B3757D05B6A4F13B96B433439D (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20395,7 +20414,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickMob_Update_mD7089C99C7D735B3757D05B6
 		return;
 	}
 }
-// Method Definition Index: 14402
+// Method Definition Index: 14450
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickMob_GoBack_m8E3DDFC26B88AA94322D8CA253BE00DC3F50DE3A (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20415,7 +20434,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickMob_GoBack_m8E3DDFC26B88AA94322D8CA2
 		return;
 	}
 }
-// Method Definition Index: 14403
+// Method Definition Index: 14451
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickMob__ctor_m54851D24089171082203AD12E012F033AF185760 (PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3* __this, const RuntimeMethod* method) 
 {
 	{
@@ -20423,7 +20442,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickMob__ctor_m54851D24089171082203AD12E
 		return;
 	}
 }
-// Method Definition Index: 14404
+// Method Definition Index: 14452
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickMob__cctor_m942B729BABA612943808D4F99F13C6AC381665D7 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20549,7 +20568,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickMob__cctor_m942B729BABA612943808D4F9
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 14405
+// Method Definition Index: 14453
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickMobController_Update_m3070001C21A02DD99F0009FA9B3AAC688585A018 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20560,6 +20579,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickMobController_Update_m3070001C21A02D
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ItemMap_t2B30F00DB645DF643CDA7BBE963A58A018175E38_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mC05D71B1AE857909B9A82FF62989ADF885BF5A76_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Clear_m01F6436D8576B8B6E5FED8EBDD424AC2D76393B5_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m99BDFF7122F2B8794DC83C6DE234F1214BA51637_RuntimeMethod_var);
@@ -20572,6 +20592,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickMobController_Update_m3070001C21A02D
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Res_t42939C8A70541C5F8BBAC618E2AE68A048453E10_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral56E06E6BC05F1B53E668EA94622FC60DE6585A96);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC2EDF5EA97ACD6C6B0590450BFAA1142F26ACE90);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -20581,22 +20602,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickMobController_Update_m3070001C21A02D
 	bool V_3 = false;
 	int32_t V_4 = 0;
 	ItemMap_t2B30F00DB645DF643CDA7BBE963A58A018175E38* V_5 = NULL;
-	Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* V_6 = NULL;
-	Mob_t394900507F39725FA57379059AA703E63166F45F* V_7 = NULL;
-	int32_t V_8 = 0;
-	int32_t V_9 = 0;
+	int32_t V_6 = 0;
+	int32_t V_7 = 0;
+	Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* V_8 = NULL;
+	Mob_t394900507F39725FA57379059AA703E63166F45F* V_9 = NULL;
 	int32_t V_10 = 0;
 	int32_t V_11 = 0;
-	Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* V_12 = NULL;
-	Mob_t394900507F39725FA57379059AA703E63166F45F* V_13 = NULL;
-	int32_t V_14 = 0;
+	int32_t V_12 = 0;
+	int32_t V_13 = 0;
+	Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* V_14 = NULL;
 	Mob_t394900507F39725FA57379059AA703E63166F45F* V_15 = NULL;
-	Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* V_16 = NULL;
-	Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* V_17 = NULL;
+	int32_t V_16 = 0;
+	Mob_t394900507F39725FA57379059AA703E63166F45F* V_17 = NULL;
+	Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* V_18 = NULL;
+	Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* V_19 = NULL;
 	int32_t G_B29_0 = 0;
-	int32_t G_B86_0 = 0;
-	int32_t G_B116_0 = 0;
-	int32_t G_B115_0 = 0;
+	int32_t G_B67_0 = 0;
+	int32_t G_B114_0 = 0;
+	int32_t G_B138_0 = 0;
+	int32_t G_B137_0 = 0;
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:38>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
@@ -21067,7 +21091,7 @@ IL_0237:
 		bool L_90 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___tanSatV2;
 		if (!L_90)
 		{
-			goto IL_03ea;
+			goto IL_050a;
 		}
 	}
 	{
@@ -21075,7 +21099,7 @@ IL_0237:
 		bool L_91 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___tanSat;
 		if (L_91)
 		{
-			goto IL_03ea;
+			goto IL_050a;
 		}
 	}
 	{
@@ -21083,7 +21107,7 @@ IL_0237:
 		bool L_92 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___tsPlayer;
 		if (L_92)
 		{
-			goto IL_03ea;
+			goto IL_050a;
 		}
 	}
 	{
@@ -21148,7 +21172,7 @@ IL_028b:
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_99 = L_98->___mobFocus;
 		if (!L_99)
 		{
-			goto IL_02d8;
+			goto IL_02e5;
 		}
 	}
 	{
@@ -21159,7 +21183,7 @@ IL_028b:
 		int32_t L_102 = L_101->___status;
 		if (!L_102)
 		{
-			goto IL_02d1;
+			goto IL_02de;
 		}
 	}
 	{
@@ -21170,7 +21194,7 @@ IL_028b:
 		int32_t L_105 = L_104->___status;
 		if ((((int32_t)L_105) == ((int32_t)1)))
 		{
-			goto IL_02d1;
+			goto IL_02de;
 		}
 	}
 	{
@@ -21181,7 +21205,7 @@ IL_028b:
 		double L_108 = L_107->___hp;
 		if ((((double)L_108) <= ((double)(0.0))))
 		{
-			goto IL_02d1;
+			goto IL_02de;
 		}
 	}
 	{
@@ -21190,1645 +21214,1924 @@ IL_028b:
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_110 = L_109->___mobFocus;
 		NullCheck(L_110);
 		bool L_111 = L_110->___isMobMe;
-		if (!L_111)
+		if (L_111)
 		{
-			goto IL_02d8;
+			goto IL_02de;
+		}
+	}
+	{
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_112 = V_0;
+		NullCheck(L_112);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_113 = L_112->___mobFocus;
+		il2cpp_codegen_runtime_class_init_inline(KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var);
+		bool L_114;
+		L_114 = KsGoldPanel_ShouldStopMob_m1807A7FF99D763B2184EB39EA3015F9F4A1B199F(L_113, NULL);
+		if (!L_114)
+		{
+			goto IL_02e5;
 		}
 	}
 
-IL_02d1:
+IL_02de:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:137>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_112 = V_0;
-		NullCheck(L_112);
-		L_112->___mobFocus = (Mob_t394900507F39725FA57379059AA703E63166F45F*)NULL;
-		Il2CppCodeGenWriteBarrier((void**)(&L_112->___mobFocus), (void*)(Mob_t394900507F39725FA57379059AA703E63166F45F*)NULL);
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_115 = V_0;
+		NullCheck(L_115);
+		L_115->___mobFocus = (Mob_t394900507F39725FA57379059AA703E63166F45F*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&L_115->___mobFocus), (void*)(Mob_t394900507F39725FA57379059AA703E63166F45F*)NULL);
 	}
 
-IL_02d8:
+IL_02e5:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:141>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_113 = V_0;
-		NullCheck(L_113);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_114 = L_113->___mobFocus;
-		if (L_114)
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_116 = V_0;
+		NullCheck(L_116);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_117 = L_116->___mobFocus;
+		if (L_117)
 		{
-			goto IL_02eb;
+			goto IL_03f6;
 		}
 	}
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:143>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_115 = V_0;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_118 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_116;
-		L_116 = PickMobController_GetMobTanSatV2_m6DBD03B46E2A9312C4F327AF94EECFA54DACFD58(NULL);
-		NullCheck(L_115);
-		L_115->___mobFocus = L_116;
-		Il2CppCodeGenWriteBarrier((void**)(&L_115->___mobFocus), (void*)L_116);
-	}
-
-IL_02eb:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:146>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_117 = V_0;
-		NullCheck(L_117);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_118 = L_117->___mobFocus;
-		if (!L_118)
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_119;
+		L_119 = PickMobController_GetMobTanSatV2_m6DBD03B46E2A9312C4F327AF94EECFA54DACFD58(NULL);
+		NullCheck(L_118);
+		L_118->___mobFocus = L_119;
+		Il2CppCodeGenWriteBarrier((void**)(&L_118->___mobFocus), (void*)L_119);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:144>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_120 = V_0;
+		NullCheck(L_120);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_121 = L_120->___mobFocus;
+		if (L_121)
 		{
-			goto IL_03e2;
+			goto IL_03e1;
 		}
 	}
 	{
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_119 = V_0;
-		NullCheck(L_119);
-		SkillInfoPaintU5BU5D_tBEE92C52D32D631EFB53E053A827F512C69E48B4* L_120;
-		L_120 = Char_skillInfoPaint_mA94372DAF5491635C1A6D1D9019D42E55F5C851B(L_119, NULL);
-		if (L_120)
+		il2cpp_codegen_runtime_class_init_inline(KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var);
+		bool L_122 = ((KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_StaticFields*)il2cpp_codegen_static_fields_for(KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var))->___isKsGold;
+		if (!L_122)
 		{
-			goto IL_03e2;
+			goto IL_03e1;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var);
+		bool L_123 = ((KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_StaticFields*)il2cpp_codegen_static_fields_for(KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var))->___autoChangeZoneWhenEmpty;
+		if (!L_123)
+		{
+			goto IL_03e1;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:146>
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		int64_t L_124 = ((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___timeNoMob;
+		if (L_124)
+		{
+			goto IL_0330;
 		}
 	}
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:148>
+		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
+		int64_t L_125;
+		L_125 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_121;
-		L_121 = PickMobController_GetSkillAttack2_mFF073BF184A589AA58B601AE1EC91BE17775A7D5(NULL);
-		V_6 = L_121;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:149>
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_122 = V_6;
-		if (!L_122)
-		{
-			goto IL_03e2;
-		}
-	}
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:151>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_123 = V_0;
-		NullCheck(L_123);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_124 = L_123->___mobFocus;
-		V_7 = L_124;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:152>
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_125 = V_7;
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_126 = V_7;
-		NullCheck(L_126);
-		int32_t L_127 = L_126->___xFirst;
-		NullCheck(L_125);
-		L_125->___x = L_127;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:153>
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_128 = V_7;
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_129 = V_7;
-		NullCheck(L_129);
-		int32_t L_130 = L_129->___yFirst;
-		NullCheck(L_128);
-		L_128->___y = L_130;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:156>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_131 = V_0;
-		NullCheck(L_131);
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_132 = L_131->___myskill;
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_133 = V_6;
-		if ((((RuntimeObject*)(Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)L_132) == ((RuntimeObject*)(Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)L_133)))
-		{
-			goto IL_035b;
-		}
-	}
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:158>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_134 = V_0;
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_135 = V_6;
-		NullCheck(L_134);
-		L_134->___myskill = L_135;
-		Il2CppCodeGenWriteBarrier((void**)(&L_134->___myskill), (void*)L_135);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:159>
-		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_136;
-		L_136 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_137 = V_6;
-		NullCheck(L_137);
-		SkillTemplate_t311437513D34E91857550DAACFFF71C301B14352* L_138 = L_137->___template;
-		NullCheck(L_138);
-		int8_t L_139 = L_138->___id;
-		NullCheck(L_136);
-		Service_selectSkill_m33143F9CD16D34BF6148DE78D89B0570F474F3AF(L_136, L_139, NULL);
+		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___timeNoMob = L_125;
+		goto IL_03d6;
 	}
 
-IL_035b:
+IL_0330:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:162>
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_140 = V_6;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:150>
+		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
+		int64_t L_126;
+		L_126 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		bool L_141;
-		L_141 = PickMobController_CanUseSkill_m9C78C1C62FE516701882C8891E6820B826DFC5AF(L_140, NULL);
-		if (!L_141)
+		int64_t L_127 = ((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___timeNoMob;
+		if ((((int64_t)((int64_t)il2cpp_codegen_subtract(L_126, L_127))) < ((int64_t)((int64_t)((int32_t)800)))))
 		{
-			goto IL_03da;
+			goto IL_03d6;
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:166>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_142 = V_0;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:152>
+		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
+		int64_t L_128;
+		L_128 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___timeNoMob = L_128;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:153>
+		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
+		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_129;
+		L_129 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
+		NullCheck(L_129);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_130 = L_129->___zones;
+		if (!L_130)
+		{
+			goto IL_036b;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
+		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_131;
+		L_131 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
+		NullCheck(L_131);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_132 = L_131->___zones;
+		NullCheck(L_132);
+		if ((((int32_t)((int32_t)(((RuntimeArray*)L_132)->max_length))) > ((int32_t)1)))
+		{
+			goto IL_036f;
+		}
+	}
+
+IL_036b:
+	{
+		G_B67_0 = ((int32_t)20);
+		goto IL_037b;
+	}
+
+IL_036f:
+	{
+		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
+		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_133;
+		L_133 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
+		NullCheck(L_133);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_134 = L_133->___zones;
+		NullCheck(L_134);
+		G_B67_0 = ((int32_t)(((RuntimeArray*)L_134)->max_length));
+	}
+
+IL_037b:
+	{
+		V_6 = G_B67_0;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:154>
+		il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
+		int32_t L_135 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___zoneID;
+		int32_t L_136 = V_6;
+		V_7 = ((int32_t)(((int32_t)il2cpp_codegen_add(L_135, 1))%L_136));
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:155>
+		int32_t L_137 = V_7;
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		int32_t L_138 = ((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___lastTryZone;
+		if ((!(((uint32_t)L_137) == ((uint32_t)L_138))))
+		{
+			goto IL_039b;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:157>
+		int32_t L_139 = V_7;
+		int32_t L_140 = V_6;
+		V_7 = ((int32_t)(((int32_t)il2cpp_codegen_add(L_139, 1))%L_140));
+	}
+
+IL_039b:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:159>
+		int32_t L_141 = V_7;
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___lastTryZone = L_141;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:160>
+		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_142;
+		L_142 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
+		int32_t L_143 = V_7;
 		NullCheck(L_142);
-		int32_t L_143 = L_142->___cx;
-		V_8 = L_143;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:167>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_144 = V_0;
+		Service_requestChangeZone_mE2F1CF77C4F0D04BF75E945AD2FA319F79631940(L_142, L_143, (-1), NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:161>
+		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
+		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_144 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
+		String_t* L_145;
+		L_145 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_7), NULL);
+		String_t* L_146;
+		L_146 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralC2EDF5EA97ACD6C6B0590450BFAA1142F26ACE90, L_145, NULL);
 		NullCheck(L_144);
-		int32_t L_145 = L_144->___cy;
-		V_9 = L_145;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:170>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_146 = V_0;
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_147 = V_7;
+		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_144, L_146, 0, NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:162>
+		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)1500), NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:163>
+		return;
+	}
+
+IL_03d6:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:165>
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)150), NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:166>
+		return;
+	}
+
+IL_03e1:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:168>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_147 = V_0;
 		NullCheck(L_147);
-		int32_t L_148 = L_147->___xFirst;
-		NullCheck(L_146);
-		L_146->___cx = L_148;
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_148 = L_147->___mobFocus;
+		if (!L_148)
+		{
+			goto IL_03f6;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:170>
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___timeNoMob = ((int64_t)0);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:171>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_149 = V_0;
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_150 = V_7;
-		NullCheck(L_150);
-		int32_t L_151 = L_150->___yFirst;
-		NullCheck(L_149);
-		L_149->___cy = L_151;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:174>
-		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
-		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_152;
-		L_152 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_153 = V_7;
-		NullCheck(L_152);
-		ModFunc_AttackMob_m6F198955F15AA1DB869AF968EECACF88EEA8EFC6(L_152, L_153, NULL);
+		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___lastTryZone = (-1);
+	}
+
+IL_03f6:
+	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:175>
-		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_154;
-		L_154 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_155 = V_6;
-		NullCheck(L_154);
-		ModFunc_SetUsedSkill_mCFDAA6172A0A073E069F1ADCCC9BA0EBE28ABDD4(L_154, L_155, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:178>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_156 = V_0;
-		int32_t L_157 = V_8;
-		NullCheck(L_156);
-		L_156->___cx = L_157;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_149 = V_0;
+		NullCheck(L_149);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_150 = L_149->___mobFocus;
+		if (!L_150)
+		{
+			goto IL_0502;
+		}
+	}
+	{
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_151 = V_0;
+		NullCheck(L_151);
+		SkillInfoPaintU5BU5D_tBEE92C52D32D631EFB53E053A827F512C69E48B4* L_152;
+		L_152 = Char_skillInfoPaint_mA94372DAF5491635C1A6D1D9019D42E55F5C851B(L_151, NULL);
+		if (L_152)
+		{
+			goto IL_0502;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:177>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_153 = V_0;
+		NullCheck(L_153);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_154 = L_153->___mobFocus;
+		il2cpp_codegen_runtime_class_init_inline(KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var);
+		bool L_155;
+		L_155 = KsGoldPanel_ShouldStopMob_m1807A7FF99D763B2184EB39EA3015F9F4A1B199F(L_154, NULL);
+		if (!L_155)
+		{
+			goto IL_0421;
+		}
+	}
+	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:179>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_158 = V_0;
-		int32_t L_159 = V_9;
-		NullCheck(L_158);
-		L_158->___cy = L_159;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:181>
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_160 = V_6;
-		NullCheck(L_160);
-		int32_t L_161 = L_160->___coolDown;
-		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
-		int32_t L_162;
-		L_162 = Math_Max_m530EBA549AFD98CFC2BD29FE86C6376E67DF11CF(((int32_t)il2cpp_codegen_add(L_161, ((int32_t)50))), ((int32_t)250), NULL);
-		int32_t L_163;
-		L_163 = Math_Min_m53C488772A34D53917BCA2A491E79A0A5356ED52(L_162, ((int32_t)450), NULL);
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_156 = V_0;
+		NullCheck(L_156);
+		L_156->___mobFocus = (Mob_t394900507F39725FA57379059AA703E63166F45F*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&L_156->___mobFocus), (void*)(Mob_t394900507F39725FA57379059AA703E63166F45F*)NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:180>
+		return;
+	}
+
+IL_0421:
+	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:182>
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(L_163, NULL);
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_157;
+		L_157 = PickMobController_GetSkillAttack2_mFF073BF184A589AA58B601AE1EC91BE17775A7D5(NULL);
+		V_8 = L_157;
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:183>
-		return;
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_158 = V_8;
+		if (!L_158)
+		{
+			goto IL_0502;
+		}
 	}
-
-IL_03da:
 	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:185>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_159 = V_0;
+		NullCheck(L_159);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_160 = L_159->___mobFocus;
+		V_9 = L_160;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:186>
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_161 = V_9;
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_162 = V_9;
+		NullCheck(L_162);
+		int32_t L_163 = L_162->___xFirst;
+		NullCheck(L_161);
+		L_161->___x = L_163;
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:187>
-		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)100), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:188>
-		return;
-	}
-
-IL_03e2:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:193>
-		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)100), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:194>
-		return;
-	}
-
-IL_03ea:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:197>
-		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
-		bool L_164 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___tanSat;
-		if (!L_164)
-		{
-			goto IL_08b3;
-		}
-	}
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:199>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_165 = V_0;
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_164 = V_9;
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_165 = V_9;
 		NullCheck(L_165);
-		bool L_166 = L_165->___isCharge;
-		if (!L_166)
+		int32_t L_166 = L_165->___yFirst;
+		NullCheck(L_164);
+		L_164->___y = L_166;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:190>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_167 = V_0;
+		NullCheck(L_167);
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_168 = L_167->___myskill;
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_169 = V_8;
+		if ((((RuntimeObject*)(Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)L_168) == ((RuntimeObject*)(Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)L_169)))
 		{
-			goto IL_0404;
+			goto IL_047b;
 		}
 	}
 	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:192>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_170 = V_0;
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_171 = V_8;
+		NullCheck(L_170);
+		L_170->___myskill = L_171;
+		Il2CppCodeGenWriteBarrier((void**)(&L_170->___myskill), (void*)L_171);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:193>
+		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_172;
+		L_172 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_173 = V_8;
+		NullCheck(L_173);
+		SkillTemplate_t311437513D34E91857550DAACFFF71C301B14352* L_174 = L_173->___template;
+		NullCheck(L_174);
+		int8_t L_175 = L_174->___id;
+		NullCheck(L_172);
+		Service_selectSkill_m33143F9CD16D34BF6148DE78D89B0570F474F3AF(L_172, L_175, NULL);
+	}
+
+IL_047b:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:196>
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_176 = V_8;
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		bool L_177;
+		L_177 = PickMobController_CanUseSkill_m9C78C1C62FE516701882C8891E6820B826DFC5AF(L_176, NULL);
+		if (!L_177)
+		{
+			goto IL_04fa;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:200>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_178 = V_0;
+		NullCheck(L_178);
+		int32_t L_179 = L_178->___cx;
+		V_10 = L_179;
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:201>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_180 = V_0;
+		NullCheck(L_180);
+		int32_t L_181 = L_180->___cy;
+		V_11 = L_181;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:204>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_182 = V_0;
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_183 = V_9;
+		NullCheck(L_183);
+		int32_t L_184 = L_183->___xFirst;
+		NullCheck(L_182);
+		L_182->___cx = L_184;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:205>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_185 = V_0;
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_186 = V_9;
+		NullCheck(L_186);
+		int32_t L_187 = L_186->___yFirst;
+		NullCheck(L_185);
+		L_185->___cy = L_187;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:208>
+		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
+		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_188;
+		L_188 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_189 = V_9;
+		NullCheck(L_188);
+		ModFunc_AttackMob_m6F198955F15AA1DB869AF968EECACF88EEA8EFC6(L_188, L_189, NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:209>
+		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_190;
+		L_190 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_191 = V_8;
+		NullCheck(L_190);
+		ModFunc_SetUsedSkill_mCFDAA6172A0A073E069F1ADCCC9BA0EBE28ABDD4(L_190, L_191, NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:212>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_192 = V_0;
+		int32_t L_193 = V_10;
+		NullCheck(L_192);
+		L_192->___cx = L_193;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:213>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_194 = V_0;
+		int32_t L_195 = V_11;
+		NullCheck(L_194);
+		L_194->___cy = L_195;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:215>
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_196 = V_8;
+		NullCheck(L_196);
+		int32_t L_197 = L_196->___coolDown;
+		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		int32_t L_198;
+		L_198 = Math_Max_m530EBA549AFD98CFC2BD29FE86C6376E67DF11CF(((int32_t)il2cpp_codegen_add(L_197, ((int32_t)50))), ((int32_t)250), NULL);
+		int32_t L_199;
+		L_199 = Math_Min_m53C488772A34D53917BCA2A491E79A0A5356ED52(L_198, ((int32_t)450), NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:216>
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(L_199, NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:217>
+		return;
+	}
+
+IL_04fa:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:221>
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)100), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:202>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:222>
 		return;
 	}
 
-IL_0404:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:204>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_167 = V_0;
-		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		bool L_168;
-		L_168 = PickMobController_CheckAutoBienKhi_mB7B653D4D3BF77A3570A1D33D283FE7EE6D2373E(L_167, NULL);
-		if (!L_168)
-		{
-			goto IL_040d;
-		}
-	}
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:206>
-		return;
-	}
-
-IL_040d:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:208>
-		il2cpp_codegen_runtime_class_init_inline(AutoSkillPanel_t2C390C00559138A3B1918283862FAA9E278E04C4_il2cpp_TypeInfo_var);
-		bool L_169;
-		L_169 = AutoSkillPanel_UpdateAutoBuffSkills_m8F3FD08F2D20CF04D0ADEC3DF8FDAE3202A40DE2(NULL);
-		if (!L_169)
-		{
-			goto IL_041f;
-		}
-	}
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:210>
-		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)250), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:211>
-		return;
-	}
-
-IL_041f:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:213>
-		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
-		bool L_170 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___danhTheoHP;
-		if (!L_170)
-		{
-			goto IL_0461;
-		}
-	}
-	{
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_171 = V_0;
-		NullCheck(L_171);
-		double L_172 = L_171->___cHPFull;
-		if ((!(((double)L_172) > ((double)(0.0)))))
-		{
-			goto IL_0461;
-		}
-	}
-	{
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_173 = V_0;
-		NullCheck(L_173);
-		double L_174 = L_173->___cHP;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_175 = V_0;
-		NullCheck(L_175);
-		double L_176 = L_175->___cHPFull;
-		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
-		int32_t L_177 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___danhTheoHPPercent;
-		if ((!(((double)((double)(((double)il2cpp_codegen_multiply(L_174, (100.0)))/L_176))) < ((double)((double)L_177)))))
-		{
-			goto IL_0461;
-		}
-	}
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:215>
-		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)200), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:216>
-		return;
-	}
-
-IL_0461:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:218>
-		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
-		bool L_178 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___doiKhuHetQuai;
-		if (!L_178)
-		{
-			goto IL_0549;
-		}
-	}
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:220>
-		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_179;
-		L_179 = PickMobController_GetMobTanSat_m749F763581868E9C58815A4B3B528CD1F435F2D2(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:221>
-		if (L_179)
-		{
-			goto IL_053c;
-		}
-	}
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:223>
-		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		int64_t L_180 = ((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___timeNoMob;
-		if (L_180)
-		{
-			goto IL_048b;
-		}
-	}
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:225>
-		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
-		int64_t L_181;
-		L_181 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
-		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___timeNoMob = L_181;
-		goto IL_0531;
-	}
-
-IL_048b:
+IL_0502:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:227>
-		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
-		int64_t L_182;
-		L_182 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		int64_t L_183 = ((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___timeNoMob;
-		if ((((int64_t)((int64_t)il2cpp_codegen_subtract(L_182, L_183))) < ((int64_t)((int64_t)((int32_t)800)))))
-		{
-			goto IL_0531;
-		}
-	}
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:229>
-		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
-		int64_t L_184;
-		L_184 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
-		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___timeNoMob = L_184;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:230>
-		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
-		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_185;
-		L_185 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
-		NullCheck(L_185);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_186 = L_185->___zones;
-		if (!L_186)
-		{
-			goto IL_04c6;
-		}
-	}
-	{
-		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
-		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_187;
-		L_187 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
-		NullCheck(L_187);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_188 = L_187->___zones;
-		NullCheck(L_188);
-		if ((((int32_t)((int32_t)(((RuntimeArray*)L_188)->max_length))) > ((int32_t)1)))
-		{
-			goto IL_04ca;
-		}
+		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)100), NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:228>
+		return;
 	}
 
-IL_04c6:
+IL_050a:
 	{
-		G_B86_0 = ((int32_t)20);
-		goto IL_04d6;
-	}
-
-IL_04ca:
-	{
-		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
-		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_189;
-		L_189 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
-		NullCheck(L_189);
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_190 = L_189->___zones;
-		NullCheck(L_190);
-		G_B86_0 = ((int32_t)(((RuntimeArray*)L_190)->max_length));
-	}
-
-IL_04d6:
-	{
-		V_10 = G_B86_0;
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:231>
-		il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
-		int32_t L_191 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___zoneID;
-		int32_t L_192 = V_10;
-		V_11 = ((int32_t)(((int32_t)il2cpp_codegen_add(L_191, 1))%L_192));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:232>
-		int32_t L_193 = V_11;
-		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		int32_t L_194 = ((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___lastTryZone;
-		if ((!(((uint32_t)L_193) == ((uint32_t)L_194))))
+		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
+		bool L_200 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___tanSat;
+		if (!L_200)
 		{
-			goto IL_04f6;
+			goto IL_0a10;
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:234>
-		int32_t L_195 = V_11;
-		int32_t L_196 = V_10;
-		V_11 = ((int32_t)(((int32_t)il2cpp_codegen_add(L_195, 1))%L_196));
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:233>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_201 = V_0;
+		NullCheck(L_201);
+		bool L_202 = L_201->___isCharge;
+		if (!L_202)
+		{
+			goto IL_0524;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:235>
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)100), NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:236>
+		return;
 	}
 
-IL_04f6:
+IL_0524:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:236>
-		int32_t L_197 = V_11;
-		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___lastTryZone = L_197;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:237>
-		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_198;
-		L_198 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
-		int32_t L_199 = V_11;
-		NullCheck(L_198);
-		Service_requestChangeZone_mE2F1CF77C4F0D04BF75E945AD2FA319F79631940(L_198, L_199, (-1), NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:238>
-		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
-		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_200 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
-		String_t* L_201;
-		L_201 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_11), NULL);
-		String_t* L_202;
-		L_202 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral56E06E6BC05F1B53E668EA94622FC60DE6585A96, L_201, NULL);
-		NullCheck(L_200);
-		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_200, L_202, 0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:239>
-		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)1500), NULL);
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_203 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		bool L_204;
+		L_204 = PickMobController_CheckAutoBienKhi_mB7B653D4D3BF77A3570A1D33D283FE7EE6D2373E(L_203, NULL);
+		if (!L_204)
+		{
+			goto IL_052d;
+		}
+	}
+	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:240>
 		return;
 	}
 
-IL_0531:
+IL_052d:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:242>
+		il2cpp_codegen_runtime_class_init_inline(AutoSkillPanel_t2C390C00559138A3B1918283862FAA9E278E04C4_il2cpp_TypeInfo_var);
+		bool L_205;
+		L_205 = AutoSkillPanel_UpdateAutoBuffSkills_m8F3FD08F2D20CF04D0ADEC3DF8FDAE3202A40DE2(NULL);
+		if (!L_205)
+		{
+			goto IL_053f;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:244>
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)150), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:243>
+		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)250), NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:245>
 		return;
 	}
 
-IL_053c:
+IL_053f:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:247>
-		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___timeNoMob = ((int64_t)0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:248>
-		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___lastTryZone = (-1);
-	}
-
-IL_0549:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:252>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_203 = V_0;
-		NullCheck(L_203);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_204 = L_203->___mobFocus;
-		if (!L_204)
+		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
+		bool L_206 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___danhTheoHP;
+		if (!L_206)
 		{
-			goto IL_0596;
+			goto IL_0581;
 		}
 	}
 	{
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_205 = V_0;
-		NullCheck(L_205);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_206 = L_205->___mobFocus;
-		NullCheck(L_206);
-		int32_t L_207 = L_206->___status;
-		if (!L_207)
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_207 = V_0;
+		NullCheck(L_207);
+		double L_208 = L_207->___cHPFull;
+		if ((!(((double)L_208) > ((double)(0.0)))))
 		{
-			goto IL_058f;
+			goto IL_0581;
 		}
 	}
 	{
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_208 = V_0;
-		NullCheck(L_208);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_209 = L_208->___mobFocus;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_209 = V_0;
 		NullCheck(L_209);
-		int32_t L_210 = L_209->___status;
-		if ((((int32_t)L_210) == ((int32_t)1)))
-		{
-			goto IL_058f;
-		}
-	}
-	{
+		double L_210 = L_209->___cHP;
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_211 = V_0;
 		NullCheck(L_211);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_212 = L_211->___mobFocus;
-		NullCheck(L_212);
-		double L_213 = L_212->___hp;
-		if ((((double)L_213) <= ((double)(0.0))))
+		double L_212 = L_211->___cHPFull;
+		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
+		int32_t L_213 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___danhTheoHPPercent;
+		if ((!(((double)((double)(((double)il2cpp_codegen_multiply(L_210, (100.0)))/L_212))) < ((double)((double)L_213)))))
 		{
-			goto IL_058f;
+			goto IL_0581;
 		}
 	}
 	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:249>
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)200), NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:250>
+		return;
+	}
+
+IL_0581:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:252>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_214 = V_0;
 		NullCheck(L_214);
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_215 = L_214->___mobFocus;
-		NullCheck(L_215);
-		bool L_216 = L_215->___isMobMe;
-		if (!L_216)
+		if (!L_215)
 		{
-			goto IL_0596;
+			goto IL_05db;
+		}
+	}
+	{
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_216 = V_0;
+		NullCheck(L_216);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_217 = L_216->___mobFocus;
+		NullCheck(L_217);
+		int32_t L_218 = L_217->___status;
+		if (!L_218)
+		{
+			goto IL_05d4;
+		}
+	}
+	{
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_219 = V_0;
+		NullCheck(L_219);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_220 = L_219->___mobFocus;
+		NullCheck(L_220);
+		int32_t L_221 = L_220->___status;
+		if ((((int32_t)L_221) == ((int32_t)1)))
+		{
+			goto IL_05d4;
+		}
+	}
+	{
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_222 = V_0;
+		NullCheck(L_222);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_223 = L_222->___mobFocus;
+		NullCheck(L_223);
+		double L_224 = L_223->___hp;
+		if ((((double)L_224) <= ((double)(0.0))))
+		{
+			goto IL_05d4;
+		}
+	}
+	{
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_225 = V_0;
+		NullCheck(L_225);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_226 = L_225->___mobFocus;
+		NullCheck(L_226);
+		bool L_227 = L_226->___isMobMe;
+		if (L_227)
+		{
+			goto IL_05d4;
+		}
+	}
+	{
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_228 = V_0;
+		NullCheck(L_228);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_229 = L_228->___mobFocus;
+		il2cpp_codegen_runtime_class_init_inline(KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var);
+		bool L_230;
+		L_230 = KsGoldPanel_ShouldStopMob_m1807A7FF99D763B2184EB39EA3015F9F4A1B199F(L_229, NULL);
+		if (!L_230)
+		{
+			goto IL_05db;
 		}
 	}
 
-IL_058f:
+IL_05d4:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:254>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_217 = V_0;
-		NullCheck(L_217);
-		L_217->___mobFocus = (Mob_t394900507F39725FA57379059AA703E63166F45F*)NULL;
-		Il2CppCodeGenWriteBarrier((void**)(&L_217->___mobFocus), (void*)(Mob_t394900507F39725FA57379059AA703E63166F45F*)NULL);
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_231 = V_0;
+		NullCheck(L_231);
+		L_231->___mobFocus = (Mob_t394900507F39725FA57379059AA703E63166F45F*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&L_231->___mobFocus), (void*)(Mob_t394900507F39725FA57379059AA703E63166F45F*)NULL);
 	}
 
-IL_0596:
+IL_05db:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:256>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_218 = V_0;
-		NullCheck(L_218);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_219 = L_218->___mobFocus;
-		if (L_219)
+		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
+		bool L_232 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___doiKhuHetQuai;
+		if (L_232)
 		{
-			goto IL_0671;
+			goto IL_05f6;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var);
+		bool L_233 = ((KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_StaticFields*)il2cpp_codegen_static_fields_for(KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var))->___isKsGold;
+		if (!L_233)
+		{
+			goto IL_06df;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var);
+		bool L_234 = ((KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_StaticFields*)il2cpp_codegen_static_fields_for(KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var))->___autoChangeZoneWhenEmpty;
+		if (!L_234)
+		{
+			goto IL_06df;
+		}
+	}
+
+IL_05f6:
+	{
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_235 = V_0;
+		NullCheck(L_235);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_236 = L_235->___mobFocus;
+		if (L_236)
+		{
+			goto IL_06df;
 		}
 	}
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:258>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_220 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_221;
-		L_221 = PickMobController_GetMobTanSat_m749F763581868E9C58815A4B3B528CD1F435F2D2(NULL);
-		NullCheck(L_220);
-		L_220->___mobFocus = L_221;
-		Il2CppCodeGenWriteBarrier((void**)(&L_220->___mobFocus), (void*)L_221);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_237;
+		L_237 = PickMobController_GetMobTanSat_m749F763581868E9C58815A4B3B528CD1F435F2D2(NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:259>
-		bool L_222 = V_1;
-		if (!L_222)
+		if (L_237)
 		{
-			goto IL_0671;
-		}
-	}
-	{
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_223 = V_0;
-		NullCheck(L_223);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_224 = L_223->___mobFocus;
-		if (!L_224)
-		{
-			goto IL_0671;
+			goto IL_06d2;
 		}
 	}
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:261>
-		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
-		bool L_225 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___telePem;
-		if (!L_225)
-		{
-			goto IL_0622;
-		}
-	}
-	{
-		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
-		bool L_226 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isGobackSmoothMove;
-		if (L_226)
-		{
-			goto IL_0622;
-		}
-	}
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:263>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_227 = V_0;
-		NullCheck(L_227);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_228 = L_227->___mobFocus;
-		NullCheck(L_228);
-		int32_t L_229 = L_228->___xFirst;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_230 = V_0;
-		NullCheck(L_230);
-		int32_t L_231 = L_230->___cx;
-		int32_t L_232;
-		L_232 = Math_abs_m9EBB513752A930AECA9ED005549135F97E154308(((int32_t)il2cpp_codegen_subtract(L_229, L_231)), NULL);
-		if ((((int32_t)L_232) >= ((int32_t)((int32_t)20))))
-		{
-			goto IL_0601;
-		}
-	}
-	{
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_233 = V_0;
-		NullCheck(L_233);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_234 = L_233->___mobFocus;
-		NullCheck(L_234);
-		int32_t L_235 = L_234->___yFirst;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_236 = V_0;
-		NullCheck(L_236);
-		int32_t L_237 = L_236->___cy;
-		int32_t L_238;
-		L_238 = Math_abs_m9EBB513752A930AECA9ED005549135F97E154308(((int32_t)il2cpp_codegen_subtract(L_235, L_237)), NULL);
-		if ((((int32_t)L_238) < ((int32_t)((int32_t)20))))
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		int64_t L_238 = ((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___timeNoMob;
+		if (L_238)
 		{
 			goto IL_0621;
 		}
 	}
-
-IL_0601:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:265>
-		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
-		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_239;
-		L_239 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_240 = V_0;
-		NullCheck(L_240);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_241 = L_240->___mobFocus;
-		NullCheck(L_241);
-		int32_t L_242 = L_241->___xFirst;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_243 = V_0;
-		NullCheck(L_243);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_244 = L_243->___mobFocus;
-		NullCheck(L_244);
-		int32_t L_245 = L_244->___yFirst;
-		NullCheck(L_239);
-		ModFunc_MoveTo_m5B1D89DB88357FED386C0A9C44C99F919D151893(L_239, L_242, L_245, NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:263>
+		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
+		int64_t L_239;
+		L_239 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___timeNoMob = L_239;
+		goto IL_06c7;
 	}
 
 IL_0621:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:267>
-		return;
-	}
-
-IL_0622:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:269>
-		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
-		bool L_246 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isGobackSmoothMove;
-		if (!L_246)
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:265>
+		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
+		int64_t L_240;
+		L_240 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		int64_t L_241 = ((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___timeNoMob;
+		if ((((int64_t)((int64_t)il2cpp_codegen_subtract(L_240, L_241))) < ((int64_t)((int64_t)((int32_t)800)))))
 		{
-			goto IL_0645;
+			goto IL_06c7;
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:271>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_247 = V_0;
-		NullCheck(L_247);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_248 = L_247->___mobFocus;
-		NullCheck(L_248);
-		int32_t L_249 = L_248->___xFirst;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_250 = V_0;
-		NullCheck(L_250);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_251 = L_250->___mobFocus;
-		NullCheck(L_251);
-		int32_t L_252 = L_251->___yFirst;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:267>
+		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
+		int64_t L_242;
+		L_242 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		PickMobController_Move_m15C0ACE8638D082A6B484E07370DD06319DEA05D(L_249, L_252, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:272>
-		return;
+		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___timeNoMob = L_242;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:268>
+		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
+		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_243;
+		L_243 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
+		NullCheck(L_243);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_244 = L_243->___zones;
+		if (!L_244)
+		{
+			goto IL_065c;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
+		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_245;
+		L_245 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
+		NullCheck(L_245);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_246 = L_245->___zones;
+		NullCheck(L_246);
+		if ((((int32_t)((int32_t)(((RuntimeArray*)L_246)->max_length))) > ((int32_t)1)))
+		{
+			goto IL_0660;
+		}
 	}
 
-IL_0645:
+IL_065c:
+	{
+		G_B114_0 = ((int32_t)20);
+		goto IL_066c;
+	}
+
+IL_0660:
+	{
+		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
+		GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_247;
+		L_247 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
+		NullCheck(L_247);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_248 = L_247->___zones;
+		NullCheck(L_248);
+		G_B114_0 = ((int32_t)(((RuntimeArray*)L_248)->max_length));
+	}
+
+IL_066c:
+	{
+		V_12 = G_B114_0;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:269>
+		il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
+		int32_t L_249 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___zoneID;
+		int32_t L_250 = V_12;
+		V_13 = ((int32_t)(((int32_t)il2cpp_codegen_add(L_249, 1))%L_250));
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:270>
+		int32_t L_251 = V_13;
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		int32_t L_252 = ((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___lastTryZone;
+		if ((!(((uint32_t)L_251) == ((uint32_t)L_252))))
+		{
+			goto IL_068c;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:272>
+		int32_t L_253 = V_13;
+		int32_t L_254 = V_12;
+		V_13 = ((int32_t)(((int32_t)il2cpp_codegen_add(L_253, 1))%L_254));
+	}
+
+IL_068c:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:274>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_253 = V_0;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_254 = V_0;
-		NullCheck(L_254);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_255 = L_254->___mobFocus;
-		NullCheck(L_255);
-		int32_t L_256 = L_255->___xFirst;
-		NullCheck(L_253);
-		L_253->___cx = L_256;
+		int32_t L_255 = V_13;
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___lastTryZone = L_255;
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:275>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_257 = V_0;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_258 = V_0;
-		NullCheck(L_258);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_259 = L_258->___mobFocus;
-		NullCheck(L_259);
-		int32_t L_260 = L_259->___yFirst;
-		NullCheck(L_257);
-		L_257->___cy = L_260;
+		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_256;
+		L_256 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
+		int32_t L_257 = V_13;
+		NullCheck(L_256);
+		Service_requestChangeZone_mE2F1CF77C4F0D04BF75E945AD2FA319F79631940(L_256, L_257, (-1), NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:276>
-		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_261;
-		L_261 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
-		NullCheck(L_261);
-		Service_charMove_m31B59A38B3C84EB5C26193C4AE9BB4E8EA3D84C9(L_261, NULL);
+		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
+		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_258 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
+		String_t* L_259;
+		L_259 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_13), NULL);
+		String_t* L_260;
+		L_260 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral56E06E6BC05F1B53E668EA94622FC60DE6585A96, L_259, NULL);
+		NullCheck(L_258);
+		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_258, L_260, 0, NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:277>
+		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)1500), NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:278>
+		return;
 	}
 
-IL_0671:
+IL_06c7:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:279>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_262 = V_0;
-		NullCheck(L_262);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_263 = L_262->___mobFocus;
-		if (!L_263)
-		{
-			goto IL_0820;
-		}
-	}
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:281>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_264 = V_0;
-		NullCheck(L_264);
-		SkillInfoPaintU5BU5D_tBEE92C52D32D631EFB53E053A827F512C69E48B4* L_265;
-		L_265 = Char_skillInfoPaint_mA94372DAF5491635C1A6D1D9019D42E55F5C851B(L_264, NULL);
-		if (L_265)
-		{
-			goto IL_08ab;
-		}
-	}
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:283>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:280>
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_266;
-		L_266 = PickMobController_GetSkillAttack2_mFF073BF184A589AA58B601AE1EC91BE17775A7D5(NULL);
-		V_12 = L_266;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:284>
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_267 = V_12;
-		if (!L_267)
-		{
-			goto IL_08ab;
-		}
+		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)150), NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:281>
+		return;
 	}
+
+IL_06d2:
 	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:285>
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___timeNoMob = ((int64_t)0);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:286>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_268 = V_0;
-		NullCheck(L_268);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_269 = L_268->___mobFocus;
-		V_13 = L_269;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:287>
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_270 = V_13;
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_271 = V_13;
-		NullCheck(L_271);
-		int32_t L_272 = L_271->___xFirst;
-		NullCheck(L_270);
-		L_270->___x = L_272;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:288>
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_273 = V_13;
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_274 = V_13;
-		NullCheck(L_274);
-		int32_t L_275 = L_274->___yFirst;
-		NullCheck(L_273);
-		L_273->___y = L_275;
+		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___lastTryZone = (-1);
+	}
+
+IL_06df:
+	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:290>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_276 = V_0;
-		NullCheck(L_276);
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_277 = L_276->___myskill;
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_278 = V_12;
-		if ((((RuntimeObject*)(Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)L_277) == ((RuntimeObject*)(Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)L_278)))
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_261 = V_0;
+		NullCheck(L_261);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_262 = L_261->___mobFocus;
+		if (L_262)
 		{
-			goto IL_06e1;
+			goto IL_07ba;
 		}
 	}
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:292>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_279 = V_0;
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_280 = V_12;
-		NullCheck(L_279);
-		L_279->___myskill = L_280;
-		Il2CppCodeGenWriteBarrier((void**)(&L_279->___myskill), (void*)L_280);
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_263 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_264;
+		L_264 = PickMobController_GetMobTanSat_m749F763581868E9C58815A4B3B528CD1F435F2D2(NULL);
+		NullCheck(L_263);
+		L_263->___mobFocus = L_264;
+		Il2CppCodeGenWriteBarrier((void**)(&L_263->___mobFocus), (void*)L_264);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:293>
-		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_281;
-		L_281 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_282 = V_12;
-		NullCheck(L_282);
-		SkillTemplate_t311437513D34E91857550DAACFFF71C301B14352* L_283 = L_282->___template;
-		NullCheck(L_283);
-		int8_t L_284 = L_283->___id;
-		NullCheck(L_281);
-		Service_selectSkill_m33143F9CD16D34BF6148DE78D89B0570F474F3AF(L_281, L_284, NULL);
+		bool L_265 = V_1;
+		if (!L_265)
+		{
+			goto IL_07ba;
+		}
 	}
-
-IL_06e1:
+	{
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_266 = V_0;
+		NullCheck(L_266);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_267 = L_266->___mobFocus;
+		if (!L_267)
+		{
+			goto IL_07ba;
+		}
+	}
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:295>
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_285 = V_13;
-		NullCheck(L_285);
-		int32_t L_286 = L_285->___xFirst;
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_287 = V_13;
-		NullCheck(L_287);
-		int32_t L_288 = L_287->___yFirst;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_289 = V_0;
-		NullCheck(L_289);
-		int32_t L_290 = L_289->___cx;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_291 = V_0;
-		NullCheck(L_291);
-		int32_t L_292 = L_291->___cy;
-		il2cpp_codegen_runtime_class_init_inline(Res_t42939C8A70541C5F8BBAC618E2AE68A048453E10_il2cpp_TypeInfo_var);
-		int32_t L_293;
-		L_293 = Res_distance_m12B6FF8AB14DA169468E5EA13CEA0318BD8BDBD0(L_286, L_288, L_290, L_292, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:296>
-		V_14 = ((int32_t)48);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:297>
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_294 = V_12;
-		NullCheck(L_294);
-		int32_t L_295 = L_294->___dx;
-		if ((((int32_t)L_295) <= ((int32_t)((int32_t)48))))
+		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
+		bool L_268 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___telePem;
+		if (!L_268)
 		{
-			G_B116_0 = L_293;
-			goto IL_0718;
+			goto IL_076b;
 		}
-		G_B115_0 = L_293;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:299>
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_296 = V_12;
-		NullCheck(L_296);
-		int32_t L_297 = L_296->___dx;
-		V_14 = L_297;
-		G_B116_0 = G_B115_0;
+		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
+		bool L_269 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isGobackSmoothMove;
+		if (L_269)
+		{
+			goto IL_076b;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:297>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_270 = V_0;
+		NullCheck(L_270);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_271 = L_270->___mobFocus;
+		NullCheck(L_271);
+		int32_t L_272 = L_271->___xFirst;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_273 = V_0;
+		NullCheck(L_273);
+		int32_t L_274 = L_273->___cx;
+		int32_t L_275;
+		L_275 = Math_abs_m9EBB513752A930AECA9ED005549135F97E154308(((int32_t)il2cpp_codegen_subtract(L_272, L_274)), NULL);
+		if ((((int32_t)L_275) >= ((int32_t)((int32_t)20))))
+		{
+			goto IL_074a;
+		}
+	}
+	{
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_276 = V_0;
+		NullCheck(L_276);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_277 = L_276->___mobFocus;
+		NullCheck(L_277);
+		int32_t L_278 = L_277->___yFirst;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_279 = V_0;
+		NullCheck(L_279);
+		int32_t L_280 = L_279->___cy;
+		int32_t L_281;
+		L_281 = Math_abs_m9EBB513752A930AECA9ED005549135F97E154308(((int32_t)il2cpp_codegen_subtract(L_278, L_280)), NULL);
+		if ((((int32_t)L_281) < ((int32_t)((int32_t)20))))
+		{
+			goto IL_076a;
+		}
 	}
 
-IL_0718:
+IL_074a:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:299>
+		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
+		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_282;
+		L_282 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_283 = V_0;
+		NullCheck(L_283);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_284 = L_283->___mobFocus;
+		NullCheck(L_284);
+		int32_t L_285 = L_284->___xFirst;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_286 = V_0;
+		NullCheck(L_286);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_287 = L_286->___mobFocus;
+		NullCheck(L_287);
+		int32_t L_288 = L_287->___yFirst;
+		NullCheck(L_282);
+		ModFunc_MoveTo_m5B1D89DB88357FED386C0A9C44C99F919D151893(L_282, L_285, L_288, NULL);
+	}
+
+IL_076a:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:301>
-		int32_t L_298 = V_14;
-		if ((((int32_t)G_B116_0) > ((int32_t)L_298)))
-		{
-			goto IL_07ad;
-		}
+		return;
 	}
+
+IL_076b:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:303>
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_299 = V_12;
-		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		bool L_300;
-		L_300 = PickMobController_CanUseSkill_m9C78C1C62FE516701882C8891E6820B826DFC5AF(L_299, NULL);
-		if (!L_300)
+		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
+		bool L_289 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isGobackSmoothMove;
+		if (!L_289)
 		{
-			goto IL_07a5;
+			goto IL_078e;
 		}
 	}
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:305>
-		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-		int32_t L_301 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___gameTick;
-		if (((int32_t)(L_301%((int32_t)50))))
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_290 = V_0;
+		NullCheck(L_290);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_291 = L_290->___mobFocus;
+		NullCheck(L_291);
+		int32_t L_292 = L_291->___xFirst;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_293 = V_0;
+		NullCheck(L_293);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_294 = L_293->___mobFocus;
+		NullCheck(L_294);
+		int32_t L_295 = L_294->___yFirst;
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		PickMobController_Move_m15C0ACE8638D082A6B484E07370DD06319DEA05D(L_292, L_295, NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:306>
+		return;
+	}
+
+IL_078e:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:308>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_296 = V_0;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_297 = V_0;
+		NullCheck(L_297);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_298 = L_297->___mobFocus;
+		NullCheck(L_298);
+		int32_t L_299 = L_298->___xFirst;
+		NullCheck(L_296);
+		L_296->___cx = L_299;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:309>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_300 = V_0;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_301 = V_0;
+		NullCheck(L_301);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_302 = L_301->___mobFocus;
+		NullCheck(L_302);
+		int32_t L_303 = L_302->___yFirst;
+		NullCheck(L_300);
+		L_300->___cy = L_303;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:310>
+		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_304;
+		L_304 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
+		NullCheck(L_304);
+		Service_charMove_m31B59A38B3C84EB5C26193C4AE9BB4E8EA3D84C9(L_304, NULL);
+	}
+
+IL_07ba:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:313>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_305 = V_0;
+		NullCheck(L_305);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_306 = L_305->___mobFocus;
+		if (!L_306)
 		{
-			goto IL_0769;
+			goto IL_097d;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:315>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_307 = V_0;
+		NullCheck(L_307);
+		SkillInfoPaintU5BU5D_tBEE92C52D32D631EFB53E053A827F512C69E48B4* L_308;
+		L_308 = Char_skillInfoPaint_mA94372DAF5491635C1A6D1D9019D42E55F5C851B(L_307, NULL);
+		if (L_308)
+		{
+			goto IL_0a08;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:317>
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_309;
+		L_309 = PickMobController_GetSkillAttack2_mFF073BF184A589AA58B601AE1EC91BE17775A7D5(NULL);
+		V_14 = L_309;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:318>
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_310 = V_14;
+		if (!L_310)
+		{
+			goto IL_0a08;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:320>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_311 = V_0;
+		NullCheck(L_311);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_312 = L_311->___mobFocus;
+		V_15 = L_312;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:321>
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_313 = V_15;
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_314 = V_15;
+		NullCheck(L_314);
+		int32_t L_315 = L_314->___xFirst;
+		NullCheck(L_313);
+		L_313->___x = L_315;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:322>
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_316 = V_15;
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_317 = V_15;
+		NullCheck(L_317);
+		int32_t L_318 = L_317->___yFirst;
+		NullCheck(L_316);
+		L_316->___y = L_318;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:324>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_319 = V_0;
+		NullCheck(L_319);
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_320 = L_319->___myskill;
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_321 = V_14;
+		if ((((RuntimeObject*)(Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)L_320) == ((RuntimeObject*)(Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)L_321)))
+		{
+			goto IL_082a;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:326>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_322 = V_0;
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_323 = V_14;
+		NullCheck(L_322);
+		L_322->___myskill = L_323;
+		Il2CppCodeGenWriteBarrier((void**)(&L_322->___myskill), (void*)L_323);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:327>
+		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_324;
+		L_324 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_325 = V_14;
+		NullCheck(L_325);
+		SkillTemplate_t311437513D34E91857550DAACFFF71C301B14352* L_326 = L_325->___template;
+		NullCheck(L_326);
+		int8_t L_327 = L_326->___id;
+		NullCheck(L_324);
+		Service_selectSkill_m33143F9CD16D34BF6148DE78D89B0570F474F3AF(L_324, L_327, NULL);
+	}
+
+IL_082a:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:329>
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_328 = V_15;
+		NullCheck(L_328);
+		int32_t L_329 = L_328->___xFirst;
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_330 = V_15;
+		NullCheck(L_330);
+		int32_t L_331 = L_330->___yFirst;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_332 = V_0;
+		NullCheck(L_332);
+		int32_t L_333 = L_332->___cx;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_334 = V_0;
+		NullCheck(L_334);
+		int32_t L_335 = L_334->___cy;
+		il2cpp_codegen_runtime_class_init_inline(Res_t42939C8A70541C5F8BBAC618E2AE68A048453E10_il2cpp_TypeInfo_var);
+		int32_t L_336;
+		L_336 = Res_distance_m12B6FF8AB14DA169468E5EA13CEA0318BD8BDBD0(L_329, L_331, L_333, L_335, NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:330>
+		V_16 = ((int32_t)48);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:331>
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_337 = V_14;
+		NullCheck(L_337);
+		int32_t L_338 = L_337->___dx;
+		if ((((int32_t)L_338) <= ((int32_t)((int32_t)48))))
+		{
+			G_B138_0 = L_336;
+			goto IL_0861;
+		}
+		G_B137_0 = L_336;
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:333>
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_339 = V_14;
+		NullCheck(L_339);
+		int32_t L_340 = L_339->___dx;
+		V_16 = L_340;
+		G_B138_0 = G_B137_0;
+	}
+
+IL_0861:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:335>
+		int32_t L_341 = V_16;
+		if ((((int32_t)G_B138_0) > ((int32_t)L_341)))
+		{
+			goto IL_090a;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:337>
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_342 = V_14;
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		bool L_343;
+		L_343 = PickMobController_CanUseSkill_m9C78C1C62FE516701882C8891E6820B826DFC5AF(L_342, NULL);
+		if (!L_343)
+		{
+			goto IL_0902;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:339>
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_344 = V_15;
+		il2cpp_codegen_runtime_class_init_inline(KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var);
+		bool L_345;
+		L_345 = KsGoldPanel_ShouldStopMob_m1807A7FF99D763B2184EB39EA3015F9F4A1B199F(L_344, NULL);
+		if (!L_345)
+		{
+			goto IL_0885;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:341>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_346 = V_0;
+		NullCheck(L_346);
+		L_346->___mobFocus = (Mob_t394900507F39725FA57379059AA703E63166F45F*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&L_346->___mobFocus), (void*)(Mob_t394900507F39725FA57379059AA703E63166F45F*)NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:342>
+		return;
+	}
+
+IL_0885:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:344>
+		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
+		int32_t L_347 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___gameTick;
+		if (((int32_t)(L_347%((int32_t)50))))
+		{
+			goto IL_08c6;
 		}
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(Mob_t394900507F39725FA57379059AA703E63166F45F_il2cpp_TypeInfo_var);
-		MobTemplateU5BU5D_t177610F47F42235F0A361E24546A503878EABC3F* L_302 = ((Mob_t394900507F39725FA57379059AA703E63166F45F_StaticFields*)il2cpp_codegen_static_fields_for(Mob_t394900507F39725FA57379059AA703E63166F45F_il2cpp_TypeInfo_var))->___arrMobTemplate;
+		MobTemplateU5BU5D_t177610F47F42235F0A361E24546A503878EABC3F* L_348 = ((Mob_t394900507F39725FA57379059AA703E63166F45F_StaticFields*)il2cpp_codegen_static_fields_for(Mob_t394900507F39725FA57379059AA703E63166F45F_il2cpp_TypeInfo_var))->___arrMobTemplate;
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_303;
-		L_303 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
-		NullCheck(L_303);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_304 = L_303->___mobFocus;
-		NullCheck(L_304);
-		int32_t L_305 = L_304->___templateId;
-		NullCheck(L_302);
-		int32_t L_306 = L_305;
-		MobTemplate_tCE9A1D97CCEED63161946DB800240D65D1DFD3FE* L_307 = (L_302)->GetAt(static_cast<il2cpp_array_size_t>(L_306));
-		NullCheck(L_307);
-		int8_t L_308 = L_307->___type;
-		if ((!(((uint32_t)L_308) == ((uint32_t)4))))
-		{
-			goto IL_0769;
-		}
-	}
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:307>
-		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
-		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_309;
-		L_309 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_310 = V_13;
-		NullCheck(L_310);
-		int32_t L_311 = L_310->___xFirst;
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_312 = V_13;
-		NullCheck(L_312);
-		int32_t L_313 = L_312->___yFirst;
-		NullCheck(L_309);
-		ModFunc_MoveTo_m5B1D89DB88357FED386C0A9C44C99F919D151893(L_309, L_311, ((int32_t)il2cpp_codegen_add(L_313, 1)), NULL);
-	}
-
-IL_0769:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:309>
-		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
-		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_314;
-		L_314 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_315 = V_13;
-		NullCheck(L_314);
-		ModFunc_AttackMob_m6F198955F15AA1DB869AF968EECACF88EEA8EFC6(L_314, L_315, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:310>
-		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_316;
-		L_316 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_317 = V_12;
-		NullCheck(L_316);
-		ModFunc_SetUsedSkill_mCFDAA6172A0A073E069F1ADCCC9BA0EBE28ABDD4(L_316, L_317, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:311>
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_318 = V_12;
-		NullCheck(L_318);
-		int32_t L_319 = L_318->___coolDown;
-		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
-		int32_t L_320;
-		L_320 = Math_Max_m530EBA549AFD98CFC2BD29FE86C6376E67DF11CF(((int32_t)il2cpp_codegen_add(L_319, ((int32_t)50))), ((int32_t)250), NULL);
-		int32_t L_321;
-		L_321 = Math_Min_m53C488772A34D53917BCA2A491E79A0A5356ED52(L_320, ((int32_t)450), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:312>
-		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(L_321, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:313>
-		return;
-	}
-
-IL_07a5:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:317>
-		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)100), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:318>
-		return;
-	}
-
-IL_07ad:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:323>
-		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
-		bool L_322 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___telePem;
-		if (!L_322)
-		{
-			goto IL_0802;
-		}
-	}
-	{
-		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
-		bool L_323 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isGobackSmoothMove;
-		if (L_323)
-		{
-			goto IL_0802;
-		}
-	}
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:325>
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_324 = V_13;
-		NullCheck(L_324);
-		int32_t L_325 = L_324->___xFirst;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_326 = V_0;
-		NullCheck(L_326);
-		int32_t L_327 = L_326->___cx;
-		int32_t L_328;
-		L_328 = Math_abs_m9EBB513752A930AECA9ED005549135F97E154308(((int32_t)il2cpp_codegen_subtract(L_325, L_327)), NULL);
-		if ((((int32_t)L_328) >= ((int32_t)((int32_t)20))))
-		{
-			goto IL_07e9;
-		}
-	}
-	{
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_329 = V_13;
-		NullCheck(L_329);
-		int32_t L_330 = L_329->___yFirst;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_331 = V_0;
-		NullCheck(L_331);
-		int32_t L_332 = L_331->___cy;
-		int32_t L_333;
-		L_333 = Math_abs_m9EBB513752A930AECA9ED005549135F97E154308(((int32_t)il2cpp_codegen_subtract(L_330, L_332)), NULL);
-		if ((((int32_t)L_333) < ((int32_t)((int32_t)20))))
-		{
-			goto IL_0801;
-		}
-	}
-
-IL_07e9:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:327>
-		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
-		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_334;
-		L_334 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_335 = V_13;
-		NullCheck(L_335);
-		int32_t L_336 = L_335->___xFirst;
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_337 = V_13;
-		NullCheck(L_337);
-		int32_t L_338 = L_337->___yFirst;
-		NullCheck(L_334);
-		ModFunc_MoveTo_m5B1D89DB88357FED386C0A9C44C99F919D151893(L_334, L_336, L_338, NULL);
-	}
-
-IL_0801:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:329>
-		return;
-	}
-
-IL_0802:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:331>
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_339 = V_13;
-		NullCheck(L_339);
-		int32_t L_340 = L_339->___xFirst;
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_341 = V_13;
-		NullCheck(L_341);
-		int32_t L_342 = L_341->___yFirst;
-		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		PickMobController_Move_m15C0ACE8638D082A6B484E07370DD06319DEA05D(L_340, L_342, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:332>
-		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)150), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:333>
-		return;
-	}
-
-IL_0820:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:338>
-		bool L_343 = V_1;
-		if (L_343)
-		{
-			goto IL_08ab;
-		}
-	}
-	{
-		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
-		bool L_344 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___doiKhuHetQuai;
-		if (L_344)
-		{
-			goto IL_08ab;
-		}
-	}
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:340>
-		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_345;
-		L_345 = PickMobController_GetMobNext_m20502B609CA5111A4CA30B91CD072A70FCEFDBED(NULL);
-		V_15 = L_345;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:341>
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_346 = V_15;
-		if (!L_346)
-		{
-			goto IL_08ab;
-		}
-	}
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:343>
-		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
-		bool L_347 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___telePem;
-		if (!L_347)
-		{
-			goto IL_088d;
-		}
-	}
-	{
-		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
-		bool L_348 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isGobackSmoothMove;
-		if (L_348)
-		{
-			goto IL_088d;
-		}
-	}
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:345>
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_349 = V_15;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_349;
+		L_349 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 		NullCheck(L_349);
-		int32_t L_350 = L_349->___xFirst;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_351 = V_0;
-		NullCheck(L_351);
-		int32_t L_352 = L_351->___cx;
-		int32_t L_353;
-		L_353 = Math_abs_m9EBB513752A930AECA9ED005549135F97E154308(((int32_t)il2cpp_codegen_subtract(L_350, L_352)), NULL);
-		if ((((int32_t)L_353) >= ((int32_t)((int32_t)20))))
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_350 = L_349->___mobFocus;
+		NullCheck(L_350);
+		int32_t L_351 = L_350->___templateId;
+		NullCheck(L_348);
+		int32_t L_352 = L_351;
+		MobTemplate_tCE9A1D97CCEED63161946DB800240D65D1DFD3FE* L_353 = (L_348)->GetAt(static_cast<il2cpp_array_size_t>(L_352));
+		NullCheck(L_353);
+		int8_t L_354 = L_353->___type;
+		if ((!(((uint32_t)L_354) == ((uint32_t)4))))
 		{
-			goto IL_0874;
+			goto IL_08c6;
 		}
 	}
 	{
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_354 = V_15;
-		NullCheck(L_354);
-		int32_t L_355 = L_354->___yFirst;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_356 = V_0;
-		NullCheck(L_356);
-		int32_t L_357 = L_356->___cy;
-		int32_t L_358;
-		L_358 = Math_abs_m9EBB513752A930AECA9ED005549135F97E154308(((int32_t)il2cpp_codegen_subtract(L_355, L_357)), NULL);
-		if ((((int32_t)L_358) < ((int32_t)((int32_t)20))))
-		{
-			goto IL_088c;
-		}
-	}
-
-IL_0874:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:347>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:346>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
-		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_359;
-		L_359 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_360 = V_15;
+		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_355;
+		L_355 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_356 = V_15;
+		NullCheck(L_356);
+		int32_t L_357 = L_356->___xFirst;
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_358 = V_15;
+		NullCheck(L_358);
+		int32_t L_359 = L_358->___yFirst;
+		NullCheck(L_355);
+		ModFunc_MoveTo_m5B1D89DB88357FED386C0A9C44C99F919D151893(L_355, L_357, ((int32_t)il2cpp_codegen_add(L_359, 1)), NULL);
+	}
+
+IL_08c6:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:348>
+		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
+		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_360;
+		L_360 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_361 = V_15;
 		NullCheck(L_360);
-		int32_t L_361 = L_360->___xFirst;
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_362 = V_15;
-		NullCheck(L_362);
-		int32_t L_363 = L_362->___yFirst;
-		NullCheck(L_359);
-		ModFunc_MoveTo_m5B1D89DB88357FED386C0A9C44C99F919D151893(L_359, L_361, L_363, NULL);
-	}
-
-IL_088c:
-	{
+		ModFunc_AttackMob_m6F198955F15AA1DB869AF968EECACF88EEA8EFC6(L_360, L_361, NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:349>
-		return;
-	}
-
-IL_088d:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:351>
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_364 = V_15;
+		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_362;
+		L_362 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_363 = V_14;
+		NullCheck(L_362);
+		ModFunc_SetUsedSkill_mCFDAA6172A0A073E069F1ADCCC9BA0EBE28ABDD4(L_362, L_363, NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:350>
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_364 = V_14;
 		NullCheck(L_364);
-		int32_t L_365 = L_364->___xFirst;
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_366 = V_15;
-		NullCheck(L_366);
-		int32_t L_367 = L_366->___yFirst;
+		int32_t L_365 = L_364->___coolDown;
+		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		int32_t L_366;
+		L_366 = Math_Max_m530EBA549AFD98CFC2BD29FE86C6376E67DF11CF(((int32_t)il2cpp_codegen_add(L_365, ((int32_t)50))), ((int32_t)250), NULL);
+		int32_t L_367;
+		L_367 = Math_Min_m53C488772A34D53917BCA2A491E79A0A5356ED52(L_366, ((int32_t)450), NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:351>
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		PickMobController_Move_m15C0ACE8638D082A6B484E07370DD06319DEA05D(L_365, L_367, NULL);
+		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(L_367, NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:352>
-		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)200), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:353>
 		return;
 	}
 
-IL_08ab:
+IL_0902:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:356>
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)100), NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:357>
 		return;
 	}
 
-IL_08b3:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:360>
-		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
-		bool L_368 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___tsPlayer;
-		if (L_368)
-		{
-			goto IL_08bb;
-		}
-	}
+IL_090a:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:362>
-		return;
+		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
+		bool L_368 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___telePem;
+		if (!L_368)
+		{
+			goto IL_095f;
+		}
 	}
-
-IL_08bb:
+	{
+		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
+		bool L_369 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isGobackSmoothMove;
+		if (L_369)
+		{
+			goto IL_095f;
+		}
+	}
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:364>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_369 = V_0;
-		NullCheck(L_369);
-		bool L_370 = L_369->___isCharge;
-		if (!L_370)
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_370 = V_15;
+		NullCheck(L_370);
+		int32_t L_371 = L_370->___xFirst;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_372 = V_0;
+		NullCheck(L_372);
+		int32_t L_373 = L_372->___cx;
+		int32_t L_374;
+		L_374 = Math_abs_m9EBB513752A930AECA9ED005549135F97E154308(((int32_t)il2cpp_codegen_subtract(L_371, L_373)), NULL);
+		if ((((int32_t)L_374) >= ((int32_t)((int32_t)20))))
 		{
-			goto IL_08cb;
+			goto IL_0946;
 		}
 	}
+	{
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_375 = V_15;
+		NullCheck(L_375);
+		int32_t L_376 = L_375->___yFirst;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_377 = V_0;
+		NullCheck(L_377);
+		int32_t L_378 = L_377->___cy;
+		int32_t L_379;
+		L_379 = Math_abs_m9EBB513752A930AECA9ED005549135F97E154308(((int32_t)il2cpp_codegen_subtract(L_376, L_378)), NULL);
+		if ((((int32_t)L_379) < ((int32_t)((int32_t)20))))
+		{
+			goto IL_095e;
+		}
+	}
+
+IL_0946:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:366>
-		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)100), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:367>
+		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
+		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_380;
+		L_380 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_381 = V_15;
+		NullCheck(L_381);
+		int32_t L_382 = L_381->___xFirst;
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_383 = V_15;
+		NullCheck(L_383);
+		int32_t L_384 = L_383->___yFirst;
+		NullCheck(L_380);
+		ModFunc_MoveTo_m5B1D89DB88357FED386C0A9C44C99F919D151893(L_380, L_382, L_384, NULL);
+	}
+
+IL_095e:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:368>
 		return;
 	}
 
-IL_08cb:
+IL_095f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:369>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_371 = V_0;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:370>
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_385 = V_15;
+		NullCheck(L_385);
+		int32_t L_386 = L_385->___xFirst;
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_387 = V_15;
+		NullCheck(L_387);
+		int32_t L_388 = L_387->___yFirst;
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		bool L_372;
-		L_372 = PickMobController_CheckAutoBienKhi_mB7B653D4D3BF77A3570A1D33D283FE7EE6D2373E(L_371, NULL);
-		if (!L_372)
-		{
-			goto IL_08d4;
-		}
-	}
-	{
+		PickMobController_Move_m15C0ACE8638D082A6B484E07370DD06319DEA05D(L_386, L_388, NULL);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:371>
+		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)150), NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:372>
 		return;
 	}
 
-IL_08d4:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:373>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_373 = V_0;
-		NullCheck(L_373);
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_374 = L_373->___charFocus;
-		if (!L_374)
-		{
-			goto IL_08f0;
-		}
-	}
-	{
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_375 = V_0;
-		NullCheck(L_375);
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_376 = L_375->___charFocus;
-		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		bool L_377;
-		L_377 = PickMobController_IsCharTanSat_m46EEAD74102EBEFDC2F3E61917515FFE82E20DB5(L_376, NULL);
-		if (L_377)
-		{
-			goto IL_08f0;
-		}
-	}
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:375>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_378 = V_0;
-		NullCheck(L_378);
-		L_378->___charFocus = (Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F*)NULL;
-		Il2CppCodeGenWriteBarrier((void**)(&L_378->___charFocus), (void*)(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F*)NULL);
-	}
-
-IL_08f0:
+IL_097d:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:377>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_379 = V_0;
-		NullCheck(L_379);
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_380 = L_379->___charFocus;
-		if (L_380)
+		bool L_389 = V_1;
+		if (L_389)
 		{
-			goto IL_09c5;
+			goto IL_0a08;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
+		bool L_390 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___doiKhuHetQuai;
+		if (L_390)
+		{
+			goto IL_0a08;
 		}
 	}
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:379>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_381 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_382;
-		L_382 = PickMobController_GetCharTanSat_mB6A72AB2E545BF709515C87DD011CEEEBE5C7637(NULL);
-		NullCheck(L_381);
-		L_381->___charFocus = L_382;
-		Il2CppCodeGenWriteBarrier((void**)(&L_381->___charFocus), (void*)L_382);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_391;
+		L_391 = PickMobController_GetMobNext_m20502B609CA5111A4CA30B91CD072A70FCEFDBED(NULL);
+		V_17 = L_391;
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:380>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_383 = V_0;
-		NullCheck(L_383);
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_384 = L_383->___charFocus;
-		if (!L_384)
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_392 = V_17;
+		if (!L_392)
 		{
-			goto IL_09c5;
+			goto IL_0a08;
 		}
 	}
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:382>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
-		bool L_385 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___telePem;
-		if (!L_385)
+		bool L_393 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___telePem;
+		if (!L_393)
 		{
-			goto IL_0976;
+			goto IL_09ea;
 		}
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
-		bool L_386 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isGobackSmoothMove;
-		if (L_386)
+		bool L_394 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isGobackSmoothMove;
+		if (L_394)
 		{
-			goto IL_0976;
+			goto IL_09ea;
 		}
 	}
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:384>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_387 = V_0;
-		NullCheck(L_387);
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_388 = L_387->___charFocus;
-		NullCheck(L_388);
-		int32_t L_389 = L_388->___cx;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_390 = V_0;
-		NullCheck(L_390);
-		int32_t L_391 = L_390->___cx;
-		int32_t L_392;
-		L_392 = Math_abs_m9EBB513752A930AECA9ED005549135F97E154308(((int32_t)il2cpp_codegen_subtract(L_389, L_391)), NULL);
-		if ((((int32_t)L_392) >= ((int32_t)((int32_t)20))))
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_395 = V_17;
+		NullCheck(L_395);
+		int32_t L_396 = L_395->___xFirst;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_397 = V_0;
+		NullCheck(L_397);
+		int32_t L_398 = L_397->___cx;
+		int32_t L_399;
+		L_399 = Math_abs_m9EBB513752A930AECA9ED005549135F97E154308(((int32_t)il2cpp_codegen_subtract(L_396, L_398)), NULL);
+		if ((((int32_t)L_399) >= ((int32_t)((int32_t)20))))
 		{
-			goto IL_0955;
+			goto IL_09d1;
 		}
 	}
 	{
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_393 = V_0;
-		NullCheck(L_393);
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_394 = L_393->___charFocus;
-		NullCheck(L_394);
-		int32_t L_395 = L_394->___cy;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_396 = V_0;
-		NullCheck(L_396);
-		int32_t L_397 = L_396->___cy;
-		int32_t L_398;
-		L_398 = Math_abs_m9EBB513752A930AECA9ED005549135F97E154308(((int32_t)il2cpp_codegen_subtract(L_395, L_397)), NULL);
-		if ((((int32_t)L_398) < ((int32_t)((int32_t)20))))
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_400 = V_17;
+		NullCheck(L_400);
+		int32_t L_401 = L_400->___yFirst;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_402 = V_0;
+		NullCheck(L_402);
+		int32_t L_403 = L_402->___cy;
+		int32_t L_404;
+		L_404 = Math_abs_m9EBB513752A930AECA9ED005549135F97E154308(((int32_t)il2cpp_codegen_subtract(L_401, L_403)), NULL);
+		if ((((int32_t)L_404) < ((int32_t)((int32_t)20))))
 		{
-			goto IL_0975;
+			goto IL_09e9;
 		}
 	}
 
-IL_0955:
+IL_09d1:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:386>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
-		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_399;
-		L_399 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_400 = V_0;
-		NullCheck(L_400);
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_401 = L_400->___charFocus;
-		NullCheck(L_401);
-		int32_t L_402 = L_401->___cx;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_403 = V_0;
-		NullCheck(L_403);
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_404 = L_403->___charFocus;
-		NullCheck(L_404);
-		int32_t L_405 = L_404->___cy;
-		NullCheck(L_399);
-		ModFunc_MoveTo_m5B1D89DB88357FED386C0A9C44C99F919D151893(L_399, L_402, L_405, NULL);
+		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_405;
+		L_405 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_406 = V_17;
+		NullCheck(L_406);
+		int32_t L_407 = L_406->___xFirst;
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_408 = V_17;
+		NullCheck(L_408);
+		int32_t L_409 = L_408->___yFirst;
+		NullCheck(L_405);
+		ModFunc_MoveTo_m5B1D89DB88357FED386C0A9C44C99F919D151893(L_405, L_407, L_409, NULL);
 	}
 
-IL_0975:
+IL_09e9:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:388>
 		return;
 	}
 
-IL_0976:
+IL_09ea:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:390>
-		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
-		bool L_406 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isGobackSmoothMove;
-		if (!L_406)
-		{
-			goto IL_0999;
-		}
-	}
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:392>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_407 = V_0;
-		NullCheck(L_407);
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_408 = L_407->___charFocus;
-		NullCheck(L_408);
-		int32_t L_409 = L_408->___cx;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_410 = V_0;
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_410 = V_17;
 		NullCheck(L_410);
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_411 = L_410->___charFocus;
-		NullCheck(L_411);
-		int32_t L_412 = L_411->___cy;
+		int32_t L_411 = L_410->___xFirst;
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_412 = V_17;
+		NullCheck(L_412);
+		int32_t L_413 = L_412->___yFirst;
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		PickMobController_Move_m15C0ACE8638D082A6B484E07370DD06319DEA05D(L_409, L_412, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:393>
+		PickMobController_Move_m15C0ACE8638D082A6B484E07370DD06319DEA05D(L_411, L_413, NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:391>
+		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)200), NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:392>
 		return;
 	}
 
-IL_0999:
+IL_0a08:
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:395>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_413 = V_0;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_414 = V_0;
-		NullCheck(L_414);
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_415 = L_414->___charFocus;
-		NullCheck(L_415);
-		int32_t L_416 = L_415->___cx;
-		NullCheck(L_413);
-		L_413->___cx = L_416;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:396>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_417 = V_0;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_418 = V_0;
-		NullCheck(L_418);
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_419 = L_418->___charFocus;
-		NullCheck(L_419);
-		int32_t L_420 = L_419->___cy;
-		NullCheck(L_417);
-		L_417->___cy = L_420;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:397>
-		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_421;
-		L_421 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
-		NullCheck(L_421);
-		Service_charMove_m31B59A38B3C84EB5C26193C4AE9BB4E8EA3D84C9(L_421, NULL);
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)100), NULL);
+		return;
 	}
 
-IL_09c5:
+IL_0a10:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:400>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_422 = V_0;
-		NullCheck(L_422);
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_423 = L_422->___charFocus;
-		if (!L_423)
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:399>
+		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
+		bool L_414 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___tsPlayer;
+		if (L_414)
 		{
-			goto IL_0af1;
+			goto IL_0a18;
 		}
 	}
 	{
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_424 = V_0;
-		NullCheck(L_424);
-		SkillInfoPaintU5BU5D_tBEE92C52D32D631EFB53E053A827F512C69E48B4* L_425;
-		L_425 = Char_skillInfoPaint_mA94372DAF5491635C1A6D1D9019D42E55F5C851B(L_424, NULL);
-		if (L_425)
-		{
-			goto IL_0af1;
-		}
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:401>
+		return;
 	}
+
+IL_0a18:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:402>
-		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_426;
-		L_426 = PickMobController_GetSkillAttack2_mFF073BF184A589AA58B601AE1EC91BE17775A7D5(NULL);
-		V_16 = L_426;
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:403>
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_427 = V_16;
-		if (!L_427)
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_415 = V_0;
+		NullCheck(L_415);
+		bool L_416 = L_415->___isCharge;
+		if (!L_416)
 		{
-			goto IL_0af1;
+			goto IL_0a28;
 		}
 	}
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:405>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_428 = V_0;
-		NullCheck(L_428);
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_429 = L_428->___charFocus;
-		V_17 = L_429;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:406>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_430 = V_0;
-		NullCheck(L_430);
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_431 = L_430->___myskill;
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_432 = V_16;
-		if ((((RuntimeObject*)(Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)L_431) == ((RuntimeObject*)(Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)L_432)))
-		{
-			goto IL_0a19;
-		}
-	}
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:408>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_433 = V_0;
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_434 = V_16;
-		NullCheck(L_433);
-		L_433->___myskill = L_434;
-		Il2CppCodeGenWriteBarrier((void**)(&L_433->___myskill), (void*)L_434);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:409>
-		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_435;
-		L_435 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_436 = V_16;
-		NullCheck(L_436);
-		SkillTemplate_t311437513D34E91857550DAACFFF71C301B14352* L_437 = L_436->___template;
-		NullCheck(L_437);
-		int8_t L_438 = L_437->___id;
-		NullCheck(L_435);
-		Service_selectSkill_m33143F9CD16D34BF6148DE78D89B0570F474F3AF(L_435, L_438, NULL);
-	}
-
-IL_0a19:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:411>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_439 = V_17;
-		NullCheck(L_439);
-		int32_t L_440 = L_439->___cx;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_441 = V_17;
-		NullCheck(L_441);
-		int32_t L_442 = L_441->___cy;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_443 = V_0;
-		NullCheck(L_443);
-		int32_t L_444 = L_443->___cx;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_445 = V_0;
-		NullCheck(L_445);
-		int32_t L_446 = L_445->___cy;
-		il2cpp_codegen_runtime_class_init_inline(Res_t42939C8A70541C5F8BBAC618E2AE68A048453E10_il2cpp_TypeInfo_var);
-		int32_t L_447;
-		L_447 = Res_distance_m12B6FF8AB14DA169468E5EA13CEA0318BD8BDBD0(L_440, L_442, L_444, L_446, NULL);
-		if ((((int32_t)L_447) > ((int32_t)((int32_t)48))))
-		{
-			goto IL_0a89;
-		}
-	}
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:413>
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_448 = V_16;
-		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		bool L_449;
-		L_449 = PickMobController_CanUseSkill_m9C78C1C62FE516701882C8891E6820B826DFC5AF(L_448, NULL);
-		if (!L_449)
-		{
-			goto IL_0a81;
-		}
-	}
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:415>
-		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
-		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_450;
-		L_450 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_451 = V_17;
-		NullCheck(L_450);
-		ModFunc_DoDoubleClickToObj_m50874301771006A34F93DFABB9F109E0D2E28444(L_450, L_451, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:416>
-		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_452;
-		L_452 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_453 = V_16;
-		NullCheck(L_452);
-		ModFunc_SetUsedSkill_mCFDAA6172A0A073E069F1ADCCC9BA0EBE28ABDD4(L_452, L_453, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:417>
-		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_454 = V_16;
-		NullCheck(L_454);
-		int32_t L_455 = L_454->___coolDown;
-		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
-		int32_t L_456;
-		L_456 = Math_Max_m530EBA549AFD98CFC2BD29FE86C6376E67DF11CF(((int32_t)il2cpp_codegen_add(L_455, ((int32_t)50))), ((int32_t)250), NULL);
-		int32_t L_457;
-		L_457 = Math_Min_m53C488772A34D53917BCA2A491E79A0A5356ED52(L_456, ((int32_t)450), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:418>
-		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(L_457, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:419>
-		return;
-	}
-
-IL_0a81:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:423>
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)100), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:424>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:406>
 		return;
 	}
 
-IL_0a89:
+IL_0a28:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:429>
-		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
-		bool L_458 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___telePem;
-		if (!L_458)
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:408>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_417 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		bool L_418;
+		L_418 = PickMobController_CheckAutoBienKhi_mB7B653D4D3BF77A3570A1D33D283FE7EE6D2373E(L_417, NULL);
+		if (!L_418)
 		{
-			goto IL_0ade;
+			goto IL_0a31;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:410>
+		return;
+	}
+
+IL_0a31:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:412>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_419 = V_0;
+		NullCheck(L_419);
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_420 = L_419->___charFocus;
+		if (!L_420)
+		{
+			goto IL_0a4d;
+		}
+	}
+	{
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_421 = V_0;
+		NullCheck(L_421);
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_422 = L_421->___charFocus;
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		bool L_423;
+		L_423 = PickMobController_IsCharTanSat_m46EEAD74102EBEFDC2F3E61917515FFE82E20DB5(L_422, NULL);
+		if (L_423)
+		{
+			goto IL_0a4d;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:414>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_424 = V_0;
+		NullCheck(L_424);
+		L_424->___charFocus = (Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&L_424->___charFocus), (void*)(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F*)NULL);
+	}
+
+IL_0a4d:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:416>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_425 = V_0;
+		NullCheck(L_425);
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_426 = L_425->___charFocus;
+		if (L_426)
+		{
+			goto IL_0b22;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:418>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_427 = V_0;
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_428;
+		L_428 = PickMobController_GetCharTanSat_mB6A72AB2E545BF709515C87DD011CEEEBE5C7637(NULL);
+		NullCheck(L_427);
+		L_427->___charFocus = L_428;
+		Il2CppCodeGenWriteBarrier((void**)(&L_427->___charFocus), (void*)L_428);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:419>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_429 = V_0;
+		NullCheck(L_429);
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_430 = L_429->___charFocus;
+		if (!L_430)
+		{
+			goto IL_0b22;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:421>
+		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
+		bool L_431 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___telePem;
+		if (!L_431)
+		{
+			goto IL_0ad3;
 		}
 	}
 	{
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
-		bool L_459 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isGobackSmoothMove;
-		if (L_459)
+		bool L_432 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isGobackSmoothMove;
+		if (L_432)
 		{
-			goto IL_0ade;
+			goto IL_0ad3;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:423>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_433 = V_0;
+		NullCheck(L_433);
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_434 = L_433->___charFocus;
+		NullCheck(L_434);
+		int32_t L_435 = L_434->___cx;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_436 = V_0;
+		NullCheck(L_436);
+		int32_t L_437 = L_436->___cx;
+		int32_t L_438;
+		L_438 = Math_abs_m9EBB513752A930AECA9ED005549135F97E154308(((int32_t)il2cpp_codegen_subtract(L_435, L_437)), NULL);
+		if ((((int32_t)L_438) >= ((int32_t)((int32_t)20))))
+		{
+			goto IL_0ab2;
+		}
+	}
+	{
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_439 = V_0;
+		NullCheck(L_439);
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_440 = L_439->___charFocus;
+		NullCheck(L_440);
+		int32_t L_441 = L_440->___cy;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_442 = V_0;
+		NullCheck(L_442);
+		int32_t L_443 = L_442->___cy;
+		int32_t L_444;
+		L_444 = Math_abs_m9EBB513752A930AECA9ED005549135F97E154308(((int32_t)il2cpp_codegen_subtract(L_441, L_443)), NULL);
+		if ((((int32_t)L_444) < ((int32_t)((int32_t)20))))
+		{
+			goto IL_0ad2;
+		}
+	}
+
+IL_0ab2:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:425>
+		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
+		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_445;
+		L_445 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_446 = V_0;
+		NullCheck(L_446);
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_447 = L_446->___charFocus;
+		NullCheck(L_447);
+		int32_t L_448 = L_447->___cx;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_449 = V_0;
+		NullCheck(L_449);
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_450 = L_449->___charFocus;
+		NullCheck(L_450);
+		int32_t L_451 = L_450->___cy;
+		NullCheck(L_445);
+		ModFunc_MoveTo_m5B1D89DB88357FED386C0A9C44C99F919D151893(L_445, L_448, L_451, NULL);
+	}
+
+IL_0ad2:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:427>
+		return;
+	}
+
+IL_0ad3:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:429>
+		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
+		bool L_452 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isGobackSmoothMove;
+		if (!L_452)
+		{
+			goto IL_0af6;
 		}
 	}
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:431>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_460 = V_17;
-		NullCheck(L_460);
-		int32_t L_461 = L_460->___cx;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_462 = V_0;
-		NullCheck(L_462);
-		int32_t L_463 = L_462->___cx;
-		int32_t L_464;
-		L_464 = Math_abs_m9EBB513752A930AECA9ED005549135F97E154308(((int32_t)il2cpp_codegen_subtract(L_461, L_463)), NULL);
-		if ((((int32_t)L_464) >= ((int32_t)((int32_t)20))))
-		{
-			goto IL_0ac5;
-		}
-	}
-	{
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_465 = V_17;
-		NullCheck(L_465);
-		int32_t L_466 = L_465->___cy;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_467 = V_0;
-		NullCheck(L_467);
-		int32_t L_468 = L_467->___cy;
-		int32_t L_469;
-		L_469 = Math_abs_m9EBB513752A930AECA9ED005549135F97E154308(((int32_t)il2cpp_codegen_subtract(L_466, L_468)), NULL);
-		if ((((int32_t)L_469) < ((int32_t)((int32_t)20))))
-		{
-			goto IL_0add;
-		}
-	}
-
-IL_0ac5:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:433>
-		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
-		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_470;
-		L_470 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_471 = V_17;
-		NullCheck(L_471);
-		int32_t L_472 = L_471->___cx;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_473 = V_17;
-		NullCheck(L_473);
-		int32_t L_474 = L_473->___cy;
-		NullCheck(L_470);
-		ModFunc_MoveTo_m5B1D89DB88357FED386C0A9C44C99F919D151893(L_470, L_472, L_474, NULL);
-	}
-
-IL_0add:
-	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:435>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_453 = V_0;
+		NullCheck(L_453);
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_454 = L_453->___charFocus;
+		NullCheck(L_454);
+		int32_t L_455 = L_454->___cx;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_456 = V_0;
+		NullCheck(L_456);
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_457 = L_456->___charFocus;
+		NullCheck(L_457);
+		int32_t L_458 = L_457->___cy;
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		PickMobController_Move_m15C0ACE8638D082A6B484E07370DD06319DEA05D(L_455, L_458, NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:432>
 		return;
 	}
 
-IL_0ade:
+IL_0af6:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:437>
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_475 = V_17;
-		NullCheck(L_475);
-		int32_t L_476 = L_475->___cx;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_477 = V_17;
-		NullCheck(L_477);
-		int32_t L_478 = L_477->___cy;
-		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		PickMobController_Move_m15C0ACE8638D082A6B484E07370DD06319DEA05D(L_476, L_478, NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:434>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_459 = V_0;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_460 = V_0;
+		NullCheck(L_460);
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_461 = L_460->___charFocus;
+		NullCheck(L_461);
+		int32_t L_462 = L_461->___cx;
+		NullCheck(L_459);
+		L_459->___cx = L_462;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:435>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_463 = V_0;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_464 = V_0;
+		NullCheck(L_464);
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_465 = L_464->___charFocus;
+		NullCheck(L_465);
+		int32_t L_466 = L_465->___cy;
+		NullCheck(L_463);
+		L_463->___cy = L_466;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:436>
+		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_467;
+		L_467 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
+		NullCheck(L_467);
+		Service_charMove_m31B59A38B3C84EB5C26193C4AE9BB4E8EA3D84C9(L_467, NULL);
 	}
 
-IL_0af1:
+IL_0b22:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:439>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_468 = V_0;
+		NullCheck(L_468);
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_469 = L_468->___charFocus;
+		if (!L_469)
+		{
+			goto IL_0c4e;
+		}
+	}
+	{
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_470 = V_0;
+		NullCheck(L_470);
+		SkillInfoPaintU5BU5D_tBEE92C52D32D631EFB53E053A827F512C69E48B4* L_471;
+		L_471 = Char_skillInfoPaint_mA94372DAF5491635C1A6D1D9019D42E55F5C851B(L_470, NULL);
+		if (L_471)
+		{
+			goto IL_0c4e;
+		}
+	}
 	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:441>
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_472;
+		L_472 = PickMobController_GetSkillAttack2_mFF073BF184A589AA58B601AE1EC91BE17775A7D5(NULL);
+		V_18 = L_472;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:442>
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_473 = V_18;
+		if (!L_473)
+		{
+			goto IL_0c4e;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:444>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_474 = V_0;
+		NullCheck(L_474);
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_475 = L_474->___charFocus;
+		V_19 = L_475;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:445>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_476 = V_0;
+		NullCheck(L_476);
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_477 = L_476->___myskill;
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_478 = V_18;
+		if ((((RuntimeObject*)(Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)L_477) == ((RuntimeObject*)(Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)L_478)))
+		{
+			goto IL_0b76;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:447>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_479 = V_0;
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_480 = V_18;
+		NullCheck(L_479);
+		L_479->___myskill = L_480;
+		Il2CppCodeGenWriteBarrier((void**)(&L_479->___myskill), (void*)L_480);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:448>
+		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_481;
+		L_481 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_482 = V_18;
+		NullCheck(L_482);
+		SkillTemplate_t311437513D34E91857550DAACFFF71C301B14352* L_483 = L_482->___template;
+		NullCheck(L_483);
+		int8_t L_484 = L_483->___id;
+		NullCheck(L_481);
+		Service_selectSkill_m33143F9CD16D34BF6148DE78D89B0570F474F3AF(L_481, L_484, NULL);
+	}
+
+IL_0b76:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:450>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_485 = V_19;
+		NullCheck(L_485);
+		int32_t L_486 = L_485->___cx;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_487 = V_19;
+		NullCheck(L_487);
+		int32_t L_488 = L_487->___cy;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_489 = V_0;
+		NullCheck(L_489);
+		int32_t L_490 = L_489->___cx;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_491 = V_0;
+		NullCheck(L_491);
+		int32_t L_492 = L_491->___cy;
+		il2cpp_codegen_runtime_class_init_inline(Res_t42939C8A70541C5F8BBAC618E2AE68A048453E10_il2cpp_TypeInfo_var);
+		int32_t L_493;
+		L_493 = Res_distance_m12B6FF8AB14DA169468E5EA13CEA0318BD8BDBD0(L_486, L_488, L_490, L_492, NULL);
+		if ((((int32_t)L_493) > ((int32_t)((int32_t)48))))
+		{
+			goto IL_0be6;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:452>
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_494 = V_18;
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		bool L_495;
+		L_495 = PickMobController_CanUseSkill_m9C78C1C62FE516701882C8891E6820B826DFC5AF(L_494, NULL);
+		if (!L_495)
+		{
+			goto IL_0bde;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:454>
+		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
+		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_496;
+		L_496 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_497 = V_19;
+		NullCheck(L_496);
+		ModFunc_DoDoubleClickToObj_m50874301771006A34F93DFABB9F109E0D2E28444(L_496, L_497, NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:455>
+		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_498;
+		L_498 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_499 = V_18;
+		NullCheck(L_498);
+		ModFunc_SetUsedSkill_mCFDAA6172A0A073E069F1ADCCC9BA0EBE28ABDD4(L_498, L_499, NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:456>
+		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_500 = V_18;
+		NullCheck(L_500);
+		int32_t L_501 = L_500->___coolDown;
+		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		int32_t L_502;
+		L_502 = Math_Max_m530EBA549AFD98CFC2BD29FE86C6376E67DF11CF(((int32_t)il2cpp_codegen_add(L_501, ((int32_t)50))), ((int32_t)250), NULL);
+		int32_t L_503;
+		L_503 = Math_Min_m53C488772A34D53917BCA2A491E79A0A5356ED52(L_502, ((int32_t)450), NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:457>
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(L_503, NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:458>
+		return;
+	}
+
+IL_0bde:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:462>
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)100), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:443>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:463>
+		return;
+	}
+
+IL_0be6:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:468>
+		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
+		bool L_504 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___telePem;
+		if (!L_504)
+		{
+			goto IL_0c3b;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
+		bool L_505 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isGobackSmoothMove;
+		if (L_505)
+		{
+			goto IL_0c3b;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:470>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_506 = V_19;
+		NullCheck(L_506);
+		int32_t L_507 = L_506->___cx;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_508 = V_0;
+		NullCheck(L_508);
+		int32_t L_509 = L_508->___cx;
+		int32_t L_510;
+		L_510 = Math_abs_m9EBB513752A930AECA9ED005549135F97E154308(((int32_t)il2cpp_codegen_subtract(L_507, L_509)), NULL);
+		if ((((int32_t)L_510) >= ((int32_t)((int32_t)20))))
+		{
+			goto IL_0c22;
+		}
+	}
+	{
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_511 = V_19;
+		NullCheck(L_511);
+		int32_t L_512 = L_511->___cy;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_513 = V_0;
+		NullCheck(L_513);
+		int32_t L_514 = L_513->___cy;
+		int32_t L_515;
+		L_515 = Math_abs_m9EBB513752A930AECA9ED005549135F97E154308(((int32_t)il2cpp_codegen_subtract(L_512, L_514)), NULL);
+		if ((((int32_t)L_515) < ((int32_t)((int32_t)20))))
+		{
+			goto IL_0c3a;
+		}
+	}
+
+IL_0c22:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:472>
+		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
+		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_516;
+		L_516 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_517 = V_19;
+		NullCheck(L_517);
+		int32_t L_518 = L_517->___cx;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_519 = V_19;
+		NullCheck(L_519);
+		int32_t L_520 = L_519->___cy;
+		NullCheck(L_516);
+		ModFunc_MoveTo_m5B1D89DB88357FED386C0A9C44C99F919D151893(L_516, L_518, L_520, NULL);
+	}
+
+IL_0c3a:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:474>
+		return;
+	}
+
+IL_0c3b:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:476>
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_521 = V_19;
+		NullCheck(L_521);
+		int32_t L_522 = L_521->___cx;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_523 = V_19;
+		NullCheck(L_523);
+		int32_t L_524 = L_523->___cy;
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		PickMobController_Move_m15C0ACE8638D082A6B484E07370DD06319DEA05D(L_522, L_524, NULL);
+	}
+
+IL_0c4e:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:480>
+		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
+		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)100), NULL);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:482>
 		return;
 	}
 }
-// Method Definition Index: 14406
+// Method Definition Index: 14454
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickMobController_Move_m15C0ACE8638D082A6B484E07370DD06319DEA05D (int32_t ___0_x, int32_t ___1_y, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22851,12 +23154,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickMobController_Move_m15C0ACE8638D082A
 	int32_t G_B17_0 = 0;
 	Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* G_B17_1 = NULL;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:447>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:486>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_0;
 		L_0 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 		V_0 = L_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:448>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:487>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_1 = V_0;
 		if (L_1)
 		{
@@ -22864,13 +23167,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickMobController_Move_m15C0ACE8638D082A
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:448>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:487>
 		return;
 	}
 
 IL_000a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:449>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:488>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		bool L_2 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___vuotDiaHinh;
 		if (L_2)
@@ -22879,7 +23182,7 @@ IL_000a:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:451>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:490>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_3 = V_0;
 		int32_t L_4 = ___0_x;
 		int32_t L_5 = ___1_y;
@@ -22888,7 +23191,7 @@ IL_000a:
 		NullCheck(L_3);
 		L_3->___currentMovePoint = L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&L_3->___currentMovePoint), (void*)L_6);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:452>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:491>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_7 = V_0;
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_8 = V_0;
 		NullCheck(L_8);
@@ -22917,18 +23220,18 @@ IL_002e:
 	{
 		NullCheck(G_B6_1);
 		G_B6_1->___cdir = G_B6_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:453>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:492>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_11 = V_0;
 		NullCheck(L_11);
 		L_11->___endMovePointCommand = (Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_11->___endMovePointCommand), (void*)(Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1*)NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:454>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:493>
 		return;
 	}
 
 IL_003b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:456>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:495>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_12 = V_0;
 		NullCheck(L_12);
 		int32_t L_13 = L_12->___cx;
@@ -22937,7 +23240,7 @@ IL_003b:
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_15;
 		L_15 = PickMobController_GetPointYsdMax_m164A42C5EB923948A35E5470D3139F993EE2D930(L_13, L_14, NULL);
 		V_1 = L_15;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:457>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:496>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_16 = V_1;
 		NullCheck(L_16);
 		int32_t L_17 = 0;
@@ -23002,12 +23305,12 @@ IL_003b:
 
 IL_0077:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:459>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:498>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_35 = V_1;
 		int32_t L_36 = ___0_x;
 		NullCheck(L_35);
 		(L_35)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)L_36);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:460>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:499>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_37 = V_1;
 		int32_t L_38 = ___1_y;
 		NullCheck(L_37);
@@ -23016,7 +23319,7 @@ IL_0077:
 
 IL_007f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:462>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:501>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_39 = V_0;
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_40 = V_1;
 		NullCheck(L_40);
@@ -23031,7 +23334,7 @@ IL_007f:
 		NullCheck(L_39);
 		L_39->___currentMovePoint = L_46;
 		Il2CppCodeGenWriteBarrier((void**)(&L_39->___currentMovePoint), (void*)L_46);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:463>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:502>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_47 = V_0;
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_48 = V_0;
 		NullCheck(L_48);
@@ -23063,16 +23366,16 @@ IL_00a2:
 	{
 		NullCheck(G_B17_1);
 		G_B17_1->___cdir = G_B17_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:464>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:503>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_53 = V_0;
 		NullCheck(L_53);
 		L_53->___endMovePointCommand = (Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_53->___endMovePointCommand), (void*)(Command_tC5575D51036CBC79804FB725177C7C6CC3F8C8A1*)NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:465>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:504>
 		return;
 	}
 }
-// Method Definition Index: 14407
+// Method Definition Index: 14455
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PickMobController_GetTypePickItem_m8473766F6F3A75B2257012C9F326B12128909F3C (ItemMap_t2B30F00DB645DF643CDA7BBE963A58A018175E38* ___0_itemMap, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23086,7 +23389,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PickMobController_GetTypePickItem_m84
 	}
 	Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* V_0 = NULL;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:469>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:508>
 		ItemMap_t2B30F00DB645DF643CDA7BBE963A58A018175E38* L_0 = ___0_itemMap;
 		if (!L_0)
 		{
@@ -23105,13 +23408,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PickMobController_GetTypePickItem_m84
 
 IL_000b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:471>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:510>
 		return (int32_t)(0);
 	}
 
 IL_000d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:474>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:513>
 		ItemMap_t2B30F00DB645DF643CDA7BBE963A58A018175E38* L_3 = ___0_itemMap;
 		NullCheck(L_3);
 		int8_t L_4 = L_3->___status;
@@ -23143,18 +23446,18 @@ IL_000d:
 
 IL_002f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:476>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:515>
 		return (int32_t)(0);
 	}
 
 IL_0031:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:478>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:517>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_10;
 		L_10 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 		V_0 = L_10;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:479>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:518>
 		ItemMap_t2B30F00DB645DF643CDA7BBE963A58A018175E38* L_11 = ___0_itemMap;
 		NullCheck(L_11);
 		int32_t L_12 = L_11->___playerId;
@@ -23194,13 +23497,13 @@ IL_0031:
 
 IL_005c:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:481>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:520>
 		return (int32_t)(0);
 	}
 
 IL_005e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:483>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:522>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		bool L_19 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___IsLimitTimesPickItem;
 		if (!L_19)
@@ -23220,13 +23523,13 @@ IL_005e:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:485>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:524>
 		return (int32_t)(0);
 	}
 
 IL_0074:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:487>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:526>
 		ItemMap_t2B30F00DB645DF643CDA7BBE963A58A018175E38* L_23 = ___0_itemMap;
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		bool L_24;
@@ -23237,13 +23540,13 @@ IL_0074:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:489>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:528>
 		return (int32_t)(0);
 	}
 
 IL_007e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:491>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:530>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		bool L_25 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___isNhatXa;
 		if (L_25)
@@ -23292,13 +23595,13 @@ IL_007e:
 
 IL_00b8:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:493>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:532>
 		return (int32_t)(1);
 	}
 
 IL_00ba:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:495>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:534>
 		bool L_37;
 		L_37 = ItemTime_isExistItem_mF88FEEBCF42FA1DCE050EE1E7C2ABEE364205725(((int32_t)4387), NULL);
 		if (!L_37)
@@ -23307,13 +23610,13 @@ IL_00ba:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:497>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:536>
 		return (int32_t)(2);
 	}
 
 IL_00c8:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:499>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:538>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		bool L_38 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___tanSat;
 		if (!L_38)
@@ -23322,17 +23625,17 @@ IL_00c8:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:501>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:540>
 		return (int32_t)(3);
 	}
 
 IL_00d1:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:503>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:542>
 		return (int32_t)(0);
 	}
 }
-// Method Definition Index: 14408
+// Method Definition Index: 14456
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_FilterItemPick_mB0AAD5D07C6D2F123D8B609D0873CF410F78CB7D (ItemMap_t2B30F00DB645DF643CDA7BBE963A58A018175E38* ___0_itemMap, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23348,7 +23651,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_FilterItemPick_mB0AAD5
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:508>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:547>
 		ItemMap_t2B30F00DB645DF643CDA7BBE963A58A018175E38* L_0 = ___0_itemMap;
 		if (!L_0)
 		{
@@ -23367,13 +23670,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_FilterItemPick_mB0AAD5
 
 IL_000b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:508>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:547>
 		return (bool)0;
 	}
 
 IL_000d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:511>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:550>
 		il2cpp_codegen_runtime_class_init_inline(AutoHelperMn_t00BEB9A8D06F630A47D620FB0E3908B7FF4D34EA_il2cpp_TypeInfo_var);
 		HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2* L_3 = ((AutoHelperMn_t00BEB9A8D06F630A47D620FB0E3908B7FF4D34EA_StaticFields*)il2cpp_codegen_static_fields_for(AutoHelperMn_t00BEB9A8D06F630A47D620FB0E3908B7FF4D34EA_il2cpp_TypeInfo_var))->___customDiscardIds;
 		if (!L_3)
@@ -23398,13 +23701,13 @@ IL_000d:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:513>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:552>
 		return (bool)0;
 	}
 
 IL_002d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:516>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:555>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		List_1_t36734ACA044956B5B61977FA4D7D11B59AB0202C* L_9 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___IdItemPicks;
 		NullCheck(L_9);
@@ -23492,7 +23795,7 @@ IL_0073:
 
 IL_0096:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:518>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:557>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		List_1_t640FAF5655E936ED6904C052B506D9C41B4C01EC* L_30 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___TypeItemBlock;
 		NullCheck(L_30);
@@ -23504,7 +23807,7 @@ IL_0096:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:520>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:559>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		List_1_t640FAF5655E936ED6904C052B506D9C41B4C01EC* L_32 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___TypeItemBlock;
 		ItemMap_t2B30F00DB645DF643CDA7BBE963A58A018175E38* L_33 = ___0_itemMap;
@@ -23520,17 +23823,17 @@ IL_0096:
 
 IL_00bb:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:522>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:561>
 		return (bool)1;
 	}
 
 IL_00bd:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:524>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:563>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 14409
+// Method Definition Index: 14457
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Mob_t394900507F39725FA57379059AA703E63166F45F* PickMobController_GetMobTanSat_m749F763581868E9C58815A4B3B528CD1F435F2D2 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23549,23 +23852,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Mob_t394900507F39725FA57379059AA703E63166F45F
 	Mob_t394900507F39725FA57379059AA703E63166F45F* V_4 = NULL;
 	int32_t V_5 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:529>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:568>
 		V_0 = (Mob_t394900507F39725FA57379059AA703E63166F45F*)NULL;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:530>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:569>
 		V_1 = ((int32_t)2147483647LL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:531>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:570>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_0;
 		L_0 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 		V_2 = L_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:532>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:571>
 		V_3 = 0;
 		goto IL_0079;
 	}
 
 IL_0012:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:534>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:573>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_1 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vMob;
 		int32_t L_2 = V_3;
@@ -23573,7 +23876,7 @@ IL_0012:
 		RuntimeObject* L_3;
 		L_3 = MyVector_elementAt_m2058CB2FBF87C401368BB43AE172A9BB65956E4E(L_1, L_2, NULL);
 		V_4 = ((Mob_t394900507F39725FA57379059AA703E63166F45F*)CastclassClass((RuntimeObject*)L_3, Mob_t394900507F39725FA57379059AA703E63166F45F_il2cpp_TypeInfo_var));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:535>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:574>
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_4 = V_4;
 		NullCheck(L_4);
 		int32_t L_5 = L_4->___xFirst;
@@ -23599,7 +23902,7 @@ IL_0012:
 		NullCheck(L_18);
 		int32_t L_19 = L_18->___cy;
 		V_5 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_subtract(L_5, L_7)), ((int32_t)il2cpp_codegen_subtract(L_9, L_11)))), ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_subtract(L_13, L_15)), ((int32_t)il2cpp_codegen_subtract(L_17, L_19))))));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:536>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:575>
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_20 = V_4;
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		bool L_21;
@@ -23618,24 +23921,24 @@ IL_0012:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:538>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:577>
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_24 = V_4;
 		V_0 = L_24;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:539>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:578>
 		int32_t L_25 = V_5;
 		V_1 = L_25;
 	}
 
 IL_0075:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:532>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:571>
 		int32_t L_26 = V_3;
 		V_3 = ((int32_t)il2cpp_codegen_add(L_26, 1));
 	}
 
 IL_0079:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:532>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:571>
 		int32_t L_27 = V_3;
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_28 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vMob;
@@ -23648,12 +23951,12 @@ IL_0079:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:542>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:581>
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_30 = V_0;
 		return L_30;
 	}
 }
-// Method Definition Index: 14410
+// Method Definition Index: 14458
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Mob_t394900507F39725FA57379059AA703E63166F45F* PickMobController_GetMobTanSatV2_m6DBD03B46E2A9312C4F327AF94EECFA54DACFD58 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23661,6 +23964,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Mob_t394900507F39725FA57379059AA703E63166F45F
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Mob_t394900507F39725FA57379059AA703E63166F45F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
@@ -23673,23 +23977,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Mob_t394900507F39725FA57379059AA703E63166F45F
 	int32_t V_5 = 0;
 	int32_t V_6 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:551>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:590>
 		V_0 = (Mob_t394900507F39725FA57379059AA703E63166F45F*)NULL;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:552>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:591>
 		V_1 = ((int32_t)2147483647LL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:553>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:592>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_0;
 		L_0 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 		V_2 = L_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:554>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:593>
 		V_3 = 0;
-		goto IL_0099;
+		goto IL_00a2;
 	}
 
 IL_0015:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:556>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:595>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_1 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vMob;
 		int32_t L_2 = V_3;
@@ -23697,11 +24001,11 @@ IL_0015:
 		RuntimeObject* L_3;
 		L_3 = MyVector_elementAt_m2058CB2FBF87C401368BB43AE172A9BB65956E4E(L_1, L_2, NULL);
 		V_4 = ((Mob_t394900507F39725FA57379059AA703E63166F45F*)CastclassClass((RuntimeObject*)L_3, Mob_t394900507F39725FA57379059AA703E63166F45F_il2cpp_TypeInfo_var));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:558>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:597>
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_4 = V_4;
 		if (!L_4)
 		{
-			goto IL_0095;
+			goto IL_009e;
 		}
 	}
 	{
@@ -23710,7 +24014,7 @@ IL_0015:
 		int32_t L_6 = L_5->___status;
 		if (!L_6)
 		{
-			goto IL_0095;
+			goto IL_009e;
 		}
 	}
 	{
@@ -23719,7 +24023,7 @@ IL_0015:
 		int32_t L_8 = L_7->___status;
 		if ((((int32_t)L_8) == ((int32_t)1)))
 		{
-			goto IL_0095;
+			goto IL_009e;
 		}
 	}
 	{
@@ -23728,7 +24032,7 @@ IL_0015:
 		double L_10 = L_9->___hp;
 		if ((((double)L_10) <= ((double)(0.0))))
 		{
-			goto IL_0095;
+			goto IL_009e;
 		}
 	}
 	{
@@ -23737,86 +24041,97 @@ IL_0015:
 		bool L_12 = L_11->___isMobMe;
 		if (L_12)
 		{
-			goto IL_0095;
+			goto IL_009e;
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:561>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:600>
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_13 = V_4;
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		bool L_14;
 		L_14 = PickMobController_FilterMobTanSat_m611D723319C9D16B18BD3A64F1404E2DD82561DD(L_13, NULL);
 		if (!L_14)
 		{
-			goto IL_0095;
+			goto IL_009e;
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:563>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:603>
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_15 = V_4;
-		NullCheck(L_15);
-		int32_t L_16 = L_15->___xFirst;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_17 = V_2;
-		NullCheck(L_17);
-		int32_t L_18 = L_17->___cx;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:564>
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_19 = V_4;
-		NullCheck(L_19);
-		int32_t L_20 = L_19->___yFirst;
-		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_21 = V_2;
-		NullCheck(L_21);
-		int32_t L_22 = L_21->___cy;
-		V_5 = ((int32_t)il2cpp_codegen_subtract(L_20, L_22));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:565>
-		int32_t L_23 = ((int32_t)il2cpp_codegen_subtract(L_16, L_18));
-		int32_t L_24 = V_5;
-		int32_t L_25 = V_5;
-		V_6 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_23, L_23)), ((int32_t)il2cpp_codegen_multiply(L_24, L_25))));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:566>
-		int32_t L_26 = V_6;
-		int32_t L_27 = V_1;
-		if ((((int32_t)L_26) >= ((int32_t)L_27)))
+		il2cpp_codegen_runtime_class_init_inline(KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var);
+		bool L_16;
+		L_16 = KsGoldPanel_CanStartMob_m8DBA53FB14B3A1115533685E11160BF6245CEC15(L_15, NULL);
+		if (!L_16)
 		{
-			goto IL_0095;
+			goto IL_009e;
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:568>
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_28 = V_4;
-		V_0 = L_28;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:569>
-		int32_t L_29 = V_6;
-		V_1 = L_29;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:605>
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_17 = V_4;
+		NullCheck(L_17);
+		int32_t L_18 = L_17->___xFirst;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_19 = V_2;
+		NullCheck(L_19);
+		int32_t L_20 = L_19->___cx;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:606>
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_21 = V_4;
+		NullCheck(L_21);
+		int32_t L_22 = L_21->___yFirst;
+		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_23 = V_2;
+		NullCheck(L_23);
+		int32_t L_24 = L_23->___cy;
+		V_5 = ((int32_t)il2cpp_codegen_subtract(L_22, L_24));
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:607>
+		int32_t L_25 = ((int32_t)il2cpp_codegen_subtract(L_18, L_20));
+		int32_t L_26 = V_5;
+		int32_t L_27 = V_5;
+		V_6 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_25, L_25)), ((int32_t)il2cpp_codegen_multiply(L_26, L_27))));
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:608>
+		int32_t L_28 = V_6;
+		int32_t L_29 = V_1;
+		if ((((int32_t)L_28) >= ((int32_t)L_29)))
+		{
+			goto IL_009e;
+		}
+	}
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:610>
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_30 = V_4;
+		V_0 = L_30;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:611>
+		int32_t L_31 = V_6;
+		V_1 = L_31;
 	}
 
-IL_0095:
+IL_009e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:554>
-		int32_t L_30 = V_3;
-		V_3 = ((int32_t)il2cpp_codegen_add(L_30, 1));
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:593>
+		int32_t L_32 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_32, 1));
 	}
 
-IL_0099:
+IL_00a2:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:554>
-		int32_t L_31 = V_3;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:593>
+		int32_t L_33 = V_3;
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
-		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_32 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vMob;
-		NullCheck(L_32);
-		int32_t L_33;
-		L_33 = MyVector_size_mF025A05E2021611BFB9E107342658AEB05222BA9(L_32, NULL);
-		if ((((int32_t)L_31) < ((int32_t)L_33)))
+		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_34 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vMob;
+		NullCheck(L_34);
+		int32_t L_35;
+		L_35 = MyVector_size_mF025A05E2021611BFB9E107342658AEB05222BA9(L_34, NULL);
+		if ((((int32_t)L_33) < ((int32_t)L_35)))
 		{
 			goto IL_0015;
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:572>
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_34 = V_0;
-		return L_34;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:614>
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_36 = V_0;
+		return L_36;
 	}
 }
-// Method Definition Index: 14411
+// Method Definition Index: 14459
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* PickMobController_GetCharTanSat_mB6A72AB2E545BF709515C87DD011CEEEBE5C7637 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23831,16 +24146,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836
 	int32_t V_1 = 0;
 	Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* V_2 = NULL;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:577>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:619>
 		V_0 = (Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F*)NULL;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:578>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:620>
 		V_1 = 0;
 		goto IL_0025;
 	}
 
 IL_0006:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:580>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:622>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_0 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vCharInMap;
 		int32_t L_1 = V_1;
@@ -23848,7 +24163,7 @@ IL_0006:
 		RuntimeObject* L_2;
 		L_2 = MyVector_elementAt_m2058CB2FBF87C401368BB43AE172A9BB65956E4E(L_0, L_1, NULL);
 		V_2 = ((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F*)CastclassClass((RuntimeObject*)L_2, Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:581>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:623>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_3 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		bool L_4;
@@ -23859,21 +24174,21 @@ IL_0006:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:583>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:625>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_5 = V_2;
 		V_0 = L_5;
 	}
 
 IL_0021:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:578>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:620>
 		int32_t L_6 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_6, 1));
 	}
 
 IL_0025:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:578>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:620>
 		int32_t L_7 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_8 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vCharInMap;
@@ -23886,12 +24201,12 @@ IL_0025:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:586>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:628>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_10 = V_0;
 		return L_10;
 	}
 }
-// Method Definition Index: 14412
+// Method Definition Index: 14460
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Mob_t394900507F39725FA57379059AA703E63166F45F* PickMobController_GetMobNext_m20502B609CA5111A4CA30B91CD072A70FCEFDBED (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23908,21 +24223,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Mob_t394900507F39725FA57379059AA703E63166F45F
 	int32_t V_2 = 0;
 	Mob_t394900507F39725FA57379059AA703E63166F45F* V_3 = NULL;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:591>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:633>
 		V_0 = (Mob_t394900507F39725FA57379059AA703E63166F45F*)NULL;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:592>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:634>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		int64_t L_0;
 		L_0 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
 		V_1 = L_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:593>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:635>
 		V_2 = 0;
 		goto IL_003b;
 	}
 
 IL_000c:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:595>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:637>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_1 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vMob;
 		int32_t L_2 = V_2;
@@ -23930,7 +24245,7 @@ IL_000c:
 		RuntimeObject* L_3;
 		L_3 = MyVector_elementAt_m2058CB2FBF87C401368BB43AE172A9BB65956E4E(L_1, L_2, NULL);
 		V_3 = ((Mob_t394900507F39725FA57379059AA703E63166F45F*)CastclassClass((RuntimeObject*)L_3, Mob_t394900507F39725FA57379059AA703E63166F45F_il2cpp_TypeInfo_var));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:596>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:638>
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_4 = V_3;
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		bool L_5;
@@ -23951,10 +24266,10 @@ IL_000c:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:598>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:640>
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_9 = V_3;
 		V_0 = L_9;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:599>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:641>
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_10 = V_3;
 		NullCheck(L_10);
 		int64_t L_11 = L_10->___lastDie;
@@ -23963,14 +24278,14 @@ IL_000c:
 
 IL_0037:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:593>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:635>
 		int32_t L_12 = V_2;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_12, 1));
 	}
 
 IL_003b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:593>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:635>
 		int32_t L_13 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_14 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vMob;
@@ -23983,25 +24298,26 @@ IL_003b:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:602>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:644>
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_16 = V_0;
 		return L_16;
 	}
 }
-// Method Definition Index: 14413
+// Method Definition Index: 14461
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_IsMobTanSat_m0C74F805526A9BC9013F071AEEB585409CA9D636 (Mob_t394900507F39725FA57379059AA703E63166F45F* ___0_mob, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	bool V_0 = false;
-	int32_t G_B9_0 = 0;
+	int32_t G_B11_0 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:607>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:649>
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_0 = ___0_mob;
 		if (!L_0)
 		{
@@ -24047,67 +24363,84 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_IsMobTanSat_m0C74F8055
 
 IL_002d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:609>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:651>
 		return (bool)0;
 	}
 
 IL_002f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:611>
-		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
-		bool L_9 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___neSieuQuai;
-		if (!L_9)
-		{
-			goto IL_0045;
-		}
-	}
-	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:653>
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_9 = ___0_mob;
+		il2cpp_codegen_runtime_class_init_inline(KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var);
 		bool L_10;
-		L_10 = ItemTime_isExistItem_mF88FEEBCF42FA1DCE050EE1E7C2ABEE364205725(((int32_t)4387), NULL);
-		G_B9_0 = ((((int32_t)L_10) == ((int32_t)0))? 1 : 0);
-		goto IL_0046;
-	}
-
-IL_0045:
-	{
-		G_B9_0 = 0;
-	}
-
-IL_0046:
-	{
-		V_0 = (bool)G_B9_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:612>
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_11 = ___0_mob;
-		NullCheck(L_11);
-		int8_t L_12 = L_11->___levelBoss;
-		if (!L_12)
+		L_10 = KsGoldPanel_CanStartMob_m8DBA53FB14B3A1115533685E11160BF6245CEC15(L_9, NULL);
+		if (L_10)
 		{
-			goto IL_0052;
+			goto IL_0039;
 		}
 	}
 	{
-		bool L_13 = V_0;
-		if (L_13)
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:655>
+		return (bool)0;
+	}
+
+IL_0039:
+	{
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:657>
+		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
+		bool L_11 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___neSieuQuai;
+		if (!L_11)
 		{
-			goto IL_0059;
+			goto IL_004f;
+		}
+	}
+	{
+		bool L_12;
+		L_12 = ItemTime_isExistItem_mF88FEEBCF42FA1DCE050EE1E7C2ABEE364205725(((int32_t)4387), NULL);
+		G_B11_0 = ((((int32_t)L_12) == ((int32_t)0))? 1 : 0);
+		goto IL_0050;
+	}
+
+IL_004f:
+	{
+		G_B11_0 = 0;
+	}
+
+IL_0050:
+	{
+		V_0 = (bool)G_B11_0;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:658>
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_13 = ___0_mob;
+		NullCheck(L_13);
+		int8_t L_14 = L_13->___levelBoss;
+		if (!L_14)
+		{
+			goto IL_005c;
+		}
+	}
+	{
+		bool L_15 = V_0;
+		if (L_15)
+		{
+			goto IL_0063;
 		}
 	}
 
-IL_0052:
+IL_005c:
 	{
-		Mob_t394900507F39725FA57379059AA703E63166F45F* L_14 = ___0_mob;
+		Mob_t394900507F39725FA57379059AA703E63166F45F* L_16 = ___0_mob;
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
-		bool L_15;
-		L_15 = PickMobController_FilterMobTanSat_m611D723319C9D16B18BD3A64F1404E2DD82561DD(L_14, NULL);
-		return L_15;
+		bool L_17;
+		L_17 = PickMobController_FilterMobTanSat_m611D723319C9D16B18BD3A64F1404E2DD82561DD(L_16, NULL);
+		return L_17;
 	}
 
-IL_0059:
+IL_0063:
 	{
 		return (bool)0;
 	}
 }
-// Method Definition Index: 14414
+// Method Definition Index: 14462
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_IsCharTanSat_m46EEAD74102EBEFDC2F3E61917515FFE82E20DB5 (Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* ___0_c, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24117,7 +24450,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_IsCharTanSat_m46EEAD74
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:617>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:663>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_0;
 		L_0 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -24128,7 +24461,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_IsCharTanSat_m46EEAD74
 		return L_2;
 	}
 }
-// Method Definition Index: 14415
+// Method Definition Index: 14463
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_IsMobNext_m8B24D6B95E6C60BFC4126B0A1B205A714F4E2925 (Mob_t394900507F39725FA57379059AA703E63166F45F* ___0_mob, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24144,7 +24477,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_IsMobNext_m8B24D6B95E6
 	bool V_1 = false;
 	int32_t V_2 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:622>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:668>
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_0 = ___0_mob;
 		NullCheck(L_0);
 		bool L_1 = L_0->___isMobMe;
@@ -24154,13 +24487,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_IsMobNext_m8B24D6B95E6
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:624>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:670>
 		return (bool)0;
 	}
 
 IL_000a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:626>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:672>
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_2 = ___0_mob;
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		bool L_3;
@@ -24171,13 +24504,13 @@ IL_000a:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:628>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:674>
 		return (bool)0;
 	}
 
 IL_0014:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:630>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:676>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		bool L_4 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___neSieuQuai;
 		if (!L_4)
@@ -24206,7 +24539,7 @@ IL_0014:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:632>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:678>
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_9 = ___0_mob;
 		NullCheck(L_9);
 		int8_t L_10 = L_9->___levelBoss;
@@ -24216,18 +24549,18 @@ IL_0014:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:634>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:680>
 		V_0 = (Mob_t394900507F39725FA57379059AA703E63166F45F*)NULL;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:635>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:681>
 		V_1 = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:636>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:682>
 		V_2 = 0;
 		goto IL_008b;
 	}
 
 IL_0057:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:638>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:684>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_11 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vMob;
 		int32_t L_12 = V_2;
@@ -24235,7 +24568,7 @@ IL_0057:
 		RuntimeObject* L_13;
 		L_13 = MyVector_elementAt_m2058CB2FBF87C401368BB43AE172A9BB65956E4E(L_11, L_12, NULL);
 		V_0 = ((Mob_t394900507F39725FA57379059AA703E63166F45F*)CastclassClass((RuntimeObject*)L_13, Mob_t394900507F39725FA57379059AA703E63166F45F_il2cpp_TypeInfo_var));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:639>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:685>
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_14 = V_0;
 		NullCheck(L_14);
 		int32_t L_15 = L_14->___countDie;
@@ -24265,22 +24598,22 @@ IL_0057:
 
 IL_0083:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:641>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:687>
 		V_1 = (bool)1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:642>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:688>
 		goto IL_0098;
 	}
 
 IL_0087:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:636>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:682>
 		int32_t L_20 = V_2;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_20, 1));
 	}
 
 IL_008b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:636>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:682>
 		int32_t L_21 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_22 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___vMob;
@@ -24295,7 +24628,7 @@ IL_008b:
 
 IL_0098:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:645>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:691>
 		bool L_24 = V_1;
 		if (L_24)
 		{
@@ -24303,13 +24636,13 @@ IL_0098:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:647>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:693>
 		return (bool)0;
 	}
 
 IL_009d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:649>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:695>
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_25 = ___0_mob;
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_26 = V_0;
 		NullCheck(L_26);
@@ -24321,7 +24654,7 @@ IL_009d:
 
 IL_00ab:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:651>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:697>
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_28 = ___0_mob;
 		NullCheck(L_28);
 		int32_t L_29 = L_28->___countDie;
@@ -24351,17 +24684,17 @@ IL_00ab:
 
 IL_00c6:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:653>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:699>
 		return (bool)0;
 	}
 
 IL_00c8:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:656>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:702>
 		return (bool)1;
 	}
 }
-// Method Definition Index: 14416
+// Method Definition Index: 14464
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_FilterMobTanSat_m611D723319C9D16B18BD3A64F1404E2DD82561DD (Mob_t394900507F39725FA57379059AA703E63166F45F* ___0_mob, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24373,7 +24706,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_FilterMobTanSat_m611D7
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:661>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:707>
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_0 = ___0_mob;
 		if (!L_0)
 		{
@@ -24392,13 +24725,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_FilterMobTanSat_m611D7
 
 IL_000b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:663>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:709>
 		return (bool)0;
 	}
 
 IL_000d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:665>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:711>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		bool L_3 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___isAllMob;
 		if (!L_3)
@@ -24407,13 +24740,13 @@ IL_000d:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:667>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:713>
 		return (bool)1;
 	}
 
 IL_0016:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:669>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:715>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_4 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___IdMobsTanSat;
 		NullCheck(L_4);
@@ -24436,13 +24769,13 @@ IL_0016:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:671>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:717>
 		return (bool)1;
 	}
 
 IL_0030:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:673>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:719>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_8 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___IdMobsTanSat;
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_9 = ___0_mob;
@@ -24457,13 +24790,13 @@ IL_0030:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:675>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:721>
 		return (bool)1;
 	}
 
 IL_0044:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:677>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:723>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_12 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___TypeMobsTanSat;
 		Mob_t394900507F39725FA57379059AA703E63166F45F* L_13 = ___0_mob;
@@ -24478,17 +24811,17 @@ IL_0044:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:679>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:725>
 		return (bool)1;
 	}
 
 IL_0058:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:681>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:727>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 14417
+// Method Definition Index: 14465
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* PickMobController_GetSkillPunch_m4C57C6DA03C241D05F0278432FFCAE0C1C974146 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24510,12 +24843,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357
 	Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* V_7 = NULL;
 	SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* G_B23_0 = NULL;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:686>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:732>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_0;
 		L_0 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 		V_0 = L_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:687>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:733>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_1 = V_0;
 		if (L_1)
 		{
@@ -24523,13 +24856,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:687>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:733>
 		return (Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)NULL;
 	}
 
 IL_000b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:690>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:736>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_2 = V_0;
 		NullCheck(L_2);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_3 = L_2->___vSkill;
@@ -24539,14 +24872,14 @@ IL_000b:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:692>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:738>
 		V_2 = 0;
 		goto IL_0066;
 	}
 
 IL_001a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:694>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:740>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_4 = V_0;
 		NullCheck(L_4);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_5 = L_4->___vSkill;
@@ -24555,7 +24888,7 @@ IL_001a:
 		RuntimeObject* L_7;
 		L_7 = MyVector_elementAt_m2058CB2FBF87C401368BB43AE172A9BB65956E4E(L_5, L_6, NULL);
 		V_3 = ((Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)CastclassClass((RuntimeObject*)L_7, Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE_il2cpp_TypeInfo_var));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:695>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:741>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_8 = V_3;
 		if (!L_8)
 		{
@@ -24572,7 +24905,7 @@ IL_001a:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:697>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:743>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_11 = V_3;
 		NullCheck(L_11);
 		SkillTemplate_t311437513D34E91857550DAACFFF71C301B14352* L_12 = L_11->___template;
@@ -24608,21 +24941,21 @@ IL_001a:
 
 IL_0060:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:699>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:745>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_20 = V_3;
 		return L_20;
 	}
 
 IL_0062:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:692>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:738>
 		int32_t L_21 = V_2;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_21, 1));
 	}
 
 IL_0066:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:692>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:738>
 		int32_t L_22 = V_2;
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_23 = V_0;
 		NullCheck(L_23);
@@ -24636,7 +24969,7 @@ IL_0066:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:704>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:750>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_26 = V_0;
 		NullCheck(L_26);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_27 = L_26->___vSkill;
@@ -24649,7 +24982,7 @@ IL_0066:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:706>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:752>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_29 = V_0;
 		NullCheck(L_29);
 		MyVector_t5E551DE127AB217F3BF51644B186993381C11E30* L_30 = L_29->___vSkill;
@@ -24657,7 +24990,7 @@ IL_0066:
 		RuntimeObject* L_31;
 		L_31 = MyVector_elementAt_m2058CB2FBF87C401368BB43AE172A9BB65956E4E(L_30, 0, NULL);
 		V_4 = ((Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)CastclassClass((RuntimeObject*)L_31, Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE_il2cpp_TypeInfo_var));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:707>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:753>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_32 = V_4;
 		if (!L_32)
 		{
@@ -24709,14 +25042,14 @@ IL_0066:
 
 IL_00ce:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:709>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:755>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_44 = V_4;
 		return L_44;
 	}
 
 IL_00d1:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:715>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:761>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		bool L_45 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isTouch;
 		if (L_45)
@@ -24749,7 +25082,7 @@ IL_00e6:
 IL_00eb:
 	{
 		V_1 = G_B23_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:716>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:762>
 		SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* L_49 = V_1;
 		if (!L_49)
 		{
@@ -24757,7 +25090,7 @@ IL_00eb:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:718>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:764>
 		SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* L_50 = V_1;
 		V_5 = L_50;
 		V_6 = 0;
@@ -24766,14 +25099,14 @@ IL_00eb:
 
 IL_00f7:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:718>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:764>
 		SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* L_51 = V_5;
 		int32_t L_52 = V_6;
 		NullCheck(L_51);
 		int32_t L_53 = L_52;
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_54 = (L_51)->GetAt(static_cast<il2cpp_array_size_t>(L_53));
 		V_7 = L_54;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:720>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:766>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_55 = V_7;
 		if (!L_55)
 		{
@@ -24790,7 +25123,7 @@ IL_00f7:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:722>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:768>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_58 = V_7;
 		NullCheck(L_58);
 		SkillTemplate_t311437513D34E91857550DAACFFF71C301B14352* L_59 = L_58->___template;
@@ -24826,7 +25159,7 @@ IL_00f7:
 
 IL_0137:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:724>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:770>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_67 = V_7;
 		return L_67;
 	}
@@ -24839,7 +25172,7 @@ IL_013a:
 
 IL_0140:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:718>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:764>
 		int32_t L_69 = V_6;
 		SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* L_70 = V_5;
 		NullCheck(L_70);
@@ -24851,7 +25184,7 @@ IL_0140:
 
 IL_0148:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:730>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:776>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_71 = V_0;
 		NullCheck(L_71);
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_72 = L_71->___myskill;
@@ -24913,7 +25246,7 @@ IL_0148:
 
 IL_0195:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:732>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:778>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_88 = V_0;
 		NullCheck(L_88);
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_89 = L_88->___myskill;
@@ -24922,11 +25255,11 @@ IL_0195:
 
 IL_019c:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:735>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:781>
 		return (Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)NULL;
 	}
 }
-// Method Definition Index: 14418
+// Method Definition Index: 14466
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_IsSpecialAttackSkill_mBC4DB1A6D1EB8AC3235BE27C1BDDFE294CD711DE (Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* ___0_skill, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24943,7 +25276,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_IsSpecialAttackSkill_m
 	String_t* V_1 = NULL;
 	String_t* G_B9_0 = NULL;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:740>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:786>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_0 = ___0_skill;
 		if (!L_0)
 		{
@@ -24962,20 +25295,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_IsSpecialAttackSkill_m
 
 IL_000b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:740>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:786>
 		return (bool)0;
 	}
 
 IL_000d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:741>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:787>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_3 = ___0_skill;
 		NullCheck(L_3);
 		SkillTemplate_t311437513D34E91857550DAACFFF71C301B14352* L_4 = L_3->___template;
 		NullCheck(L_4);
 		int8_t L_5 = L_4->___id;
 		V_0 = L_5;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:742>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:788>
 		int8_t L_6 = V_0;
 		if ((((int32_t)L_6) == ((int32_t)((int32_t)9))))
 		{
@@ -24992,13 +25325,13 @@ IL_000d:
 
 IL_0023:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:742>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:788>
 		return (bool)1;
 	}
 
 IL_0025:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:743>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:789>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_8 = ___0_skill;
 		NullCheck(L_8);
 		SkillTemplate_t311437513D34E91857550DAACFFF71C301B14352* L_9 = L_8->___template;
@@ -25031,7 +25364,7 @@ IL_0039:
 IL_0049:
 	{
 		V_1 = G_B9_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:744>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:790>
 		String_t* L_16 = V_1;
 		NullCheck(L_16);
 		bool L_17;
@@ -25074,17 +25407,17 @@ IL_0049:
 
 IL_007e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:746>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:792>
 		return (bool)1;
 	}
 
 IL_0080:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:748>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:794>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 14419
+// Method Definition Index: 14467
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_CanUseSpecialSkill_m91D2A03CC120E743799DF6D4E6132D56C1776BD8 (Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* ___0_skill, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25099,7 +25432,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_CanUseSpecialSkill_m91
 	}
 	Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* V_0 = NULL;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:753>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:799>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_0 = ___0_skill;
 		if (!L_0)
 		{
@@ -25118,18 +25451,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_CanUseSpecialSkill_m91
 
 IL_000b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:753>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:799>
 		return (bool)0;
 	}
 
 IL_000d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:754>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:800>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_3;
 		L_3 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 		V_0 = L_3;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:755>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:801>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_4 = V_0;
 		if (L_4)
 		{
@@ -25137,20 +25470,20 @@ IL_000d:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:755>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:801>
 		return (bool)0;
 	}
 
 IL_0018:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:757>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:803>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		int64_t L_5;
 		L_5 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_6 = ___0_skill;
 		NullCheck(L_6);
 		int64_t L_7 = L_6->___lastTimeUseThisSkill;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:758>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:804>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_8 = ___0_skill;
 		NullCheck(L_8);
 		int32_t L_9 = L_8->___coolDown;
@@ -25160,17 +25493,17 @@ IL_0018:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:760>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:806>
 		return (bool)0;
 	}
 
 IL_002f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:762>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:808>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_10 = ___0_skill;
 		NullCheck(L_10);
 		L_10->___paintCanNotUseSkill = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:764>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:810>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_11 = V_0;
 		NullCheck(L_11);
 		double L_12 = L_11->___cMP;
@@ -25184,13 +25517,13 @@ IL_002f:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:766>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:812>
 		return (bool)0;
 	}
 
 IL_0046:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:770>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:816>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_15 = ___0_skill;
 		NullCheck(L_15);
 		SkillTemplate_t311437513D34E91857550DAACFFF71C301B14352* L_16 = L_15->___template;
@@ -25249,7 +25582,7 @@ IL_0046:
 
 IL_009a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:772>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:818>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_31 = V_0;
 		NullCheck(L_31);
 		double L_32 = L_31->___cHP;
@@ -25262,17 +25595,17 @@ IL_009a:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:774>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:820>
 		return (bool)0;
 	}
 
 IL_00b4:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:778>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:824>
 		return (bool)1;
 	}
 }
-// Method Definition Index: 14420
+// Method Definition Index: 14468
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* PickMobController_GetSkillMonkey_m49BAC91A48913FE366EF60A4783DC9003FC88026 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25290,12 +25623,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357
 	Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* V_3 = NULL;
 	SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* G_B6_0 = NULL;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:783>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:829>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_0;
 		L_0 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 		V_0 = L_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:784>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:830>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_1 = V_0;
 		if (L_1)
 		{
@@ -25303,13 +25636,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:784>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:830>
 		return (Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)NULL;
 	}
 
 IL_000b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:787>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:833>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		bool L_2 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isTouch;
 		if (L_2)
@@ -25342,7 +25675,7 @@ IL_0020:
 IL_0025:
 	{
 		V_1 = G_B6_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:788>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:834>
 		SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* L_6 = V_1;
 		if (!L_6)
 		{
@@ -25350,21 +25683,21 @@ IL_0025:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:790>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:836>
 		V_2 = 0;
 		goto IL_0051;
 	}
 
 IL_002d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:792>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:838>
 		SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* L_7 = V_1;
 		int32_t L_8 = V_2;
 		NullCheck(L_7);
 		int32_t L_9 = L_8;
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
 		V_3 = L_10;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:793>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:839>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_11 = V_3;
 		if (!L_11)
 		{
@@ -25392,21 +25725,21 @@ IL_002d:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:795>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:841>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_17 = V_3;
 		return L_17;
 	}
 
 IL_004d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:790>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:836>
 		int32_t L_18 = V_2;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_18, 1));
 	}
 
 IL_0051:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:790>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:836>
 		int32_t L_19 = V_2;
 		SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* L_20 = V_1;
 		NullCheck(L_20);
@@ -25418,7 +25751,7 @@ IL_0051:
 
 IL_0057:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:801>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:847>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_21 = V_0;
 		SkillTemplate_t311437513D34E91857550DAACFFF71C301B14352* L_22 = (SkillTemplate_t311437513D34E91857550DAACFFF71C301B14352*)il2cpp_codegen_object_new(SkillTemplate_t311437513D34E91857550DAACFFF71C301B14352_il2cpp_TypeInfo_var);
 		SkillTemplate__ctor_m5CF00726BF25D383EC204A57627CD18159ABDB4A(L_22, NULL);
@@ -25431,11 +25764,11 @@ IL_0057:
 		return L_24;
 	}
 }
-// Method Definition Index: 14421
+// Method Definition Index: 14469
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_IsPlayerMonkey_mE418FE59CD8094B2A9C4F456BD1EC0D4B782A080 (Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* ___0_myChar, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:809>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:855>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_0 = ___0_myChar;
 		if (L_0)
 		{
@@ -25443,13 +25776,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_IsPlayerMonkey_mE418FE
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:809>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:855>
 		return (bool)0;
 	}
 
 IL_0005:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:812>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:858>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_1 = ___0_myChar;
 		NullCheck(L_1);
 		int8_t L_2 = L_1->___isMonkey;
@@ -25459,13 +25792,13 @@ IL_0005:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:814>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:860>
 		return (bool)1;
 	}
 
 IL_000f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:818>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:864>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_3 = ___0_myChar;
 		NullCheck(L_3);
 		int32_t L_4 = L_3->___head;
@@ -25526,13 +25859,13 @@ IL_0043:
 
 IL_005d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:820>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:866>
 		return (bool)1;
 	}
 
 IL_005f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:825>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:871>
 		bool L_15;
 		L_15 = ItemTime_isMonkeyActive_m6D159E844092CC701D83D6562CA0FF896A9702FB(NULL);
 		if (!L_15)
@@ -25541,17 +25874,17 @@ IL_005f:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:827>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:873>
 		return (bool)1;
 	}
 
 IL_0068:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:830>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:876>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 14422
+// Method Definition Index: 14470
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_CheckAutoBienKhi_mB7B653D4D3BF77A3570A1D33D283FE7EE6D2373E (Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* ___0_myChar, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25573,7 +25906,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_CheckAutoBienKhi_mB7B6
 	bool V_3 = false;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 2> __active_exceptions;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:835>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:881>
 		il2cpp_codegen_runtime_class_init_inline(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var);
 		bool L_0 = ((PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_StaticFields*)il2cpp_codegen_static_fields_for(PickMob_tD5CD1E55D5278BDF06B4BAD2820F5DF58DCA08F3_il2cpp_TypeInfo_var))->___isAutoBienKhi;
 		if (L_0)
@@ -25582,16 +25915,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_CheckAutoBienKhi_mB7B6
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:837>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:883>
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___isTransformingMonkey = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:838>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:884>
 		return (bool)0;
 	}
 
 IL_000f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:841>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:887>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_1 = ___0_myChar;
 		if (!L_1)
 		{
@@ -25636,16 +25969,16 @@ IL_000f:
 
 IL_003c:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:843>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:889>
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___isTransformingMonkey = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:844>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:890>
 		return (bool)0;
 	}
 
 IL_0044:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:850>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:896>
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		bool L_9 = ((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___isTransformingMonkey;
 		if (!L_9)
@@ -25654,7 +25987,7 @@ IL_0044:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:853>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:899>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_10 = ___0_myChar;
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		bool L_11;
@@ -25674,14 +26007,14 @@ IL_0044:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:855>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:901>
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___isTransformingMonkey = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:857>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:903>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_14;
 		L_14 = PickMobController_GetSkillPunch_m4C57C6DA03C241D05F0278432FFCAE0C1C974146(NULL);
 		V_1 = L_14;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:858>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:904>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_15 = V_1;
 		if (!L_15)
 		{
@@ -25689,13 +26022,13 @@ IL_0044:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:860>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:906>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_16 = ___0_myChar;
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_17 = V_1;
 		NullCheck(L_16);
 		L_16->___myskill = L_17;
 		Il2CppCodeGenWriteBarrier((void**)(&L_16->___myskill), (void*)L_17);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:861>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:907>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_18;
 		L_18 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_19 = V_1;
@@ -25709,18 +26042,18 @@ IL_0044:
 
 IL_0089:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:863>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:909>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_22 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 		NullCheck(L_22);
 		InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_22, _stringLiteralA982013B19F0BC5774E424DC1E05C92F2DAC299E, 0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:864>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:910>
 		return (bool)0;
 	}
 
 IL_009b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:868>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:914>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		int64_t L_23;
 		L_23 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
@@ -25732,14 +26065,14 @@ IL_009b:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:870>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:916>
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___isTransformingMonkey = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:871>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:917>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_25;
 		L_25 = PickMobController_GetSkillPunch_m4C57C6DA03C241D05F0278432FFCAE0C1C974146(NULL);
 		V_2 = L_25;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:872>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:918>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_26 = V_2;
 		if (!L_26)
 		{
@@ -25747,13 +26080,13 @@ IL_009b:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:874>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:920>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_27 = ___0_myChar;
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_28 = V_2;
 		NullCheck(L_27);
 		L_27->___myskill = L_28;
 		Il2CppCodeGenWriteBarrier((void**)(&L_27->___myskill), (void*)L_28);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:875>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:921>
 		Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_29;
 		L_29 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_30 = V_2;
@@ -25767,40 +26100,40 @@ IL_009b:
 
 IL_00d9:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:877>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:923>
 		return (bool)0;
 	}
 
 IL_00db:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:881>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:927>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_33 = ___0_myChar;
 		NullCheck(L_33);
 		L_33->___cvx = 0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:882>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:928>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_34 = ___0_myChar;
 		NullCheck(L_34);
 		L_34->___cvy = 0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:883>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:929>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_35 = ___0_myChar;
 		NullCheck(L_35);
 		L_35->___mobFocus = (Mob_t394900507F39725FA57379059AA703E63166F45F*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_35->___mobFocus), (void*)(Mob_t394900507F39725FA57379059AA703E63166F45F*)NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:884>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:930>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_36 = ___0_myChar;
 		NullCheck(L_36);
 		L_36->___charFocus = (Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_36->___charFocus), (void*)(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F*)NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:885>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:931>
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)150), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:886>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:932>
 		return (bool)1;
 	}
 
 IL_0103:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:894>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:940>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_37 = ___0_myChar;
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		bool L_38;
@@ -25811,13 +26144,13 @@ IL_0103:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:896>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:942>
 		return (bool)0;
 	}
 
 IL_010d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:902>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:948>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_39 = ___0_myChar;
 		NullCheck(L_39);
 		bool L_40 = L_39->___isCharge;
@@ -25838,18 +26171,18 @@ IL_010d:
 
 IL_011d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:902>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:948>
 		return (bool)0;
 	}
 
 IL_011f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:904>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:950>
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_43;
 		L_43 = PickMobController_GetSkillMonkey_m49BAC91A48913FE366EF60A4783DC9003FC88026(NULL);
 		V_0 = L_43;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:905>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:951>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_44 = V_0;
 		if (!L_44)
 		{
@@ -25868,20 +26201,20 @@ IL_011f:
 
 IL_0130:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:905>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:951>
 		return (bool)0;
 	}
 
 IL_0132:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:908>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:954>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		int64_t L_47;
 		L_47 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_48 = V_0;
 		NullCheck(L_48);
 		int64_t L_49 = L_48->___lastTimeUseThisSkill;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:909>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:955>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_50 = V_0;
 		NullCheck(L_50);
 		int32_t L_51 = L_50->___coolDown;
@@ -25902,13 +26235,13 @@ IL_0132:
 
 IL_014f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:911>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:957>
 		return (bool)0;
 	}
 
 IL_0151:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:915>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:961>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_54 = ___0_myChar;
 		NullCheck(L_54);
 		double L_55 = L_54->___cMP;
@@ -25922,7 +26255,7 @@ IL_0151:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:917>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:963>
 		return (bool)0;
 	}
 
@@ -25932,39 +26265,39 @@ IL_0161:
 	try
 	{
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:923>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:969>
 			il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 			((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___isTransformingMonkey = (bool)1;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:924>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:970>
 			il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 			int64_t L_58;
 			L_58 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
 			((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___timeStartTransformMonkey = L_58;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:927>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:973>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_59 = ___0_myChar;
 			NullCheck(L_59);
 			L_59->___cvx = 0;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:928>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:974>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_60 = ___0_myChar;
 			NullCheck(L_60);
 			L_60->___cvy = 0;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:929>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:975>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_61 = ___0_myChar;
 			NullCheck(L_61);
 			L_61->___mobFocus = (Mob_t394900507F39725FA57379059AA703E63166F45F*)NULL;
 			Il2CppCodeGenWriteBarrier((void**)(&L_61->___mobFocus), (void*)(Mob_t394900507F39725FA57379059AA703E63166F45F*)NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:930>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:976>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_62 = ___0_myChar;
 			NullCheck(L_62);
 			L_62->___charFocus = (Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F*)NULL;
 			Il2CppCodeGenWriteBarrier((void**)(&L_62->___charFocus), (void*)(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F*)NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:933>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:979>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_63 = ___0_myChar;
 			Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_64 = V_0;
 			NullCheck(L_63);
 			L_63->___myskill = L_64;
 			Il2CppCodeGenWriteBarrier((void**)(&L_63->___myskill), (void*)L_64);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:934>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:980>
 			Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_65;
 			L_65 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 			Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_66 = V_0;
@@ -25974,7 +26307,7 @@ IL_0161:
 			int8_t L_68 = L_67->___id;
 			NullCheck(L_65);
 			Service_selectSkill_m33143F9CD16D34BF6148DE78D89B0570F474F3AF(L_65, L_68, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:935>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:981>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6* L_69;
 			L_69 = GameScr_gI_m26BF6CA4E5B7A30A6498B3EF9992BD1CA23B8798(NULL);
@@ -25985,29 +26318,29 @@ IL_0161:
 			int8_t L_72 = L_71->___id;
 			NullCheck(L_69);
 			GameScr_saveRMSCurrentSkill_m80ACAABF1D454CECCAE9BA3819AE462CC5667148(L_69, L_72, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:936>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:982>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_73 = ___0_myChar;
 			NullCheck(L_73);
 			Char_useSkillNotFocus_m6F5098EC2B7BE4318DFFBA9E69E1E678A5A4CDFF(L_73, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:937>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:983>
 			Service_t2E6B9AA4D7E2C20476C716E6AB34F0D5D76F207D* L_74;
 			L_74 = Service_gI_m3CCADAF033AB9D23EEAE06445881D9557028CD32(NULL);
 			NullCheck(L_74);
 			Service_skill_not_focus_m91FAB1AC98F2C051A85BC620E6785FDEB0B3591D(L_74, (int8_t)6, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:938>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:984>
 			Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_75 = ___0_myChar;
 			NullCheck(L_75);
 			L_75->___isWaitMonkey = (bool)1;
 		}
 		try
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:939>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:985>
 			il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 			SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE* L_76;
 			L_76 = SoundMn_gI_mC638F7F795F36F9E04F30A3613B22693B6E6B4D7(NULL);
 			NullCheck(L_76);
 			SoundMn_gong_m2FBF074DF67403F88370C0DC2CAA24ECEBD323EC(L_76, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:939>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:985>
 			goto IL_01e6_1;
 		}
 		catch(Il2CppExceptionWrapper& e)
@@ -26023,23 +26356,23 @@ IL_0161:
 CATCH_01e3_1:
 		{
 			RuntimeObject* L_77 = ((RuntimeObject*)IL2CPP_GET_ACTIVE_EXCEPTION(RuntimeObject*));;
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:939>
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:939>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:985>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:985>
 			IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 			goto IL_01e6_1;
 		}
 
 IL_01e6_1:
 		{
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:941>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:987>
 			il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 			InfoMe_t3EC5B6678C6354BF1BF4C1AAFAE66BB988B428C9* L_78 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___info1;
 			NullCheck(L_78);
 			InfoMe_addInfo_m30F2AAB535011B5A6F9FCD194CBF7C787DD1E1F8(L_78, _stringLiteralF0B964C31901E1AA952A88301C87FA4C88127837, 0, NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:942>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:988>
 			il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 			PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8(((int32_t)300), NULL);
-			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:943>
+			//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:989>
 			V_3 = (bool)1;
 			goto IL_020f;
 		}
@@ -26057,11 +26390,11 @@ IL_01e6_1:
 CATCH_0204:
 	{
 		Exception_t* L_79 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:945>
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:947>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:991>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:993>
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var)));
 		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))))->___isTransformingMonkey = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:948>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:994>
 		V_3 = (bool)0;
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_020f;
@@ -26069,12 +26402,12 @@ CATCH_0204:
 
 IL_020f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:950>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:996>
 		bool L_80 = V_3;
 		return L_80;
 	}
 }
-// Method Definition Index: 14423
+// Method Definition Index: 14471
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* PickMobController_GetSkillSpecialAttack_m06B47D5767BDAD9CB9462F41F5043A050C9982DC (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26091,24 +26424,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357
 	Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* V_2 = NULL;
 	SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* G_B6_0 = NULL;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:954>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1000>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_0;
 		L_0 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:955>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1001>
 		if (L_0)
 		{
 			goto IL_0009;
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:955>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1001>
 		return (Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)NULL;
 	}
 
 IL_0009:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:960>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1006>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		bool L_1 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isTouch;
 		if (L_1)
@@ -26141,7 +26474,7 @@ IL_001e:
 IL_0023:
 	{
 		V_0 = G_B6_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:961>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1007>
 		SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* L_5 = V_0;
 		if (!L_5)
 		{
@@ -26149,21 +26482,21 @@ IL_0023:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:963>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1009>
 		V_1 = 0;
 		goto IL_0048;
 	}
 
 IL_002b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:965>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1011>
 		SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* L_6 = V_0;
 		int32_t L_7 = V_1;
 		NullCheck(L_6);
 		int32_t L_8 = L_7;
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
 		V_2 = L_9;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:966>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1012>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_10 = V_2;
 		if (!L_10)
 		{
@@ -26191,21 +26524,21 @@ IL_002b:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:968>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1014>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_15 = V_2;
 		return L_15;
 	}
 
 IL_0044:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:963>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1009>
 		int32_t L_16 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_16, 1));
 	}
 
 IL_0048:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:963>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1009>
 		int32_t L_17 = V_1;
 		SkillU5BU5D_tD6CF5D2C7A0F98E450228A8DDB33BC5A920CBA14* L_18 = V_0;
 		NullCheck(L_18);
@@ -26217,11 +26550,11 @@ IL_0048:
 
 IL_004e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:973>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1019>
 		return (Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE*)NULL;
 	}
 }
-// Method Definition Index: 14424
+// Method Definition Index: 14472
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* PickMobController_GetSkillAttack2_mFF073BF184A589AA58B601AE1EC91BE17775A7D5 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26234,12 +26567,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357
 	Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* V_0 = NULL;
 	Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* V_1 = NULL;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:979>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1025>
 		il2cpp_codegen_runtime_class_init_inline(AutoSkillPanel_t2C390C00559138A3B1918283862FAA9E278E04C4_il2cpp_TypeInfo_var);
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_0;
 		L_0 = AutoSkillPanel_GetAttackSkillForTanSat_m3016A946FCE397119B3E9D9E50414B7F590C1A56(NULL);
 		V_0 = L_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:980>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1026>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_1 = V_0;
 		if (!L_1)
 		{
@@ -26247,19 +26580,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:982>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1028>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_2 = V_0;
 		return L_2;
 	}
 
 IL_000b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:986>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1032>
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_3;
 		L_3 = PickMobController_GetSkillSpecialAttack_m06B47D5767BDAD9CB9462F41F5043A050C9982DC(NULL);
 		V_1 = L_3;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:987>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1033>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_4 = V_1;
 		if (!L_4)
 		{
@@ -26267,21 +26600,21 @@ IL_000b:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:989>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1035>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_5 = V_1;
 		return L_5;
 	}
 
 IL_0016:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:993>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1039>
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_6;
 		L_6 = PickMobController_GetSkillPunch_m4C57C6DA03C241D05F0278432FFCAE0C1C974146(NULL);
 		return L_6;
 	}
 }
-// Method Definition Index: 14425
+// Method Definition Index: 14473
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_CanUseSkill_m9C78C1C62FE516701882C8891E6820B826DFC5AF (Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* ___0_skill, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26294,7 +26627,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_CanUseSkill_m9C78C1C62
 	}
 	Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* V_0 = NULL;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:998>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1044>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_0 = ___0_skill;
 		if (!L_0)
 		{
@@ -26313,18 +26646,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_CanUseSkill_m9C78C1C62
 
 IL_000b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:998>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1044>
 		return (bool)0;
 	}
 
 IL_000d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:999>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1045>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_3;
 		L_3 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 		V_0 = L_3;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1000>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1046>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_4 = V_0;
 		if (L_4)
 		{
@@ -26332,13 +26665,13 @@ IL_000d:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1000>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1046>
 		return (bool)0;
 	}
 
 IL_0018:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1003>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1049>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_5 = ___0_skill;
 		NullCheck(L_5);
 		SkillTemplate_t311437513D34E91857550DAACFFF71C301B14352* L_6 = L_5->___template;
@@ -26374,7 +26707,7 @@ IL_0018:
 
 IL_0041:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1005>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1051>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		int64_t L_14;
 		L_14 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
@@ -26390,7 +26723,7 @@ IL_0041:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1007>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1053>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_19 = ___0_skill;
 		NullCheck(L_19);
 		L_19->___paintCanNotUseSkill = (bool)0;
@@ -26398,7 +26731,7 @@ IL_0041:
 
 IL_005d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1009>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1055>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_20 = ___0_skill;
 		NullCheck(L_20);
 		bool L_21 = L_20->___paintCanNotUseSkill;
@@ -26407,7 +26740,7 @@ IL_005d:
 
 IL_0067:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1013>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1059>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_22 = ___0_skill;
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		bool L_23;
@@ -26418,7 +26751,7 @@ IL_0067:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1015>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1061>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_24 = ___0_skill;
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		bool L_25;
@@ -26428,7 +26761,7 @@ IL_0067:
 
 IL_0076:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1018>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1064>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		int64_t L_26;
 		L_26 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
@@ -26444,7 +26777,7 @@ IL_0076:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1020>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1066>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_31 = ___0_skill;
 		NullCheck(L_31);
 		L_31->___paintCanNotUseSkill = (bool)0;
@@ -26452,7 +26785,7 @@ IL_0076:
 
 IL_0096:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1022>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1068>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_32 = ___0_skill;
 		NullCheck(L_32);
 		bool L_33 = L_32->___paintCanNotUseSkill;
@@ -26462,7 +26795,7 @@ IL_0096:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1024>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1070>
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_34 = V_0;
 		NullCheck(L_34);
 		double L_35 = L_34->___cMP;
@@ -26475,11 +26808,11 @@ IL_0096:
 
 IL_00b0:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1026>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1072>
 		return (bool)0;
 	}
 }
-// Method Definition Index: 14426
+// Method Definition Index: 14474
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double PickMobController_GetManaUseSkill_mDF1C5603F07981C6B9D60532E705355D0F6DE227 (Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* ___0_skill, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26489,7 +26822,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double PickMobController_GetManaUseSkill_mDF1
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1031>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1077>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_0 = ___0_skill;
 		NullCheck(L_0);
 		SkillTemplate_t311437513D34E91857550DAACFFF71C301B14352* L_1 = L_0->___template;
@@ -26501,13 +26834,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double PickMobController_GetManaUseSkill_mDF1
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1033>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1079>
 		return (1.0);
 	}
 
 IL_0018:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1035>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1081>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_3 = ___0_skill;
 		NullCheck(L_3);
 		SkillTemplate_t311437513D34E91857550DAACFFF71C301B14352* L_4 = L_3->___template;
@@ -26519,7 +26852,7 @@ IL_0018:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1037>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1083>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_6 = ___0_skill;
 		NullCheck(L_6);
 		int32_t L_7 = L_6->___manaUse;
@@ -26533,14 +26866,14 @@ IL_0018:
 
 IL_0043:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1039>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1085>
 		Skill_t19752D8A45B2FDFBADD3DD75DD39B603EDB357AE* L_10 = ___0_skill;
 		NullCheck(L_10);
 		int32_t L_11 = L_10->___manaUse;
 		return ((double)L_11);
 	}
 }
-// Method Definition Index: 14427
+// Method Definition Index: 14475
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PickMobController_GetYsd_mD732D7E8B4898277689C67FEA2B12399DAA8C90B (int32_t ___0_xsd, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26557,25 +26890,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PickMobController_GetYsd_mD732D7E8B48
 	int32_t V_3 = 0;
 	int32_t V_4 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1044>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1090>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_0;
 		L_0 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
 		V_0 = L_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1045>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1091>
 		il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 		int32_t L_1 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___pxh;
 		V_1 = L_1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1046>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1092>
 		V_2 = (-1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1047>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1093>
 		V_3 = ((int32_t)24);
 		goto IL_003b;
 	}
 
 IL_0013:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1049>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1095>
 		int32_t L_2 = ___0_xsd;
 		int32_t L_3 = V_3;
 		il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
@@ -26587,7 +26920,7 @@ IL_0013:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1051>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1097>
 		int32_t L_5 = V_3;
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_6 = V_0;
 		NullCheck(L_6);
@@ -26596,7 +26929,7 @@ IL_0013:
 		int32_t L_8;
 		L_8 = Res_abs_m613075BC715AB0662EB7A9CD2E58BF5911EFBFF0(((int32_t)il2cpp_codegen_subtract(L_5, L_7)), NULL);
 		V_4 = L_8;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1052>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1098>
 		int32_t L_9 = V_4;
 		int32_t L_10 = V_1;
 		if ((((int32_t)L_9) >= ((int32_t)L_10)))
@@ -26605,24 +26938,24 @@ IL_0013:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1054>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1100>
 		int32_t L_11 = V_4;
 		V_1 = L_11;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1055>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1101>
 		int32_t L_12 = V_3;
 		V_2 = L_12;
 	}
 
 IL_0036:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1047>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1093>
 		int32_t L_13 = V_3;
 		V_3 = ((int32_t)il2cpp_codegen_add(L_13, ((int32_t)24)));
 	}
 
 IL_003b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1047>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1093>
 		int32_t L_14 = V_3;
 		il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 		int32_t L_15 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___pxh;
@@ -26632,12 +26965,12 @@ IL_003b:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1059>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1105>
 		int32_t L_16 = V_2;
 		return L_16;
 	}
 }
-// Method Definition Index: 14428
+// Method Definition Index: 14476
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* PickMobController_GetPointYsdMax_m164A42C5EB923948A35E5470D3139F993EE2D930 (int32_t ___0_xStart, int32_t ___1_xEnd, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26655,13 +26988,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int32U5BU5D_t19C97395396A72ECAF310612F0760F16
 	int32_t V_4 = 0;
 	int32_t V_5 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1064>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1110>
 		il2cpp_codegen_runtime_class_init_inline(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___pxh;
 		V_0 = L_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1065>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1111>
 		V_1 = (-1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1066>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1112>
 		int32_t L_1 = ___0_xStart;
 		int32_t L_2 = ___1_xEnd;
 		if ((((int32_t)L_1) <= ((int32_t)L_2)))
@@ -26670,7 +27003,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int32U5BU5D_t19C97395396A72ECAF310612F0760F16
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1068>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1114>
 		int32_t L_3 = ___1_xEnd;
 		V_2 = L_3;
 		goto IL_0028;
@@ -26678,13 +27011,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int32U5BU5D_t19C97395396A72ECAF310612F0760F16
 
 IL_0010:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1070>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1116>
 		int32_t L_4 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		int32_t L_5;
 		L_5 = PickMobController_GetYsd_mD732D7E8B4898277689C67FEA2B12399DAA8C90B(L_4, NULL);
 		V_3 = L_5;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1071>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1117>
 		int32_t L_6 = V_3;
 		if ((((int32_t)L_6) == ((int32_t)(-1))))
 		{
@@ -26700,24 +27033,24 @@ IL_0010:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1073>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1119>
 		int32_t L_9 = V_3;
 		V_0 = L_9;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1074>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1120>
 		int32_t L_10 = V_2;
 		V_1 = L_10;
 	}
 
 IL_0023:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1068>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1114>
 		int32_t L_11 = V_2;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_11, ((int32_t)24)));
 	}
 
 IL_0028:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1068>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1114>
 		int32_t L_12 = V_2;
 		int32_t L_13 = ___0_xStart;
 		if ((((int32_t)L_12) < ((int32_t)L_13)))
@@ -26731,7 +27064,7 @@ IL_0028:
 
 IL_002e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1080>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1126>
 		int32_t L_14 = ___1_xEnd;
 		V_4 = L_14;
 		goto IL_0053;
@@ -26739,13 +27072,13 @@ IL_002e:
 
 IL_0033:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1082>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1128>
 		int32_t L_15 = V_4;
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		int32_t L_16;
 		L_16 = PickMobController_GetYsd_mD732D7E8B4898277689C67FEA2B12399DAA8C90B(L_15, NULL);
 		V_5 = L_16;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1083>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1129>
 		int32_t L_17 = V_5;
 		if ((((int32_t)L_17) == ((int32_t)(-1))))
 		{
@@ -26761,24 +27094,24 @@ IL_0033:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1085>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1131>
 		int32_t L_20 = V_5;
 		V_0 = L_20;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1086>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1132>
 		int32_t L_21 = V_4;
 		V_1 = L_21;
 	}
 
 IL_004c:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1080>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1126>
 		int32_t L_22 = V_4;
 		V_4 = ((int32_t)il2cpp_codegen_subtract(L_22, ((int32_t)24)));
 	}
 
 IL_0053:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1080>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1126>
 		int32_t L_23 = V_4;
 		int32_t L_24 = ___0_xStart;
 		if ((((int32_t)L_23) > ((int32_t)L_24)))
@@ -26789,7 +27122,7 @@ IL_0053:
 
 IL_0058:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1090>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1136>
 		int32_t L_25 = V_1;
 		if ((((int32_t)L_25) == ((int32_t)(-1))))
 		{
@@ -26808,7 +27141,7 @@ IL_0058:
 
 IL_0064:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1092>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1138>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_28 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)2);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_29 = L_28;
 		int32_t L_30 = ___1_xEnd;
@@ -26822,7 +27155,7 @@ IL_0064:
 
 IL_0073:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1094>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1140>
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_32 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)2);
 		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_33 = L_32;
 		int32_t L_34 = V_1;
@@ -26835,7 +27168,7 @@ IL_0073:
 		return L_35;
 	}
 }
-// Method Definition Index: 14429
+// Method Definition Index: 14477
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickMobController_Wait_m37FE431B0011D9F78C468FD2F33ECF8B9AF746D8 (int32_t ___0_time, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26846,22 +27179,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickMobController_Wait_m37FE431B0011D9F7
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1099>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1145>
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___IsWait = (bool)1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1100>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1146>
 		il2cpp_codegen_runtime_class_init_inline(mSystem_t1B21ADB1655C044C0EE8693B3E616CF16812FFBC_il2cpp_TypeInfo_var);
 		int64_t L_0;
 		L_0 = mSystem_currentTimeMillis_m5CCB6CA1D1858E7F9BB6905048A0ACC17C73B86A(NULL);
 		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___TimeStartWait = L_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1101>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1147>
 		int32_t L_1 = ___0_time;
 		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___TimeWait = ((int64_t)L_1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1102>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1148>
 		return;
 	}
 }
-// Method Definition Index: 14430
+// Method Definition Index: 14478
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_IsWaiting_mF736E8D1578D17DFBAB5C2042C259F2779D0FDAC (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26872,7 +27205,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_IsWaiting_mF736E8D1578
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1106>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1152>
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		bool L_0 = ((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___IsWait;
 		if (!L_0)
@@ -26893,20 +27226,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PickMobController_IsWaiting_mF736E8D1578
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1108>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1154>
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___IsWait = (bool)0;
 	}
 
 IL_001f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1110>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:1156>
 		il2cpp_codegen_runtime_class_init_inline(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var);
 		bool L_4 = ((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___IsWait;
 		return L_4;
 	}
 }
-// Method Definition Index: 14431
+// Method Definition Index: 14479
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickMobController__ctor_mD1C5CC806A86DA9AC306CAB9762DC281737B8DB9 (PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6* __this, const RuntimeMethod* method) 
 {
 	{
@@ -26914,7 +27247,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickMobController__ctor_mD1C5CC806A86DA9
 		return;
 	}
 }
-// Method Definition Index: 14432
+// Method Definition Index: 14480
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickMobController__cctor_m904AF2831798C28D9F6A54C76FB9EDDCB91C01EB (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26959,9 +27292,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickMobController__cctor_m904AF2831798C2
 		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___timeNoMob = ((int64_t)0);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:34>
 		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___lastTryZone = (-1);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:804>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:850>
 		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___isTransformingMonkey = (bool)0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:805>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Mod.XMAP/PickMobController.cs:851>
 		((PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_StaticFields*)il2cpp_codegen_static_fields_for(PickMobController_t87374ED7A9025694CD55EAFA9C3B9E62096145D6_il2cpp_TypeInfo_var))->___timeStartTransformMonkey = ((int64_t)0);
 		return;
 	}
@@ -26990,7 +27323,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PickMobController__cctor_m904AF2831798C2
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 14433
+// Method Definition Index: 14481
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* XmapAlgorithm_FindWay_m55BBF7ACB521A1C7AE42FCE9A376E833A83C7258 (int32_t ___0_idMapStart, int32_t ___1_idMapEnd, const RuntimeMethod* method) 
 {
 	List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* V_0 = NULL;
@@ -27008,7 +27341,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t05915E9237850A58106982B7FE4BC5DA4E872
 		return L_4;
 	}
 }
-// Method Definition Index: 14434
+// Method Definition Index: 14482
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* XmapAlgorithm_FindWay_m5543D1315B7291897457DCD6671FF5C23CF0E2AD (int32_t ___0_idMapEnd, List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* ___1_wayPassed, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27194,7 +27527,7 @@ IL_0093:
 		return L_32;
 	}
 }
-// Method Definition Index: 14435
+// Method Definition Index: 14483
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* XmapAlgorithm_GetBestWay_mF52D2BF6861D8F7721D9479F0962169A96A9F831 (List_1_tB5A0E21D0A7C39DF93D616FD5B94C4737A083E35* ___0_ways, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27287,7 +27620,7 @@ IL_0031:
 		return L_16;
 	}
 }
-// Method Definition Index: 14436
+// Method Definition Index: 14484
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* XmapAlgorithm_GetWayPassedStart_m93D7CF892DA58DF0E242921BA8F19FDB5FA0C8F4 (int32_t ___0_idMapStart, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27309,7 +27642,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t05915E9237850A58106982B7FE4BC5DA4E872
 		return L_1;
 	}
 }
-// Method Definition Index: 14437
+// Method Definition Index: 14485
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* XmapAlgorithm_GetWayPassedNext_mF60032B1E5C02DF9079711A59ED332E57E5B0A8A (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* ___0_wayPassed, int32_t ___1_idMapNext, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27332,7 +27665,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t05915E9237850A58106982B7FE4BC5DA4E872
 		return L_2;
 	}
 }
-// Method Definition Index: 14438
+// Method Definition Index: 14486
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XmapAlgorithm_IsWayBetter_mDA0D827D940EC10192D33F8680B302DCC0DD659B (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* ___0_way1, List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* ___1_way2, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27396,7 +27729,7 @@ IL_002f:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 14439
+// Method Definition Index: 14487
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XmapAlgorithm_IsBadWay_m8F523CE88001FB667F7653127B401D1C1075A825 (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* ___0_way, const RuntimeMethod* method) 
 {
 	{
@@ -27407,7 +27740,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XmapAlgorithm_IsBadWay_m8F523CE88001FB66
 		return L_1;
 	}
 }
-// Method Definition Index: 14440
+// Method Definition Index: 14488
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XmapAlgorithm_IsWayGoFutureAndBack_m99829DC4AB8089B0E7A8A993BCF1F2B47F787C36 (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* ___0_way, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27511,7 +27844,7 @@ IL_0051:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 14441
+// Method Definition Index: 14489
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapAlgorithm__ctor_m1320E68790FCD4075058AD9672CF103C36CEF9FF (XmapAlgorithm_tEE3216B74A4AAEB9F556B731C5B1A1436C62404A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -27527,7 +27860,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapAlgorithm__ctor_m1320E68790FCD407505
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 14442
+// Method Definition Index: 14490
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_Update_m123CBCB42587C5D84BEA9E440B9EA94CC564559C (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27821,7 +28154,7 @@ IL_014d:
 		return;
 	}
 }
-// Method Definition Index: 14443
+// Method Definition Index: 14491
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_perform_mB2DEF88949CCC70C88EBF48F66CCEF10AEC6EAEB (XmapController_tC554F90C4B318ED138E9388414DAC565A7356198* __this, int32_t ___0_idAction, RuntimeObject* ___1_p, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27852,7 +28185,7 @@ IL_000f:
 		return;
 	}
 }
-// Method Definition Index: 14444
+// Method Definition Index: 14492
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_Wait_mDB680107381043537C7119DB716CCE3455E95F91 (int32_t ___0_time, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27878,7 +28211,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_Wait_mDB680107381043537C7
 		return;
 	}
 }
-// Method Definition Index: 14445
+// Method Definition Index: 14493
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XmapController_IsWaiting_m0A00F601769353F7F0A53899F54A34194F8F4B33 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27923,7 +28256,7 @@ IL_001f:
 		return L_4;
 	}
 }
-// Method Definition Index: 14446
+// Method Definition Index: 14494
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_ShowXmapMenu_m355E3BB95CE5439B89674E84EC657346D0422883 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -28032,7 +28365,7 @@ IL_0060:
 		return;
 	}
 }
-// Method Definition Index: 14447
+// Method Definition Index: 14495
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* XmapController_GetMapName_m2E79221916A5C85F4672554FE368B6DE30C8480F (int32_t ___0_id, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -28111,7 +28444,7 @@ IL_0038:
 		return L_18;
 	}
 }
-// Method Definition Index: 14448
+// Method Definition Index: 14496
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_ShowPanelXmap_m44EA9A29E8A0AC34DF7FF39A88898515068464ED (List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* ___0_idMaps, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -28229,7 +28562,7 @@ IL_007e:
 		return;
 	}
 }
-// Method Definition Index: 14449
+// Method Definition Index: 14497
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_StartRunToMapId_m211DA242B8BE41DAF3898929ED461BE4CFF20123 (int32_t ___0_idMap, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -28251,7 +28584,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_StartRunToMapId_m211DA242
 		return;
 	}
 }
-// Method Definition Index: 14450
+// Method Definition Index: 14498
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_FinishXmap_m641C4FB59329CEDD7309B95C4E0733FFDA0DE5CB (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -28287,7 +28620,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_FinishXmap_m641C4FB59329C
 		return;
 	}
 }
-// Method Definition Index: 14451
+// Method Definition Index: 14499
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_SaveIdMapCapsuleReturn_m290E8134C7E3224C23C12D18A358E4910E8DF733 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -28307,7 +28640,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_SaveIdMapCapsuleReturn_m2
 		return;
 	}
 }
-// Method Definition Index: 14452
+// Method Definition Index: 14500
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_NextMap_m4B61C84FB890957B136AF4681F06F63CEDD85938 (int32_t ___0_idMapNext, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -28432,7 +28765,7 @@ IL_0064:
 		return;
 	}
 }
-// Method Definition Index: 14453
+// Method Definition Index: 14501
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_NextMap_mE30C8364572E157CE66EACA172C4406C9B1BB9E1 (MapNext_t04317B5461F84B03683F16E1E864A8E3FA5FE3A2 ___0_mapNext, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -28526,7 +28859,7 @@ IL_003e:
 		return;
 	}
 }
-// Method Definition Index: 14454
+// Method Definition Index: 14502
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_NextMapAutoWaypoint_m0A280B71851018088A52C017CDD95D779910D6F2 (MapNext_t04317B5461F84B03683F16E1E864A8E3FA5FE3A2 ___0_mapNext, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -28784,7 +29117,7 @@ IL_0108:
 		return;
 	}
 }
-// Method Definition Index: 14455
+// Method Definition Index: 14503
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_NextMapNpcMenu_m7558F5B946A62D989DFEF59D525C9A742247CF00 (MapNext_t04317B5461F84B03683F16E1E864A8E3FA5FE3A2 ___0_mapNext, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -29551,7 +29884,7 @@ IL_0364:
 		return;
 	}
 }
-// Method Definition Index: 14456
+// Method Definition Index: 14504
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_Fixtl_mCF7F2E58405E2F9850C597C7C127B93BE59F0693 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -29645,7 +29978,7 @@ IL_0064:
 		return;
 	}
 }
-// Method Definition Index: 14457
+// Method Definition Index: 14505
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_NextMapNpcPanel_m0DEE4518D675CF4AECAA47499BD6008342F51018 (MapNext_t04317B5461F84B03683F16E1E864A8E3FA5FE3A2 ___0_mapNext, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -29775,7 +30108,7 @@ IL_005c:
 		return;
 	}
 }
-// Method Definition Index: 14458
+// Method Definition Index: 14506
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_NextMapPosition_m48CC9A24BB1EB4EBBDD3A04F49EEC599F48A94D5 (MapNext_t04317B5461F84B03683F16E1E864A8E3FA5FE3A2 ___0_mapNext, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -29795,7 +30128,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_NextMapPosition_m48CC9A24
 		return;
 	}
 }
-// Method Definition Index: 14459
+// Method Definition Index: 14507
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_NextMapCapsule_m51D630A2A457E000F6014CD4441113602FF8AD06 (MapNext_t04317B5461F84B03683F16E1E864A8E3FA5FE3A2 ___0_mapNext, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -29826,7 +30159,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_NextMapCapsule_m51D630A2A
 		return;
 	}
 }
-// Method Definition Index: 14460
+// Method Definition Index: 14508
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_UseCapsuleNormal_mD8A53E70BEFF685A001FFFD6187095B07C2DF094 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -29855,7 +30188,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_UseCapsuleNormal_mD8A53E7
 		return;
 	}
 }
-// Method Definition Index: 14461
+// Method Definition Index: 14509
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_UseCapsuleVip_mA4ACF8FA6694DB87E89F2B0E0E248DA4AC905D79 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -29884,7 +30217,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_UseCapsuleVip_mA4ACF8FA66
 		return;
 	}
 }
-// Method Definition Index: 14462
+// Method Definition Index: 14510
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_HideInfoDlg_m7D0634197A4A7ED71517622F3AD7BF49EFF2B2DA (const RuntimeMethod* method) 
 {
 	{
@@ -29894,7 +30227,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController_HideInfoDlg_m7D0634197A4A
 		return;
 	}
 }
-// Method Definition Index: 14463
+// Method Definition Index: 14511
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController__ctor_m5DB17E501274B7C83AFF6BA960084E59E6E212B9 (XmapController_tC554F90C4B318ED138E9388414DAC565A7356198* __this, const RuntimeMethod* method) 
 {
 	{
@@ -29902,7 +30235,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController__ctor_m5DB17E501274B7C83A
 		return;
 	}
 }
-// Method Definition Index: 14464
+// Method Definition Index: 14512
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XmapController__cctor_mF82D2BF08526E0B16DFDD8F3DA0FA911B7CC1F4E (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -29964,7 +30297,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Decimal_tDA6C877282B2D789CF97C094
 		return L_1;
 	}
 }
-// Method Definition Index: 19104
+// Method Definition Index: 19152
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color32__ctor_mC9C6B443F0C7CA3F8B174158B2AF6F05E18EAC4E_inline (Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B* __this, uint8_t ___0_r, uint8_t ___1_g, uint8_t ___2_b, uint8_t ___3_a, const RuntimeMethod* method) 
 {
 	{
@@ -29980,7 +30313,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color32__ctor_mC9C6B443F0C7C
 		return;
 	}
 }
-// Method Definition Index: 14486
+// Method Definition Index: 14534
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t XmapData_GetPosWaypointY_m98A97AB37804CD5B034A9E4DD750BBCA41589A96_inline (Waypoint_t10627C403A194C3D7901C1C01F3C6859FE7D6EE6* ___0_waypoint, const RuntimeMethod* method) 
 {
 	{

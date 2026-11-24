@@ -291,6 +291,7 @@ IL2CPP_EXTERN_C RuntimeClass* AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F2
 IL2CPP_EXTERN_C RuntimeClass* AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AutoChatPanel_t9F210BA1E16FA865E87E0BFDAE2748AD9E951F2F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AutoFlag_tC8B9BEE4162120C587BC0E7EB6CF8577AB745217_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AutoHelperMn_t00BEB9A8D06F630A47D620FB0E3908B7FF4D34EA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AutoItemPanel_t2E7F7F6C9261D64F40BC7170592CE01D10978E50_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AutoKaioken_t86EF32C170CE546280F2F0C9D306D191E987E468_il2cpp_TypeInfo_var;
@@ -324,6 +325,7 @@ IL2CPP_EXTERN_C RuntimeClass* Int32U5BU5DU5BU5D_t179D865D5B30EFCBC50F82C9774329C
 IL2CPP_EXTERN_C RuntimeClass* Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ItemViewerPanel_tA0F6DC147E5219D70EDB24C89874DCB4AC55A386_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Item_tFAF77888D49883A321EB596A7D93CB5615D37E95_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_tBE4CE335B6A359B40B17C3959F174A9FCACB9494_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_il2cpp_TypeInfo_var;
@@ -662,6 +664,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral7A7493D38CE1E5890BE82ABD66F9E885B4A531DC
 IL2CPP_EXTERN_C String_t* _stringLiteral7A978F60C878533A3ECAC0EAEC204803A27CBF2E;
 IL2CPP_EXTERN_C String_t* _stringLiteral7AE81D21F011E979E721A4CDCB3636F624F5C52A;
 IL2CPP_EXTERN_C String_t* _stringLiteral7B04634EE02513A15764E0922B201C1B7838600C;
+IL2CPP_EXTERN_C String_t* _stringLiteral7B77BFFE5090BBA1B700760455456A4EFF60233B;
 IL2CPP_EXTERN_C String_t* _stringLiteral7B7AC2474C407F8997147ADC39DD5A0B94715D4B;
 IL2CPP_EXTERN_C String_t* _stringLiteral7CA73FFE68662FF736D0A6BAF27D6E3CC1689E3C;
 IL2CPP_EXTERN_C String_t* _stringLiteral7DC24380A7D017770EBFBC82BA64A76D6A5688BD;
@@ -769,6 +772,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralA3693CA431031142C58AD41DB32EFF4377670C79
 IL2CPP_EXTERN_C String_t* _stringLiteralA392E7CF7D49F0A9B9C7177124A1B9883EEAA4C7;
 IL2CPP_EXTERN_C String_t* _stringLiteralA3D3A8ED0A26A0BF0B871F704F05A95FBC12F6E1;
 IL2CPP_EXTERN_C String_t* _stringLiteralA42779B09629BCE81B76EF626A57A0B40F2AD827;
+IL2CPP_EXTERN_C String_t* _stringLiteralA46C6A21B3661A035D4598C7BB8B85BAEED6E8AD;
 IL2CPP_EXTERN_C String_t* _stringLiteralA5522AE32F3760E734704BEBF5EAB58EDBFA4A35;
 IL2CPP_EXTERN_C String_t* _stringLiteralA5730104092B19F33DBD57822F0F18FD729D0B8D;
 IL2CPP_EXTERN_C String_t* _stringLiteralA5BF1C50948947F3FE87355C70530E7495DC0429;
@@ -1678,6 +1682,9 @@ struct Item_tFAF77888D49883A321EB596A7D93CB5615D37E95  : public RuntimeObject
 	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___size;
 };
 struct ItemViewerPanel_tA0F6DC147E5219D70EDB24C89874DCB4AC55A386  : public RuntimeObject
+{
+};
+struct KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998  : public RuntimeObject
 {
 };
 struct MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE  : public RuntimeObject
@@ -3376,6 +3383,18 @@ struct ItemViewerPanel_tA0F6DC147E5219D70EDB24C89874DCB4AC55A386_StaticFields
 	int32_t ___itemsPerPage;
 	ItemTemplate_t39FD64463B94EBCD96909003E2BB12E876BA17FF* ___selectedItem;
 	bool ___isSelectDiscardMode;
+};
+struct KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_StaticFields
+{
+	KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998* ____instance;
+	bool ___isShow;
+	bool ___isKsGold;
+	int64_t ___minStartHp;
+	int64_t ___stopHp;
+	bool ___useTanSatV2;
+	bool ___autoChangeZoneWhenEmpty;
+	int32_t ___editingIndex;
+	int64_t ___lastBackspaceTime;
 };
 struct MiniGamePanel_t329F32B3DC9CF0322300A7F08D06EA4E8C24176B_StaticFields
 {
@@ -5874,6 +5893,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AutoUpPanel_get_isAutoUpRunning_m11E6117
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AutoMapPanel_get_isAnyActive_mB68AA19008ECBF66E47FB8144E17D77B5F24E711 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GraphicPanel_get_isCustomActive_mDB83671DB56413D15B84704FB076997311CE3F79 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AutoKaioken_get_IsAnyActive_m6C312658ED46A66D0A949071F7749E66B9C743A7 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AutoFusionPanel_get_isAnyActive_m00331278F90AA20D26157E800F5909EC4D574BBD (const RuntimeMethod* method) ;
 inline void List_1__ctor_mCA8DD57EAC70C2B5923DBB9D5A77CEAC22E7068E (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, const RuntimeMethod* method)
 {
 	((  void (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
@@ -29305,6 +29325,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_GetStrModFunc_mDE5B2C09925417140
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AutoBossPanel_t98F93A1F66AE2C06F86881E0E3607EF1EFF07643_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AutoChatPanel_t9F210BA1E16FA865E87E0BFDAE2748AD9E951F2F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AutoFlag_tC8B9BEE4162120C587BC0E7EB6CF8577AB745217_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AutoHelperMn_t00BEB9A8D06F630A47D620FB0E3908B7FF4D34EA_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AutoItemPanel_t2E7F7F6C9261D64F40BC7170592CE01D10978E50_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AutoKaioken_t86EF32C170CE546280F2F0C9D306D191E987E468_il2cpp_TypeInfo_var);
@@ -29314,6 +29335,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_GetStrModFunc_mDE5B2C09925417140
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GraphicPanel_t19507AE5DD776EAC4C5B5180F4995435555A4071_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ItemViewerPanel_tA0F6DC147E5219D70EDB24C89874DCB4AC55A386_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_ToArray_m2C402D882AA60FC1D5C7C09A129BE7779F833B4A_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mCA8DD57EAC70C2B5923DBB9D5A77CEAC22E7068E_RuntimeMethod_var);
@@ -29333,8 +29355,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_GetStrModFunc_mDE5B2C09925417140
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3909D766F6ACE9B44DC0DD71D2433E4B9737B36D);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral41FBF5320B6D83215EC62866A8CA831E1132AD9C);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral73A68E4765B2C670831071487EE85F4BC38C0CCD);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7B77BFFE5090BBA1B700760455456A4EFF60233B);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8188CF89CF00CED7C4A1868BEF3E712D3C28C41E);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8401BB5C61E3BBCB13B24BCFF0514573AED71D57);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA46C6A21B3661A035D4598C7BB8B85BAEED6E8AD);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAAD44662429F832B29F778E0DB1B436F94B8C843);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBBF68D1F29587F2EB0D9ACDFC1EDE57A507E6DDE);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD63BE27893590224F96D3A2A6A0B80C205E005AB);
@@ -29433,6 +29457,8 @@ IL_0008:
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:332>
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:333>
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:334>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:335>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:336>
 		ValueTuple_2U5BU5DU5BU5D_t7787CC69B8E2CBA3ED428D13E570A8AE9D76BC17* L_1 = (ValueTuple_2U5BU5DU5BU5D_t7787CC69B8E2CBA3ED428D13E570A8AE9D76BC17*)(ValueTuple_2U5BU5DU5BU5D_t7787CC69B8E2CBA3ED428D13E570A8AE9D76BC17*)SZArrayNew(ValueTuple_2U5BU5DU5BU5D_t7787CC69B8E2CBA3ED428D13E570A8AE9D76BC17_il2cpp_TypeInfo_var, (uint32_t)4);
 		ValueTuple_2U5BU5DU5BU5D_t7787CC69B8E2CBA3ED428D13E570A8AE9D76BC17* L_2 = L_1;
 		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_3 = (ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A*)(ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A*)SZArrayNew(ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A_il2cpp_TypeInfo_var, (uint32_t)6);
@@ -29556,7 +29582,7 @@ IL_0008:
 		NullCheck(L_32);
 		(L_32)->SetAt(static_cast<il2cpp_array_size_t>(1), (ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A*)L_53);
 		ValueTuple_2U5BU5DU5BU5D_t7787CC69B8E2CBA3ED428D13E570A8AE9D76BC17* L_56 = L_32;
-		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_57 = (ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A*)(ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A*)SZArrayNew(ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A_il2cpp_TypeInfo_var, (uint32_t)((int32_t)9));
+		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_57 = (ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A*)(ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A*)SZArrayNew(ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A_il2cpp_TypeInfo_var, (uint32_t)((int32_t)11));
 		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_58 = L_57;
 		il2cpp_codegen_runtime_class_init_inline(AutoUpPanel_t678638F617E385A069DD4AFB491CC91FB3E8519F_il2cpp_TypeInfo_var);
 		bool L_59;
@@ -29676,219 +29702,236 @@ IL_01ee:
 		ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8((&L_85), L_84, _stringLiteral41FBF5320B6D83215EC62866A8CA831E1132AD9C, ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8_RuntimeMethod_var);
 		NullCheck(L_83);
 		(L_83)->SetAt(static_cast<il2cpp_array_size_t>(8), (ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862)L_85);
-		NullCheck(G_B5_5);
-		(G_B5_5)->SetAt(static_cast<il2cpp_array_size_t>(G_B5_4), (ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A*)L_83);
-		ValueTuple_2U5BU5DU5BU5D_t7787CC69B8E2CBA3ED428D13E570A8AE9D76BC17* L_86 = G_B5_6;
-		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_87 = (ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A*)(ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A*)SZArrayNew(ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A_il2cpp_TypeInfo_var, (uint32_t)6);
-		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_88 = L_87;
-		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
-		bool L_89 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isInventory;
-		ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862 L_90;
-		memset((&L_90), 0, sizeof(L_90));
-		ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8((&L_90), L_89, _stringLiteral2236E2A720B3B1E5D7598B350CFB128C05D7A12B, ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8_RuntimeMethod_var);
-		NullCheck(L_88);
-		(L_88)->SetAt(static_cast<il2cpp_array_size_t>(0), (ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862)L_90);
-		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_91 = L_88;
-		il2cpp_codegen_runtime_class_init_inline(AutoHelperMn_t00BEB9A8D06F630A47D620FB0E3908B7FF4D34EA_il2cpp_TypeInfo_var);
-		bool L_92 = ((AutoHelperMn_t00BEB9A8D06F630A47D620FB0E3908B7FF4D34EA_StaticFields*)il2cpp_codegen_static_fields_for(AutoHelperMn_t00BEB9A8D06F630A47D620FB0E3908B7FF4D34EA_il2cpp_TypeInfo_var))->___isAutoDefend;
-		ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862 L_93;
-		memset((&L_93), 0, sizeof(L_93));
-		ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8((&L_93), L_92, _stringLiteral3909D766F6ACE9B44DC0DD71D2433E4B9737B36D, ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8_RuntimeMethod_var);
-		NullCheck(L_91);
-		(L_91)->SetAt(static_cast<il2cpp_array_size_t>(1), (ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862)L_93);
-		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_94 = L_91;
-		bool L_95 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___AnPlayer;
-		String_t* L_96 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___strAnPlayer;
-		ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862 L_97;
-		memset((&L_97), 0, sizeof(L_97));
-		ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8((&L_97), L_95, L_96, ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8_RuntimeMethod_var);
-		NullCheck(L_94);
-		(L_94)->SetAt(static_cast<il2cpp_array_size_t>(2), (ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862)L_97);
-		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_98 = L_94;
-		bool L_99 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isShowID;
-		String_t* L_100 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___strShowID;
-		ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862 L_101;
-		memset((&L_101), 0, sizeof(L_101));
-		ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8((&L_101), L_99, L_100, ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8_RuntimeMethod_var);
-		NullCheck(L_98);
-		(L_98)->SetAt(static_cast<il2cpp_array_size_t>(3), (ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862)L_101);
-		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_102 = L_98;
-		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_103;
-		L_103 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
-		NullCheck(L_103);
-		bool L_104 = L_103->___isIntroOff;
-		String_t* L_105 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___strIntroOff;
-		ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862 L_106;
-		memset((&L_106), 0, sizeof(L_106));
-		ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8((&L_106), L_104, L_105, ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8_RuntimeMethod_var);
-		NullCheck(L_102);
-		(L_102)->SetAt(static_cast<il2cpp_array_size_t>(4), (ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862)L_106);
-		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_107 = L_102;
-		bool L_108 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___GiamDungLuong;
-		String_t* L_109 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___strGiamDungLuong;
-		ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862 L_110;
-		memset((&L_110), 0, sizeof(L_110));
-		ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8((&L_110), L_108, L_109, ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8_RuntimeMethod_var);
-		NullCheck(L_107);
-		(L_107)->SetAt(static_cast<il2cpp_array_size_t>(5), (ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862)L_110);
+		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_86 = L_83;
+		il2cpp_codegen_runtime_class_init_inline(KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var);
+		bool L_87 = ((KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_StaticFields*)il2cpp_codegen_static_fields_for(KsGoldPanel_t884DE7EAB600ACE5D003472BCB513E7DEF476998_il2cpp_TypeInfo_var))->___isKsGold;
+		ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862 L_88;
+		memset((&L_88), 0, sizeof(L_88));
+		ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8((&L_88), L_87, _stringLiteral7B77BFFE5090BBA1B700760455456A4EFF60233B, ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8_RuntimeMethod_var);
 		NullCheck(L_86);
-		(L_86)->SetAt(static_cast<il2cpp_array_size_t>(3), (ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A*)L_107);
-		V_0 = L_86;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:335>
+		(L_86)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)9)), (ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862)L_88);
+		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_89 = L_86;
+		il2cpp_codegen_runtime_class_init_inline(AutoFusionPanel_t805F501A29BB91FD0E2D66CFF3B1A260498A9561_il2cpp_TypeInfo_var);
+		bool L_90;
+		L_90 = AutoFusionPanel_get_isAnyActive_m00331278F90AA20D26157E800F5909EC4D574BBD(NULL);
+		ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862 L_91;
+		memset((&L_91), 0, sizeof(L_91));
+		ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8((&L_91), L_90, _stringLiteralA46C6A21B3661A035D4598C7BB8B85BAEED6E8AD, ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8_RuntimeMethod_var);
+		NullCheck(L_89);
+		(L_89)->SetAt(static_cast<il2cpp_array_size_t>(((int32_t)10)), (ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862)L_91);
+		NullCheck(G_B5_5);
+		(G_B5_5)->SetAt(static_cast<il2cpp_array_size_t>(G_B5_4), (ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A*)L_89);
+		ValueTuple_2U5BU5DU5BU5D_t7787CC69B8E2CBA3ED428D13E570A8AE9D76BC17* L_92 = G_B5_6;
+		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_93 = (ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A*)(ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A*)SZArrayNew(ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A_il2cpp_TypeInfo_var, (uint32_t)6);
+		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_94 = L_93;
+		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
+		bool L_95 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isInventory;
+		ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862 L_96;
+		memset((&L_96), 0, sizeof(L_96));
+		ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8((&L_96), L_95, _stringLiteral2236E2A720B3B1E5D7598B350CFB128C05D7A12B, ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8_RuntimeMethod_var);
+		NullCheck(L_94);
+		(L_94)->SetAt(static_cast<il2cpp_array_size_t>(0), (ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862)L_96);
+		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_97 = L_94;
+		il2cpp_codegen_runtime_class_init_inline(AutoHelperMn_t00BEB9A8D06F630A47D620FB0E3908B7FF4D34EA_il2cpp_TypeInfo_var);
+		bool L_98 = ((AutoHelperMn_t00BEB9A8D06F630A47D620FB0E3908B7FF4D34EA_StaticFields*)il2cpp_codegen_static_fields_for(AutoHelperMn_t00BEB9A8D06F630A47D620FB0E3908B7FF4D34EA_il2cpp_TypeInfo_var))->___isAutoDefend;
+		ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862 L_99;
+		memset((&L_99), 0, sizeof(L_99));
+		ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8((&L_99), L_98, _stringLiteral3909D766F6ACE9B44DC0DD71D2433E4B9737B36D, ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8_RuntimeMethod_var);
+		NullCheck(L_97);
+		(L_97)->SetAt(static_cast<il2cpp_array_size_t>(1), (ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862)L_99);
+		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_100 = L_97;
+		bool L_101 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___AnPlayer;
+		String_t* L_102 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___strAnPlayer;
+		ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862 L_103;
+		memset((&L_103), 0, sizeof(L_103));
+		ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8((&L_103), L_101, L_102, ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8_RuntimeMethod_var);
+		NullCheck(L_100);
+		(L_100)->SetAt(static_cast<il2cpp_array_size_t>(2), (ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862)L_103);
+		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_104 = L_100;
+		bool L_105 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___isShowID;
+		String_t* L_106 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___strShowID;
+		ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862 L_107;
+		memset((&L_107), 0, sizeof(L_107));
+		ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8((&L_107), L_105, L_106, ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8_RuntimeMethod_var);
+		NullCheck(L_104);
+		(L_104)->SetAt(static_cast<il2cpp_array_size_t>(3), (ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862)L_107);
+		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_108 = L_104;
+		ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED* L_109;
+		L_109 = ModFunc_GI_m5C6B18206EFBF974B67D2837064177BBADA42A1A(NULL);
+		NullCheck(L_109);
+		bool L_110 = L_109->___isIntroOff;
+		String_t* L_111 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___strIntroOff;
+		ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862 L_112;
+		memset((&L_112), 0, sizeof(L_112));
+		ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8((&L_112), L_110, L_111, ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8_RuntimeMethod_var);
+		NullCheck(L_108);
+		(L_108)->SetAt(static_cast<il2cpp_array_size_t>(4), (ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862)L_112);
+		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_113 = L_108;
+		bool L_114 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___GiamDungLuong;
+		String_t* L_115 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___strGiamDungLuong;
+		ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862 L_116;
+		memset((&L_116), 0, sizeof(L_116));
+		ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8((&L_116), L_114, L_115, ValueTuple_2__ctor_m0AFDC00433F4D3478EA5858A71BB29F9E93EA5A8_RuntimeMethod_var);
+		NullCheck(L_113);
+		(L_113)->SetAt(static_cast<il2cpp_array_size_t>(5), (ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862)L_116);
+		NullCheck(L_92);
+		(L_92)->SetAt(static_cast<il2cpp_array_size_t>(3), (ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A*)L_113);
+		V_0 = L_92;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:337>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
-		Panel_t49349297CB778B2219539905F16B94090BD93138* L_111 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
-		NullCheck(L_111);
-		int32_t L_112 = L_111->___currentTabIndex;
-		V_1 = L_112;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:336>
-		int32_t L_113 = V_1;
-		if ((((int32_t)L_113) < ((int32_t)0)))
-		{
-			goto IL_033e;
-		}
-	}
-	{
-		int32_t L_114 = V_1;
-		ValueTuple_2U5BU5DU5BU5D_t7787CC69B8E2CBA3ED428D13E570A8AE9D76BC17* L_115 = V_0;
-		NullCheck(L_115);
-		if ((((int32_t)L_114) >= ((int32_t)((int32_t)(((RuntimeArray*)L_115)->max_length)))))
-		{
-			goto IL_033e;
-		}
-	}
-	{
+		Panel_t49349297CB778B2219539905F16B94090BD93138* L_117 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
+		NullCheck(L_117);
+		int32_t L_118 = L_117->___currentTabIndex;
+		V_1 = L_118;
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:338>
-		ValueTuple_2U5BU5DU5BU5D_t7787CC69B8E2CBA3ED428D13E570A8AE9D76BC17* L_116 = V_0;
-		int32_t L_117 = V_1;
-		NullCheck(L_116);
-		int32_t L_118 = L_117;
-		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_119 = (L_116)->GetAt(static_cast<il2cpp_array_size_t>(L_118));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:339>
-		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_120 = (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*)il2cpp_codegen_object_new(List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_il2cpp_TypeInfo_var);
-		List_1__ctor_mCA8DD57EAC70C2B5923DBB9D5A77CEAC22E7068E(L_120, List_1__ctor_mCA8DD57EAC70C2B5923DBB9D5A77CEAC22E7068E_RuntimeMethod_var);
-		V_2 = L_120;
+		int32_t L_119 = V_1;
+		if ((((int32_t)L_119) < ((int32_t)0)))
+		{
+			goto IL_036c;
+		}
+	}
+	{
+		int32_t L_120 = V_1;
+		ValueTuple_2U5BU5DU5BU5D_t7787CC69B8E2CBA3ED428D13E570A8AE9D76BC17* L_121 = V_0;
+		NullCheck(L_121);
+		if ((((int32_t)L_120) >= ((int32_t)((int32_t)(((RuntimeArray*)L_121)->max_length)))))
+		{
+			goto IL_036c;
+		}
+	}
+	{
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:340>
-		V_3 = L_119;
+		ValueTuple_2U5BU5DU5BU5D_t7787CC69B8E2CBA3ED428D13E570A8AE9D76BC17* L_122 = V_0;
+		int32_t L_123 = V_1;
+		NullCheck(L_122);
+		int32_t L_124 = L_123;
+		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_125 = (L_122)->GetAt(static_cast<il2cpp_array_size_t>(L_124));
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:341>
+		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_126 = (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*)il2cpp_codegen_object_new(List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_il2cpp_TypeInfo_var);
+		List_1__ctor_mCA8DD57EAC70C2B5923DBB9D5A77CEAC22E7068E(L_126, List_1__ctor_mCA8DD57EAC70C2B5923DBB9D5A77CEAC22E7068E_RuntimeMethod_var);
+		V_2 = L_126;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:342>
+		V_3 = L_125;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:343>
 		V_4 = 0;
-		goto IL_032b;
+		goto IL_0359;
 	}
 
-IL_02ce:
+IL_02fc:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:343>
-		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_121 = V_3;
-		int32_t L_122 = V_4;
-		NullCheck(L_121);
-		int32_t L_123 = L_122;
-		ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862 L_124 = (L_121)->GetAt(static_cast<il2cpp_array_size_t>(L_123));
-		ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862 L_125 = L_124;
-		bool L_126 = L_125.___Item1;
-		V_5 = L_126;
-		String_t* L_127 = L_125.___Item2;
-		V_6 = L_127;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:344>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:345>
+		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_127 = V_3;
+		int32_t L_128 = V_4;
+		NullCheck(L_127);
+		int32_t L_129 = L_128;
+		ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862 L_130 = (L_127)->GetAt(static_cast<il2cpp_array_size_t>(L_129));
+		ValueTuple_2_tBE5B4915E1CEA1416C0DE837C133F4BD7C189862 L_131 = L_130;
+		bool L_132 = L_131.___Item1;
+		V_5 = L_132;
+		String_t* L_133 = L_131.___Item2;
+		V_6 = L_133;
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:346>
 		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
-		bool L_128 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___ModNotLogo;
-		if (!L_128)
-		{
-			goto IL_0308;
-		}
-	}
-	{
-		String_t* L_129 = V_6;
-		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
-		String_t* L_130 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___strLogo;
-		bool L_131;
-		L_131 = String_op_Inequality_m8C940F3CFC42866709D7CA931B3D77B4BE94BCB6(L_129, L_130, NULL);
-		if (!L_131)
-		{
-			goto IL_0325;
-		}
-	}
-	{
-		String_t* L_132 = V_6;
-		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
-		String_t* L_133 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___strLogoGif;
-		bool L_134;
-		L_134 = String_op_Inequality_m8C940F3CFC42866709D7CA931B3D77B4BE94BCB6(L_132, L_133, NULL);
+		bool L_134 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___ModNotLogo;
 		if (!L_134)
 		{
-			goto IL_0325;
+			goto IL_0336;
+		}
+	}
+	{
+		String_t* L_135 = V_6;
+		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
+		String_t* L_136 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___strLogo;
+		bool L_137;
+		L_137 = String_op_Inequality_m8C940F3CFC42866709D7CA931B3D77B4BE94BCB6(L_135, L_136, NULL);
+		if (!L_137)
+		{
+			goto IL_0353;
+		}
+	}
+	{
+		String_t* L_138 = V_6;
+		il2cpp_codegen_runtime_class_init_inline(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var);
+		String_t* L_139 = ((ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_StaticFields*)il2cpp_codegen_static_fields_for(ModFunc_tDD85F1D5E1A1EC94E96477E4EE695E460D1036ED_il2cpp_TypeInfo_var))->___strLogoGif;
+		bool L_140;
+		L_140 = String_op_Inequality_m8C940F3CFC42866709D7CA931B3D77B4BE94BCB6(L_138, L_139, NULL);
+		if (!L_140)
+		{
+			goto IL_0353;
 		}
 	}
 
-IL_0308:
+IL_0336:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:346>
-		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_135 = V_2;
-		bool L_136 = V_5;
-		if (L_136)
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:348>
+		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_141 = V_2;
+		bool L_142 = V_5;
+		if (L_142)
 		{
-			G_B13_0 = L_135;
-			goto IL_0314;
+			G_B13_0 = L_141;
+			goto IL_0342;
 		}
-		G_B12_0 = L_135;
+		G_B12_0 = L_141;
 	}
 	{
 		G_B14_0 = _stringLiteral8188CF89CF00CED7C4A1868BEF3E712D3C28C41E;
 		G_B14_1 = G_B12_0;
-		goto IL_0319;
+		goto IL_0347;
 	}
 
-IL_0314:
+IL_0342:
 	{
 		G_B14_0 = _stringLiteralD63BE27893590224F96D3A2A6A0B80C205E005AB;
 		G_B14_1 = G_B13_0;
 	}
 
-IL_0319:
+IL_0347:
 	{
-		String_t* L_137 = V_6;
-		String_t* L_138;
-		L_138 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B14_0, L_137, NULL);
+		String_t* L_143 = V_6;
+		String_t* L_144;
+		L_144 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B14_0, L_143, NULL);
 		NullCheck(G_B14_1);
-		List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_inline(G_B14_1, L_138, List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_RuntimeMethod_var);
+		List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_inline(G_B14_1, L_144, List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_RuntimeMethod_var);
 	}
 
-IL_0325:
+IL_0353:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:341>
-		int32_t L_139 = V_4;
-		V_4 = ((int32_t)il2cpp_codegen_add(L_139, 1));
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:343>
+		int32_t L_145 = V_4;
+		V_4 = ((int32_t)il2cpp_codegen_add(L_145, 1));
 	}
 
-IL_032b:
+IL_0359:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:341>
-		int32_t L_140 = V_4;
-		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_141 = V_3;
-		NullCheck(L_141);
-		if ((((int32_t)L_140) < ((int32_t)((int32_t)(((RuntimeArray*)L_141)->max_length)))))
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:343>
+		int32_t L_146 = V_4;
+		ValueTuple_2U5BU5D_tF73A1FA03D25B8E8390B98D8592719A2B8C6CF6A* L_147 = V_3;
+		NullCheck(L_147);
+		if ((((int32_t)L_146) < ((int32_t)((int32_t)(((RuntimeArray*)L_147)->max_length)))))
 		{
-			goto IL_02ce;
+			goto IL_02fc;
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:349>
-		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_142 = V_2;
-		NullCheck(L_142);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_143;
-		L_143 = List_1_ToArray_m2C402D882AA60FC1D5C7C09A129BE7779F833B4A(L_142, List_1_ToArray_m2C402D882AA60FC1D5C7C09A129BE7779F833B4A_RuntimeMethod_var);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:351>
+		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_148 = V_2;
+		NullCheck(L_148);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_149;
+		L_149 = List_1_ToArray_m2C402D882AA60FC1D5C7C09A129BE7779F833B4A(L_148, List_1_ToArray_m2C402D882AA60FC1D5C7C09A129BE7779F833B4A_RuntimeMethod_var);
 		il2cpp_codegen_runtime_class_init_inline(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var);
-		((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___strModFunc = L_143;
-		Il2CppCodeGenWriteBarrier((void**)(&((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___strModFunc), (void*)L_143);
+		((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___strModFunc = L_149;
+		Il2CppCodeGenWriteBarrier((void**)(&((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___strModFunc), (void*)L_149);
 		return;
 	}
 
-IL_033e:
+IL_036c:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:353>
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_144 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)0);
-		il2cpp_codegen_runtime_class_init_inline(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var);
-		((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___strModFunc = L_144;
-		Il2CppCodeGenWriteBarrier((void**)(&((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___strModFunc), (void*)L_144);
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:355>
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_150 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)0);
+		il2cpp_codegen_runtime_class_init_inline(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var);
+		((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___strModFunc = L_150;
+		Il2CppCodeGenWriteBarrier((void**)(&((Panel_t49349297CB778B2219539905F16B94090BD93138_StaticFields*)il2cpp_codegen_static_fields_for(Panel_t49349297CB778B2219539905F16B94090BD93138_il2cpp_TypeInfo_var))->___strModFunc), (void*)L_150);
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:357>
 		return;
 	}
 }
@@ -29903,12 +29946,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_HP_MPup_mFFC6A00C78D5AD172F3DDDA
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:359>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:361>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___HP_UP;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, (0.5f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:360>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:362>
 		return;
 	}
 }
@@ -29928,7 +29971,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_charPunch_mB26FF1781144ACA67436E
 	int32_t G_B8_0 = 0;
 	int32_t G_B12_0 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:364>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:366>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_0;
 		L_0 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -29940,7 +29983,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_charPunch_mB26FF1781144ACA67436E
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:366>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:368>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		float L_2 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___volume;
 		((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___volume = ((float)(L_2/(2.0f)));
@@ -29948,7 +29991,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_charPunch_mB26FF1781144ACA67436E
 
 IL_001c:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:368>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:370>
 		float L_3 = ___1_volumn;
 		if ((!(((float)L_3) <= ((float)(0.0f)))))
 		{
@@ -29956,18 +29999,18 @@ IL_001c:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:370>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:372>
 		___1_volumn = (0.00999999978f);
 	}
 
 IL_002b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:372>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:374>
 		il2cpp_codegen_runtime_class_init_inline(Res_t42939C8A70541C5F8BBAC618E2AE68A048453E10_il2cpp_TypeInfo_var);
 		int32_t L_4;
 		L_4 = Res_random_m4C7D8B74D6563FDABCAD9A9B88B6EA731051D971(0, 3, NULL);
 		V_0 = L_4;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:373>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:375>
 		bool L_5 = ___0_isKick;
 		if (!L_5)
 		{
@@ -29975,7 +30018,7 @@ IL_002b:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:375>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:377>
 		int32_t L_6 = V_0;
 		if (L_6)
 		{
@@ -30005,7 +30048,7 @@ IL_0045:
 
 IL_0051:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:379>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:381>
 		int32_t L_9 = V_0;
 		if (L_9)
 		{
@@ -30034,10 +30077,10 @@ IL_0060:
 
 IL_006a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:381>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:383>
 		int32_t L_12 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_12, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:382>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:384>
 		return;
 	}
 }
@@ -30052,15 +30095,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_thaiduonghasan_mDE8BD2668BD5DD49
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:386>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:388>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___THAIDUONGHASAN;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, (0.5f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:387>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:389>
 		int32_t L_1 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_1, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:388>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:390>
 		return;
 	}
 }
@@ -30075,12 +30118,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_rain_m96E1B90A94349686B3BA3ABA24
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:392>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:394>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___RAIN;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playMus_mA44BC5B9C15570B820468EC5F0603BD879D42AA7(L_0, (0.300000012f), (bool)1, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:393>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:395>
 		return;
 	}
 }
@@ -30095,15 +30138,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_gongName_mED08C5AC9400F397B9EAB4
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:397>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:399>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___NAMEK_CHARGE;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, (0.300000012f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:398>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:400>
 		int32_t L_1 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_1, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:399>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:401>
 		return;
 	}
 }
@@ -30118,15 +30161,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_gong_m2FBF074DF67403F88370C0DC2C
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:403>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:405>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___GONG;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, (0.200000003f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:404>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:406>
 		int32_t L_1 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_1, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:405>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:407>
 		return;
 	}
 }
@@ -30141,15 +30184,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_getItem_mCFEEEB0825F5731DF285A2A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:409>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:411>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___GET_ITEM;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, (0.300000012f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:410>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:412>
 		int32_t L_1 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_1, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:411>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:413>
 		return;
 	}
 }
@@ -30167,11 +30210,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_soundToolOption_mA6CC95FFA3A2E19
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:415>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:417>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		bool L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPlaySound;
 		((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPlaySound = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:416>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:418>
 		bool L_1 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isPlaySound;
 		if (!L_1)
 		{
@@ -30179,7 +30222,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_soundToolOption_mA6CC95FFA3A2E19
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:418>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:420>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE* L_2;
 		L_2 = SoundMn_gI_mC638F7F795F36F9E04F30A3613B22693B6E6B4D7(NULL);
@@ -30187,7 +30230,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_soundToolOption_mA6CC95FFA3A2E19
 		int32_t L_3 = ((TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_StaticFields*)il2cpp_codegen_static_fields_for(TileMap_t9A76417946CFF983D7937D363B2C18AEF41CB199_il2cpp_TypeInfo_var))->___mapID;
 		NullCheck(L_2);
 		SoundMn_loadSound_mE9380935ADBF8F200EF5D83F57679B1ED4EA4EBF(L_2, L_3, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:419>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:421>
 		il2cpp_codegen_runtime_class_init_inline(Rms_t233B1849E61744F4CE2C667927199ADDA6438C4A_il2cpp_TypeInfo_var);
 		Rms_saveRMSInt_m6429922F24AC570BC8C569486E3BD135B981A8C7(_stringLiteralDED3029C465756DEA941E79E8F329177D6158CF4, 1, NULL);
 		goto IL_0045;
@@ -30195,22 +30238,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_soundToolOption_mA6CC95FFA3A2E19
 
 IL_0030:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:423>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:425>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE* L_4;
 		L_4 = SoundMn_gI_mC638F7F795F36F9E04F30A3613B22693B6E6B4D7(NULL);
 		NullCheck(L_4);
 		SoundMn_closeSound_m879A9A0363D2F79964B3DF230559B4AA9405A751(L_4, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:424>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:426>
 		il2cpp_codegen_runtime_class_init_inline(Rms_t233B1849E61744F4CE2C667927199ADDA6438C4A_il2cpp_TypeInfo_var);
 		Rms_saveRMSInt_m6429922F24AC570BC8C569486E3BD135B981A8C7(_stringLiteralDED3029C465756DEA941E79E8F329177D6158CF4, 0, NULL);
 	}
 
 IL_0045:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:426>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:428>
 		SoundMn_getStrOption_mF623BF010029C1CD373C5998B13A8D0C8F9FC0D8(__this, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:427>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:429>
 		return;
 	}
 }
@@ -30226,11 +30269,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_chatVipToolOption_m3C7DF8A6EC487
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:431>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:433>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		bool L_0 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___isPaintChatVip;
 		((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___isPaintChatVip = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:432>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:434>
 		bool L_1 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___isPaintChatVip;
 		if (!L_1)
 		{
@@ -30238,7 +30281,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_chatVipToolOption_m3C7DF8A6EC487
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:434>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:436>
 		il2cpp_codegen_runtime_class_init_inline(Rms_t233B1849E61744F4CE2C667927199ADDA6438C4A_il2cpp_TypeInfo_var);
 		Rms_saveRMSInt_m6429922F24AC570BC8C569486E3BD135B981A8C7(_stringLiteralAA301FEB337EED66F946630B6C806B8DEEB718B1, 0, NULL);
 		goto IL_002c;
@@ -30246,16 +30289,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_chatVipToolOption_m3C7DF8A6EC487
 
 IL_0021:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:438>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:440>
 		il2cpp_codegen_runtime_class_init_inline(Rms_t233B1849E61744F4CE2C667927199ADDA6438C4A_il2cpp_TypeInfo_var);
 		Rms_saveRMSInt_m6429922F24AC570BC8C569486E3BD135B981A8C7(_stringLiteralAA301FEB337EED66F946630B6C806B8DEEB718B1, 1, NULL);
 	}
 
 IL_002c:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:440>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:442>
 		SoundMn_getStrOption_mF623BF010029C1CD373C5998B13A8D0C8F9FC0D8(__this, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:441>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:443>
 		return;
 	}
 }
@@ -30271,7 +30314,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_analogToolOption_m62352E2A31E5F9
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:445>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:447>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___isAnalog;
 		if (L_0)
@@ -30280,36 +30323,36 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_analogToolOption_m62352E2A31E5F9
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:447>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:449>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___isAnalog = 1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:448>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:450>
 		int32_t L_1 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___isAnalog;
 		il2cpp_codegen_runtime_class_init_inline(Rms_t233B1849E61744F4CE2C667927199ADDA6438C4A_il2cpp_TypeInfo_var);
 		Rms_saveRMSInt_m6429922F24AC570BC8C569486E3BD135B981A8C7(_stringLiteral8FB9F115D0DB19F2A0E99E91F32DB82EEA4AD844, L_1, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:449>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:451>
 		GameScr_setSkillBarPosition_m92E7E97818D361C4A2E9E616B57D7D5EF5C7697C(NULL);
 		goto IL_003d;
 	}
 
 IL_0023:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:453>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:455>
 		il2cpp_codegen_runtime_class_init_inline(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var);
 		((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___isAnalog = 0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:454>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:456>
 		int32_t L_2 = ((GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_StaticFields*)il2cpp_codegen_static_fields_for(GameScr_t7DBA24E06D787249E531A43317C4E2403E4AF7F6_il2cpp_TypeInfo_var))->___isAnalog;
 		il2cpp_codegen_runtime_class_init_inline(Rms_t233B1849E61744F4CE2C667927199ADDA6438C4A_il2cpp_TypeInfo_var);
 		Rms_saveRMSInt_m6429922F24AC570BC8C569486E3BD135B981A8C7(_stringLiteral8FB9F115D0DB19F2A0E99E91F32DB82EEA4AD844, L_2, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:455>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:457>
 		GameScr_setSkillBarPosition_m92E7E97818D361C4A2E9E616B57D7D5EF5C7697C(NULL);
 	}
 
 IL_003d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:457>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:459>
 		SoundMn_getStrOption_mF623BF010029C1CD373C5998B13A8D0C8F9FC0D8(__this, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:458>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:460>
 		return;
 	}
 }
@@ -30324,7 +30367,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_CaseAnalog_m078176A2C9FA04D1EBA8
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:462>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:464>
 		il2cpp_codegen_runtime_class_init_inline(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var);
 		bool L_0 = ((Main_t6125012C4D88701077DD3C4660130C5535730E1E_StaticFields*)il2cpp_codegen_static_fields_for(Main_t6125012C4D88701077DD3C4660130C5535730E1E_il2cpp_TypeInfo_var))->___isPC;
 		if (!L_0)
@@ -30343,7 +30386,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_CaseAnalog_m078176A2C9FA04D1EBA8
 
 IL_000e:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:464>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:466>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		bool L_2 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___isTouch;
 		if (L_2)
@@ -30352,20 +30395,20 @@ IL_000e:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:466>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:468>
 		SoundMn_chatVipToolOption_m3C7DF8A6EC487D1E3C88591DD47C49500912FD17(__this, NULL);
 		return;
 	}
 
 IL_001c:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:470>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:472>
 		SoundMn_analogToolOption_m62352E2A31E5F94608ABE2EAAD685118B589DCAD(__this, NULL);
 	}
 
 IL_0022:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:473>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:475>
 		return;
 	}
 }
@@ -30382,7 +30425,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_CaseSizeScr_m95412C3A2D1456A1A3A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:477>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:479>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		bool L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___lowGraphic;
 		if (!L_0)
@@ -30391,10 +30434,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_CaseSizeScr_m95412C3A2D1456A1A3A
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:479>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:481>
 		il2cpp_codegen_runtime_class_init_inline(Rms_t233B1849E61744F4CE2C667927199ADDA6438C4A_il2cpp_TypeInfo_var);
 		Rms_saveRMSInt_m6429922F24AC570BC8C569486E3BD135B981A8C7(_stringLiteral15217A64D60F52B2E241B135161ABF43C9B928BB, 0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:480>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:482>
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
 		String_t* L_1 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___plsRestartGame;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
@@ -30404,10 +30447,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_CaseSizeScr_m95412C3A2D1456A1A3A
 
 IL_0024:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:484>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:486>
 		il2cpp_codegen_runtime_class_init_inline(Rms_t233B1849E61744F4CE2C667927199ADDA6438C4A_il2cpp_TypeInfo_var);
 		Rms_saveRMSInt_m6429922F24AC570BC8C569486E3BD135B981A8C7(_stringLiteral15217A64D60F52B2E241B135161ABF43C9B928BB, 1, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:485>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:487>
 		il2cpp_codegen_runtime_class_init_inline(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var);
 		String_t* L_2 = ((mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_StaticFields*)il2cpp_codegen_static_fields_for(mResources_t3D48DAF9643E86DDEC268272363A2522D4D80FE8_il2cpp_TypeInfo_var))->___plsRestartGame;
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
@@ -30416,9 +30459,9 @@ IL_0024:
 
 IL_003f:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:487>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:489>
 		SoundMn_getStrOption_mF623BF010029C1CD373C5998B13A8D0C8F9FC0D8(__this, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:488>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:490>
 		return;
 	}
 }
@@ -30434,7 +30477,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_AuraToolOption_mC1F8B883E84825C1
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:492>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:494>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		bool L_0 = ((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_StaticFields*)il2cpp_codegen_static_fields_for(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var))->___isPaintAura;
 		if (!L_0)
@@ -30443,10 +30486,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_AuraToolOption_mC1F8B883E84825C1
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:494>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:496>
 		il2cpp_codegen_runtime_class_init_inline(Rms_t233B1849E61744F4CE2C667927199ADDA6438C4A_il2cpp_TypeInfo_var);
 		Rms_saveRMSInt_m6429922F24AC570BC8C569486E3BD135B981A8C7(_stringLiteral31A6916DA0FA0C595CB9D002C6CAE1823C059D7C, 0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:495>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:497>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_StaticFields*)il2cpp_codegen_static_fields_for(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var))->___isPaintAura = (bool)0;
 		goto IL_002b;
@@ -30454,19 +30497,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_AuraToolOption_mC1F8B883E84825C1
 
 IL_001a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:499>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:501>
 		il2cpp_codegen_runtime_class_init_inline(Rms_t233B1849E61744F4CE2C667927199ADDA6438C4A_il2cpp_TypeInfo_var);
 		Rms_saveRMSInt_m6429922F24AC570BC8C569486E3BD135B981A8C7(_stringLiteral31A6916DA0FA0C595CB9D002C6CAE1823C059D7C, 1, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:500>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:502>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_StaticFields*)il2cpp_codegen_static_fields_for(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var))->___isPaintAura = (bool)1;
 	}
 
 IL_002b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:502>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:504>
 		SoundMn_getStrOption_mF623BF010029C1CD373C5998B13A8D0C8F9FC0D8(__this, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:503>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:505>
 		return;
 	}
 }
@@ -30482,7 +30525,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_AuraToolOption2_m0C53646A853D44C
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:507>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:509>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		bool L_0 = ((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_StaticFields*)il2cpp_codegen_static_fields_for(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var))->___isPaintAura2;
 		if (!L_0)
@@ -30491,10 +30534,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_AuraToolOption2_m0C53646A853D44C
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:509>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:511>
 		il2cpp_codegen_runtime_class_init_inline(Rms_t233B1849E61744F4CE2C667927199ADDA6438C4A_il2cpp_TypeInfo_var);
 		Rms_saveRMSInt_m6429922F24AC570BC8C569486E3BD135B981A8C7(_stringLiteral80D03791CD4BD10265FBFD379F38E054DACF2F96, 0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:510>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:512>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_StaticFields*)il2cpp_codegen_static_fields_for(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var))->___isPaintAura2 = (bool)0;
 		goto IL_002b;
@@ -30502,19 +30545,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_AuraToolOption2_m0C53646A853D44C
 
 IL_001a:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:514>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:516>
 		il2cpp_codegen_runtime_class_init_inline(Rms_t233B1849E61744F4CE2C667927199ADDA6438C4A_il2cpp_TypeInfo_var);
 		Rms_saveRMSInt_m6429922F24AC570BC8C569486E3BD135B981A8C7(_stringLiteral80D03791CD4BD10265FBFD379F38E054DACF2F96, 1, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:515>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:517>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		((Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_StaticFields*)il2cpp_codegen_static_fields_for(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var))->___isPaintAura2 = (bool)1;
 	}
 
 IL_002b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:517>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:519>
 		SoundMn_getStrOption_mF623BF010029C1CD373C5998B13A8D0C8F9FC0D8(__this, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:518>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:520>
 		return;
 	}
 }
@@ -30522,7 +30565,7 @@ IL_002b:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_update_m4B38E141343A89D7A9799F5483919E080ACF176B (SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:522>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:524>
 		return;
 	}
 }
@@ -30536,12 +30579,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_closeSound_m879A9A0363D2F79964B3
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:526>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:528>
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		((Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_StaticFields*)il2cpp_codegen_static_fields_for(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var))->___stopAll = (bool)1;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:527>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:529>
 		SoundMn_stopAll_m3BBA3789102D97D21FB379DBA109A92A49019819(__this, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:528>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:530>
 		return;
 	}
 }
@@ -30556,15 +30599,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_bigeExlode_m94574BB3889789DBB4AC
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:532>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:534>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___BIG_EXPLODE;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, (0.5f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:533>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:535>
 		int32_t L_1 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_1, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:534>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:536>
 		return;
 	}
 }
@@ -30579,15 +30622,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_explode_1_m5767A1D70FED40FB3316F
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:538>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:540>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___EXPLODE_1;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, (0.5f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:539>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:541>
 		int32_t L_1 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_1, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:540>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:542>
 		return;
 	}
 }
@@ -30602,15 +30645,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_explode_2_m7A1A72392791026D43564
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:544>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:546>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___EXPLODE_1;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, (0.5f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:545>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:547>
 		int32_t L_1 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_1, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:546>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:548>
 		return;
 	}
 }
@@ -30625,15 +30668,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_traidatKame_m325FB2A81F934FBB274
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:550>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:552>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___TRAIDAT_KAME;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, (1.0f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:551>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:553>
 		int32_t L_1 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_1, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:552>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:554>
 		return;
 	}
 }
@@ -30648,15 +30691,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_namekKame_m93B0921CE674F80CE7050
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:556>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:558>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___NAMEK_KAME;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, (0.300000012f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:557>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:559>
 		int32_t L_1 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_1, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:558>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:560>
 		return;
 	}
 }
@@ -30671,15 +30714,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_nameLazer_m3C984A99AFDA9375E91C3
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:562>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:564>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___NAMEK_LAZER;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, (0.300000012f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:563>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:565>
 		int32_t L_1 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_1, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:564>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:566>
 		return;
 	}
 }
@@ -30694,15 +30737,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_xaydaKame_mEFEB7D0966BDE0467E1CF
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:568>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:570>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___XAYDA_KAME;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, (0.300000012f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:569>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:571>
 		int32_t L_1 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_1, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:570>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:572>
 		return;
 	}
 }
@@ -30718,11 +30761,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_mobKame_m13470F5822F9D4BBCEFF395
 	}
 	int32_t V_0 = 0;
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:574>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:576>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___XAYDA_KAME;
 		V_0 = L_0;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:575>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:577>
 		int32_t L_1 = ___0_type;
 		if ((!(((uint32_t)L_1) == ((uint32_t)((int32_t)13)))))
 		{
@@ -30730,7 +30773,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_mobKame_m13470F5822F9D4BBCEFF395
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:577>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:579>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_2 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___NORMAL_KAME;
 		V_0 = L_2;
@@ -30738,14 +30781,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_mobKame_m13470F5822F9D4BBCEFF395
 
 IL_0011:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:579>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:581>
 		int32_t L_3 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_3, (0.100000001f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:580>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:582>
 		int32_t L_4 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_4, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:581>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:583>
 		return;
 	}
 }
@@ -30762,7 +30805,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_charRun_mE41D7493CCBD6042CBD1C49
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:585>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:587>
 		il2cpp_codegen_runtime_class_init_inline(Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F_il2cpp_TypeInfo_var);
 		Char_tAD4A836CEB9BA0C6651AEC6622232BACB068836F* L_0;
 		L_0 = Char_myCharz_m9DE62929FABFA1CCB394459859AB6253266AF5DA(NULL);
@@ -30774,11 +30817,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_charRun_mE41D7493CCBD6042CBD1C49
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:587>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:589>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		float L_2 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___volume;
 		((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___volume = ((float)(L_2/(2.0f)));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:588>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:590>
 		float L_3 = ___0_volumn;
 		if ((!(((float)L_3) <= ((float)(0.0f)))))
 		{
@@ -30786,13 +30829,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_charRun_mE41D7493CCBD6042CBD1C49
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:590>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:592>
 		___0_volumn = (0.00999999978f);
 	}
 
 IL_002b:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:593>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:595>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_4 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___gameTick;
 		if (((int32_t)(L_4%8)))
@@ -30801,20 +30844,20 @@ IL_002b:
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:595>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:597>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_5 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___MOVE;
 		float L_6 = ___0_volumn;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_5, L_6, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:596>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:598>
 		int32_t L_7 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_7, 1));
 	}
 
 IL_004d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:598>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:600>
 		return;
 	}
 }
@@ -30830,7 +30873,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_monkeyRun_m7D0597E3BCC709A1BFF24
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:602>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:604>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___gameTick;
 		if (((int32_t)(L_0%8)))
@@ -30839,19 +30882,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_monkeyRun_m7D0597E3BCC709A1BFF24
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:604>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:606>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_1 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___KHICHAY;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_1, (0.200000003f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:605>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:607>
 		int32_t L_2 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_2, 1));
 	}
 
 IL_0026:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:607>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:609>
 		return;
 	}
 }
@@ -30866,15 +30909,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_charFall_m52E63CFA767B4AFEECAB35
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:611>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:613>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___MOVE;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, (0.100000001f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:612>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:614>
 		int32_t L_1 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_1, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:613>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:615>
 		return;
 	}
 }
@@ -30889,15 +30932,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_charJump_mF3B57939471FFD70B74355
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:617>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:619>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___MOVE;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, (0.200000003f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:618>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:620>
 		int32_t L_1 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_1, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:619>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:621>
 		return;
 	}
 }
@@ -30912,15 +30955,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_panelOpen_m8E244B3DE5B427971D15D
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:623>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:625>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___PANEL_OPEN;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, (0.5f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:624>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:626>
 		int32_t L_1 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_1, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:625>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:627>
 		return;
 	}
 }
@@ -30928,7 +30971,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_panelOpen_m8E244B3DE5B427971D15D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_buttonClose_mC0CB62D7950C86F50A076E42FBD7E876DA137FC1 (SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:629>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:631>
 		return;
 	}
 }
@@ -30943,15 +30986,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_buttonClick_m0A9406690EA36F7D2A6
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:633>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:635>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___BUTTON_CLICK;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, (0.5f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:634>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:636>
 		int32_t L_1 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_1, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:635>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:637>
 		return;
 	}
 }
@@ -30966,15 +31009,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_charFly_mCAADE1C16368D3BE6B3443B
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:639>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:641>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___FLY;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, (0.200000003f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:640>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:642>
 		int32_t L_1 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_1, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:641>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:643>
 		return;
 	}
 }
@@ -30989,15 +31032,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_openMenu_mBE9015850F76D8B191B90D
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:645>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:647>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___BUTTON_CLOSE;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, (0.5f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:646>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:648>
 		int32_t L_1 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_1, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:647>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:649>
 		return;
 	}
 }
@@ -31012,15 +31055,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_panelClick_mA5209472E4F75651A435
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:651>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:653>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___PANEL_CLICK;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, (0.5f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:652>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:654>
 		int32_t L_1 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_1, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:653>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:655>
 		return;
 	}
 }
@@ -31035,15 +31078,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_eatPeans_m957ADC604523C0C5708738
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:657>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:659>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___EAT_PEAN;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, (0.5f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:658>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:660>
 		int32_t L_1 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_1, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:659>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:661>
 		return;
 	}
 }
@@ -31058,12 +31101,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_openDialog_m8C0BBA7A68C776F8860B
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:663>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:665>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___OPEN_DIALOG;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, (0.5f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:664>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:666>
 		return;
 	}
 }
@@ -31078,15 +31121,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_hoisinh_mAFEA7FD373117B84D9FCC9C
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:668>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:670>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___HOISINH;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, (0.5f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:669>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:671>
 		int32_t L_1 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_1, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:670>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:672>
 		return;
 	}
 }
@@ -31094,7 +31137,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_hoisinh_mAFEA7FD373117B84D9FCC9C
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_taitaoPause_mF7A3BB6702BACAED827E116F13666E8529294F1B (SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:674>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:676>
 		return;
 	}
 }
@@ -31111,7 +31154,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SoundMn_isPlayRain_mFB63A5459E69C3A058C3
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	try
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:680>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:682>
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		bool L_0;
 		L_0 = Sound_isPlayingSound_mA48893179CE74E09B1E934A75C89C75D8044D2E7(NULL);
@@ -31131,8 +31174,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SoundMn_isPlayRain_mFB63A5459E69C3A058C3
 CATCH_0008:
 	{
 		Exception_t* L_1 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));;
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:682>
 		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:684>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:686>
 		V_0 = (bool)0;
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
 		goto IL_000d;
@@ -31140,7 +31183,7 @@ CATCH_0008:
 
 IL_000d:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:686>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:688>
 		bool L_2 = V_0;
 		return L_2;
 	}
@@ -31149,7 +31192,7 @@ IL_000d:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SoundMn_isPlayAirShip_mE2F98B9274871B46AC9B424B2A5154CC9A5494C1 (SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:690>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:692>
 		return (bool)0;
 	}
 }
@@ -31164,11 +31207,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_airShip_m71E7665A1435622A9A363A8
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:695>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:697>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___cout;
 		((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___cout = ((int32_t)il2cpp_codegen_add(L_0, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:696>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:698>
 		int32_t L_1 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___cout;
 		if (((int32_t)(L_1%2)))
 		{
@@ -31176,7 +31219,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_airShip_m71E7665A1435622A9A363A8
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:698>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:700>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_2 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___AIR_SHIP;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
@@ -31185,7 +31228,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_airShip_m71E7665A1435622A9A363A8
 
 IL_0025:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:700>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:702>
 		return;
 	}
 }
@@ -31193,7 +31236,7 @@ IL_0025:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_pauseAirShip_m6BFF7A57D5121C89E01DE42CB47AD436E6179CD1 (SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:704>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:706>
 		return;
 	}
 }
@@ -31201,7 +31244,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_pauseAirShip_m6BFF7A57D5121C89E0
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_resumeAirShip_m75458306001C7E4FDF8B81C2AB170A8C2CF5E1F1 (SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE* __this, const RuntimeMethod* method) 
 {
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:708>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:710>
 		return;
 	}
 }
@@ -31215,10 +31258,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_stopAll_m3BBA3789102D97D21FB379D
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:712>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:714>
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_stopAllz_m9F14204D7F0B77AF5C5F9B4D7C86BBC70ADEC2A4(NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:713>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:715>
 		return;
 	}
 }
@@ -31233,26 +31276,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_backToRegister_m61499C6E59E6B195
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:717>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:719>
 		il2cpp_codegen_runtime_class_init_inline(Session_ME_t04C33DE1A7AD3EF7D655E860FAD232C9D38B44DB_il2cpp_TypeInfo_var);
 		Session_ME_t04C33DE1A7AD3EF7D655E860FAD232C9D38B44DB* L_0;
 		L_0 = Session_ME_gI_m08EE51E01B34D2C15C6BA5D68AF6B05C2A74CB76(NULL);
 		NullCheck(L_0);
 		Session_ME_close_m9E8E26F3FDCF4543183F1A9870E23B49CE5DA828(L_0, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:718>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:720>
 		il2cpp_codegen_runtime_class_init_inline(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var);
 		Panel_t49349297CB778B2219539905F16B94090BD93138* L_1 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___panel;
 		NullCheck(L_1);
 		Panel_hide_m03E6E24D789D22CC14FDF035AE1F9F01673C43DD(L_1, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:719>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:721>
 		LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_2 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
 		NullCheck(L_2);
 		LoginScr_actRegister_m1B60B1FF9D765785D278AD197E5D92194F68EBF8(L_2, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:720>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:722>
 		LoginScr_tC859CD60B2ED059FFFD2EB2B7FE1C7347A9847F8* L_3 = ((GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_StaticFields*)il2cpp_codegen_static_fields_for(GameCanvas_t3C221610BEBCBA21285DC2E692D0CEC84918B2CE_il2cpp_TypeInfo_var))->___loginScr;
 		NullCheck(L_3);
 		VirtualActionInvoker0::Invoke(4, L_3);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:721>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:723>
 		return;
 	}
 }
@@ -31267,10 +31310,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_newKame_m5859644FC85CA5C7276E191
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:725>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:727>
 		int32_t L_0 = __this->___poolCount;
 		__this->___poolCount = ((int32_t)il2cpp_codegen_add(L_0, 1));
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:726>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:728>
 		int32_t L_1 = __this->___poolCount;
 		if (((int32_t)(L_1%((int32_t)15))))
 		{
@@ -31278,7 +31321,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_newKame_m5859644FC85CA5C7276E191
 		}
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:728>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:730>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_2 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___TRAIDAT_KAME;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
@@ -31287,7 +31330,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_newKame_m5859644FC85CA5C7276E191
 
 IL_0028:
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:730>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:732>
 		return;
 	}
 }
@@ -31302,12 +31345,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_radarClick_m1DC5C041F450B07C90F5
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:734>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:736>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___RADAR_CLICK;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, (0.5f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:735>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:737>
 		return;
 	}
 }
@@ -31322,12 +31365,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_radarItem_mFBB2A28FBF6B34FB2247A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:739>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:741>
 		il2cpp_codegen_runtime_class_init_inline(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var);
 		int32_t L_0 = ((SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_StaticFields*)il2cpp_codegen_static_fields_for(SoundMn_tF7143B2451DA74D22C62C68BA65D0A1FD37828DE_il2cpp_TypeInfo_var))->___RADAR_ITEM;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, (0.5f), NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:740>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:742>
 		return;
 	}
 }
@@ -31341,12 +31384,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SoundMn_playSound_m90B232216EB9D16F28810
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:744>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:746>
 		int32_t L_0 = ___2_id;
 		float L_1 = ___3_volume;
 		il2cpp_codegen_runtime_class_init_inline(Sound_t06FB644265ECCFDDC2E12D87F6111B3760FC17A0_il2cpp_TypeInfo_var);
 		Sound_playSound_m78606A7711B3A7A84444459BF6A824CBAE45AB21(L_0, L_1, NULL);
-		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:745>
+		//<source_info:C:/Users/lz/Downloads/prj apk/prj apk/ExportedProject/Assets/Scripts/Assembly-CSharp/SoundMn.cs:747>
 		return;
 	}
 }
@@ -35053,7 +35096,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR myReader_tFB44890E0114AFA52E24074
 		return L_0;
 	}
 }
-// Method Definition Index: 19137
+// Method Definition Index: 19185
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
